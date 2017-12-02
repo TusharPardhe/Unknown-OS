@@ -5,6 +5,7 @@
 UnknownOS is a 64 bit Ubuntu derivative distro which uses fewer resources and is energy efficient with minimal graphics requirement and low ram usage. You’ll get a powerful File Explorer (Nautilus), Vlc Media Player, Tor, VirtualBox and much more with minimilastic design and Openbox desktop manager which makes it highly customizable and fast. All the commands are similar to any other Ubuntu derivative distro like touch,cat,grep,git etc. Xcompmgr is used as composite manager as it uses less resources and is very light.It also comes with pre-installed Grub-Menu customizer through which one can customize their Grub Menu and a lot of more fun and efficient applications to personalize your system and learn working with linux.
 
 
+![](/images/Screenshot_13.png)
 ## Key Features
 
 It uses **apt** as a package manager so all the repositories are available for the user to install the required application packages.
@@ -101,9 +102,7 @@ Before installing the system on your main machine or virtualBox environment simp
 You should first download the .iso file on your current operating system and should have a CD/DVD or an Usb Stick to create a bootable environment.
 For example: [Rufus](https://rufus.akeo.ie/) is used for Windows.
 
-![](/images/Screenshot_13.png)
 ![](/images/Screenshot_14.png)
-![](/images/Screenshot_15.png)
 
 ## Installing 
 
@@ -131,6 +130,7 @@ For example: [Rufus](https://rufus.akeo.ie/) is used for Windows.
 * [pmenu](https://gitlab.com/o9000/pmenu.git)
 
 And many other open source projects that I might have forgot (I'll add them as I remember) and a lot of brain cells indeed.
+![](/images/Screenshot_15.png)
 
 ## Acknowledgments
 
