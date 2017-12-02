@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/ISOLINUX
+/usr/lib/ISOLINUX/isohdppx.bin
+/usr/lib/ISOLINUX/isohdpfx.bin
+/usr/lib/ISOLINUX/isolinux.bin
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/isolinux
+/usr/share/doc
+/usr/share/doc/isolinux
+/usr/share/doc/isolinux/README.txt.gz
+/usr/share/doc/isolinux/copyright
+/usr/share/doc/isolinux/changelog.Debian.gz

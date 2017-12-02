@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libgarcon-1-0
+/usr/share/doc/libgarcon-1-0/changelog.Debian.gz
+/usr/share/doc/libgarcon-1-0/copyright
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/libgarcon-1.so.0.0.0
+/usr/lib/x86_64-linux-gnu/libgarcon-gtk2-1.so.0.0.0
+/usr/lib/x86_64-linux-gnu/libgarcon-1.so.0
+/usr/lib/x86_64-linux-gnu/libgarcon-gtk2-1.so.0

@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/qt4
+/usr/lib/x86_64-linux-gnu/qt4/bin
+/usr/lib/x86_64-linux-gnu/qt4/bin/qdbus
+/usr/share
+/usr/share/doc
+/usr/share/doc/qdbus
+/usr/share/doc/qdbus/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/qdbus.1.gz
+/usr/share/doc/qdbus/changelog.Debian.gz
+/usr/share/doc/qdbus/LGPL_EXCEPTION.txt

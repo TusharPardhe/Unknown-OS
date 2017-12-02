@@ -1,0 +1,28 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/xdg/xfce4/panel/xfce4-menu-5.rc 4.7.0 -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/xdg/xfce4/panel/systray-4.rc 4.7.0 -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/xdg/xfce4/panel/panels.xml 4.7.0 -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/xdg/xfce4/panel/launcher-9.rc 4.7.0 -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/xdg/xfce4/panel/launcher-7.rc 4.7.0 -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/xdg/xfce4/panel/launcher-10.rc 4.7.0 -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/xdg/xfce4/panel/clock-14.rc 4.7.0 -- "$@"
+# End automatically added section
+# Automatically added by dh_makeshlibs
+if [ "$1" = "remove" ]; then
+	ldconfig
+fi
+# End automatically added section

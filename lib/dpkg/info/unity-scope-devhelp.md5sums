@@ -1,0 +1,7 @@
+5f10ccfc92d2ffeb6ab9b78e72422a4d  usr/lib/python3/dist-packages/unity_scope_devhelp-0.1.egg-info
+06f9a5052b0678d81b9cf489b9902cd5  usr/share/dbus-1/services/unity-scope-devhelp.service
+8364d11d7417cc2711de1337caa2d58d  usr/share/doc/unity-scope-devhelp/changelog.Debian.gz
+2595344287ab7ab4bd62b345191dd9db  usr/share/doc/unity-scope-devhelp/copyright
+d41d8cd98f00b204e9800998ecf8427e  usr/share/unity-scopes/devhelp/__init__.py
+0c02647e7b48c1b40352ef3c6bce1841  usr/share/unity-scopes/devhelp/unity_devhelp_daemon.py
+f598f7362e077a67d0944a6a28118e3d  usr/share/unity/scopes/code/devhelp.scope

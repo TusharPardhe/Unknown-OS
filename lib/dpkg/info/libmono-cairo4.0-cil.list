@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/mono
+/usr/lib/mono/4.5
+/usr/lib/mono/gac
+/usr/lib/mono/gac/Mono.Cairo
+/usr/lib/mono/gac/Mono.Cairo/4.0.0.0__0738eb9f132ed756
+/usr/lib/mono/gac/Mono.Cairo/4.0.0.0__0738eb9f132ed756/Mono.Cairo.dll
+/usr/lib/mono/gac/Mono.Cairo/4.0.0.0__0738eb9f132ed756/Mono.Cairo.dll.config
+/usr/share
+/usr/share/doc
+/usr/share/doc/libmono-cairo4.0-cil
+/usr/share/doc/libmono-cairo4.0-cil/copyright
+/usr/lib/mono/4.5/Mono.Cairo.dll
+/usr/share/doc/libmono-cairo4.0-cil/changelog.Debian.gz

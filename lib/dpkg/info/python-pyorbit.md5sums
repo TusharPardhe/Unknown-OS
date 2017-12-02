@@ -1,0 +1,17 @@
+667732b1e9e79cac767fbfbc2f895901  usr/lib/python2.7/dist-packages/ORBit.x86_64-linux-gnu.so
+5ab308eecf5bd078e55f37ed4d33515e  usr/share/doc/python-pyorbit/NEWS.gz
+3dc7f2833512293672367b8da5b4f41d  usr/share/doc/python-pyorbit/README
+8e3ef25fad6e621c3a2fdbca264f0f75  usr/share/doc/python-pyorbit/TODO
+7befb9235a7ceccb029191caf6a8ce4b  usr/share/doc/python-pyorbit/changelog.Debian.gz
+2b94cfe5ccc15c1c2bf74b3d7208f36b  usr/share/doc/python-pyorbit/copyright
+4c61a53dc12985e08930d96993e5f2ae  usr/share/doc/python-pyorbit/examples/Makefile.am
+506b3ee6e79d5b7f8b3452109a2b0983  usr/share/doc/python-pyorbit/examples/Makefile.in.gz
+30f11b698b14820697ffafc948bcb31b  usr/share/doc/python-pyorbit/examples/c-inproc/Makefile.am
+78236fa90156c1594eb8816f75fc750a  usr/share/doc/python-pyorbit/examples/c-inproc/Makefile.in.gz
+74b8e7605657e89aadd3b3ba37b4ea88  usr/share/doc/python-pyorbit/examples/c-inproc/c-impl.c
+5630116878fad2f34791a00ec97d05f9  usr/share/doc/python-pyorbit/examples/c-inproc/test-c-inproc.py
+ef4ed3c66e0806e7043eceef7f78a1e3  usr/share/doc/python-pyorbit/examples/c-inproc/testcall.idl
+5dffad1723d6e829aaadc326c16a024c  usr/share/doc/python-pyorbit/examples/constants.py
+5b044ee12e15fb6661107708273af6c1  usr/share/doc/python-pyorbit/examples/everything_client.py.gz
+4473a8814209ce1c570f0a2dfc32f2de  usr/share/doc/python-pyorbit/examples/everything_inprocess.py
+819528727297e9fbb38fc0e60d6651ad  usr/share/doc/python-pyorbit/examples/everything_server.py.gz

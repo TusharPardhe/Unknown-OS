@@ -1,0 +1,7 @@
+b6cac566b63b853522368329f7ee98dc  usr/lib/x86_64-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
+5947e7d78dc91f5429d05be685ebbb6a  usr/share/doc/indicator-bluetooth/changelog.Debian.gz
+04498110ef5256272582fdc9514e4a5f  usr/share/doc/indicator-bluetooth/copyright
+e99a0540140a7a487dc0c1ec4bb5632b  usr/share/glib-2.0/schemas/com.canonical.indicator.bluetooth.gschema.xml
+edf47ddba29be6a0d4a8c66b3deac323  usr/share/unity/indicators/com.canonical.indicator.bluetooth
+dad1fd8e1e65af5c4526f89238cc43a3  usr/share/upstart/sessions/indicator-bluetooth.conf
+ee0bc1ea17d8f320187f34af174eba89  usr/share/upstart/xdg/autostart/indicator-bluetooth.desktop

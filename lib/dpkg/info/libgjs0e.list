@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libgjs0e
+/usr/share/doc/libgjs0e/README
+/usr/share/doc/libgjs0e/copyright
+/usr/share/doc/libgjs0e/NEWS.gz
+/usr/share/doc/libgjs0e/changelog.Debian.gz
+/usr/lib
+/usr/lib/gjs
+/usr/lib/gjs/girepository-1.0
+/usr/lib/gjs/girepository-1.0/GjsPrivate-1.0.typelib
+/usr/lib/libgjs.so.0.0.0
+/usr/lib/libgjs.so.0

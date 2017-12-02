@@ -1,0 +1,4 @@
+29ee17333cccb2c0626218c710ba4b92  usr/sbin/irqbalance
+4a33e3d7cbe33ce8cefc77dbf07ade9e  usr/share/doc/irqbalance/changelog.Debian.gz
+0bdeec97a4b4190fdfca99ff5e516a58  usr/share/doc/irqbalance/copyright
+90da1af8933d6b61c55dd0af5b720673  usr/share/man/man1/irqbalance.1.gz

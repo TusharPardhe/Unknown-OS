@@ -1,0 +1,7 @@
+7caf46d193bc370115f663fca3758a6c  usr/sbin/make-ssl-cert
+ced44f6f499b7890c94a6b1e9ef2fc20  usr/share/doc/ssl-cert/README
+0136fad67ac985518579a31adc8e6c4a  usr/share/doc/ssl-cert/changelog.gz
+b5871218e2191512a92da33c0719eec2  usr/share/doc/ssl-cert/copyright
+94a4726469c4af8642517dd2dd07d775  usr/share/lintian/overrides/ssl-cert
+568f14167212460e45fd451cac33e5a6  usr/share/man/man8/make-ssl-cert.8.gz
+e6dead1d6111a5b730f42797c720f14e  usr/share/ssl-cert/ssleay.cnf

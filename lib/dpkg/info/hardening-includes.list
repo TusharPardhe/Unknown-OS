@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/bin
+/usr/bin/hardening-check
+/usr/share
+/usr/share/doc
+/usr/share/doc/hardening-includes
+/usr/share/doc/hardening-includes/copyright
+/usr/share/doc/hardening-includes/changelog.gz
+/usr/share/hardening-includes
+/usr/share/hardening-includes/hardening.make
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/hardening-check.1.gz

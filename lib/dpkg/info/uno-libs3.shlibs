@@ -1,0 +1,5 @@
+libuno_cppu 3 uno-libs3 (>= 5.1.6~), ure
+libuno_cppuhelpergcc3 3 uno-libs3 (>= 5.1.6~), ure
+libuno_purpenvhelpergcc3 3 uno-libs3 (>= 5.1.6~), ure
+libuno_sal 3 uno-libs3 (>= 5.1.6~), ure
+libuno_salhelpergcc3 3 uno-libs3 (>= 5.1.6~), ure

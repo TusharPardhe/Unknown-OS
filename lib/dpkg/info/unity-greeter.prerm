@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/lightdm/lightdm.conf.d/50-unity-greeter.conf 14.04.1-0ubuntu1 -- "$@"
+# End automatically added section

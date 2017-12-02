@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/pulse-8.0
+/usr/lib/pulse-8.0/modules
+/usr/lib/pulse-8.0/modules/module-x11-bell.so
+/usr/lib/pulse-8.0/modules/module-x11-xsmp.so
+/usr/lib/pulse-8.0/modules/module-x11-cork-request.so
+/usr/lib/pulse-8.0/modules/module-x11-publish.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/pulseaudio-module-x11
+/usr/share/doc/pulseaudio-module-x11/copyright
+/usr/share/doc/pulseaudio-module-x11/NEWS.gz
+/usr/share/doc/pulseaudio-module-x11/changelog.Debian.gz
+/usr/share/doc/pulseaudio-module-x11/README

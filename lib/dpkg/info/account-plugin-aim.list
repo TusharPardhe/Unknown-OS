@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/accounts
+/usr/share/accounts/providers
+/usr/share/accounts/providers/aim.provider
+/usr/share/accounts/services
+/usr/share/accounts/services/aim-im.service
+/usr/share/doc
+/usr/share/doc/account-plugin-aim
+/usr/share/doc/account-plugin-aim/copyright
+/usr/share/doc/account-plugin-aim/changelog.Debian.gz
+/usr/share/doc/account-plugin-aim/CONTRIBUTORS
+/usr/share/doc/account-plugin-aim/NEWS.gz
+/usr/share/doc/account-plugin-aim/TODO
+/usr/share/doc/account-plugin-aim/README
+/usr/share/doc/account-plugin-aim/AUTHORS

@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="ワークスペースの変更時に動作を切り替えます。">
+						<longdesc>名前で切り替え可能にする場合、このリストは切り替える活動の名前に設定し、ワークスペースはアイテムのインデックスで再表示されます。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="ワークスペース切り替え時に動作を切り替えます">
+						<longdesc>利用可能な記録手法のリストです。&quot;name&quot;は workspace_mapping で定義されている名前で活動を切り替え可能にします。&quot;memory&quot; は、前のワークスペースに戻るときに、そこで最後の活動に変更します。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="一日の開始時間(デフォルトは午前5:30)">
+						<longdesc>現在の時間が一日の開始時間より前の場合、活動は昨日の集計に計上され、時間を超えたものが今日に集計されます。2日にまたがる活動は、活動の最大部分がある側から、反転します。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="活動が設定されていない時にも通知する">
+						<longdesc>活動が何も開始されていない場合にも、notify_interval 分毎に通知する。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="現在のタスクを x 分ごとに通知します">
+						<longdesc>現在のタスクを、指定した時間(分)ごとに通知します。0または120を超える値に設定すると通知しません。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="シャットダウン時は記録を停止する">
+						<longdesc>シャットダウン時に記録を停止する</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="アイドル時に記録を停止する">
+						<longdesc>コンピューターがアイドル状態になったら活動の記録を停止する</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="ハムスターアプリケーションウィンドウをOn/Offします。">
+								<longdesc>ハムスターアプリケーションウィンドウの表示をOn/Offします。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="ハムスターアプリケーションウィンドウのアクションをOn/Offします。">
+								<longdesc>ハムスターアプリケーションウィンドウの表示を切り替えるコマンド。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="タイムトラッカーのウィンドウの表示/非表示">
+								<longdesc>タイムトラッカーのウィンドウ表示・非表示を切り替えるキーボードショートカットです。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

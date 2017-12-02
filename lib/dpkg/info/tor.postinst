@@ -1,0 +1,198 @@
+#!/bin/sh -e
+
+# checking debian-tor account
+
+uid=`getent passwd debian-tor | cut -d ":" -f 3`
+home=`getent passwd debian-tor | cut -d ":" -f 6`
+
+# if there is the uid the account is there and we can do
+# the sanit(ar)y checks otherwise we can safely create it.
+
+if [ "$uid" ]; then
+	if [ "$home" = "/var/lib/tor" ]; then
+		:
+		#echo "debian-tor homedir check: ok"
+	else
+		echo "ERROR: debian-tor account has an unexpected home directory!"
+		echo "It should be '/var/lib/tor', but it is '$home'."
+		echo "Removing the debian-tor user might fix this, but the question"
+		echo "remains how you got into this mess to begin with."
+		exit 1
+	fi
+else
+	adduser --quiet \
+		--system \
+		--disabled-password \
+		--home /var/lib/tor \
+		--no-create-home \
+		--shell /bin/false \
+		--group \
+		debian-tor
+fi
+
+
+for i in lib log; do
+	if ! [ -d "/var/$i/tor" ]; then
+		echo "Something or somebody made /var/$i/tor disappear."
+		echo "Creating one for you again."
+		mkdir "/var/$i/tor"
+	fi
+done
+
+which restorecon >/dev/null 2>&1 && restorecon /var/lib/tor
+chown debian-tor:debian-tor /var/lib/tor
+chmod 02700 /var/lib/tor
+
+which restorecon >/dev/null 2>&1 && restorecon /var/log/tor
+chown debian-tor:adm /var/log/tor
+chmod 02750 /var/log/tor
+
+
+move_away_keys=0
+
+if [ "$1" = "configure" ] &&
+   [ -e /var/lib/tor/keys ] &&
+   [ ! -z "$2" ]; then
+	if dpkg --compare-versions "$2" lt 0.1.2.19-2; then
+		move_away_keys=1
+	elif dpkg --compare-versions "$2" gt 0.2.0 &&
+	     dpkg --compare-versions "$2" lt 0.2.0.26-rc; then
+		move_away_keys=1
+	fi
+fi
+if [ "$move_away_keys" = "1" ]; then
+	echo "Retiring possibly compromised keys.  See /usr/share/doc/tor/NEWS.Debian.gz"
+	echo "and /var/lib/tor/keys/moved-away-by-tor-package/README.REALLY for"
+	echo "further information."
+	if ! [ -d /var/lib/tor/keys/moved-away-by-tor-package ]; then
+		mkdir /var/lib/tor/keys/moved-away-by-tor-package
+		cat > /var/lib/tor/keys/moved-away-by-tor-package/README.REALLY << EOF
+It has been discovered that the random number generator in Debian's
+openssl package is predictable.  This is caused by an incorrect
+Debian-specific change to the openssl package (CVE-2008-0166).  As a
+result, cryptographic key material may be guessable.
+
+See Debian Security Advisory number 1571 (DSA-1571) for more information:
+http://lists.debian.org/debian-security-announce/2008/msg00152.html
+
+The Debian package for Tor has moved away the onion keys upon package
+upgrade, and it will have moved away your identity key if it was created
+in the affected timeframe.  There is no sure way to automatically tell
+if your key was created with an affected openssl library, so this move
+is done unconditionally.
+
+If you have restarted Tor since this change (and the package probably
+did that for you already unless you configured your system differently)
+then the Tor daemon already created new keys for itself and in all
+likelyhood is already working just fine with new keys.
+
+If you are absolutely certain that your identity key was created with
+a non-affected version of openssl and for some reason you have to retain
+the old identity, then you can move back the copy of secret_id_key to
+/var/lib/tor/keys.  Do not move back the onion keys, they were created
+only recently since they are temporary keys with a lifetime of only a few
+days anyway.
+
+Sincerely,
+Peter Palfrader, Tue, 13 May 2008 13:32:23 +0200
+EOF
+	fi
+	for f in secret_onion_key secret_onion_key.old; do
+		if [ -e /var/lib/tor/keys/"$f" ]; then
+			mv -v /var/lib/tor/keys/"$f" /var/lib/tor/keys/moved-away-by-tor-package/"$f"
+		fi
+	done
+	if [ -e /var/lib/tor/keys/secret_id_key ]; then
+		id_mtime=`stat -c %Y /var/lib/tor/keys/secret_id_key`
+		sept=`date -d '2006-09-10' +%s`
+		if [ "$id_mtime" -gt "$sept" ] ; then
+			mv -v /var/lib/tor/keys/secret_id_key /var/lib/tor/keys/moved-away-by-tor-package/secret_id_key
+		fi
+	fi
+fi
+
+# clean out apparmor policy files that we shipped with
+# Tor 0.2.3.16-alpha-1 in experimental and
+# Tor 0.2.3.17-beta-1 in unstable.
+if [ "$1" = "configure" ] &&
+   [ -e /etc/apparmor.d/usr.sbin.tor ] &&
+   [ ! -z "$2" ] &&
+   dpkg --compare-versions "$2" le 0.2.3.17-beta-1; then
+	checksum="`md5sum /etc/apparmor.d/usr.sbin.tor | awk '{print $1}'`"
+	pkg_md5="`dpkg-query -W -f='${Conffiles}' tor | awk '$1=="/etc/apparmor.d/usr.sbin.tor" {print $2}'`"
+	if [ "$checksum" = "$pkg_md5" ]; then
+		if command -v apparmor_parser > /dev/null 2>&1 ; then
+			apparmor_parser --remove -T -W /etc/apparmor.d/usr.sbin.tor || true
+		fi
+
+		rm -f "/etc/apparmor.d/usr.sbin.tor"
+		rm -f "/etc/apparmor.d/disable/usr.sbin.tor" || true
+		rm -f "/etc/apparmor.d/force-complain/usr.sbin.tor" || true
+		rm -f "/etc/apparmor.d/local/usr.sbin.tor" || true
+		rmdir /etc/apparmor.d/local 2>/dev/null || true
+		rmdir /etc/apparmor.d 2>/dev/null || true
+	fi
+fi
+
+tor_error_init() {
+	echo "Tor was unable to start due to configuration errors.";
+	echo "Please fix them and manually restart the tor daemon using";
+	echo " ´service start tor´";
+}
+
+# Automatically added by dh_apparmor
+if [ "$1" = "configure" ]; then
+    APP_PROFILE="/etc/apparmor.d/system_tor"
+    if [ -f "$APP_PROFILE" ]; then
+        # Add the local/ include
+        LOCAL_APP_PROFILE="/etc/apparmor.d/local/system_tor"
+
+        test -e "$LOCAL_APP_PROFILE" || {
+            tmp=`mktemp`
+        cat <<EOM > "$tmp"
+# Site-specific additions and overrides for system_tor.
+# For more details, please see /etc/apparmor.d/local/README.
+EOM
+            mkdir `dirname "$LOCAL_APP_PROFILE"` 2>/dev/null || true
+            mv -f "$tmp" "$LOCAL_APP_PROFILE"
+            chmod 644 "$LOCAL_APP_PROFILE"
+        }
+
+        # Reload the profile, including any abstraction updates
+        if aa-status --enabled 2>/dev/null; then
+            apparmor_parser -r -T -W "$APP_PROFILE" || true
+        fi
+    fi
+fi
+# End automatically added section
+# Automatically added by dh_systemd_enable
+# This will only remove masks created by d-s-h on package removal.
+deb-systemd-helper unmask tor.service >/dev/null || true
+
+# was-enabled defaults to true, so new installations run enable.
+if deb-systemd-helper --quiet was-enabled tor.service; then
+	# Enables the unit on first installation, creates new
+	# symlinks on upgrades if the unit file has changed.
+	deb-systemd-helper enable tor.service >/dev/null || true
+else
+	# Update the statefile to add new symlinks (if any), which need to be
+	# cleaned up on purge. Also remove old symlinks.
+	deb-systemd-helper update-state tor.service >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_installinit
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ]; then
+	if [ -x "/etc/init.d/tor" ]; then
+		update-rc.d tor defaults >/dev/null
+	fi
+	if [ -x "/etc/init.d/tor" ] || [ -e "/etc/init/tor.conf" ]; then
+		invoke-rc.d tor start || tor_error_init
+	fi
+fi
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/tor/tor-tsocks.conf 0.2.4.12-alpha-1 tor -- "$@"
+# End automatically added section
+
+
+exit 0

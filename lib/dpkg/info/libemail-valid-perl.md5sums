@@ -1,0 +1,5 @@
+99277f97f84813dc322c8dc478ec006b  usr/share/doc/libemail-valid-perl/changelog.Debian.gz
+e1ccc40e52b44399a02108e9bf67b523  usr/share/doc/libemail-valid-perl/copyright
+cb8a40ae82c60bd273ed9f56856489cf  usr/share/doc/libemail-valid-perl/examples/valid.t.gz
+44a8a952798479c83d2f00e57d382785  usr/share/man/man3/Email::Valid.3pm.gz
+35fe8e91ee1ec144c3841327d497d475  usr/share/perl5/Email/Valid.pm

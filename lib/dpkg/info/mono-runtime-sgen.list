@@ -1,0 +1,9 @@
+/.
+/usr
+/usr/bin
+/usr/bin/mono-sgen
+/usr/share
+/usr/share/doc
+/usr/share/doc/mono-runtime-sgen
+/usr/share/doc/mono-runtime-sgen/copyright
+/usr/share/doc/mono-runtime-sgen/changelog.Debian.gz

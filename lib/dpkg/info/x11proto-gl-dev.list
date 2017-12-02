@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/pkgconfig
+/usr/share/pkgconfig/glproto.pc
+/usr/share/doc
+/usr/share/doc/x11proto-gl-dev
+/usr/share/doc/x11proto-gl-dev/copyright
+/usr/share/doc/x11proto-gl-dev/changelog.Debian.gz
+/usr/include
+/usr/include/GL
+/usr/include/GL/internal
+/usr/include/GL/internal/glcore.h
+/usr/include/GL/glxmd.h
+/usr/include/GL/glxtokens.h
+/usr/include/GL/glxproto.h
+/usr/include/GL/glxint.h

@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/keyrings
+/usr/share/keyrings/deb.torproject.org-keyring.gpg
+/usr/share/doc
+/usr/share/doc/deb.torproject.org-keyring
+/usr/share/doc/deb.torproject.org-keyring/changelog.gz
+/usr/share/doc/deb.torproject.org-keyring/copyright
+/etc
+/etc/apt
+/etc/apt/trusted.gpg.d
+/etc/apt/trusted.gpg.d/deb.torproject.org-keyring.gpg

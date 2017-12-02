@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/rygel-2.6
+/usr/lib/rygel-2.6/plugins
+/usr/lib/rygel-2.6/plugins/playbin.plugin
+/usr/lib/rygel-2.6/plugins/librygel-playbin.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/rygel-playbin
+/usr/share/doc/rygel-playbin/copyright
+/usr/share/doc/rygel-playbin/changelog.Debian.gz

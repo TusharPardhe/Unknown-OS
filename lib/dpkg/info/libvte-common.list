@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libvte-common
+/usr/share/doc/libvte-common/changelog.Debian.gz
+/usr/share/doc/libvte-common/NEWS.gz
+/usr/share/doc/libvte-common/README
+/usr/share/doc/libvte-common/copyright
+/usr/share/doc/libvte-common/AUTHORS
+/usr/share/vte
+/usr/share/vte/termcap-0.0
+/usr/share/vte/termcap-0.0/xterm
+/usr/share/vte/termcap

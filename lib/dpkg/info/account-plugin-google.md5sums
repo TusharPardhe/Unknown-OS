@@ -1,0 +1,6 @@
+8a82c00ad6b9b7ddaf3bbbd8cb587e0d  usr/share/accounts/providers/google.provider
+cb935a7b63b71e9e4830ae7b5aaa5e2c  usr/share/accounts/qml-plugins/google/Main.qml
+58b4b5f15bfb00c9d428679e29d97fe7  usr/share/accounts/services/google-drive.service
+93092d1d35d1ed47c79ef75162515ee3  usr/share/accounts/services/google-im.service
+2de4f88eef05739bdbaa2cca104ef437  usr/share/accounts/services/picasa.service
+2ded704009915d85ac9ca024e8f1eac4  usr/share/doc/account-plugin-google/copyright

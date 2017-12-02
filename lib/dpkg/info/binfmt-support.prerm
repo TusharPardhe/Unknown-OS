@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installinit
+if [ -x "/etc/init.d/binfmt-support" ] || [ -e "/etc/init/binfmt-support.conf" ]; then
+	invoke-rc.d binfmt-support stop || true
+fi
+# End automatically added section

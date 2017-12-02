@@ -1,0 +1,17 @@
+#! /bin/sh
+set -e
+
+if [ "$1" = "purge" ] ; then
+  for FILE in gnibbles.1.0.scores gnibbles.2.0.scores \
+  gnibbles.3.0.scores gnibbles.4.0.scores gnibbles.1.1.scores \
+  gnibbles.2.1.scores gnibbles.3.1.scores gnibbles.4.1.scores; do
+        rm -f /var/games/$FILE
+  done
+
+  if [ -d /var/games ]; then
+        rmdir --ignore-fail-on-non-empty /var/games
+  fi
+fi
+
+
+

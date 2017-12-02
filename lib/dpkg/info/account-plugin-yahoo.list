@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/accounts
+/usr/share/accounts/providers
+/usr/share/accounts/providers/yahoo.provider
+/usr/share/accounts/services
+/usr/share/accounts/services/yahoo-im.service
+/usr/share/doc
+/usr/share/doc/account-plugin-yahoo
+/usr/share/doc/account-plugin-yahoo/copyright
+/usr/share/doc/account-plugin-yahoo/changelog.Debian.gz
+/usr/share/doc/account-plugin-yahoo/CONTRIBUTORS
+/usr/share/doc/account-plugin-yahoo/NEWS.gz
+/usr/share/doc/account-plugin-yahoo/TODO
+/usr/share/doc/account-plugin-yahoo/README
+/usr/share/doc/account-plugin-yahoo/AUTHORS

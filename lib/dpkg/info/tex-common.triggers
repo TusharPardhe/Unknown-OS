@@ -1,0 +1,5 @@
+interest texmf-hyphen
+interest texmf-format
+interest texmf-map
+interest /usr/share/texmf
+interest /usr/share/texlive/texmf-dist

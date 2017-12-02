@@ -1,0 +1,102 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "remove" ] ||  [ "$1" = "upgrade" ] && [ -x /usr/share/cli-common/policy-remove ]; then
+	/usr/share/cli-common/policy-remove pango-sharp 2.8
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "remove" ] ||  [ "$1" = "upgrade" ] && [ -x /usr/share/cli-common/policy-remove ]; then
+	/usr/share/cli-common/policy-remove pango-sharp 2.4
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "remove" ] ||  [ "$1" = "upgrade" ] && [ -x /usr/share/cli-common/policy-remove ]; then
+	/usr/share/cli-common/policy-remove gtk-sharp 2.10
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "remove" ] ||  [ "$1" = "upgrade" ] && [ -x /usr/share/cli-common/policy-remove ]; then
+	/usr/share/cli-common/policy-remove atk-sharp 2.10
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "remove" ] ||  [ "$1" = "upgrade" ] && [ -x /usr/share/cli-common/policy-remove ]; then
+	/usr/share/cli-common/policy-remove gdk-sharp 2.10
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "remove" ] ||  [ "$1" = "upgrade" ] && [ -x /usr/share/cli-common/policy-remove ]; then
+	/usr/share/cli-common/policy-remove gtk-dotnet 2.6
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "remove" ] ||  [ "$1" = "upgrade" ] && [ -x /usr/share/cli-common/policy-remove ]; then
+	/usr/share/cli-common/policy-remove gtk-dotnet 2.4
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "remove" ] ||  [ "$1" = "upgrade" ] && [ -x /usr/share/cli-common/policy-remove ]; then
+	/usr/share/cli-common/policy-remove gdk-sharp 2.8
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "remove" ] ||  [ "$1" = "upgrade" ] && [ -x /usr/share/cli-common/policy-remove ]; then
+	/usr/share/cli-common/policy-remove atk-sharp 2.4
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "remove" ] ||  [ "$1" = "upgrade" ] && [ -x /usr/share/cli-common/policy-remove ]; then
+	/usr/share/cli-common/policy-remove gtk-sharp 2.8
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "remove" ] ||  [ "$1" = "upgrade" ] && [ -x /usr/share/cli-common/policy-remove ]; then
+	/usr/share/cli-common/policy-remove gtk-dotnet 2.8
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "remove" ] ||  [ "$1" = "upgrade" ] && [ -x /usr/share/cli-common/policy-remove ]; then
+	/usr/share/cli-common/policy-remove gtk-sharp 2.4
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "remove" ] ||  [ "$1" = "upgrade" ] && [ -x /usr/share/cli-common/policy-remove ]; then
+	/usr/share/cli-common/policy-remove gtk-sharp 2.6
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "remove" ] ||  [ "$1" = "upgrade" ] && [ -x /usr/share/cli-common/policy-remove ]; then
+	/usr/share/cli-common/policy-remove pango-sharp 2.6
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "remove" ] ||  [ "$1" = "upgrade" ] && [ -x /usr/share/cli-common/policy-remove ]; then
+	/usr/share/cli-common/policy-remove atk-sharp 2.8
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "remove" ] ||  [ "$1" = "upgrade" ] && [ -x /usr/share/cli-common/policy-remove ]; then
+	/usr/share/cli-common/policy-remove gtk-dotnet 2.10
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "remove" ] ||  [ "$1" = "upgrade" ] && [ -x /usr/share/cli-common/policy-remove ]; then
+	/usr/share/cli-common/policy-remove gdk-sharp 2.6
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "remove" ] ||  [ "$1" = "upgrade" ] && [ -x /usr/share/cli-common/policy-remove ]; then
+	/usr/share/cli-common/policy-remove pango-sharp 2.10
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "remove" ] ||  [ "$1" = "upgrade" ] && [ -x /usr/share/cli-common/policy-remove ]; then
+	/usr/share/cli-common/policy-remove gdk-sharp 2.4
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "remove" ] ||  [ "$1" = "upgrade" ] && [ -x /usr/share/cli-common/policy-remove ]; then
+	/usr/share/cli-common/policy-remove atk-sharp 2.6
+fi
+# End automatically added section

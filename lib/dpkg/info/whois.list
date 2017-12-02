@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/whois
+/usr/share/doc/whois/README
+/usr/share/doc/whois/changelog.gz
+/usr/share/doc/whois/copyright
+/usr/share/man
+/usr/share/man/man5
+/usr/share/man/man5/whois.conf.5.gz
+/usr/share/man/man1
+/usr/share/man/man1/whois.1.gz
+/usr/share/man/man1/mkpasswd.1.gz
+/usr/bin
+/usr/bin/whois
+/usr/bin/mkpasswd

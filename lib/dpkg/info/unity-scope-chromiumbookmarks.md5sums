@@ -1,0 +1,7 @@
+7b44258b561632521a0a37ed26c43a97  usr/lib/python3/dist-packages/unity_scope_chromiumbookmarks-0.1.egg-info
+d1f68e22bc141d39cc3f2a8eaa8f13de  usr/share/dbus-1/services/unity-scope-chromiumbookmarks.service
+0d3f5311d02be6dfbb74841f1e6aa551  usr/share/doc/unity-scope-chromiumbookmarks/changelog.Debian.gz
+8be9a94a7d9b91f72cf4d3660f810ec8  usr/share/doc/unity-scope-chromiumbookmarks/copyright
+d41d8cd98f00b204e9800998ecf8427e  usr/share/unity-scopes/chromiumbookmarks/__init__.py
+aa80780cbc5a430923569b0c3a3d1c72  usr/share/unity-scopes/chromiumbookmarks/unity_chromiumbookmarks_daemon.py
+17f0b7f897aabb03b847ede03cc3fe6b  usr/share/unity/scopes/web/chromiumbookmarks.scope

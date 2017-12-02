@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Canvia d&apos;activitat en canviar d&apos;espai de treball">
+						<longdesc>Si s&apos;ha habilitat l&apos;opció de canvi d&apos;activitat per nom, en esta llista s&apos;estableixen els noms d&apos;activitat a què es podrà canviar. Els espais de treball es representen mitjançant l&apos;índex de l&apos;element.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Indica si en canviar d&apos;espai de treball s&apos;ha d&apos;activar el canvi d&apos;activitat">
+						<longdesc>Llista dels mètodes de seguiment habilitats. «name» (nom) habilita el canvi d&apos;activitats pel nom que s&apos;haja definit a workspace_mapping; «memory» (memòria) permet canviar a l&apos;última activitat quan es torna a un espai de treball anterior.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="Hora d&apos;inici del dia (hora per defecte: les 5:30)">
+						<longdesc>Es considerarà que les activitats pertanyen a ahir si l&apos;hora actual és anterior a la que s&apos;ha indicat com a inici del dia, i que pertanyen a hui si l&apos;hora és posterior. Les activitats que es duen a terme al llarg de dos dies es comptabilitzen al dia en què es realitzi la major part de l&apos;activitat.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Recorda&apos;m també si no hi ha cap activitat en actiu">
+						<longdesc>Recorda&apos;m també si no s&apos;ha iniciat cap activitat cada «notify_interval» (interval de notificació) minuts.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Recorda l&apos;activitat actual cada x minuts">
+						<longdesc>Recorda l&apos;activitat actual cada interval de minuts indicat. Si és 0 o més gran de 120 s&apos;inhabiliten els recordatoris.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Para el comptador en parar l&apos;ordinador">
+						<longdesc>Para de comptar l&apos;activitat actual en parar l&apos;ordinador</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Para de comptar quan l&apos;ordinador estiga inactiu">
+						<longdesc>Para de comptar l&apos;activitat actual quan l&apos;ordinador estiga inactiu</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Oculta o mostra la finestra de l&apos;aplicació Hamster">
+								<longdesc>Oculta o mostra la finestra de l&apos;aplicació Hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Acció per ocultar o mostrar la finestra de l&apos;aplicació Hamster">
+								<longdesc>Orde per ocultar o mostrar la finestra de l&apos;aplicació Hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Mostra/oculta la finestra del comptador de temps">
+								<longdesc>Drecera de teclat per mostrar o ocultar la finestra del comptador de temps.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/librarian.so.0.0.0
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/librarian0
+/usr/share/doc
+/usr/share/doc/librarian0
+/usr/share/doc/librarian0/changelog.Debian.gz
+/usr/share/doc/librarian0/copyright
+/usr/share/doc/librarian0/NEWS.gz
+/usr/share/doc/librarian0/README.gz
+/usr/share/doc/librarian0/TODO
+/usr/lib/librarian.so.0

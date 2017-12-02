@@ -1,0 +1,6 @@
+aeea85f9f3faddfac1035717b09c499e  usr/lib/telepathy/telepathy-logger
+fa62b7b0ffe3784ff7334fefaab66111  usr/share/dbus-1/services/org.freedesktop.Telepathy.Client.Logger.service
+f2408fa82027ff7007d2295edb890286  usr/share/dbus-1/services/org.freedesktop.Telepathy.Logger.service
+bb5adc0f8025225f022b2040439a2148  usr/share/doc/telepathy-logger/copyright
+038b3a15781c995fbb387f1dbd565b54  usr/share/glib-2.0/schemas/org.freedesktop.Telepathy.Logger.gschema.xml
+1912df3b6a31e5290d4b172c8f1b342c  usr/share/telepathy/clients/Logger.client

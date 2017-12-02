@@ -1,0 +1,13 @@
+f6c528a9db7542fddb53263b73994170  usr/lib/systemd/user/telepathy-salut.service
+b0799c94906c6289d57ed6722039177c  usr/lib/telepathy/salut-0/lib/libsalut-plugins-0.8.1.so
+cfd63c096e1489b55ccd3e8f51deb81d  usr/lib/telepathy/salut-0/lib/libwocky-telepathy-salut-0.8.1.so
+5abb2405ed0129fdbfbdbcd010b00c24  usr/lib/telepathy/telepathy-salut
+13969ee2dee487cfadd047faea3a8899  usr/share/dbus-1/services/org.freedesktop.Telepathy.ConnectionManager.salut.service
+deb7f2a7e6db700e4a069c16df012d7c  usr/share/doc/telepathy-salut/AUTHORS
+81d77ec6bde26cf57e812abd4e48376f  usr/share/doc/telepathy-salut/NEWS.gz
+36c539abee635c2de9f70544fb0653f5  usr/share/doc/telepathy-salut/README
+6c8e1c40741556028dbbca7312a3c81f  usr/share/doc/telepathy-salut/changelog.Debian.gz
+0d8d030361dfb2cf615b63e807b6fc40  usr/share/doc/telepathy-salut/clique.html
+46226a126ce733cf30355818df429ac5  usr/share/doc/telepathy-salut/copyright
+6562303f81becb1541a4bf6641034e7c  usr/share/man/man8/telepathy-salut.8.gz
+bf130309a1b24bd059a773cbfc13b483  usr/share/telepathy/managers/salut.manager

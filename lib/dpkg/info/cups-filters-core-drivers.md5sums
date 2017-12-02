@@ -1,0 +1,11 @@
+42a8c4f317629af5e4aa48ee97b1e03a  usr/lib/cups/filter/imagetopdf
+2d889356728e212e799c699a4ba8fbe1  usr/lib/cups/filter/pdftopdf
+ac9f1639416044257a53ad9ac14a8f0b  usr/lib/cups/filter/pdftops
+90f88df3c0afdad24ed0ddd4404720ac  usr/lib/cups/filter/pdftoraster
+1c280c48549c7d8c0982268f993d7d12  usr/lib/cups/filter/rastertopclx
+71dadf83faf20a696a0e9f3c9f961021  usr/lib/cups/filter/rastertopdf
+9d61e7678612b7f3a41eb89af251fe4c  usr/lib/cups/filter/sys5ippprinter
+0a06fffcba031bab5f43cf6c8b935436  usr/share/cups/mime/cupsfilters-ghostscript.convs
+ccbc052999ed6bc5277e29c40af8cbf5  usr/share/cups/mime/cupsfilters.convs
+cf8b39bdfb2e0f717730792c372fba15  usr/share/cups/mime/cupsfilters.types
+90812312ae2529b34c79430cb2cd1aa4  usr/share/doc/cups-filters-core-drivers/copyright

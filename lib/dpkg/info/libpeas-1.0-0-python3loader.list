@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/libpeas-1.0
+/usr/lib/libpeas-1.0/loaders
+/usr/lib/libpeas-1.0/loaders/libpython3loader.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/libpeas-1.0-0-python3loader
+/usr/share/doc/libpeas-1.0-0-python3loader/copyright
+/usr/share/doc/libpeas-1.0-0-python3loader/NEWS.gz
+/usr/share/doc/libpeas-1.0-0-python3loader/AUTHORS
+/usr/share/doc/libpeas-1.0-0-python3loader/README.gz
+/usr/share/doc/libpeas-1.0-0-python3loader/changelog.Debian.gz

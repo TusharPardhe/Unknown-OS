@@ -1,0 +1,4 @@
+85b71a1ebbccdfa896be2c497a3d8af6  usr/share/doc/liblwp-protocol-https-perl/changelog.Debian.gz
+c731477a68815b51848c0f793ffb1aa7  usr/share/doc/liblwp-protocol-https-perl/copyright
+524c57ee5f53e479689118b49d7dbf0f  usr/share/man/man3/LWP::Protocol::https.3pm.gz
+fa6114ce5b62c2db5085782adf67e988  usr/share/perl5/LWP/Protocol/https.pm

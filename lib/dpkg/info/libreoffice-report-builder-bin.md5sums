@@ -1,0 +1,5 @@
+c742a0e80bf66e358102af136e23de13  usr/lib/libreoffice/program/librptlo.so
+ac67bdb9234b1599b2fb05d255f5207e  usr/lib/libreoffice/program/librptuilo.so
+dab681dadd829126b007e444acf114b4  usr/lib/libreoffice/program/librptxmllo.so
+4583c119b7c148a61e54ddbbdc1917a9  usr/share/bug/libreoffice-report-builder-bin/presubj
+4657bf2e39bbf6a78fe81bdf4b12b0e6  usr/share/lintian/overrides/libreoffice-report-builder-bin

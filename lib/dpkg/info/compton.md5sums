@@ -1,0 +1,8 @@
+58440fdd0f346a043df4161e5d272514  usr/bin/compton
+5f22e49fcdd10610b2ff50f50e477a64  usr/bin/compton-trans
+b1d6bd1aa20bfeef929c1f6a6608a6f3  usr/share/doc/compton/README.md.gz
+e400059022212f9c2dc3f8b0b8defba8  usr/share/doc/compton/changelog.Debian.gz
+4af5dfa9fe66b4a6281582340ef30291  usr/share/doc/compton/copyright
+15e58bf8ee7f5821eab9a8b4a19173e1  usr/share/doc/compton/examples/compton.sample.conf
+f0e4d0a84aef7847121362cd43614005  usr/share/man/man1/compton-trans.1.gz
+75e398d95641d004a8b9832c4a29cb05  usr/share/man/man1/compton.1.gz

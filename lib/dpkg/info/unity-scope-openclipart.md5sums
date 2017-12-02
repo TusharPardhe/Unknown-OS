@@ -1,0 +1,7 @@
+13367523021138cf6909c0457cd6b642  usr/lib/python3/dist-packages/unity_scope_openclipart-0.1.egg-info
+81c3a92d0f3aa41dba3582726fb21738  usr/share/dbus-1/services/unity-scope-openclipart.service
+9910cf4cd0366e99e90dec8de425cc77  usr/share/doc/unity-scope-openclipart/changelog.Debian.gz
+fbe5bf334e73ff2b1368f3732c12e615  usr/share/doc/unity-scope-openclipart/copyright
+d41d8cd98f00b204e9800998ecf8427e  usr/share/unity-scopes/openclipart/__init__.py
+3a35b7565fdc05cd0f94e4fe99770d6f  usr/share/unity-scopes/openclipart/unity_openclipart_daemon.py
+e017b9eca9bfbf1c4181ed6cfcd02d92  usr/share/unity/scopes/graphics/openclipart.scope

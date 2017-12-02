@@ -1,0 +1,53 @@
+#!/bin/sh -e
+set -e
+
+
+
+if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
+    # remove background alternatives
+    for background in \
+          lines-wallpaper_1280x1024.svg \
+          lines-wallpaper_1600x1200.svg \
+          lines-wallpaper_1920x1080.svg \
+          lines-wallpaper_1920x1200.svg \
+          lines-wallpaper_2560x1080.svg \
+          joy-wallpaper_1600x1200.svg \
+          joy-wallpaper_1600x1200.svg \
+          joy-wallpaper_1280x1024.svg \
+          joy-wallpaper_1920x1080.svg \
+          joy-wallpaper_1920x1200.svg \
+          joy-inksplat-wallpaper_1920x1080.svg \
+          spacefun-wallpaper.svg \
+          spacefun-wallpaper-widescreen.svg \
+          moreblue-orbit-wallpaper.svg \
+          moreblue-orbit-wallpaper-widescreen.svg \
+          ; do
+        update-alternatives --remove desktop-background /usr/share/images/desktop-base/$background
+    done
+    # remove desktop-background.xml alternatives
+    for desktopbackground in \
+          lines.xml \
+          joy.xml \
+          ; do
+        update-alternatives --remove desktop-background.xml /usr/share/images/desktop-base/$desktopbackground
+    done
+
+    # remove splash alternatives
+    for splash in \
+          spacefun-splash.svg \
+          moreblue-orbit-splash.png \
+          ; do
+        update-alternatives --remove desktop-splash /usr/share/images/desktop-base/$splash
+    done
+
+    # remove grub alternatives
+    for background in \
+          lines-grub.png \
+          lines-grub-1920x1080.png \
+          joy-grub.png \
+          spacefun-grub.png \
+          spacefun-grub-widescreen.png \
+          ; do
+        update-alternatives --remove desktop-grub /usr/share/images/desktop-base/$background
+    done
+fi

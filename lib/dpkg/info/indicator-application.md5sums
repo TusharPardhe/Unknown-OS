@@ -1,0 +1,7 @@
+87431c1d185d2bd353ea9481fecd96bd  usr/lib/indicators3/7/libapplication.so
+a0a8972bb2d8851b703bdf815b8acf5e  usr/lib/x86_64-linux-gnu/indicator-application/indicator-application-service
+19f188bd1c545280f323d7ef79b56f78  usr/share/doc/indicator-application/changelog.Debian.gz
+f8734db18ebc08586803c49fc533d6ed  usr/share/doc/indicator-application/copyright
+5dbb415b3cc7b7f15290ae2778342e74  usr/share/indicator-application/ordering-override.keyfile
+c309227e2d8a6dbeb88d6a630d300838  usr/share/indicator-application/upstart/xdg/autostart/indicator-application.desktop
+5e865dc9e69abdecf43ad07f8d6b633f  usr/share/upstart/sessions/indicator-application.conf

@@ -1,0 +1,10 @@
+7f4fe923bf1b1d00435d777bfab47271  usr/lib/python2.7/dist-packages/indicator_keyboard/__init__.py
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/python2.7/dist-packages/indicator_keyboard/tests/__init__.py
+d36c04e5507bc67bf11c0977daec3082  usr/lib/python2.7/dist-packages/indicator_keyboard/tests/test_indicator_keyboard.py
+4cfa6e8b762682c80159807cfecc8546  usr/lib/x86_64-linux-gnu/indicator-keyboard/indicator-keyboard-service
+80a1dbad1da2826a49166d5532e53ada  usr/share/doc/indicator-keyboard/changelog.Debian.gz
+d31da46c547cd6c58c768a69bfc5acac  usr/share/doc/indicator-keyboard/copyright
+acc8dda8f80c6404864c917a4f147535  usr/share/glib-2.0/schemas/com.canonical.indicator.keyboard.gschema.xml
+4762d282adeab76007ed4a30cd930180  usr/share/unity/indicators/com.canonical.indicator.keyboard
+6116195b698a4470761faca727a2034d  usr/share/upstart/sessions/indicator-keyboard.conf
+8146067a971e5b02f6ea065257f50a42  usr/share/upstart/xdg/autostart/indicator-keyboard.desktop

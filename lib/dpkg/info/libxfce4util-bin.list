@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/sbin
+/usr/sbin/xfce4-kiosk-query
+/usr/share
+/usr/share/doc
+/usr/share/doc/libxfce4util-bin
+/usr/share/doc/libxfce4util-bin/copyright
+/usr/share/man
+/usr/share/man/man8
+/usr/share/man/man8/xfce4-kiosk-query.8.gz
+/usr/share/doc/libxfce4util-bin/changelog.Debian.gz

@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e
+
+if ! dpkg-statoverride --list /usr/lib/spice-gtk/spice-client-glib-usb-acl-helper >/dev/null 2>&1
+then
+  dpkg-statoverride --update --add root root 4755 /usr/lib/spice-gtk/spice-client-glib-usb-acl-helper
+fi

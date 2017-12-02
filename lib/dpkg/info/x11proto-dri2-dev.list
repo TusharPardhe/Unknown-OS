@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/include
+/usr/include/X11
+/usr/include/X11/extensions
+/usr/include/X11/extensions/dri2tokens.h
+/usr/include/X11/extensions/dri2proto.h
+/usr/share
+/usr/share/pkgconfig
+/usr/share/pkgconfig/dri2proto.pc
+/usr/share/doc
+/usr/share/doc/x11proto-dri2-dev
+/usr/share/doc/x11proto-dri2-dev/copyright
+/usr/share/doc/x11proto-dri2-dev/changelog.Debian.gz
+/usr/share/doc/x11proto-dri2-dev/dri2proto.txt.gz

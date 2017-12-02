@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="notify_on_idle">
+					<local_schema short_desc="ಯಾವುದೆ ಚಟುವಟಿಕೆಯನ್ನು ಹೊಂದಿಸದೆ ಇದ್ದಾಗ ಕೂಡ ನೆನಪಿಸು">
+						<longdesc>ಯಾವುದೆ ಚಟುವಟಿಕೆಗಳನ್ನು ಆರಂಭಿಸದೆ ಇದ್ದಲ್ಲಿ ಪ್ರತಿ ಸೂಚನಾ_ಕಾಲಾವಧಿಯಲ್ಲೂ ನೆನಪಿಸು.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="ಪ್ರಸಕ್ತ ಕೆಲಸವನ್ನು x ನಿಮಿಷಗಳ ನಂತರ ನೆನಪಿಸುತ್ತದೆ">
+						<longdesc>ಪ್ರಸಕ್ತ ಕೆಲಸವನ್ನು ಪ್ರತಿ ನಿಗದಿಪಡಿಸಿದ ನಿಮಿಷಗಳ ನಂತರ ನೆನಪಿಸುತ್ತದೆ. ಈ ನೆನಪು ಮಾಡುವುದನ್ನು ಅಶಕ್ತಗೊಳಿಸಲು ಈ ಮೌಲ್ಯವನ್ನು ೦ ಗೆ ಅಥವ ೧೨೦ಕ್ಕಿಂತ ಹೆಚ್ಚಿನದಕ್ಕೆ ಬದಲಾಯಿಸಿ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="ಮುಚ್ಚಿದಾಗ ಟ್ರ್ಯಾಕಿಂಗನ್ನು ನಿಲ್ಲಿಸು">
+						<longdesc>ಮುಚ್ಚಿದಾಗ ಪ್ರಸಕ್ತ ಟ್ರ್ಯಾಕಿಂಗ್ ಚಟುವಟಿಕೆಯನ್ನು ನಿಲ್ಲಿಸು</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="ಜಡಗೊಂಡಾಗ ಟ್ರ್ಯಾಕಿಂಗ್ ಅನ್ನು ನಿಲ್ಲಿಸು">
+						<longdesc>ಗಣಕವು ಜಡಗೊಂಡಾಗ ಪ್ರಸಕ್ತ ಟ್ರ್ಯಾಕಿಂಗ್ ಚಟುವಟಿಕೆಯನ್ನು ನಿಲ್ಲಿಸು</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

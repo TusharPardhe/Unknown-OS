@@ -1,0 +1,3 @@
+/etc/X11/Xsession.d/70im-config_launch
+/etc/X11/xinit/xinputrc
+/etc/default/im-config

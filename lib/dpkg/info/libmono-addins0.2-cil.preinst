@@ -1,0 +1,17 @@
+#!/bin/sh
+set -e
+
+# policy files that were not removed in 0.3~svn.r90520-1 to 0.3-1 upgrade
+# see http://bugs.debian.org/547137   
+if [ "$1" = "upgrade" ] && dpkg --compare-versions "$2" "<=" "0.3-2"; then
+	if [ -f /usr/share/cli-common/packages.d/policy.0.2.Mono.Addins.installcligac ]; then
+		echo "Removing forgotten GAC policy file: Mono.Addins 0.2..."
+		/usr/share/cli-common/policy-remove Mono.Addins 0.2
+	fi
+	if [ -f  /usr/share/cli-common/packages.d/policy.0.2.Mono.Addins.Setup.installcligac ]; then
+		echo "Removing forgotten GAC policy file: Mono.Addins.Setup 0.2..."
+		/usr/share/cli-common/policy-remove Mono.Addins.Setup 0.2
+	fi
+fi
+
+

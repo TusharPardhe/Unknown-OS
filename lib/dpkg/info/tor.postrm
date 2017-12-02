@@ -1,0 +1,51 @@
+#!/bin/sh -e
+
+if [ "$1" = "purge" ]; then
+    # logs have to be removed according to policy.
+    rm -rf /var/log/tor/
+    rm -rf /var/lib/tor/
+    rm -rf /var/run/tor/
+fi
+
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/tor/tor-tsocks.conf 0.2.4.12-alpha-1 tor -- "$@"
+# End automatically added section
+# Automatically added by dh_installinit
+if [ "$1" = "purge" ] ; then
+	update-rc.d tor remove >/dev/null
+fi
+
+
+# In case this system is running systemd, we make systemd reload the unit files
+# to pick up changes.
+if [ -d /run/systemd/system ] ; then
+	systemctl --system daemon-reload >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_systemd_enable
+if [ "$1" = "remove" ]; then
+	if [ -x "/usr/bin/deb-systemd-helper" ]; then
+		deb-systemd-helper mask tor.service >/dev/null
+	fi
+fi
+
+if [ "$1" = "purge" ]; then
+	if [ -x "/usr/bin/deb-systemd-helper" ]; then
+		deb-systemd-helper purge tor.service >/dev/null
+		deb-systemd-helper unmask tor.service >/dev/null
+	fi
+fi
+# End automatically added section
+# Automatically added by dh_apparmor
+if [ "$1" = "purge" ] && ! [ -e "/etc/apparmor.d/system_tor" ] ; then
+    rm -f "/etc/apparmor.d/disable/system_tor" || true
+    rm -f "/etc/apparmor.d/force-complain/system_tor" || true
+    rm -f "/etc/apparmor.d/local/system_tor" || true
+    rmdir /etc/apparmor.d/disable 2>/dev/null || true
+    rmdir /etc/apparmor.d/local   2>/dev/null || true
+    rmdir /etc/apparmor.d         2>/dev/null || true
+fi
+# End automatically added section
+
+
+exit 0

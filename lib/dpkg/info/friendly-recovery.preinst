@@ -1,0 +1,11 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installinit
+if [ "$1" = install ] || [ "$1" = upgrade ]; then
+	if [ -e "/etc/init.d/friendly-recovery" ] && [ -L "/etc/init.d/friendly-recovery" ] \
+	   && [ $(readlink -f "/etc/init.d/friendly-recovery") = /lib/init/upstart-job ]
+	then
+		rm -f "/etc/init.d/friendly-recovery"
+	fi
+fi
+# End automatically added section

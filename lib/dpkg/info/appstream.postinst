@@ -1,0 +1,10 @@
+#!/bin/sh
+# postinst script for appstream
+set -e
+
+# Force-upgrade the database, in case something has changed
+appstreamcli refresh-index --force || true
+
+
+
+exit 0

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="notify_on_idle">
+					<local_schema short_desc="साथ ही याद दिलाएँ जब कोई गतिविधि सेट नहीं है">
+						<longdesc>हर notify_interval पर साथ ही याद दिलाएँ यदि कोई गतिविधि आरंभ की गई है यदि कोई गतिविधि आरंभ की गई है.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="हर x मिनट में मौजूदा कार्य का स्मार">
+						<longdesc>मौजूदा कार्य के बारे में हर निर्दिष्ट मिनट में याद दिलाएँ. 0 या 120 से अधिक पर सेट करें यदि आप अनुस्मारक को निष्क्रिय करना चाहते हैं.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="शटडाउन पर ट्रैकिंग रोकें">
+						<longdesc>बंद करने पर मौजूदा गतिविधि की ट्रैकिंग रोकें</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="निष्क्रिय होने पर ट्रैकिंग रोकें">
+						<longdesc>कंप्यूटर निष्क्रिय होने पर मौजूदा गतिविधि की ट्रैकिंग रोकें</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

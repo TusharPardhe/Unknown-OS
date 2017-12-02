@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/rygel-2.6
+/usr/lib/rygel-2.6/plugins
+/usr/lib/rygel-2.6/plugins/tracker.plugin
+/usr/lib/rygel-2.6/plugins/librygel-tracker.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/rygel-tracker
+/usr/share/doc/rygel-tracker/copyright
+/usr/share/doc/rygel-tracker/NEWS.Debian.gz
+/usr/share/doc/rygel-tracker/changelog.Debian.gz

@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/bin
+/usr/bin/mtr
+/usr/share
+/usr/share/doc
+/usr/share/doc/mtr-tiny
+/usr/share/doc/mtr-tiny/copyright
+/usr/share/doc/mtr-tiny/changelog.Debian.gz
+/usr/share/man
+/usr/share/man/man8
+/usr/share/man/man8/mtr.8.gz

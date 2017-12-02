@@ -1,0 +1,6 @@
+c04fac045fc5177343b0e80bef8e0240  usr/include/X11/extensions/xf86vm.h
+faa4088b33949f46f2f440a9242c2186  usr/include/X11/extensions/xf86vmproto.h
+71270b39fd56b53bb933048f99b9e776  usr/include/X11/extensions/xf86vmstr.h
+c22c4ff6b7ba83f92cda40868c4e7968  usr/share/doc/x11proto-xf86vidmode-dev/changelog.Debian.gz
+4f48200d2fde46234d63e3deb4040bb5  usr/share/doc/x11proto-xf86vidmode-dev/copyright
+1e57d081cd41c34906d20564a890f641  usr/share/pkgconfig/xf86vidmodeproto.pc

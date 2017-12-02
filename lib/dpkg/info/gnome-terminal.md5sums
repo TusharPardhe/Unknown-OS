@@ -1,0 +1,17 @@
+609d0673341eb7200fdb290414514b69  usr/bin/gnome-terminal
+77580f60a45c81036b843a0681aa0915  usr/bin/gnome-terminal.real
+bf6db390b791eed7b47365d212613692  usr/bin/gnome-terminal.wrapper
+aae0bda230f95f2e7f03efc7baac9c9f  usr/lib/gnome-terminal/gnome-terminal-migration
+6d1a2493ea25a07c785c7a34c64f3d58  usr/lib/gnome-terminal/gnome-terminal-server
+b4e28d32d6f20357295ae62ae42d59eb  usr/lib/nautilus/extensions-3.0/libterminal-nautilus.so
+eef8fce6773a10846bd564989f86509c  usr/share/appdata/gnome-terminal.appdata.xml
+3c27491e665946c1842f0658c4c68f0d  usr/share/applications/gnome-terminal.desktop
+5b6d1e2a51a453dbd41b93ee258abc85  usr/share/dbus-1/services/org.gnome.Terminal.service
+1cfbe97397ece1370f81c22dc9ec2832  usr/share/doc/gnome-terminal/AUTHORS
+d8ed67be993659a8d3ee31fac69de934  usr/share/doc/gnome-terminal/NEWS.gz
+e3860de418680bfbf27bd31d99af8b42  usr/share/doc/gnome-terminal/README.Debian
+127a7fda9d7da373727ffee0ce91b3f0  usr/share/doc/gnome-terminal/changelog.Debian.gz
+2c560e2a2e1e98052edce143693a303c  usr/share/doc/gnome-terminal/copyright
+0280764b881c00c18fad428eba23f958  usr/share/glib-2.0/schemas/org.gnome.Terminal.gschema.xml
+7fb011f8ca18bb78680f3047fe683b12  usr/share/gnome-shell/search-providers/gnome-terminal-search-provider.ini
+6295573e944c079d817b7129c5a81d71  usr/share/man/man1/gnome-terminal.1.gz

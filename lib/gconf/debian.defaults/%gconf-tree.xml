@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="desktop">
+		<dir name="gnome">
+			<dir name="font_rendering">
+				<entry name="dpi" mtime="1508439562" type="float" value="96"/>
+			</dir>
+			<dir name="url-handlers">
+				<dir name="https">
+					<entry name="command" mtime="1508439562" type="string">
+						<stringvalue>sensible-browser %s</stringvalue>
+					</entry>
+				</dir>
+				<dir name="http">
+					<entry name="command" mtime="1508439562" type="string">
+						<stringvalue>sensible-browser %s</stringvalue>
+					</entry>
+				</dir>
+				<dir name="h323">
+					<entry name="command" mtime="1508439562" type="string">
+						<stringvalue>ekiga -c %s</stringvalue>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="applications">
+				<dir name="media">
+					<entry name="exec" mtime="1508439562" type="string">
+						<stringvalue>rhythmbox</stringvalue>
+					</entry>
+				</dir>
+				<dir name="browser">
+					<entry name="exec" mtime="1508439562" type="string">
+						<stringvalue>firefox</stringvalue>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="background">
+				<entry name="picture_filename" mtime="1508439562" type="string">
+					<stringvalue>/usr/share/backgrounds/warty-final-ubuntu.png</stringvalue>
+				</entry>
+				<entry name="primary_color" mtime="1508439562" type="string">
+					<stringvalue>#4E3E29</stringvalue>
+				</entry>
+				<entry name="picture_options" mtime="1508439562" type="string">
+					<stringvalue>stretched</stringvalue>
+				</entry>
+			</dir>
+			<dir name="peripherals">
+				<dir name="keyboard">
+					<entry name="bell_mode" mtime="1508439562" type="string">
+						<stringvalue>off</stringvalue>
+					</entry>
+				</dir>
+			</dir>
+			<dir name="sound">
+				<entry name="enable_esd" mtime="1508439562" type="bool" value="true"/>
+				<entry name="event_sounds" mtime="1508439562" type="bool" value="true"/>
+			</dir>
+		</dir>
+	</dir>
+	<dir name="apps">
+		<dir name="gksu">
+			<entry name="sudo-mode" mtime="1508439562" type="bool" value="true"/>
+		</dir>
+		<dir name="hamster-indicator">
+			<entry name="label_length" mtime="1508439562" type="int" value="20"/>
+			<entry name="icon_glow" mtime="1508439562" type="bool" value="true"/>
+			<entry name="show_label" mtime="1508439562" type="bool" value="false"/>
+		</dir>
+	</dir>
+</gconf>

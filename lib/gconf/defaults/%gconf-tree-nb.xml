@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Bytt aktivitet ved bytte av arbeidsområde">
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Hvorvidt bytte av arbeidsområde skal utløse bytte av aktivitet">
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="Tidspunkt for dagens start (forvalg er 05:30)">
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Vis påminnelser når ingen aktivitet er satt">
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Vis påminnelse om aktiv oppgave hvert x minutt">
+						<longdesc>Påminnelse om aktiv oppgave ved spesifiserte intervaller i minutter. Sett til 0 eller større enn 120 for å slå av påminnelse.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Stopp sporing når datamaskinen slås av">
+						<longdesc>Stopp sporing av pågående aktivitet når datamaskinen slås av</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Stopp sporing når datamaskinen ikke er i bruk">
+						<longdesc>Stopp sporing av nåværende aktivitet når datamaskinen er inaktiv</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Slå av/på programvindu for hamster">
+								<longdesc>Slå av/på synlighet for hamster programvinduet.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Vis / skjul vindu for tidsporing">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

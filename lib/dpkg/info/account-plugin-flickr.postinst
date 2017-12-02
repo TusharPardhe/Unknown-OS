@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/signon-ui/webkit-options.d/secure.flickr.com.conf 0.11+14.04.20140408 -- "$@"
+# End automatically added section

@@ -1,0 +1,5 @@
+16edac5ae6426f6f2b358b967e513bcc  usr/lib/x86_64-linux-gnu/bamf/bamfdaemon
+2de69d9eea2651592d233a23cbeb24ef  usr/lib/x86_64-linux-gnu/bamf/bamfdaemon-dbus-runner
+817172cb93215e6dda1f0d92e00fd8ce  usr/share/dbus-1/services/org.ayatana.bamf.service
+f5575c8db849a05b3d4cf7336c7db8c2  usr/share/doc/bamfdaemon/copyright
+587162a542b383722d871fa248baa88a  usr/share/upstart/sessions/bamfdaemon.conf

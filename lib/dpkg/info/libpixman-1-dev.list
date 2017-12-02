@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/include
+/usr/include/pixman-1
+/usr/include/pixman-1/pixman.h
+/usr/include/pixman-1/pixman-version.h
+/usr/share
+/usr/share/doc
+/usr/share/doc/libpixman-1-dev
+/usr/share/doc/libpixman-1-dev/copyright
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/libpixman-1.a
+/usr/lib/x86_64-linux-gnu/pkgconfig
+/usr/lib/x86_64-linux-gnu/pkgconfig/pixman-1.pc
+/usr/share/doc/libpixman-1-dev/changelog.Debian.gz
+/usr/lib/x86_64-linux-gnu/libpixman-1.so

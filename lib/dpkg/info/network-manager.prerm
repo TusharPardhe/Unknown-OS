@@ -1,0 +1,22 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/dbus-1/system.d/nm-avahi-autoipd.conf 1.1.90-2~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/dbus-1/system.d/nm-dhcp-client.conf 0.9.10.0-1~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/polkit-1/rules.d/60-network-manager.rules 0.9.8.8-4~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/polkit-1/localauthority/10-vendor.d/org.freedesktop.NetworkManager.pkla 0.9.8.8-4~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper mv_conffile /etc/dbus-1/system.d/NetworkManager.conf /etc/dbus-1/system.d/org.freedesktop.NetworkManager.conf 0.9.4.0-1~ -- "$@"
+# End automatically added section
+# Automatically added by dh_systemd_start
+if [ -d /run/systemd/system ] && [ "$1" = remove ]; then
+	deb-systemd-invoke stop NetworkManager-dispatcher.service >/dev/null
+fi
+# End automatically added section

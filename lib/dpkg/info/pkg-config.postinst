@@ -1,0 +1,9 @@
+#! /bin/sh
+
+set -e
+
+
+
+if test "$1" = configure; then
+    /usr/share/pkg-config-dpkghook update
+fi

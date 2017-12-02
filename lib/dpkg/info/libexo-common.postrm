@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/xdg/xfce4/mount.rc 0.5.2-1 -- "$@"
+# End automatically added section

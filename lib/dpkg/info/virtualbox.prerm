@@ -1,0 +1,26 @@
+#!/bin/sh
+
+set -e
+
+if [ -x "/etc/init.d/virtualbox" ] && [ "$1" = remove ]; then
+	invoke-rc.d virtualbox stop || true
+fi
+
+# Automatically added by dh_systemd_start
+if [ -d /run/systemd/system ]; then
+	deb-systemd-invoke stop vboxweb.service >/dev/null
+fi
+# End automatically added section
+
+# Automatically added by dhpython:
+if which pyclean >/dev/null 2>&1; then
+	pyclean -p virtualbox 
+else
+	dpkg -L virtualbox | grep \.py$ | while read file
+	do
+		rm -f "${file}"[co] >/dev/null
+  	done
+fi
+
+# End automatically added section
+

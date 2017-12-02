@@ -1,0 +1,14 @@
+38cd74804ecdcca336e4c6ce3a2b93bf  usr/bin/do-release-upgrade
+60df3b3aa085ba0656fef423d7a6f5de  usr/lib/ubuntu-release-upgrader/do-partial-upgrade
+4cbf07cad6e2e8fe767260fb49a63bf9  usr/lib/ubuntu-release-upgrader/release-upgrade-motd
+081f4ef08c43c0184663f1d6693c0145  usr/share/apport/package-hooks/source_ubuntu-release-upgrader.py
+d452acfcbbca9f831a00db7deb82bbab  usr/share/doc/ubuntu-release-upgrader-core/AUTHORS
+21a58978245d375e03ecbf0ce2cf0063  usr/share/doc/ubuntu-release-upgrader-core/README
+b38c68d82f3fa513cdf9a1dfb9548ea1  usr/share/doc/ubuntu-release-upgrader-core/copyright
+3e8ad595c6c69baa5a0d5aadb3619f4f  usr/share/man/man8/do-release-upgrade.8.gz
+4309876023a7c9973aaab4e8804cb175  usr/share/polkit-1/actions/com.ubuntu.release-upgrader.policy
+cec418983e7a7a5e8a1a75ce64012d7b  usr/share/ubuntu-release-upgrader/DistUpgrade.cfg
+57de23a4d7a44ea38b69e11ad50e4977  usr/share/ubuntu-release-upgrader/additional_pkgs.cfg
+e302c6f2d217d1ace8f6e247ad49466b  usr/share/ubuntu-release-upgrader/demoted.cfg
+f4c31f0ece64f9ebbf87cd82f7085815  usr/share/ubuntu-release-upgrader/mirrors.cfg
+77defb0fda872df46c51e15fd1326864  usr/share/ubuntu-release-upgrader/removal_blacklist.cfg

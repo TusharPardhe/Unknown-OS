@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/gnome-2.0
+/usr/share/gnome-2.0/ui
+/usr/share/gnome-2.0/ui/Bonobo_Sample_Hello.xml
+/usr/share/gnome-2.0/ui/bonobo-browser.xml
+/usr/share/gnome-2.0/ui/Bonobo_Sample_Container-ui.xml
+/usr/share/doc
+/usr/share/doc/libbonoboui2-common
+/usr/share/doc/libbonoboui2-common/README
+/usr/share/doc/libbonoboui2-common/copyright
+/usr/share/doc/libbonoboui2-common/NEWS.gz
+/usr/share/doc/libbonoboui2-common/changelog.Debian.gz

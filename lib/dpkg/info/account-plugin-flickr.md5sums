@@ -1,0 +1,5 @@
+7788fdb979eaecb4d82bb36fb54e8835  usr/share/accounts/providers/flickr.provider
+48262ee62ebd37192066577b3d36e7e2  usr/share/accounts/qml-plugins/flickr/Main.qml
+d549fcca0d87c1f23edfde9373daf772  usr/share/accounts/services/flickr-microblog.service
+3405db9978701382fca0215fa3704a09  usr/share/accounts/services/flickr-sharing.service
+2ded704009915d85ac9ca024e8f1eac4  usr/share/doc/account-plugin-flickr/copyright

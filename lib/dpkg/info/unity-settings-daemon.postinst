@@ -1,0 +1,42 @@
+#! /bin/sh
+set -e
+
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/gnome/config/Editres.ad 3.6.3-0ubuntu3~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/gnome/config/Emacs.ad 3.6.3-0ubuntu3~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/gnome/config/General.ad 3.6.3-0ubuntu3~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/gnome/config/Motif.ad 3.6.3-0ubuntu3~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/gnome/config/Tk.ad 3.6.3-0ubuntu3~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/gnome/config/Xaw.ad 3.6.3-0ubuntu3~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/dbus-1/system.d/org.gnome.SettingsDaemon.DateTimeMechanism.conf 3.6.4-0ubuntu7~ -- "$@"
+# End automatically added section
+
+
+# Remove obsolete conffiles
+
+case "$1" in
+configure)
+    if dpkg --compare-versions "$2" lt-nl "2.24.1"; then
+        rm -rf /etc/gnome/config/xrdb
+    fi
+    if dpkg --compare-versions "$2" lt-nl "2.26.1"; then
+        rm -f /etc/xdg/autostart/gnome-settings-daemon.desktop
+    fi
+    if dpkg --compare-versions "$2" lt-nl "3.6.3-0ubuntu3"; then
+        if [ -d /etc/gnome/config ]; then
+            rmdir --ignore-fail-on-non-empty /etc/gnome/config
+        fi
+    fi
+esac

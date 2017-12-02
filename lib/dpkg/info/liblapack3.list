@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/lapack
+/usr/lib/lapack/liblapack.so.3.6.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/liblapack3
+/usr/share/doc/liblapack3/copyright
+/usr/share/doc/liblapack3/testing_results.txt.gz
+/usr/share/doc/liblapack3/README.gz
+/usr/lib/lapack/liblapack.so.3
+/usr/share/doc/liblapack3/changelog.Debian.gz

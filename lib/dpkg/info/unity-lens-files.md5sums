@@ -1,0 +1,8 @@
+a68d28e7f0964264d3fcff705f6ccf4e  usr/lib/x86_64-linux-gnu/unity-lens-files/unity-files-daemon
+4d8030d0cd3f4068609730f30c7d2470  usr/locale/da/LC_MESSAGES/unity-lens-files.mo
+15d0c694e42026e13bb0b399a35ec37e  usr/share/dbus-1/services/unity-scope-files-local.service
+c0d25c690bb562ebc31523577b87e687  usr/share/doc/unity-lens-files/changelog.Debian.gz
+d6d2627d8dba376ba2999f79eba77409  usr/share/doc/unity-lens-files/copyright
+c0175ddfde9822b799ebb23625c6de85  usr/share/glib-2.0/schemas/com.canonical.Unity.FilesLens.gschema.xml
+356cb49d6204bd596648dace1b08038c  usr/share/unity/scopes/files/local.scope
+9bd06ba76d5ba1ac50fca557eba785fb  usr/share/unity/themes/files.png

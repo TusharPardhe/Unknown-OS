@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+
+case "$0::$1" in
+*.postinst::configure|*.postrm::remove)
+	depmod -a -F /boot/System.map-4.4.0-96-generic 4.4.0-96-generic || true
+	for dir in "/etc/kernel/postinst.d" "/etc/kernel/postinst.d/4.4.0-96-generic"
+	do
+		if [ -d "$dir" ]; then
+			run-parts --verbose --exit-on-error --arg="4.4.0-96-generic" --arg="/boot/vmlinuz-4.4.0-96-generic" "$dir"
+		fi
+	done
+	;;
+esac

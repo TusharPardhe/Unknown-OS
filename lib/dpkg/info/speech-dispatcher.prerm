@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installinit
+if [ -x "/etc/init.d/speech-dispatcher" ] || [ -e "/etc/init/speech-dispatcher.conf" ]; then
+	invoke-rc.d speech-dispatcher stop || true
+fi
+# End automatically added section

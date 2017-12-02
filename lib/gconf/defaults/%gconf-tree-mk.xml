@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Смени ја активноста при промена на работното место">
+						<longdesc>Ако е овозможено менување по име, оваа листа ги поставува имињата на активностите кои треба да се менуваат, работните простори определени со индексот на предметот.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Дали менувањето на работното место треба да предизвика менување на активноста">
+						<longdesc>Листа на овозможени методи на следење. „name“ ќе овозможи преминување на активности дефинирани во workspace_mapping. „memory“ ќе овозможи преминување на последната активност при враќање на претходниот работен простор.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="Кога започнува денот (стандардно е 5:30)">
+						<longdesc>Активностите ќе се сметаат како да се од вчера ако тековното време е помало од одредениот почеток на денот, ако е после тоа време. Активностите кои се протегаат во два дена ќе се постават на денот каде што е најголем дел од активноста.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Потсети ме кога не е стартувана некоја активност">
+						<longdesc>Исто така потсети ме на секои notify_interval минути ако не е стартувана некоја активност.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Потсети ме за тековната задача на секои x минути">
+						<longdesc>Потсети ме за тековната задача на одреден број минути. Поставете на 0 или на повеќе од 120 за оневозможување на потсетникот.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Престани со следење при исклучување">
+						<longdesc>Престани со следење на тековната активност при исклучување</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Престани да следиш при неактивност">
+						<longdesc>Престани да ја следиш тековната активност кога компјутерот е неактивен</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Вклучи/исклучи го прозорецот на hamster">
+								<longdesc>Вклучи/исклучи видливост на прозорецот на апликацијата hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Вклучи/исклучи го дејството на прозорецот на hamster">
+								<longdesc>Команда за менување на видливоста на прозорецот на апликацијата hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Покажи / скриј го прозорецот на следачот на време">
+								<longdesc>Кратенка на тастатурата за прикажување / криење на прозорецот на следачот на време.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,10 @@
+bea80d9059610750353163f5817ef393  usr/bin/devhelp
+ce3bf8a8cde120718c4e0d8902b6d1c1  usr/share/appdata/org.gnome.Devhelp.appdata.xml
+e7b2595592ebf285089216da4312bfd0  usr/share/applications/org.gnome.Devhelp.desktop
+02e8e33f43c3745164d7fbcbfb6bd1f9  usr/share/dbus-1/services/org.gnome.Devhelp.service
+ff0f9c825e0a9a96640b260f400f1973  usr/share/doc/devhelp/copyright
+8203c7cd21907c73543bc6f273e4924e  usr/share/doc/devhelp/tools/devhelp.vim
+ad8c30b9db3c2a41c046937bca8c9751  usr/share/doc/devhelp/tools/html2funcs.py
+acc2dbc56e27d11c9da99ede52c379dc  usr/share/doc/devhelp/tools/html2xml.py
+b0b7cce370905497cd49429856be91ba  usr/share/doc/devhelp/tools/man2xml.py
+c6ac3ab0f40e130dc8df804907ece393  usr/share/man/man1/devhelp.1.gz

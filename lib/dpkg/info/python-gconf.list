@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python2.7
+/usr/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages/gtk-2.0
+/usr/lib/python2.7/dist-packages/gtk-2.0/gconf.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/python-gconf
+/usr/share/doc/python-gconf/copyright
+/usr/share/doc/python-gconf/changelog.Debian.gz

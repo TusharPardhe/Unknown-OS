@@ -1,0 +1,8 @@
+/etc/NetworkManager/NetworkManager.conf
+/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
+/etc/NetworkManager/dispatcher.d/01ifupdown
+/etc/dbus-1/system.d/nm-dispatcher.conf
+/etc/dbus-1/system.d/org.freedesktop.NetworkManager.conf
+/etc/dnsmasq.d/network-manager
+/etc/init.d/network-manager
+/etc/init/network-manager.conf

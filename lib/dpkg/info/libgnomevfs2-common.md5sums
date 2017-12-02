@@ -1,0 +1,12 @@
+5f795a393e6a398218e4679b7827e834  usr/share/doc/libgnomevfs2-common/AUTHORS
+0c08348fac24946b7eaf9539d01c4ef4  usr/share/doc/libgnomevfs2-common/NEWS.gz
+c8edd543f959766c0f9a1a5c59edc548  usr/share/doc/libgnomevfs2-common/README
+4e29670356c53960a6f3ca2507b51c3c  usr/share/doc/libgnomevfs2-common/TODO
+a939ff8d913e1df500868aa8c08021b7  usr/share/doc/libgnomevfs2-common/changelog.Debian.gz
+1ce196f7cadc5459ea5c78769b66e801  usr/share/doc/libgnomevfs2-common/copyright
+f11c1b454b487b40f19469f0c215e94d  usr/share/gconf/defaults/10_libgnomevfs2-common
+e105bb8aebbc878448c016b0c6bda00b  usr/share/gconf/schemas/desktop_default_applications.schemas
+49733d2baa9c7e2595c51504f53abcfc  usr/share/gconf/schemas/desktop_gnome_url_handlers.schemas
+8cf20b861b3b66a594109f0ddff7294f  usr/share/gconf/schemas/system_dns_sd.schemas
+c28cd75ea7cab184deaee7caa361d6f9  usr/share/gconf/schemas/system_http_proxy.schemas
+ca2a5d4e9ecb09250f9ab2411d8ec973  usr/share/gconf/schemas/system_smb.schemas

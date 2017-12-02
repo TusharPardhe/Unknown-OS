@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/xorg
+/usr/lib/xorg/modules
+/usr/lib/xorg/modules/drivers
+/usr/lib/xorg/modules/drivers/qxl_drv.so
+/usr/share
+/usr/share/bug
+/usr/share/bug/xserver-xorg-video-qxl
+/usr/share/doc
+/usr/share/doc/xserver-xorg-video-qxl
+/usr/share/doc/xserver-xorg-video-qxl/copyright
+/usr/share/doc/xserver-xorg-video-qxl/changelog.Debian.gz
+/usr/share/doc/xserver-xorg-video-qxl/README
+/usr/share/doc/xserver-xorg-video-qxl/TODO.gz
+/usr/share/bug/xserver-xorg-video-qxl/script

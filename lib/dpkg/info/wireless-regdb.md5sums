@@ -1,0 +1,6 @@
+c07af6508171b271fb7ca88b73006b0f  lib/crda/pubkeys/sforshee.key.pub.pem
+4027373084a30fe92e6fe2cc9ff63e65  lib/crda/pubkeys/ubuntu-devel-discuss@lists.ubuntu.com.key.pub.pem
+49414346e4e10f3bce065f1e34c0880c  lib/crda/regulatory.bin
+37007e7ae0587d938e635415136f3db1  usr/share/doc/wireless-regdb/changelog.Debian.gz
+2333451fba05cdc5e11d337be9070fb0  usr/share/doc/wireless-regdb/copyright
+80d5e1c12c839ed19e2d74355a30ec4d  usr/share/man/man5/regulatory.bin.5.gz

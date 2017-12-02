@@ -1,0 +1,11 @@
+9b027afa96c0a565ee64d17633958f3f  usr/lib/libgupnp-av-1.0.so.2.0.0
+1fdc7a4d7ff29fb55d4a3fa0f9df8272  usr/share/doc/libgupnp-av-1.0-2/AUTHORS
+5a6858e0551a8d89d46da95449ce40fe  usr/share/doc/libgupnp-av-1.0-2/NEWS.gz
+135810230c31d6fb960e60e07fcbebab  usr/share/doc/libgupnp-av-1.0-2/README
+b0b7b6ca003bc5ba8c53e8e78c81bf1d  usr/share/doc/libgupnp-av-1.0-2/changelog.Debian.gz
+498be340f4972ff7cd0d90f1ac8a4c36  usr/share/doc/libgupnp-av-1.0-2/copyright
+6958a07c227c75974a8ab0166a4634e3  usr/share/gupnp-av/av.xsd
+e94e039e9e145e348cfad9adb282b689  usr/share/gupnp-av/didl-lite-v2.xsd
+bce127aa9c11204001c71f86d1952db7  usr/share/gupnp-av/simpledc20021212.xsd
+752fc851d0318a958f283ebc80ee1b71  usr/share/gupnp-av/upnp.xsd
+a8b1dda5e86c3ee8cd8fd66379bb7129  usr/share/gupnp-av/xml.xsd

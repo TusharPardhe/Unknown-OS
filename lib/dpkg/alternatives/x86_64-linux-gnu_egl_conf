@@ -1,0 +1,6 @@
+auto
+/etc/ld.so.conf.d/x86_64-linux-gnu_EGL.conf
+
+/usr/lib/x86_64-linux-gnu/mesa-egl/ld.so.conf
+500
+

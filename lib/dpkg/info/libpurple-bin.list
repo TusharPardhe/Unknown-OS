@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libpurple-bin
+/usr/share/doc/libpurple-bin/changelog.Debian.gz
+/usr/share/doc/libpurple-bin/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/purple-remote.1.gz
+/usr/bin
+/usr/bin/purple-url-handler
+/usr/bin/purple-send-async
+/usr/bin/purple-remote
+/usr/bin/purple-send

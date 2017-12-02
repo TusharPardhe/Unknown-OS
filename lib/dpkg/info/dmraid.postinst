@@ -1,0 +1,46 @@
+#! /bin/sh
+
+set -e
+
+
+case "$1" in
+  configure)
+    if command -v update-initramfs >/dev/null 2>&1; then
+	    update-initramfs -u
+    fi
+    # Calling udevadm trigger on block devices with mountall installed can have
+    # severe consequences (clearing /tmp for instance); see LP #444252 and
+    # dups.  Instead, let update-initramfs flag the system as needing a reboot.
+    # If you're here, your dmraid devices are probably working or you can be
+    # bothered with a reboot.
+    ## Activate existing arrays now.
+    #udevadm trigger --subsystem-match=block --action=change
+
+    if [ -f /etc/init.d/dmraid ]; then
+  	update-rc.d -f dmraid remove
+	rm -f /etc/init.d/dmraid
+    fi
+  ;;
+  abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+# Automatically added by dh_installudev
+if [ "$1" = configure ]; then
+	if [ -e "/etc/udev/rules.d/97_dmraid.rules" ]; then
+		echo "Preserving user changes to /etc/udev/rules.d/97-dmraid.rules ..."
+		if [ -e "/etc/udev/rules.d/97-dmraid.rules" ]; then
+			mv -f "/etc/udev/rules.d/97-dmraid.rules" "/etc/udev/rules.d/97-dmraid.rules.dpkg-new"
+		fi
+		mv -f "/etc/udev/rules.d/97_dmraid.rules" "/etc/udev/rules.d/97-dmraid.rules"
+	fi
+fi
+# End automatically added section
+
+
+exit 0

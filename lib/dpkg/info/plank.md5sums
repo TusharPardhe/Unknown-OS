@@ -1,0 +1,17 @@
+668d7b709d283c82a8eab76bd73d3177  usr/bin/plank
+cff1c435512e80b52d4a0332400d4aae  usr/lib/x86_64-linux-gnu/plank/docklets/libdocklet-clippy.so
+0f8f9fd581fe88bea4cfc10d3ea8c6d5  usr/lib/x86_64-linux-gnu/plank/docklets/libdocklet-clock.so
+4718b364d1da8418f1e7f9f4adbaa064  usr/lib/x86_64-linux-gnu/plank/docklets/libdocklet-desktop.so
+b6c4dc3175ae9442b26a50516c7d6fab  usr/lib/x86_64-linux-gnu/plank/docklets/libdocklet-trash.so
+360f2b742989cc39d06de70c2813e184  usr/share/appdata/plank.appdata.xml
+966e7ed4d58d2f098c21e30826d6b168  usr/share/applications/plank.desktop
+56f116b413277ef5a1b23a86b51721da  usr/share/apport/package-hooks/source_plank.py
+4c3024c4b13ddd10dc7fecf464df7bd2  usr/share/doc/plank/copyright
+3221e079376f691de2aed12ccdb6de9f  usr/share/icons/hicolor/128x128/apps/plank.svg
+fb665490beb69d21cd33e7d5042c2443  usr/share/icons/hicolor/16x16/apps/plank.svg
+061fbd174263b9babd3b3efa0e08b08e  usr/share/icons/hicolor/22x22/apps/plank.svg
+2da737a7293ac250bf0626cf9399fc47  usr/share/icons/hicolor/24x24/apps/plank.svg
+0c04cdb6dc0c793382dc51108f586a32  usr/share/icons/hicolor/32x32/apps/plank.svg
+4652f7915b54ebe844d1de55c8db266a  usr/share/icons/hicolor/48x48/apps/plank.svg
+154ec876c212e4b3177d9b7e47532aff  usr/share/icons/hicolor/64x64/apps/plank.svg
+427f53f143051b0f26bcdc24b2573b42  usr/share/man/man1/plank.1.gz

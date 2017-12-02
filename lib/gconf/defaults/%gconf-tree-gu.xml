@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="notify_on_idle">
+					<local_schema short_desc="જ્યારે પ્રવૃત્તિ સુયોજિત ન હોય ત્યારે પણ યાદ અપાવો">
+						<longdesc>દરેક notify_interval મિનિટોએ પણ યાદ રાખો જો પ્રવૃત્તિને શરૂ કરી ન દેવામાં આવી હોય.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="વર્તમાન કામને દર x મિનિટોએ યાદ અપાવે">
+						<longdesc>દરેક કામને સ્પષ્ટ થયેલ મિનિટોના આ દરે યાદ અપાવો. ૦ માં સુયોજીત થયેલ છે અથવા યાદ અપાવનાર નિષ્ક્રિય કરવા માટે ૧૨૦ કરતાં વધુ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="બંધ કરી રહ્યા હોય ત્યારે શોધવાનું બંધ કરો">
+						<longdesc>બંધ કરી રહ્યા હોય ત્યારે હાલની પ્રવૃત્તિ શોધવાનું બંધ કરો</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="નિષ્ક્રિય પર શોધવાનું બંધ કરો">
+						<longdesc>જ્યારે કમ્પ્યુટર નિષ્ક્રિય બનેલ હોય ત્યારે, હાલની પ્રવૃત્તિ શોધવાનું બંધ કરો</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="ટૉગલ હેમસ્ટર કાર્યક્રમ વિન્ડો">
+								<longdesc>હેમસ્ટર કાર્યક્રમ વિન્ડોની ટૉગલ દૃશ્યતા</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="ટૉગલ હેમસ્ટર કાર્યક્રમ વિન્ડો ક્રિયા">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

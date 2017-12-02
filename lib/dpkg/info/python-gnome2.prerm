@@ -1,0 +1,20 @@
+#!/bin/sh
+
+set -e
+
+rm -f /usr/lib/gnome-vfs-2.0/modules/libpythonmethod.so
+
+
+# Automatically added by dh_python2:
+if which pyclean >/dev/null 2>&1; then
+	pyclean -p python-gnome2 
+else
+	dpkg -L python-gnome2 | grep \.py$ | while read file
+	do
+		rm -f "${file}"[co] >/dev/null
+  	done
+fi
+
+# End automatically added section
+
+

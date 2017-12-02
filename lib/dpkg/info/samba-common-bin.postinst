@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e 
+
+if dpkg --compare-versions "$2" lt-nl 2:4.0.12+dfsg-2~; then
+	for alternative in nmblookup net testparm; do
+		if update-alternatives --list $alternative >/dev/null 2>&1
+		then
+			update-alternatives --remove-all $alternative
+		fi
+	done
+fi
+
+
+
+exit 0

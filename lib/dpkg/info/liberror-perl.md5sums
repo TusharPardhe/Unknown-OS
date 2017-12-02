@@ -1,0 +1,7 @@
+c152c6c52919861514bd1486c9791d26  usr/share/doc/liberror-perl/README
+5fd7f04f5b1ff4e028d83732d2d63272  usr/share/doc/liberror-perl/changelog.Debian.gz
+603a60d66d85a47448898b17ea9460e4  usr/share/doc/liberror-perl/copyright
+67a2de0ced3964077e84820c9693213c  usr/share/man/man3/Error.3pm.gz
+5c177c81e26d816d64aa900719932580  usr/share/man/man3/Error::Simple.3pm.gz
+1e59167755ff3107e7f830b23371bae1  usr/share/perl5/Error.pm
+40a176cf0acf43793fe2353a0596489d  usr/share/perl5/Error/Simple.pm

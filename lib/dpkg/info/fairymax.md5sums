@@ -1,0 +1,16 @@
+009c1e6b22f13f593981e9b20db38ac9  usr/games/fairymax
+a1d971a84caba3eb0a1c6b484c15af42  usr/games/maxqi
+70ae7ee7d5de88bc91fbff9a0ab16fc9  usr/games/shamax
+8c7c549ca8e95a2c0d3e9763e14ea3d2  usr/share/doc/fairymax/CVfairy.html
+860020905dcdb168a1b84ff6425ce26c  usr/share/doc/fairymax/README
+7126a6320fbd4e45217021a5ff574b19  usr/share/doc/fairymax/changelog.Debian.gz
+a5ec9110d7ec7ee654f4d98698d8d52d  usr/share/doc/fairymax/copyright
+ef27cbe84521fd95baf047362a0a4592  usr/share/games/fairymax/fmax.ini
+674172f47a1ddc15fcfa165088fb7122  usr/share/games/fairymax/qmax.ini
+6236f30fa935e4ed871fb5bc7fad1753  usr/share/games/plugins/logos/fairymax.png
+6236f30fa935e4ed871fb5bc7fad1753  usr/share/games/plugins/logos/maxqi.png
+6236f30fa935e4ed871fb5bc7fad1753  usr/share/games/plugins/logos/shamax.png
+a7dbf30c0bbf5de9563638ec141fd3f0  usr/share/games/plugins/xboard/fairymax.eng
+0065652f9beccd38a9338fec464e26d7  usr/share/games/plugins/xboard/maxqi.eng
+445dc5e889f2d8745b201d02356f3cb1  usr/share/games/plugins/xboard/shamax.eng
+452efd87f8e44bcb1655de76859da2f5  usr/share/man/man6/fairymax.6.gz

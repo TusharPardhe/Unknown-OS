@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/session-migration
+/usr/share/doc/session-migration/copyright
+/usr/share/doc/session-migration/changelog.gz
+/usr/share/upstart
+/usr/share/upstart/sessions
+/usr/share/upstart/sessions/session-migration.conf
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/session-migration.1.gz
+/usr/bin
+/usr/bin/session-migration

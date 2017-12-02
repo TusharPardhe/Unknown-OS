@@ -1,0 +1,34 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+	configure)
+		update-alternatives --install /usr/bin/x-window-manager \
+			x-window-manager /usr/bin/openbox 90 --slave \
+			/usr/share/man/man1/x-window-manager.1.gz \
+			x-window-manager.1.gz /usr/share/man/man1/openbox.1.gz
+		update-alternatives --install /usr/bin/x-session-manager \
+                        x-session-manager /usr/bin/openbox-session 40 --slave \
+                        /usr/share/man/man1/x-session-manager.1.gz \
+                        x-session-manager.1.gz /usr/share/man/man1/openbox-session.1.gz
+
+			if which update-menus >/dev/null 2>&1; then
+				update-menus;
+			fi
+		;;
+esac
+
+# Automatically added by dh_installmenu
+inst=/etc/menu-methods/openbox
+if [ -f $inst ]; then
+	chmod a+x $inst
+	if [ -x "`which update-menus 2>/dev/null`" ]; then
+		update-menus
+	fi
+fi
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/xdg/openbox/autostart.sh 3.5.0-1 -- "$@"
+# End automatically added section
+

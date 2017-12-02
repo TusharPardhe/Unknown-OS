@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+
+
+# remove directory /etc/sane.d/
+if [ "$1" = "purge" ]; then
+    echo "Removing directory /etc/sane.d/ ..."
+    rmdir --ignore-fail-on-non-empty /etc/sane.d/
+fi

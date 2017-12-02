@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="ਵਰਕਸਪੇਸ ਬਦਲਣ ਨਾਲ ਸਰਗਰਮੀ ਬਦਲੋ">
+						<longdesc>ਜੇ ਨਾਂ ਰਾਹੀਂ ਬਦਲਣਾ ਚਾਲੂ ਕੀਤਾ ਤਾਂ, ਇਹ ਲਿਸਟ ਨੂੰ ਸਰਗਰਮੀ ਨਾਲ ਲਈ ਸੈੱਟ ਕੀਤਾ ਜਾਵੇਗਾ, ਜਿਸ ਲਈ ਬਦਲਣਾ ਹੈ, ਵਰਕਸਪੇਸ ਆਈਟਮ ਦੇ ਇੰਡੈਕਸ ਨਾਲ ਦਰਸਾਇਆ ਜਾਂਦਾ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="ਕੀ ਵਰਕਸਪੇਸ ਬਦਲਣ ਨਾਲ ਐਕਟਿਵੀ ਬਦਲੀ ਜਾਵੇ">
+						<longdesc>ਚਾਲੂ ਟਰੈਕਿੰਗ ਢੰਗਾਂ ਦੀ ਲਿਸਟ ਹੈ। &quot;ਨਾਂ&quot; workspace_mapping ਵਿੱਚ ਦਿੱਤੇ ਨਾਂ ਮੁਤਾਬਕ ਸਰਗਰਮੀ ਬਦਲਣਾ ਚਾਲੂ ਕਰੇਗਾ। &quot;ਮੈਮੋਰੀ&quot; ਪਿਛਲੀ ਵਰਕਸਪੇਸ ਵਿੱਚ ਜਾਣ ਸਮੇਂ ਆਖਰੀ ਸਰਗਰਮੀ ਲਈ ਬਦਲੇਗਾ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="ਸਮਾਂ, ਜਦੋਂ ਦਿਨ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ (ਮੂਲ ੫:੩੦ ਸਵੇਰੇ)">
+						<longdesc>ਸਰਗਰਮੀ ਨੂੰ ਕੱਲ੍ਹ ਵਾਲੀ ਨਾਲ ਸਬੰਧਿਤ ਗਿਣਿਆ ਜਾਵੇਗਾ, ਜੇ ਮੌਜੂਦਾ ਸਮਾਂ ਖਾਸ ਦਿਨ ਦੇ ਸ਼ੁਰੂ ਅਤੇ ਅੱਜਜ ਤੋਂ ਘੱਟ ਹੋਵੇਗਾ, ਜੇ ਇਹ ਸਮੇਂ ਤੋਂ ਵੱਧ ਹੈ। ਸਰਗਰਮੀਆਂ, ਜੋ ਦੋ ਦਿਨ ਲੈਂਦੀਆਂ ਹਨ, ਉੱਥੇ ਟਿੱਪ ਵਿੱਚ ਵੇਖਾਈਆਂ ਜਾਣਗੀਆਂ, ਜਿੱਥੇ ਸਰਗਰਮੀ ਦਾ ਸਭ ਤੋਂ ਵੱਡਾ ਭਾਗ ਹੁੰਦਾ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="ਜਦੋਂ ਕੋਈ ਸਰਗਰਮੀ ਸੈੱਟ ਨਾ ਹੋਵੇ ਤਾਂ ਵੀ ਚੇਤੇ ਕਰਵਾਓ">
+						<longdesc>ਜੇ ਕੋਈ ਸਰਗਰਮੀ ਸ਼ੁਰੂ ਨਾ ਹੋਵੇ ਤਾਂ ਹਰੇਕ ਸੂਚਨਾ ਅੰਤਰਾਲ ਮਿੰਟ ਦੇ ਬਾਅਦ ਚੇਤੇ ਕਰਵਾਉ(_i)</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="ਮੌਜੂਦਾ ਟਾਸਕ ਹਰੇਕ x ਮਿੰਟਾਂ ਬਾਅਦ ਚੇਤੇ ਕਰਵਾਉ">
+						<longdesc>ਖਾਸ ਦਿੱਤੇ ਮਿੰਟਾਂ ਦੇ ਬਾਅਦ ਮੌਜੂਦਾ ਟਾਸਕ ਚੇਤੇ ਕਰਵਾਉ। ਰੀਮਾਈਡਰ ਬੰਦ ਕਰਨ ਲਈ 0 ਜਾਂ 120 ਤੋਂ ਵੱਧ ਸੈੱਟ ਕਰੋ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="ਬੰਦ ਕਰਨ ਸਮੇਂ ਟਰੈਕਿੰਗ ਬੰਦ ਕਰੋ">
+						<longdesc>ਬੰਦ ਕਰਨ ਉੱਤੇ ਮੌਜੂਦਾ ਸਰਗਰਮੀ ਲਈ ਟਰੈਕਿੰਗ ਬੰਦ ਕਰੋ</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="ਵੇਹਲਾ ਹੋਵੇ ਤਾਂ ਟਰੈਕਿੰਗ ਰੋਕੋ">
+						<longdesc>ਜਦੋਂ ਕੰਪਿਊਟਰ ਵੇਹਲਾ ਹੋਵੇ ਤਾਂ ਮੌਜੂਦਾ ਸਰਗਰਮੀ ਲਈ ਟਰੈਕਿੰਗ ਰੋਕੋ</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="ਹਮਸਟਰ ਐਪਲੀਕੇਸ਼ਨ ਵਿੰਡੋ ਬਦਲੋ">
+								<longdesc>ਹਮਸਟਰ ਐਪਲੀਕੇਸ਼ਨ ਵਿੰਡੋ ਦੀ ਦਿੱਖ ਬਦਲੋ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="ਹਮਸਟਰ ਐਪਲੀਕੇਸ਼ਨ ਵਿੰਡੋ ਕਾਰਵਾਈ ਬਦਲੋ">
+								<longdesc>ਹਮਸਟਰ ਐਪਲੀਕੇਸ਼ਨ ਵਿੰਡੋ ਦੀ ਦਿੱਖ ਬਦਲਣ ਵਾਲੀ ਕਮਾਂਡ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="ਟਾਈਮ ਟਰੈਕਰ ਵਿੰਡੋ ਵੇਖੋ / ਓਹਲੇ ਕਰੋ">
+								<longdesc>ਟਾਈਮ ਟਰੈਕਰ ਵਿੰਡੋ ਵੇਖਣ /ਓਹਲੇ ਕਰਨ ਲਈ ਕੀਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਹੈ।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

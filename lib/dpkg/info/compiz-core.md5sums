@@ -1,0 +1,15 @@
+ea4d95715f72160bda90d3365ef0f40c  usr/bin/compiz
+2a127eb27737e20fd9d52c7404d61516  usr/bin/compiz-decorator
+fe592a0a3fbe36bd5c11df852828b59a  usr/lib/x86_64-linux-gnu/libcompiz_core.so.0.9.12.2
+47c18b6e4d1b46dda32e6a185e187e12  usr/share/applications/compiz.desktop
+66a5c1cf8b22bf2dc43f0e128cf2d031  usr/share/apport/package-hooks/source_compiz.py
+7c780ee7cbd2a9cf1604a9e45e7a128b  usr/share/compiz/core.xml
+4f499fce806fc394bb9930388d006328  usr/share/compiz/icon.png
+ebe7f420185bb36c0a0fe72a6a9ac3cc  usr/share/doc/compiz-core/AUTHORS.gz
+54e1f2fc53077fce3af0f09ecbd61a42  usr/share/doc/compiz-core/NEWS.gz
+6fd0e2246177d5126525d5ae170558c4  usr/share/doc/compiz-core/README
+919b819b461a7141fc615417c52ab968  usr/share/doc/compiz-core/README.Debian
+d76924a1683280faa7e925906d9c6f4e  usr/share/doc/compiz-core/changelog.Debian.gz
+8cebe94e91a20b4f051bf9bb99e8fecc  usr/share/doc/compiz-core/copyright
+4514580814ee1c628481b6a73d94f400  usr/share/lintian/overrides/compiz-core
+8f2d636c86f6ebf2f9c6989867eb55c8  usr/share/man/man1/compiz.1.gz

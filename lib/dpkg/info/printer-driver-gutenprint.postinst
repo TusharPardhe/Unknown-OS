@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+
+if [ "$1" = "configure" ]; then
+  if dpkg --compare-versions "$2" lt "5.2.10-3~" && [ -r /var/cache/cups/ppd-updates ]; then
+    # Drop earlier traces of gutenprint PPD updates
+    sed -e '/ gutenprint$/d' -i /var/cache/cups/ppd-updates
+  fi
+fi
+
+
+

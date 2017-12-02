@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/bin
+/usr/bin/scim-im-agent
+/usr/share
+/usr/share/doc
+/usr/share/doc/scim-im-agent
+/usr/share/doc/scim-im-agent/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/scim-im-agent.1.gz
+/usr/share/doc/scim-im-agent/changelog.Debian.gz

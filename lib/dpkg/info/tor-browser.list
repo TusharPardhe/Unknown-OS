@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/tor-browser
+/usr/share/doc/tor-browser/changelog.Debian.gz
+/usr/share/doc/tor-browser/copyright
+/usr/share/pixmaps
+/usr/share/pixmaps/tor-browser-en.png
+/usr/share/applications
+/usr/share/applications/tor-browser-en.desktop
+/usr/bin
+/usr/bin/tor-browser-en.sh
+/opt
+/opt/tor-browser-en
+/opt/tor-browser-en/tor-browser-linux64-6.5.1_en-US.tar.xz

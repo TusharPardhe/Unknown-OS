@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python2.7
+/usr/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages/appindicator
+/usr/lib/python2.7/dist-packages/appindicator/_appindicator.so
+/usr/lib/python2.7/dist-packages/appindicator/__init__.py
+/usr/share
+/usr/share/doc
+/usr/share/doc/python-appindicator
+/usr/share/doc/python-appindicator/copyright
+/usr/share/pygtk
+/usr/share/pygtk/2.0
+/usr/share/pygtk/2.0/defs
+/usr/share/pygtk/2.0/defs/appindicator.defs
+/usr/share/doc/python-appindicator/changelog.Debian.gz

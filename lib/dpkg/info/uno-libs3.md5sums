@@ -1,0 +1,13 @@
+d74bfce1ef3288e3c91074ff1e01ed7d  usr/lib/libreoffice/program/libreglo.so
+117f60b03e8da759558b211baa5a2d0c  usr/lib/libreoffice/program/libstorelo.so
+9cfa124781f6e4ec428c2d129754aa46  usr/lib/libreoffice/program/libuno_cppu.so.3
+daba9b7d1459e934afcf72835069601e  usr/lib/libreoffice/program/libuno_cppuhelpergcc3.so.3
+d720c0cdfc2e611bcf074834ee08f98b  usr/lib/libreoffice/program/libuno_purpenvhelpergcc3.so.3
+e1975aaff53bbf04563cf9ed860bdce8  usr/lib/libreoffice/program/libuno_sal.so.3
+c995bfe332a6a033d385fa21094dc850  usr/lib/libreoffice/program/libuno_salhelpergcc3.so.3
+e619c34442fe1502f48810e34ba0ec9a  usr/lib/libreoffice/program/libunoidllo.so
+e94858b8f560c89d6c02ce0de8893f2b  usr/lib/libreoffice/program/libxmlreaderlo.so
+4583c119b7c148a61e54ddbbdc1917a9  usr/share/bug/uno-libs3/presubj
+04e876ad3d97ae7253067584e2d406e5  usr/share/doc/uno-libs3/changelog.Debian.gz
+afeba2fcaad484d5661790d180ff30ce  usr/share/doc/uno-libs3/copyright
+a901405d75c08ee5eb0ff77914111c4e  usr/share/lintian/overrides/uno-libs3

@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/bogl-bterm
+/usr/share/doc/bogl-bterm/changelog.Debian.gz
+/usr/share/doc/bogl-bterm/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/bterm.1.gz
+/usr/bin
+/usr/bin/bterm

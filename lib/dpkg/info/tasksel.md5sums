@@ -1,0 +1,14 @@
+302b0d24643d67bf3512b49c69b0580f  usr/bin/tasksel
+1ca772d3c9fe058ae565647d9135b1d0  usr/lib/tasksel/default_desktop
+9f85baf74332882dace7d5a1d28be573  usr/lib/tasksel/filter-tasks
+8f7bce0460bf599df6f47140d3775d33  usr/lib/tasksel/packages/list
+65aec32e1ea6fc0f7303a4811161664d  usr/lib/tasksel/tasksel-debconf
+b33c4d20a88d91b3379b521066d2901b  usr/lib/tasksel/tests/debconf
+4e510db9ea8cab6a007a91550ef2701b  usr/lib/tasksel/tests/lang
+1134e8d21eb3edad2cf26739001656e4  usr/lib/tasksel/tests/new-install
+e22c04ffdcef8cb29be1ddea976baf26  usr/share/doc/tasksel/README.gz
+c6c53982a317fdfb5443ac05dbd15472  usr/share/doc/tasksel/TODO
+f2d00f0549b16d2970542d0a954bd2e9  usr/share/doc/tasksel/changelog.gz
+491b7844eb468cf83912a9c495fdeab1  usr/share/doc/tasksel/copyright
+d55b802376b7ba30da885acb82c3958b  usr/share/man/man8/tasksel.8.gz
+3056504ac7124a1beabc227dac851914  usr/share/menu/tasksel

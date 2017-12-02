@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/xdg/autostart/gdu-notification-daemon.desktop 3.6.1-1~ gnome-disk-utility -- "$@"
+# End automatically added section

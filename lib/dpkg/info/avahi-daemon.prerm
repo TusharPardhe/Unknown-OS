@@ -1,0 +1,19 @@
+#!/bin/sh
+
+set -e
+
+# avoid cancelling of "stop" via socket or D-Bus activation
+if [ -d /run/systemd/system ] && [ "$1" = remove ]; then
+    systemctl mask --runtime avahi-daemon.service
+    # stop avahi-daemon manually since invoke-rc.d currently doesn't
+    # deal with masked services (see Bug #717109)
+    systemctl stop avahi-daemon.service || true
+fi
+
+# Automatically added by dh_installinit
+if ([ -x "/etc/init.d/avahi-daemon" ] || [ -e "/etc/init/avahi-daemon.conf" ]) && \
+   [ "$1" = remove ]; then
+	invoke-rc.d avahi-daemon stop || exit $?
+fi
+# End automatically added section
+

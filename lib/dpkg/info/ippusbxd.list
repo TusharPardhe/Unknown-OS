@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/ippusbxd
+/usr/share/doc/ippusbxd/copyright
+/usr/share/doc/ippusbxd/changelog.Debian.gz
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/ippusbxd.1.gz
+/usr/sbin
+/usr/sbin/ippusbxd
+/etc
+/etc/apparmor.d
+/etc/apparmor.d/usr.sbin.ippusbxd

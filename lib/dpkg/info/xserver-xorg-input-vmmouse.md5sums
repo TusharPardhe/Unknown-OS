@@ -1,0 +1,8 @@
+86b6f1623eb863da47f183e1dd2dbbbc  bin/vmmouse_detect
+9c1d72507cbbbbc7fe818c210a3e8c09  lib/udev/rules.d/69-xorg-vmmouse.rules
+a90eb14ed757653ab9523687c76c9ac7  usr/lib/xorg/modules/input/vmmouse_drv.so
+0858880a9001298301d8086be621fbd1  usr/share/X11/xorg.conf.d/50-vmmouse.conf
+696eb042dc2b4ec50708f6e3b1481808  usr/share/doc/xserver-xorg-input-vmmouse/changelog.Debian.gz
+1d8515e67b89729937a1734ac9889910  usr/share/doc/xserver-xorg-input-vmmouse/copyright
+bff29fc3cd6f2624bd150917c822e50d  usr/share/man/man1/vmmouse_detect.1.gz
+2faeea6106680598bbf1a9309e310d8c  usr/share/man/man4/vmmouse.4.gz

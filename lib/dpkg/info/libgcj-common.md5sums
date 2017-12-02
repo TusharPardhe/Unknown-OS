@@ -1,0 +1,12 @@
+a328b1aa820eae66607b09ff02e56647  usr/bin/aot-compile
+792a447ef48e01aa4fddd08e4c0dcac0  usr/bin/dh_nativejava
+cb994183a5aa2be4ba8053d63f731133  usr/bin/rebuild-gcj-db
+898eb78eafa1be2e858ae393ff69dfe3  usr/lib/gcc/aotcompile.py
+466dd036c26fd631e7af5d107bdd2a43  usr/lib/gcc/classfile.py
+6db37989ed1a3c45dceb5e4f6a75e2be  usr/sbin/rebuild-security-providers
+0491425323f6705e6031f1b5bf7ff3be  usr/share/debhelper/autoscripts/postinst-rebuild-gcj-db
+0491425323f6705e6031f1b5bf7ff3be  usr/share/debhelper/autoscripts/postrm-rebuild-gcj-db
+12346a0affe23203627d9edc245501e6  usr/share/doc/libgcj-common/changelog.Debian.gz
+cdda17f31f221cd51b47a9022d5af678  usr/share/doc/libgcj-common/copyright
+44d0518998cef42649b13d5ba019bb5e  usr/share/gcj/debian_defaults
+2fc1340998be5d320c385a1d2ce1f1ce  usr/share/man/man1/dh_nativejava.1.gz

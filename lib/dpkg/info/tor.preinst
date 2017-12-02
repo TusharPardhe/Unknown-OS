@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/tor/tor-tsocks.conf 0.2.4.12-alpha-1 tor -- "$@"
+# End automatically added section

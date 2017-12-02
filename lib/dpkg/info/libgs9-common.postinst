@@ -1,0 +1,13 @@
+#!/bin/sh
+# postinst script for libgs9.18-common
+
+set -e
+
+update-alternatives --install /usr/share/ghostscript/current \
+		    ghostscript-current \
+		    /usr/share/ghostscript/9.18 \
+		    `echo '9.18' | sed -e 's/\.//'` || true
+
+
+
+exit 0

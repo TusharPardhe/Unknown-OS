@@ -1,0 +1,6 @@
+0670e51d65d2ca59b27d14349fa60e3b  usr/lib/python3/dist-packages/aptdaemon/pkcompat.py
+4f0ee479db7109b4633b08cfad627e82  usr/lib/python3/dist-packages/aptdaemon/pkenums.py
+28fa832e77f95b6c13cd15c693bbb704  usr/lib/python3/dist-packages/aptdaemon/pkutils.py
+0779bc75f0844c70b99bc07bc23f807a  usr/share/dbus-1/system-services/org.freedesktop.PackageKit.service
+3df9d4433314862d44dcfa64191ba672  usr/share/doc/python3-aptdaemon.pkcompat/README.PackageKit
+951656b1ecb3192363f39497d3fb4743  usr/share/doc/python3-aptdaemon.pkcompat/copyright

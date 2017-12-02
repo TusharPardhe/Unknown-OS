@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/signon-ui-x11
+/usr/share/doc/signon-ui-x11/copyright
+/usr/share/doc/signon-ui-x11/changelog.Debian.gz
+/usr/share/applications
+/usr/share/applications/signon-ui.desktop
+/usr/bin
+/usr/bin/signon-ui

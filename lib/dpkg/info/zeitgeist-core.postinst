@@ -1,0 +1,19 @@
+#! /bin/sh
+set -e
+
+dpkg-maintscript-helper rm_conffile /etc/bash_completion.d/zeitgeist-core 0.9.14-2~ -- "$@"
+dpkg-maintscript-helper rm_conffile /etc/bash_completion.d/zeitgeist-daemon 0.9.14-2~ -- "$@"
+
+restart_daemon()
+{
+	# Tell any running Zeitgeist daemon to stop gracefully - they'll be
+	# restarted through D-Bus activation the next time they are needed.
+	kill -s HUP `pidof -x zeitgeist-daemon` >/dev/null 2>&1 || true
+}
+
+# Not enabled yet - versions in Debian don't support this
+#if [ "$1" = configure ]; then
+#	restart_daemon
+#fi
+
+

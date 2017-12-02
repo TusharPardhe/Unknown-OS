@@ -1,0 +1,24 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "upgrade" ]; then
+    if dpkg --compare-versions "$2" ge "1:1.11" && \
+        dpkg --compare-versions "$2" lt "1:1.12"; then
+        update-alternatives --remove automake /usr/bin/automake-1.11
+    fi
+    if dpkg --compare-versions "$2" ge "1:1.12" && \
+        dpkg --compare-versions "$2" lt "1:1.13"; then
+        update-alternatives --remove automake /usr/bin/automake-1.12
+    fi
+    if dpkg --compare-versions "$2" ge "1:1.13" && \
+        dpkg --compare-versions "$2" lt "1:1.14"; then
+        update-alternatives --remove automake /usr/bin/automake-1.13
+    fi
+    if dpkg --compare-versions "$2" ge "1:1.14" && \
+        dpkg --compare-versions "$2" lt "1:1.15"; then
+        update-alternatives --remove automake /usr/bin/automake-1.14
+    fi
+fi
+
+

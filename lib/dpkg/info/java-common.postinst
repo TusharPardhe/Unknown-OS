@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+configure)
+    [ -d /etc/.java ] || mkdir -m 755 /etc/.java
+    [ -d /etc/.java/.systemPrefs ] || mkdir -m 755 /etc/.java/.systemPrefs
+    if [ ! -f /etc/.java/.systemPrefs/.system.lock ]; then
+        touch /etc/.java/.systemPrefs/.system.lock
+        chmod 644 /etc/.java/.systemPrefs/.system.lock
+    fi
+    if [ ! -f /etc/.java/.systemPrefs/.systemRootModFile ]; then
+        touch /etc/.java/.systemPrefs/.systemRootModFile
+        chmod 644 /etc/.java/.systemPrefs/.systemRootModFile
+    fi
+esac
+
+
+
+exit 0

@@ -1,0 +1,12 @@
+042f31f2cdb7594b479578e5eff0ddab  usr/lib/x86_64-linux-gnu/unity/unity-scope-applications.so
+8fb19ef474c227140df04c13bf619df7  usr/lib/x86_64-linux-gnu/unity/unity-scope-runningapps.so
+7fb18c1b37d3dd9b034b294374eb2eb4  usr/locale/da/LC_MESSAGES/unity-lens-applications.mo
+01e34853cefa73326a90ff6d0fcb7a78  usr/share/dbus-1/services/unity-scope-applications.service
+1ca1655dab27fab188234e26ce6c82ba  usr/share/desktop-directories/X-Unity-All-Applications.directory
+a27fa0a153c4873403fbcb113902f765  usr/share/doc/unity-lens-applications/changelog.Debian.gz
+ab52582a554719ea3ddf760545690bd8  usr/share/doc/unity-lens-applications/copyright
+85b72150ec96723c03adeac97d68a10c  usr/share/glib-2.0/schemas/com.canonical.Unity.AppsLens.gschema.xml
+5feb71e4660cb6ecce595bff2fbc23e5  usr/share/unity/scopes/applications/applications.scope
+69d66afc014e70c16745f713b1b4fef7  usr/share/unity/scopes/applications/scopes.scope
+decb331923fb45c6e38c21dbc4485550  usr/share/unity/scopes/commands.scope
+7fcf33ff5e0e93a2daeefb7897313d4b  usr/share/unity/themes/applications.png

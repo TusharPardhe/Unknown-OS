@@ -1,0 +1,52 @@
+#!/bin/sh
+
+set -e
+
+# Automatically added by dh_dkms
+# The original file can be found in template-dkms-mkdeb/debian/postinst
+# in the DKMS tarball, check it for copyright notices.
+
+DKMS_NAME=virtualbox
+DKMS_PACKAGE_NAME=$DKMS_NAME-dkms
+DKMS_VERSION=5.0.40
+
+postinst_found=0
+
+case "$1" in
+	configure)
+		for DKMS_POSTINST in /usr/lib/dkms/common.postinst /usr/share/$DKMS_PACKAGE_NAME/postinst; do
+			if [ -f $DKMS_POSTINST ]; then
+				$DKMS_POSTINST $DKMS_NAME $DKMS_VERSION /usr/share/$DKMS_PACKAGE_NAME "" $2
+				postinst_found=1
+				break
+			fi
+		done
+		if [ "$postinst_found" -eq 0 ]; then
+			echo "ERROR: DKMS version is too old and $DKMS_PACKAGE_NAME was not"
+			echo "built with legacy DKMS support."
+			echo "You must either rebuild $DKMS_PACKAGE_NAME with legacy postinst"
+			echo "support or upgrade DKMS to a more current version."
+			exit 1
+		fi
+	;;
+esac
+# End automatically added section
+# Automatically added by dh_installudev
+if [ "$1" = configure ]; then
+	if [ -e "/etc/udev/rules.d/z60_virtualbox-dkms.rules" ]; then
+		echo "Preserving user changes to /etc/udev/rules.d/60-virtualbox-dkms.rules ..."
+		if [ -e "/etc/udev/rules.d/60-virtualbox-dkms.rules" ]; then
+			mv -f "/etc/udev/rules.d/60-virtualbox-dkms.rules" "/etc/udev/rules.d/60-virtualbox-dkms.rules.dpkg-new"
+		fi
+		mv -f "/etc/udev/rules.d/z60_virtualbox-dkms.rules" "/etc/udev/rules.d/60-virtualbox-dkms.rules"
+	fi
+fi
+# End automatically added section
+
+
+if [ "$1" = configure ]; then
+	# only restart if VirtualBox isn't running
+	if test -x /etc/init.d/virtualbox && ! pidof VBoxSVC > /dev/null; then
+		invoke-rc.d virtualbox restart || true
+	fi
+fi

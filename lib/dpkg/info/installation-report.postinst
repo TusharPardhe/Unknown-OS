@@ -1,0 +1,23 @@
+#!/bin/sh
+set -e
+
+
+if [ "$1" = configure ] && dpkg --compare-versions "$2" lt 2.13; then
+	for file in /var/log/installer/cdebconf/*.dat \
+		/var/log/installer/syslog /var/log/installer/messages \
+		/var/log/installer/partman; do
+		if [ -e "$file" ]; then
+			chmod 600 $file
+		fi
+	done
+fi
+
+if [ "$1" = configure ] && dpkg --compare-versions "$2" lt 2.32; then
+	update-rc.d installation-report remove
+fi
+
+if [ "$1" = configure ] && dpkg --compare-versions "$2" lt 2.39ubuntu4; then
+	if [ -e /var/log/installer/media-info ]; then
+		chmod 644 /var/log/installer/media-info
+	fi
+fi

@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/accounts
+/usr/share/accounts/providers
+/usr/share/accounts/providers/jabber.provider
+/usr/share/accounts/services
+/usr/share/accounts/services/jabber-im.service
+/usr/share/doc
+/usr/share/doc/account-plugin-jabber
+/usr/share/doc/account-plugin-jabber/copyright
+/usr/share/doc/account-plugin-jabber/changelog.Debian.gz
+/usr/share/doc/account-plugin-jabber/CONTRIBUTORS
+/usr/share/doc/account-plugin-jabber/NEWS.gz
+/usr/share/doc/account-plugin-jabber/TODO
+/usr/share/doc/account-plugin-jabber/README
+/usr/share/doc/account-plugin-jabber/AUTHORS

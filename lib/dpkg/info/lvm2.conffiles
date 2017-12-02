@@ -1,0 +1,4 @@
+/etc/init.d/lvm2
+/etc/init.d/lvm2-lvmetad
+/etc/init.d/lvm2-lvmpolld
+/etc/lvm/lvm.conf

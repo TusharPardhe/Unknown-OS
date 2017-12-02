@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/bin
+/usr/bin/compton
+/usr/bin/compton-trans
+/usr/share
+/usr/share/doc
+/usr/share/doc/compton
+/usr/share/doc/compton/examples
+/usr/share/doc/compton/examples/compton.sample.conf
+/usr/share/doc/compton/copyright
+/usr/share/doc/compton/README.md.gz
+/usr/share/doc/compton/changelog.Debian.gz
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/compton-trans.1.gz
+/usr/share/man/man1/compton.1.gz

@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/xdg/autostart/bluetooth-applet-unity.desktop 3.6.1-0ubuntu2~ gnome-bluetooth -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/xdg/autostart/bluetooth-applet.desktop 3.8.1-2ubuntu1~ gnome-bluetooth -- "$@"
+# End automatically added section

@@ -1,0 +1,17 @@
+09d8976c8e2d2651385223249a96d037  usr/lib/gnome-vfs-2.0/modules/libpythonmethod-2.7.so
+39ede0c08531b80acb736c5d83de190c  usr/lib/python2.7/dist-packages/gtk-2.0/bonobo/__init__.py
+b70bbd670ffc2f137ea146208f8524eb  usr/lib/python2.7/dist-packages/gtk-2.0/bonobo/_bonobo.so
+4712bfe903db1051ed72402f9ba8f280  usr/lib/python2.7/dist-packages/gtk-2.0/bonobo/activation.so
+4ab28a672f8eab36d868b7e7fe2c316c  usr/lib/python2.7/dist-packages/gtk-2.0/bonobo/ui.so
+779e6a06824d8eaf0ffce8bbcaf49849  usr/lib/python2.7/dist-packages/gtk-2.0/gnome/__init__.py
+38c5f7fec2e0afd7b3a9a13236c53ab0  usr/lib/python2.7/dist-packages/gtk-2.0/gnome/_gnome.so
+fd34d1c8bba79051fe9ba4ddc702fce8  usr/lib/python2.7/dist-packages/gtk-2.0/gnome/canvas.py
+10b42201142754be14639328489480cb  usr/lib/python2.7/dist-packages/gtk-2.0/gnome/ui.so
+865042a336189df26b54a4748c5c5221  usr/lib/python2.7/dist-packages/gtk-2.0/gnome/vfs.py
+782aaa65ac51a12ec23b1e50603fde86  usr/lib/python2.7/dist-packages/gtk-2.0/gnomecanvas.so
+43de927126687df58482b326e9d41ea6  usr/lib/python2.7/dist-packages/gtk-2.0/gnomevfs/__init__.py
+d2a208f28473ee579299598b30c1056d  usr/lib/python2.7/dist-packages/gtk-2.0/gnomevfs/_gnomevfs.so
+44c725f034b31129e65b719c15c0f895  usr/lib/python2.7/dist-packages/gtk-2.0/gnomevfs/gnomevfsbonobo.so
+f99c2209463a10b301a7fa31d34f77ae  usr/share/doc/python-gnome2/NEWS.gz
+b7b5477df61dc84a8a726da624eab889  usr/share/doc/python-gnome2/copyright
+953b9c1ccc101bd1f73d689a8c5cb94f  usr/share/python/runtime.d/python-gnome2.rtupdate

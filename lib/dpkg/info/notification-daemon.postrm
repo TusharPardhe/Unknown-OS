@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper mv_conffile /etc/xdg/autostart/notification-daemon.desktop /etc/xdg/autostart/notification-daemon-autostart.desktop 3.17.2-2~ notification-daemon -- "$@"
+# End automatically added section

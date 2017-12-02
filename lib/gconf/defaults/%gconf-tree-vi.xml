@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="notify_interval">
+					<local_schema short_desc="Nhắc nhở về tác vụ hiện thời mỗi x phút">
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Dừng theo dõi khi tắt máy">
+						<longdesc>Dừng theo dõi hoạt động hiện thời khi tắt máy</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Đừng theo dõi khi nghỉ">
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

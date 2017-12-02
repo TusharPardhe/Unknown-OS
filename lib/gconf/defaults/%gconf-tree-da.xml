@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Skift aktivitet ved arbejdsområdeskift">
+						<longdesc>Hvis skift efter navn er aktiveret, vil denne liste indeholde de aktivitetsnavne som der skal skiftes til, arbejdsområder repræsenteret ved objektets indeks.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Skal arbejdsområdeskift udløse aktivitetsskift">
+						<longdesc>Liste af aktiverede sporingsmetoder. &quot;name&quot; vil aktivere skift efter navn, defineret i arbejdsområde_kortlægning. &quot;memory&quot; vil aktivere skift til sidste aktivitet, når der returneres til et tidligere arbejdsområde.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="På hvilket tidspunkt starter dagen (forvalget er 5.30 om morgenen)">
+						<longdesc>Aktiviteter vil blive regnet som tilhørende i går, hvis den aktuelle tid er mindre end den specificerede start på dagen og ellers vil den blive regnet som tilhørende i dag. Aktiviteter, som spænder over to dage, vil tippe over til den dag hvor størstedelen af aktiviteten ligger.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Påmind også når ingen aktivitet er angivet">
+						<longdesc>Påmind også hvert notify_interval minut, hvis ingen aktivitet er påbegyndt.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Påmind om nuværende opgave hvert x&apos;te minut">
+						<longdesc>Påmind om den nuværende opgave med det angivne interval i minutter. Sæt værdien til 0 eller højere end 120 for at deaktivere påmindelsen.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Stop måling når der slukkes">
+						<longdesc>Stop måling af den aktuelle aktivitet når der slukkes</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Stop måling ved inaktivitet">
+						<longdesc>Stop måling af den aktuelle aktivitet når computeren er inaktiv</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Slå hamster-programvinduet til eller fra">
+								<longdesc>Slå synligheden af hamster-programvinduet til eller fra.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Handling som slår hamster-programvinduet til eller fra">
+								<longdesc>Kommando for at slå synligheden af hamster-programvinduet til eller fra.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Vis/skjul tidsstyringsvinduet">
+								<longdesc>Tastaturgenvej for at vise/skjule tidsstyringsvinduet.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,9 @@
+d4c3d923b1d3f2dba605ad87f95d32c5  usr/bin/ltrace
+816744fad10ed972ff75e798fd364dca  usr/share/doc/ltrace/CREDITS
+a6cb05f52449bdc4b9670e2d19116378  usr/share/doc/ltrace/NEWS.gz
+c9e367650548442e8c36b50fc327b577  usr/share/doc/ltrace/README
+522f4c6e0c8b1802fbbb162c8c9be780  usr/share/doc/ltrace/TODO.gz
+7b60c0179154f02cca0f68238c90000d  usr/share/doc/ltrace/changelog.Debian.gz
+dea65f4e4f198c6fc3633e2f18d37567  usr/share/doc/ltrace/copyright
+d1e84f7d9474552c4b24e59157ed089b  usr/share/man/man1/ltrace.1.gz
+b7edcdafaf6ed6155cef37b6a45cbc74  usr/share/man/man5/ltrace.conf.5.gz

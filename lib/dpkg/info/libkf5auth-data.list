@@ -1,0 +1,4 @@
+/etc
+/etc/dbus-1
+/etc/dbus-1/system.d
+/etc/dbus-1/system.d/org.kde.kf5auth.conf

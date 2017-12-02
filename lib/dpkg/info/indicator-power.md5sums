@@ -1,0 +1,9 @@
+2e6965a99d61ed3ef93bfd02210b8ea8  usr/lib/x86_64-linux-gnu/indicator-power/indicator-power-service
+41b71c3623a889eeb186788e7abb9584  usr/share/apport/package-hooks/source_indicator-power.py
+779ba953f3d247348c7fcf7099e3d6b6  usr/share/doc/indicator-power/changelog.Debian.gz
+4851f094838f4278f27ac9eeed3fa9d1  usr/share/doc/indicator-power/copyright
+23d3fc578c96fb485131f55ea10a67b8  usr/share/glib-2.0/schemas/com.canonical.indicator.power.gschema.xml
+22ffa485856c29b895b94a5c7fb656d6  usr/share/indicator-power/sounds/Low battery.ogg
+b955c5fc410ef7e9e0511995d7f6337f  usr/share/unity/indicators/com.canonical.indicator.power
+d07ee4c3a5ce4fee2e29de8eb18568d8  usr/share/upstart/sessions/indicator-power.conf
+b674d64f84c51c51bc2d76d7559784ca  usr/share/upstart/xdg/autostart/indicator-power.desktop

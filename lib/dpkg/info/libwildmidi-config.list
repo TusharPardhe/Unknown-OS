@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libwildmidi-config
+/usr/share/doc/libwildmidi-config/copyright
+/usr/share/doc/libwildmidi-config/changelog.Debian.gz
+/usr/share/man
+/usr/share/man/man5
+/usr/share/man/man5/wildmidi.cfg.5.gz
+/etc
+/etc/wildmidi
+/etc/wildmidi/wildmidi.cfg

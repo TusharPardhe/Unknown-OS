@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/command-not-found-data
+/usr/share/doc/command-not-found-data/changelog.gz
+/usr/share/doc/command-not-found-data/copyright
+/usr/share/command-not-found
+/usr/share/command-not-found/programs.d
+/usr/share/command-not-found/programs.d/amd64-restricted.db
+/usr/share/command-not-found/programs.d/amd64-main.db
+/usr/share/command-not-found/programs.d/amd64-universe.db
+/usr/share/command-not-found/programs.d/amd64-multiverse.db
+/usr/share/command-not-found/programs.d/all-universe.db
+/usr/share/command-not-found/programs.d/all-main.db
+/usr/share/command-not-found/programs.d/all-multiverse.db
+/usr/share/command-not-found/priority.txt

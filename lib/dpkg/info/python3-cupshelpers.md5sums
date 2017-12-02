@@ -1,0 +1,17 @@
+d930c84d4d48ca3c775d2f983edfd998  usr/lib/python3/dist-packages/cupshelpers/__init__.py
+94117c3b83aae70e8372eda4e8b0835e  usr/lib/python3/dist-packages/cupshelpers/__pycache__/__init__.cpython-35.pyc
+1c2b6b6a150188b34fba24f532ff56eb  usr/lib/python3/dist-packages/cupshelpers/__pycache__/config.cpython-35.pyc
+b75791d3daa41e59cd9bc10426169048  usr/lib/python3/dist-packages/cupshelpers/__pycache__/cupshelpers.cpython-35.pyc
+de6aecf81427fc0737d5a4471f7cb310  usr/lib/python3/dist-packages/cupshelpers/__pycache__/installdriver.cpython-35.pyc
+3eeefe9d575055877e6979fb5d1f3f18  usr/lib/python3/dist-packages/cupshelpers/__pycache__/openprinting.cpython-35.pyc
+e25a64ace8812610a622840cefab6140  usr/lib/python3/dist-packages/cupshelpers/__pycache__/ppds.cpython-35.pyc
+bcc131053ddb19d3b4b39d67cc3db9f6  usr/lib/python3/dist-packages/cupshelpers/__pycache__/xmldriverprefs.cpython-35.pyc
+9c299b4cf969b2cb124aaf483a168047  usr/lib/python3/dist-packages/cupshelpers/config.py
+022d84624ff9853d83c9a3db83cf9069  usr/lib/python3/dist-packages/cupshelpers/cupshelpers.py
+761c675d9f61f16870cea31e3b3b6f61  usr/lib/python3/dist-packages/cupshelpers/installdriver.py
+c3ea1be5f164d69b5abd818afd2f6bb2  usr/lib/python3/dist-packages/cupshelpers/openprinting.py
+b939429b51ac030c9d287439e5ec065f  usr/lib/python3/dist-packages/cupshelpers/ppds.py
+36a3cf190751a435b94a5ab082914e25  usr/lib/python3/dist-packages/cupshelpers/xmldriverprefs.py
+064e5594f11b0aae103b5476960f027d  usr/share/doc/python3-cupshelpers/AUTHORS
+8587e0d8b7821b37b27f8e3b4b1e5fdf  usr/share/doc/python3-cupshelpers/changelog.Debian.gz
+8c3a7450f6e04120d3102343f4695be8  usr/share/doc/python3-cupshelpers/copyright

@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Ŝanĝi al alia aktivaĵo je ŝanĝo de laborspaco">
+						<longdesc>Se baskuligo per nomo estas eblegita, ĉi tiu listo difinas la aktiveconomojn al kiuj transiri, laborspacoj reprezentitaj per la indekso de eroj.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Ĉu transiro inter laborspacoj ekigu aktiveco-ŝanĝon">
+						<longdesc>Listo de ebligitaj ŝanĝospurilaj metodoj. &quot;name&quot; ebligos ŝanĝi activaĵojn per nomo difinita en workspace_mapping. &quot;memory&quot; ebligos ŝanĝi al la lasta aktivaĵo kiam reiranta al antaŭa laborspaco.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="Je kiu horo komenciĝas la tago (defaŭltas al 5:30 atm)">
+						<longdesc>Aktivecoj estos kalkulitaj kiel apartenantaj al hieraŭ se la nuna horo estas malpli ol la specifita tago-komenco; kaj hodiaŭ, se ĝi estas post la horo. Aktivecoj kiuj daŭras du tagojn, transiros al kie la plej granda parto de la aktiveco estas.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Ankaŭ rememorigi kiam neniu aktiveco estas difinita">
+						<longdesc>Ankaŭ memorigi je ĉiu notify_interval minutoj se nenia aktiveco startis.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Rememorigi pri aktuala tasko je ĉiu x minutoj">
+						<longdesc>Rememorigi pri aktuala tasko je ĉiu specifita intervalo de minutoj. Malebligu memorigon per elekto de 0 aŭ pli ol 120.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Ĉesi ŝanĝospuri je komputila elŝalto">
+						<longdesc>Ĉesi ŝanĝospuri la aktualan aktivecon je sistemfermo</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Ĉesi ŝanĝospuri kiam la komputilo estas senaga">
+						<longdesc>Ĉesi ŝanĝospuri la aktualan aktivecon kiam la komputilo fariĝas senaga</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Baskuligi hamster-aplikofenestron">
+								<longdesc>Baskuligi videblecon de la hamster-aplikofenestro.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Baskuligi hamster-aplikofenestron agadon">
+								<longdesc>Komando baskuligi videblecon de la hamster aplikaĵfenestro.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Montri / kaŝi fenestron de la tempo ŝanĝospurilo">
+								<longdesc>Fulmoklavoj por montri / kaŝi la tempospurilan fenestron.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

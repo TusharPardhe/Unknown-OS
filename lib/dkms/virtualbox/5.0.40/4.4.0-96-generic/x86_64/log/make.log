@@ -1,0 +1,119 @@
+DKMS make.log for virtualbox-5.0.40 for kernel 4.4.0-96-generic (x86_64)
+Tue Oct 10 23:45:36 IST 2017
+make: Entering directory '/usr/src/linux-headers-4.4.0-96-generic'
+  LD      /var/lib/dkms/virtualbox/5.0.40/build/built-in.o
+  LD      /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/built-in.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/linux/SUPDrv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/SUPDrv.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/SUPDrvGip.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/SUPDrvSem.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/SUPDrvTracer.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/SUPLibAll.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/alloc-r0drv.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/initterm-r0drv.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/memobj-r0drv.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/mpnotification-r0drv.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/powernotification-r0drv.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/linux/assert-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/linux/alloc-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/linux/initterm-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/linux/memobj-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/linux/memuserkernel-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/linux/mp-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/linux/mpnotification-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/linux/process-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/linux/rtStrFormatKernelAddress-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/linux/semevent-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/linux/semeventmulti-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/linux/semfastmutex-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/linux/semmutex-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/linux/spinlock-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/linux/thread-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/linux/thread2-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/linux/threadctxhooks-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/linux/time-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/linux/timer-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/generic/semspinmutex-r0drv-generic.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/alloc/alloc.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/checksum/crc32.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/checksum/ipv4.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/checksum/ipv6.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/err/RTErrConvertFromErrno.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/err/RTErrConvertToErrno.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/log/log.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/log/logellipsis.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/log/logrel.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/log/logrelellipsis.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/log/logcom.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/log/logformat.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/misc/RTAssertMsg1Weak.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/misc/RTAssertMsg2.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/misc/RTAssertMsg2Add.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/misc/RTAssertMsg2AddWeak.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/misc/RTAssertMsg2AddWeakV.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/misc/RTAssertMsg2Weak.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/misc/RTAssertMsg2WeakV.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/misc/assert.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/misc/handletable.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/misc/handletablectx.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/misc/thread.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/string/RTStrCopy.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/string/RTStrCopyEx.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/string/RTStrCopyP.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/string/RTStrNCmp.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/string/RTStrNLen.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/string/stringalloc.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/string/strformat.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/string/strformatrt.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/string/strformattype.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/string/strprintf.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/string/strtonum.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/table/avlpv.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/time/time.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/r0drv/linux/RTLogWriteDebugger-r0drv-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/generic/RTAssertShouldPanic-generic.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/generic/RTLogWriteStdErr-stub-generic.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/generic/RTLogWriteStdOut-stub-generic.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/generic/RTLogWriteUser-generic.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/generic/RTMpGetArraySize-generic.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/generic/RTMpGetCoreCount-generic.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/generic/RTSemEventWait-2-ex-generic.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/generic/RTSemEventWaitNoResume-2-ex-generic.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/generic/RTSemEventMultiWait-2-ex-generic.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/generic/RTSemEventMultiWaitNoResume-2-ex-generic.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/generic/RTTimerCreate-generic.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/generic/errvars-generic.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/generic/mppresent-generic.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/generic/uuid-generic.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/VBox/log-vbox.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/common/alloc/heapsimple.o
+  LD [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/vboxdrv.o
+  LD      /var/lib/dkms/virtualbox/5.0.40/build/vboxnetadp/built-in.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxnetadp/linux/VBoxNetAdp-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxnetadp/VBoxNetAdp.o
+  LD [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxnetadp/vboxnetadp.o
+  LD      /var/lib/dkms/virtualbox/5.0.40/build/vboxnetflt/built-in.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxnetflt/linux/VBoxNetFlt-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxnetflt/VBoxNetFlt.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxnetflt/SUPR0IdcClient.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxnetflt/SUPR0IdcClientComponent.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxnetflt/linux/SUPR0IdcClient-linux.o
+  LD [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxnetflt/vboxnetflt.o
+  LD      /var/lib/dkms/virtualbox/5.0.40/build/vboxpci/built-in.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxpci/linux/VBoxPci-linux.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxpci/VBoxPci.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxpci/SUPR0IdcClient.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxpci/SUPR0IdcClientComponent.o
+  CC [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxpci/linux/SUPR0IdcClient-linux.o
+  LD [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxpci/vboxpci.o
+  Building modules, stage 2.
+  MODPOST 4 modules
+  CC      /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/vboxdrv.mod.o
+  LD [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxdrv/vboxdrv.ko
+  CC      /var/lib/dkms/virtualbox/5.0.40/build/vboxnetadp/vboxnetadp.mod.o
+  LD [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxnetadp/vboxnetadp.ko
+  CC      /var/lib/dkms/virtualbox/5.0.40/build/vboxnetflt/vboxnetflt.mod.o
+  LD [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxnetflt/vboxnetflt.ko
+  CC      /var/lib/dkms/virtualbox/5.0.40/build/vboxpci/vboxpci.mod.o
+  LD [M]  /var/lib/dkms/virtualbox/5.0.40/build/vboxpci/vboxpci.ko
+make: Leaving directory '/usr/src/linux-headers-4.4.0-96-generic'

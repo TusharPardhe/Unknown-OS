@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/gir1.2-gdesktopenums-3.0
+/usr/share/doc/gir1.2-gdesktopenums-3.0/AUTHORS
+/usr/share/doc/gir1.2-gdesktopenums-3.0/README
+/usr/share/doc/gir1.2-gdesktopenums-3.0/copyright
+/usr/share/doc/gir1.2-gdesktopenums-3.0/NEWS.gz
+/usr/share/doc/gir1.2-gdesktopenums-3.0/changelog.Debian.gz
+/usr/lib
+/usr/lib/girepository-1.0
+/usr/lib/girepository-1.0/GDesktopEnums-3.0.typelib

@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/feedparser_sgmllib3.py
+/usr/lib/python3/dist-packages/feedparser.py
+/usr/lib/python3/dist-packages/feedparser-5.1.3.egg-info
+/usr/lib/python3/dist-packages/feedparser-5.1.3.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/feedparser-5.1.3.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/feedparser-5.1.3.egg-info/PKG-INFO
+/usr/share
+/usr/share/doc
+/usr/share/doc/python3-feedparser
+/usr/share/doc/python3-feedparser/copyright
+/usr/share/doc/python3-feedparser/changelog.Debian.gz

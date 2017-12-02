@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="పని ప్రదేశాలు మార్పు మీద క్రియాకలాపమును మీటుట.">
+						<longdesc>పేరు ద్వారా మీటటం  సశక్త పరిచినచో ఈ జాబితాలోని ఒక అంశము ద్వారా సూచిం చబడిన పని ప్రదేశాలకు క్రియాకలాపపు పేర్లను అమర్చబడుతుంది.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="పని ప్రదేశాలు స్విచ్  క్రియాకలాపము స్విచ్ ని ట్రిగర్ చేయాలా">
+						<longdesc>సశక్త పరువు ట్రాక్ చేయు విధానములు యొక్క పట్టిక. &quot;నామము&quot; పని ప్రదేశాలు అనువంశిక లక్షణసంపుటిలో జన్యుకణపు స్థలములో నిర్వచించిన క్రియాకలాపములు మార్చటం సశక్త పరుస్తుంది.&quot;జ్ఞాపకశక్తి&quot; పూర్వపు పని ప్రదేశాలు వెల్లినచో ఆఖరి క్రియాకలాపమునకు మారుట మొదలవుతుంది.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="ఏ సమయానికి రోజు మొదలవుతుంది(5:30AM అప్రమేయం)">
+						<longdesc>రోజు యొక్క పరిమితి లోపే కార్యకలాపములు మొదలుపెట్టిన యెడల అవి నిన్నటికి మరియు పరిమితి దాటిన మీదట రేపటీకి చెందును.కార్యకలాపములు రెండు రోజులు గడిపినచో  ప్రధాన భాగము ఉన్న  రోజున అవి చెందుతాయి.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="ఏ క్రియాకలాపము అమర్చనప్పుడు కూడా గుర్తుచేస్తుంది">
+						<longdesc>ఏ క్రియాకలాపము ప్రారంభించకపోతే ప్రతి notify_interval నిమిషాలను గుర్తుచేస్తుంది.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="ప్రస్తుత కర్తవ్యాన్ని ప్రతి x నిముషములకు వొకసారి గుర్తుచేయుము">
+						<longdesc>తెలుపబడిన యిన్ని నిముషములకు వొకసారి ప్రస్తుత కర్తవ్యాన్ని గుర్తుచేయండి. గుర్తుచేయుదానిని అచేతనపరచుటకు 0కు లేదా 120 కన్నా యెక్కువకు అమర్చండి.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="మూసివేయుటపై ట్రాకింగ్ ఆపుము">
+						<longdesc>మూసివేయునపుడు ప్రస్తుత కార్యకలాపముపై ట్రాక్‌చేయుట ఆపుము</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="జడముగా వుండునపుడు ట్రాక్‌చేయుట ఆపుము">
+						<longdesc>కంప్యూటర్ జడముగా వున్నప్పుడు, ప్రస్తుత క్రియాకలాపముపై ట్రాక్‌చేయుట ఆపుము</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="హంస్టర్ అనువర్తన విండోని మార్చుట">
+								<longdesc>హామ్‌స్టర్ అనువర్తన విండో ద్రుశ్యమానం మార్చుట.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="హామ్‌స్టర్ అనువర్తన విండో కార్యమును మార్చుట">
+								<longdesc>హామ్‌స్టర్ అనువర్తన విండో యొక్క దృస్యమానము మార్పునకు ఆదేశము.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="సమయము ట్రాక్‌చేయుదాని విండోని చూపు / దాచు">
+								<longdesc>సమయము ట్రాక్‌చేయుదాని విండో చూపుటకు / దాచుటకు కీబోర్డు లఘువు.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

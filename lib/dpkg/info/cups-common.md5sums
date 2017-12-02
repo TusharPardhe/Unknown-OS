@@ -1,0 +1,15 @@
+74d3b285abf9a587a671fcaf378397e9  usr/share/cups/drv/sample.drv
+30217c0a80dcfb83532f89860c55266b  usr/share/cups/locale/ca/cups_ca.po
+8fce5ed7ef420213677d52e6a0b657a1  usr/share/cups/locale/cs/cups_cs.po
+9f8efb5439265e65e6facae1849a6c13  usr/share/cups/locale/de/cups_de.po
+2d02cc66518f9568879432900da360b6  usr/share/cups/locale/es/cups_es.po
+60fb4644d3aeff3011175b492d867158  usr/share/cups/locale/fr/cups_fr.po
+eebf43639f775c0b94467696c933e976  usr/share/cups/locale/it/cups_it.po
+8918403de40cc9d10061160afcdb8a33  usr/share/cups/locale/ja/cups_ja.po
+5a76594ddf6c8feb2e6870c9d92e84c5  usr/share/cups/locale/ru/cups_ru.po
+7658ac21ab369b9777427a0cfcdec0c5  usr/share/cups/ppdc/font.defs
+dfb90263a9557df4a36a7db1dc339dda  usr/share/cups/ppdc/media.defs
+7aae5f08098dcf7b8774e1fc9a939870  usr/share/cups/ppdc/raster.defs
+d6eb1f0ebe77f09af7ff90dcc2ff41cb  usr/share/doc/cups-common/changelog.Debian.gz
+8941662d917f56d7eece9f4307f5fa38  usr/share/doc/cups-common/copyright
+f271c98d8392777fd08ef980f737bfa4  usr/share/lintian/overrides/cups-common

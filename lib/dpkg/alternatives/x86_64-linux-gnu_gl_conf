@@ -1,0 +1,9 @@
+auto
+/etc/ld.so.conf.d/x86_64-linux-gnu_GL.conf
+x86_64-linux-gnu_xorg_extra_modules
+/usr/lib/x86_64-linux-gnu/xorg/extra-modules
+
+/usr/lib/x86_64-linux-gnu/mesa/ld.so.conf
+500
+/usr/lib/x86_64-linux-gnu/xorg/x11-extra-modules
+

@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/unity-schemas
+/usr/share/doc/unity-schemas/copyright
+/usr/share/doc/unity-schemas/changelog.Debian.gz
+/usr/share/glib-2.0
+/usr/share/glib-2.0/schemas
+/usr/share/glib-2.0/schemas/com.canonical.Unity.gschema.xml
+/usr/share/glib-2.0/schemas/org.compiz.unitymtgrabhandles.gschema.xml
+/usr/share/glib-2.0/schemas/org.compiz.unityshell.gschema.xml

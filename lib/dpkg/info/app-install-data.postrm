@@ -1,0 +1,16 @@
+#!/bin/sh
+# postrm script for app-data-ubuntu
+
+set -e
+
+
+
+if [ "$1" = "remove" ] && [ -x /usr/sbin/update-app-install ]; then
+	# cache the application data
+	/usr/sbin/update-app-install || true
+fi
+
+# cleanup icon cache
+if [ "$1" = "remove" ]; then
+    rm -f /usr/share/app-install/icon-theme.cache
+fi

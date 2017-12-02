@@ -1,0 +1,6 @@
+d9eb7418b21441544c46ff272e33181f  usr/lib/libreoffice/program/gnome-open-url
+d9b0b66729783395729b702e5d23acb7  usr/lib/libreoffice/program/liblosessioninstalllo.so
+a0555d9c0cf2dfb5f0c7073a356ebc23  usr/lib/libreoffice/program/libucpgio1lo.so
+0d935866ddc514136369c7bd49db2474  usr/lib/libreoffice/share/registry/gnome.xcd
+4583c119b7c148a61e54ddbbdc1917a9  usr/share/bug/libreoffice-gnome/presubj
+836daefdd03f7e71c71a13fe54bbaedb  usr/share/lintian/overrides/libreoffice-gnome

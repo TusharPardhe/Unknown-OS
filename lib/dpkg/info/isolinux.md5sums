@@ -1,0 +1,7 @@
+610bcbbd6f131dd0932edecc243f30f1  usr/lib/ISOLINUX/isohdpfx.bin
+819e59ac79bbb68909e0f594574f2c6f  usr/lib/ISOLINUX/isohdppx.bin
+ed699170ba7463bd4dcfbba1048e4aa5  usr/lib/ISOLINUX/isolinux.bin
+04205cc3e1454a6edaeb5d4fcde72775  usr/share/doc/isolinux/README.txt.gz
+ac349abad11ceede7c7b02838eb3320b  usr/share/doc/isolinux/changelog.Debian.gz
+00c3d57ed85e7ac01ab992c6b01c8057  usr/share/doc/isolinux/copyright
+124d55d90fd48540ecd049b264cadb29  usr/share/lintian/overrides/isolinux

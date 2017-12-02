@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/polkit-1
+/usr/share/polkit-1/actions
+/usr/share/polkit-1/actions/org.spice-space.lowlevelusbaccess.policy
+/usr/share/doc
+/usr/share/doc/spice-client-glib-usb-acl-helper
+/usr/share/doc/spice-client-glib-usb-acl-helper/copyright
+/usr/share/doc/spice-client-glib-usb-acl-helper/changelog.Debian.gz
+/usr/lib
+/usr/lib/spice-gtk
+/usr/lib/spice-gtk/spice-client-glib-usb-acl-helper

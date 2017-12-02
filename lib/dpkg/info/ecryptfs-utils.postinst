@@ -1,0 +1,123 @@
+#!/bin/sh
+
+set -e
+
+chmod 755 /usr/share/ecryptfs-utils/*.desktop || true
+
+case "${1}" in
+	configure)
+		[ -e /var/log/installer/syslog ] && sed -i '/user-setup: YOU SHOULD RECORD THIS/,+2 d' /var/log/installer/syslog
+		pam-auth-update --package
+		# Try to migrate encrypted Private counters from /tmp to /dev/shm, if sane
+		for i in $(ls /home); do
+			if [ -f "/tmp/ecryptfs-$i-Private" ] && [ ! -e "/dev/shm/ecryptfs-$i-Private" ]; then
+				o=$(stat -c %U "/tmp/ecryptfs-$i-Private")
+				if [ $i = $o ]; then
+					mv -f /tmp/ecryptfs-$i-Private /dev/shm
+				fi
+			fi
+		done
+		# detect and clean up after nonexisting cryptswap devices from LP #953875
+		if [ -e /etc/crypttab ] && [ -e /etc/fstab ]; then
+			broken_devs=''
+			while read mapper_dev phys_dev keyfile _; do
+				# ignore comments, existing devices, non-UUID phys_devs, and non-random devices
+				[ "$mapper_dev" = "${mapper_dev#\#}" ] || continue
+				[ ! -e "/dev/mapper/$mapper_dev" ] || continue
+				[ "$phys_dev" != "${phys_dev#UUID=}" ] || continue
+				[ "$keyfile" = "/dev/urandom" ] || continue
+				uuid="${phys_dev#UUID=}"
+				# does that UUID actually exist? then everything is good
+				[ ! -e /dev/disk/by-uuid/$uuid ] || continue
+				# we found a broken one
+				broken_devs="$broken_devs$mapper_dev "
+			done < /etc/crypttab
+			if [ -n "$broken_devs" ]; then
+				echo "Disabling broken cryptswap devices: $broken_devs (see https://launchpad.net/bugs/953875)..."
+				cp -a /etc/crypttab /etc/crypttab.dpkg-save
+				cp -a /etc/fstab /etc/fstab.dpkg-save
+				for dev in $broken_devs; do
+					sed -i "/^$dev\b/ s/^/#/" /etc/crypttab
+					sed -i "/^\/dev\/mapper\/$dev\b/ s/^/#/" /etc/fstab
+				done
+				if type update-initamfs >/dev/null 2>&1; then
+					update-initramfs -u
+				fi
+			fi
+		fi
+		# comment out leftover unencrypted swap after LP #1453738
+		if [ -e /etc/crypttab ] && [ -e /etc/fstab ] && dpkg --compare-versions "$2" lt-nl "107-0ubuntu2"; then
+			while read mapper_dev phys_dev keyfile options; do
+				# only consider cryptswapN devices from ecryptfs-setup-swap
+				[ "$mapper_dev" != "${mapper_dev#cryptswap}" ] || continue
+				[ "${options#*swap,}" != "$options" ] || continue
+				# ignore devices without offset=, they would cause #953875 again
+				[ "${options%offset=*}" != "$options" ] || continue
+				# get/verify UUID
+				uuid="${phys_dev#UUID=}"
+				[ -e /dev/disk/by-uuid/$uuid ] || continue
+				# we found a cryptswap partition; disable all fstab references to the underlying unencrypted one
+				for link in $(udevadm info --query=symlink -n /dev/disk/by-uuid/$uuid); do
+					if grep -q "/dev/$link[[:space:]]" /etc/fstab; then
+						echo "Disabling unencrypted swap device /dev/$link in /etc/fstab to enable $mapper_dev"
+						sed -i.dpkg-save "\^/dev/$link[[:space:]]^d" /etc/fstab
+						break
+					fi
+				done
+			done < /etc/crypttab
+		fi
+
+		# Fix up GPT unencrypted swap partitions that have not been
+		# marked as no-auto mounting in order to prevent systemd from
+		# using them before the encrypted swap can be initialized
+		# (LP: #1447282, LP: #1597154).
+		#
+		# IMPORTANT: Much of this code is duplicated from
+		# ecryptfs-setup-swap. Please keep the two in sync when making
+		# any changes.
+		if [ -e /etc/crypttab ] && [ -e /etc/fstab ]; then
+			while read mapper_dev phys_dev keyfile options; do
+				# only consider cryptswapN devices from ecryptfs-setup-swap
+				[ "$mapper_dev" != "${mapper_dev#cryptswap}" ] || continue
+				[ "${options#*swap,}" != "$options" ] || continue
+				# ignore devices without offset=, they would cause #953875 again
+				[ "${options%offset=*}" != "$options" ] || continue
+				# get/verify UUID
+				uuid="${phys_dev#UUID=}"
+				[ -e "/dev/disk/by-uuid/$uuid" ] || continue
+
+				# If this is a GPT partition, mark it as no-auto mounting, to avoid
+				# auto-activating it on boot
+				swap_dev=$(blkid -U "$uuid")
+				if [ "$(blkid -p -s PART_ENTRY_SCHEME -o value "$swap_dev")" = "gpt" ]; then
+					# Correctly handle NVMe/MMC drives, as well as any similar physical
+					# block device that follow the "/dev/foo0p1" pattern (LP: #1597154)
+					if echo "$swap_dev" | grep -qE "^/dev/.+[0-9]+p[0-9]+$"; then
+						drive=$(echo "$swap_dev" | sed "s:\(.\+[0-9]\)p[0-9]\+:\1:")
+					else
+						drive=$(echo "$swap_dev" | sed "s:\(.\+[^0-9]\)[0-9]\+:\1:")
+					fi
+					partno=$(echo "$swap_dev" | sed "s:.\+[^0-9]\([0-9]\+\):\1:")
+					if [ -b "$drive" ] && \
+					   ! printf "x\np\n" | fdisk "$drive" | grep -q "^$swap_dev .* GUID:.*\b63\b"; then
+							# toggle flag 63 ("no auto")
+							echo "Marking GPT swap partition $swap_dev as no-auto ..."
+							# unfortunately fdisk fails on "cannot re-read part table" and is very verbose
+							printf "x\nS\n$partno\n63\nr\nw\n" | fdisk "$drive" >/dev/null 2>&1 || true
+					fi
+				fi
+			done < /etc/crypttab
+		fi
+	;;
+	abort-upgrade|abort-remove|abort-deconfigure)
+
+	;;
+	*)
+		echo "postinst called with unknown argument \`{$1}'" >&2
+		exit 1
+	;;
+esac
+
+
+
+exit 0

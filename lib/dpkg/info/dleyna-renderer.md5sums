@@ -1,0 +1,7 @@
+5f6a5184e1d68903200f9a91de5c628f  usr/lib/dleyna-renderer/dleyna-renderer-service
+0fa3256107f08932fd0eff2380aae041  usr/lib/x86_64-linux-gnu/dleyna-renderer/libdleyna-renderer-1.0.so.1.0.3
+62c6042fee7b17f55d9e4a57035cf2a9  usr/lib/x86_64-linux-gnu/pkgconfig/dleyna-renderer-1.0.pc
+38032ed280d7dd06a42ad4719d2dd05f  usr/lib/x86_64-linux-gnu/pkgconfig/dleyna-renderer-service-1.0.pc
+deb8cdb23fc842b14ea724ea1b20fc37  usr/share/dbus-1/services/com.intel.dleyna-renderer.service
+8ba45de32283939190798c59875aa171  usr/share/doc/dleyna-renderer/changelog.Debian.gz
+447bc6f894a20936454a31ff59b6ff15  usr/share/doc/dleyna-renderer/copyright

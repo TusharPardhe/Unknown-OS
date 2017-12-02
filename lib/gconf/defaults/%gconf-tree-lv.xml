@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Pārslēgt darbību reizē ar darbvirsmu">
+						<longdesc>Ja ieslēgta pārslēgšanās pēc nosaukuma, šis saraksts norāda darbību nosaukumus, uz kurām jāpārslēdzas. Indeksi apzīmē darbvirsmas.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Vai darbvirsmas pārslēgšanai vajadzētu pārslēgt darbības">
+						<longdesc>Ieslēgto uzskaites metožu saraksts. &quot;name&quot; ieslēgs pārslēgšanos pēc workspace_mapping definētajiem nosaukumiem. &quot;memory&quot; ieslēgs pārslēgšanos uz pēdējo darbību, atgriežoties pie iepriekš lietotas darbvirsmas.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="Kad sākas diena (noklusētā vērtība ir 5:30 no rīta)">
+						<longdesc>Ja pašreizējais laiks ir pirms norādītā dienas sākuma, darbības tiks pieskaitītas vakardienai, pretējā gadījumā - šodienai. Darbības, kas notiek divas dienas, tiks pieskaitītas tai dienai, kurā izdarīta lielākā daļa.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="atgādināt arī tad, ja darbība nav norādīta">
+						<longdesc>Atgādināt katras notify_interval minūtes arī tad, ja pašlaik nekāda darbība nav uzsākta.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Atgādināt par pašreizējo darbību ik pēc x minūtēm">
+						<longdesc>Atgādināt par pašreizējo darbību ik pēc norādītajām minūtēm. Atgādinājumus var izslēgt, šeit ierakstot 0 vai skaitli, kas lielāks par 120.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Pārtraukt uzskaiti, datoru izslēdzot">
+						<longdesc>Pārtraukt pašreizējās darbības uzskaiti, kad dators tiek izslēgts</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Pārtraukt uzskaiti dīkstāves laikā">
+						<longdesc>Pārtraukt pašreizējās darbības uzskaiti, kad dators netiek lietots</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Pārslēgt hamster lietotnes logu">
+								<longdesc>Pārslēgt hamster lietotnes loga redzamību.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Pārslēgt hamster lietotnes loga darbību">
+								<longdesc>Komanda, ar kuru pārslēdz hamster lietotnes loga redzamību.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Rādīt / slēpt laika uzskaites logu">
+								<longdesc>Taustiņu kombinācija laika uzskaites loga rādīšanai / slēpšanai.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

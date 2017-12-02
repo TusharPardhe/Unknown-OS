@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Переключать занятие при смене рабочего места">
+						<longdesc>Если включено переключение по имени, этот список устанавливает названия занятий, которые следует переключать. Рабочие места представлены индексом элемента.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Должно ли переключение рабочего места переключать задачу">
+						<longdesc>Список используемых методов учёта. «name» — включить переключение занятий по именам, определённым в workspace_mapping; «memory» — включить переключение на последнее занятие при возвращении к предыдущему рабочему месту.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="Со скольки начинается день (по умолчанию с 5:30)">
+						<longdesc>Занятия будут учитываться за вчерашний день, если текущее время меньше указанного начала дня, и за сегодняшний день, если больше этого времени. Занятия, которые перекрывают два дня, относятся к тому дню, на который пришлась большая часть времени.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Также напоминать, когда занятие не установлено">
+						<longdesc>Также напоминать каждые notify_interval минут, если ни одно занятие не начато.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Напоминание о текущей задаче периодически через заданное число минут">
+						<longdesc>Напоминание о текущей задаче каждые несколько минут. Значение 0 или более 120 отключает напоминание.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Прекращать учёт при выключении компьютера">
+						<longdesc>Прекращать учёт текущего занятия при выключении компьютера</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Прекращать учёт при бездействии">
+						<longdesc>Прекращать учёт текущего занятия при бездействии компьютера</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Переключить окно приложения hamster">
+								<longdesc>Переключить окно приложения hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Переключить окно приложения hamster">
+								<longdesc>Команда переключения окна приложения hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Показывать или скрывать окно учёта времени.">
+								<longdesc>Клавиатурное сокращение для отображения или скрытия окна учёта времени.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

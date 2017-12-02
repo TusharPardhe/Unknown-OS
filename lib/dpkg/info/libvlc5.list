@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libvlc5
+/usr/share/doc/libvlc5/copyright
+/usr/share/bug
+/usr/share/bug/libvlc5
+/usr/share/bug/libvlc5/control
+/usr/share/bug/libvlc5/presubj
+/usr/lib
+/usr/lib/libvlc.so.5.5.0
+/usr/share/doc/libvlc5/NEWS.Debian.gz
+/usr/share/doc/libvlc5/changelog.Debian.gz
+/usr/lib/libvlc.so.5

@@ -1,0 +1,8 @@
+auto
+/etc/X11/xinit/xinput.d/zh_SG
+
+/etc/X11/xinit/xinput.d/scim
+0
+/etc/X11/xinit/xinput.d/scim-immodule
+50
+

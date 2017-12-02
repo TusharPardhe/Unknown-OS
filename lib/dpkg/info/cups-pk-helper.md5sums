@@ -1,0 +1,7 @@
+890c0e1d86e737a5e9f1afdf011fd7f7  usr/lib/x86_64-linux-gnu/cups-pk-helper-mechanism
+80f91d2fa7b4521699a6de2817ee61e2  usr/share/dbus-1/system-services/org.opensuse.CupsPkHelper.Mechanism.service
+5e0bbfcffc82c2e516f9b33d36ec423a  usr/share/doc/cups-pk-helper/NEWS.gz
+c1f76503c447323fdc25bba47b7449cd  usr/share/doc/cups-pk-helper/README
+41ea8323884ce08912c23d054d5a2479  usr/share/doc/cups-pk-helper/changelog.Debian.gz
+5c63144b6ce04392488de6d699367c53  usr/share/doc/cups-pk-helper/copyright
+6c3164455a34463e4940905dc87418c7  usr/share/polkit-1/actions/org.opensuse.cupspkhelper.mechanism.policy

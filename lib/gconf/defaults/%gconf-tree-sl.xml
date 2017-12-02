@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Preklopi dejavnost ob preklopu delovne površine">
+						<longdesc>V primeru, da je omogočen preklop po imenu, se s seznamom določijo imena dejavnosti, ki bodo preklopljene, delovne površine pa so predstavljene z določili predmeta.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Ali naj preklop delovne površine preklopi dejavnosti">
+						<longdesc>Seznam omogočenih načinov sledenja. &quot;Ime&quot; omogoči preklop dejavnosti po imenu določenem med možnostmi workspace_mapping, &quot;pomnilnik&quot; pa preklopi zadnjo dejavnost ob vračanju na predhodno delovno površino.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="Ob kateri uri se dan začne (privzeto 5:30)">
+						<longdesc>Dejavnosti bodo označene kot včerajšnje, ko je trenutni čas manjši od časa določenega za začetek novega dne, sicer bodo označene kot današnje. Dejavnosti, ki trajajo več dni bodo označene glede na večinski del trajanja dneva.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Opozori kadar ni določenih dejavnosti">
+						<longdesc>Opozori vsakih _nekaj minut, če ni nobene začete dejavnosti.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Opomni na trenutno nalogo vsakih x minut">
+						<longdesc>Opomni na trenutno dejavnost vsakih toliko minut. Vrednost 0 in vrednost večja od 120 onemogoči opomnik.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Zaustavi sledenje ob izklopu računalnika">
+						<longdesc>Zaustavi sledenje trenutni dejavnosti ob izklopu računalnika</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Zaustavi sledenje ob nedejavnosti">
+						<longdesc>Zaustavi sledenje trenutne dejavnosti, kadar računalnik ni dejaven</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Preklopi okno programa Hamster">
+								<longdesc>Preklapljanje vidnosti okna programa Hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Dejanje preklopa okna programa Hamster">
+								<longdesc>Ukaz za preklapljanje vidnosti okna programa Hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Pokaži / Skrij okno sledenja časa">
+								<longdesc>Tipkovna bližnjica za skrivanje in prikaz okna sledenja času.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

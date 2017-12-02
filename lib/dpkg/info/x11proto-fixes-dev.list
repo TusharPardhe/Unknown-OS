@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/include
+/usr/include/X11
+/usr/include/X11/extensions
+/usr/include/X11/extensions/xfixesproto.h
+/usr/include/X11/extensions/xfixeswire.h
+/usr/share
+/usr/share/pkgconfig
+/usr/share/pkgconfig/fixesproto.pc
+/usr/share/doc
+/usr/share/doc/x11proto-fixes-dev
+/usr/share/doc/x11proto-fixes-dev/copyright
+/usr/share/doc/x11proto-fixes-dev/changelog.Debian.gz
+/usr/share/doc/x11proto-fixes-dev/fixesproto.txt.gz

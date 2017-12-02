@@ -1,0 +1,7 @@
+2efd877f6923263968543bc81e76f7f2  usr/lib/python3/dist-packages/unity_scope_tomboy-0.1.egg-info
+93063294f0874b2a6d39bc6fd0d2329f  usr/share/dbus-1/services/unity-scope-tomboy.service
+4de949fcccf5db5b6e40b05180a65be9  usr/share/doc/unity-scope-tomboy/changelog.Debian.gz
+962cb558c8bb3d03272ed78e2dbc84a7  usr/share/doc/unity-scope-tomboy/copyright
+d41d8cd98f00b204e9800998ecf8427e  usr/share/unity-scopes/tomboy/__init__.py
+7f1a81378c6da4c62ee5227e7eeaaebd  usr/share/unity-scopes/tomboy/unity_tomboy_daemon.py
+6cb0b694b417b723067de30600465179  usr/share/unity/scopes/notes/tomboy.scope

@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/share
+/usr/share/dbus-1
+/usr/share/dbus-1/services
+/usr/share/dbus-1/services/com.nokia.singlesignonui.service
+/usr/share/dbus-1/services/com.canonical.indicators.webcredentials.service
+/usr/share/doc
+/usr/share/doc/signon-ui-service
+/usr/share/doc/signon-ui-service/copyright
+/usr/share/doc/signon-ui-service/changelog.Debian.gz

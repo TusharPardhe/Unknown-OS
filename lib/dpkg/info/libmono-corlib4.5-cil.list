@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/mono
+/usr/lib/mono/4.5
+/usr/lib/mono/4.5/mscorlib.dll
+/usr/share
+/usr/share/doc
+/usr/share/doc/libmono-corlib4.5-cil
+/usr/share/doc/libmono-corlib4.5-cil/copyright
+/usr/share/doc/libmono-corlib4.5-cil/changelog.Debian.gz

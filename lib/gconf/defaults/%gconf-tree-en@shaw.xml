@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="𐑕𐑢𐑦𐑗 𐑨𐑒𐑑𐑦𐑝𐑦𐑑𐑦 𐑪𐑯 𐑢𐑻𐑒𐑕𐑐𐑱𐑕 𐑗𐑱𐑯𐑡">
+						<longdesc>𐑦𐑓 𐑕𐑢𐑦𐑗𐑦𐑙 𐑚𐑲 𐑯𐑱𐑥 𐑦𐑟 𐑦𐑯𐑱𐑚𐑩𐑤𐑛, 𐑞𐑦𐑕 𐑤𐑦𐑕𐑑 𐑕𐑧𐑑𐑕 𐑞 𐑨𐑒𐑑𐑦𐑝𐑦𐑑𐑦 𐑯𐑱𐑥𐑟 𐑞𐑨𐑑 𐑖𐑫𐑛 𐑚𐑰 𐑕𐑢𐑦𐑗𐑑 𐑑, 𐑢𐑻𐑒𐑕𐑐𐑱𐑕𐑩𐑟 𐑮𐑧𐑐𐑮𐑩𐑟𐑧𐑯𐑑𐑩𐑛 𐑚𐑲 𐑞 𐑦𐑯𐑛𐑧𐑒𐑕 𐑝 𐑲𐑑𐑩𐑥.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="𐑖𐑫𐑛 𐑢𐑻𐑒𐑕𐑐𐑱𐑕 𐑕𐑢𐑦𐑗 𐑑𐑮𐑦𐑜𐑻 𐑨𐑒𐑑𐑦𐑝𐑦𐑑𐑦 𐑕𐑢𐑦𐑗">
+						<longdesc>𐑤𐑦𐑕𐑑 𐑝 𐑦𐑯𐑱𐑚𐑩𐑤𐑛 𐑑𐑮𐑨𐑒𐑦𐑙 𐑥𐑧𐑔𐑩𐑛𐑟. &quot;name&quot; 𐑢𐑦𐑤 𐑦𐑯𐑱𐑚𐑩𐑤 𐑕𐑢𐑦𐑗𐑦𐑙 𐑨𐑒𐑑𐑦𐑝𐑦𐑑𐑦𐑟 𐑚𐑲 𐑯𐑱𐑥 𐑛𐑦𐑓𐑲𐑯𐑛 𐑦𐑯 workspace_mapping. &quot;memory&quot; 𐑢𐑦𐑤 𐑦𐑯𐑱𐑚𐑩𐑤 𐑕𐑢𐑦𐑗𐑦𐑙 𐑑 𐑞 𐑤𐑭𐑕𐑑 𐑨𐑒𐑑𐑦𐑝𐑦𐑑𐑦 𐑢𐑧𐑯 𐑮𐑦𐑑𐑻𐑯𐑦𐑙 𐑑 𐑩 𐑐𐑮𐑰𐑝𐑦𐑩𐑕 𐑢𐑻𐑒𐑕𐑐𐑱𐑕.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="𐑨𐑑 𐑢𐑪𐑑 𐑑𐑲𐑥 𐑛𐑳𐑟 𐑞 𐑛𐑱 𐑕𐑑𐑸𐑑 (𐑛𐑦𐑓𐑷𐑤𐑑𐑕 𐑑 5:30AM)">
+						<longdesc>𐑨𐑒𐑑𐑦𐑝𐑦𐑑𐑦𐑟 𐑢𐑦𐑤 𐑚𐑰 𐑒𐑬𐑯𐑑𐑩𐑛 𐑨𐑟 𐑑 𐑚𐑦𐑤𐑪𐑙 𐑑 𐑘𐑧𐑕𐑑𐑼𐑛𐑱 𐑦𐑓 𐑞 𐑒𐑳𐑮𐑩𐑯𐑑 𐑑𐑲𐑥 𐑦𐑟 𐑤𐑧𐑕 𐑞𐑨𐑯 𐑞 𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑛 𐑛𐑱 𐑕𐑑𐑸𐑑; 𐑯 𐑑𐑫𐑛𐑱, 𐑦𐑓 𐑦𐑑 𐑦𐑟 𐑴𐑝𐑼 𐑞 𐑑𐑲𐑥. 𐑨𐑒𐑑𐑦𐑝𐑦𐑑𐑦𐑟 𐑞𐑨𐑑 𐑕𐑐𐑨𐑯 𐑑𐑵 𐑛𐑱𐑟, 𐑢𐑦𐑤 𐑑𐑦𐑐 𐑴𐑝𐑼 𐑑 𐑞 𐑕𐑲𐑛 𐑢𐑺 𐑞 𐑤𐑸𐑡𐑩𐑕𐑑 𐑐𐑸𐑑 𐑝 𐑞 𐑨𐑒𐑑𐑦𐑝𐑦𐑑𐑦 𐑦𐑟.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="𐑷𐑤𐑕𐑴 𐑮𐑦𐑥𐑲𐑯𐑛 𐑢𐑧𐑯 𐑯𐑴 𐑨𐑒𐑑𐑦𐑝𐑦𐑑𐑦 𐑦𐑟 𐑕𐑧𐑑">
+						<longdesc>𐑷𐑤𐑕𐑴 𐑮𐑦𐑥𐑲𐑯𐑛 𐑧𐑝𐑮𐑦 notify_interval 𐑥𐑦𐑯𐑦𐑑𐑕 𐑦𐑓 𐑯𐑴 𐑨𐑒𐑑𐑦𐑝𐑦𐑑𐑦 𐑣𐑨𐑟 𐑚𐑰𐑯 𐑕𐑑𐑸𐑑𐑩𐑛.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="𐑮𐑦𐑥𐑲𐑯𐑛 𐑝 𐑒𐑳𐑮𐑩𐑯𐑑 𐑑𐑭𐑕𐑒 𐑧𐑝𐑮𐑦 x 𐑥𐑦𐑯𐑦𐑑𐑕">
+						<longdesc>𐑮𐑦𐑥𐑲𐑯𐑛 𐑝 𐑒𐑳𐑮𐑩𐑯𐑑 𐑑𐑭𐑕𐑒 𐑧𐑝𐑮𐑦 𐑕𐑐𐑧𐑕𐑦𐑓𐑲𐑛 𐑩𐑥𐑬𐑯𐑑 𐑝 𐑥𐑦𐑯𐑦𐑑𐑕. 𐑕𐑧𐑑 𐑑 0 𐑹 𐑜𐑮𐑱𐑑𐑼 𐑞𐑨𐑯 120 𐑑 𐑛𐑦𐑕𐑱𐑚𐑩𐑤 𐑮𐑦𐑥𐑲𐑯𐑛𐑼.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="𐑕𐑑𐑪𐑐 𐑑𐑮𐑨𐑒𐑦𐑙 𐑪𐑯 𐑖𐑩𐑑𐑛𐑶𐑯">
+						<longdesc>𐑕𐑑𐑪𐑐 𐑑𐑮𐑨𐑒𐑦𐑙 𐑒𐑳𐑮𐑩𐑯𐑑 𐑨𐑒𐑑𐑦𐑝𐑦𐑑𐑦 𐑪𐑯 𐑖𐑩𐑑𐑛𐑶𐑯</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="𐑕𐑑𐑪𐑐 𐑑𐑮𐑨𐑒𐑦𐑙 𐑪𐑯 𐑲𐑛𐑩𐑤">
+						<longdesc>𐑕𐑑𐑪𐑐 𐑑𐑮𐑨𐑒𐑦𐑙 𐑒𐑳𐑮𐑩𐑯𐑑 𐑨𐑒𐑑𐑦𐑝𐑦𐑑𐑦 𐑢𐑧𐑯 𐑒𐑩𐑥𐑐𐑿𐑑𐑼 𐑚𐑦𐑒𐑳𐑥𐑟 𐑲𐑛𐑩𐑤</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,17 @@
+/.
+/etc
+/etc/profile.d
+/etc/profile.d/appmenu-qt5.sh
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/appmenu-qt5
+/usr/share/doc/appmenu-qt5/README
+/usr/share/doc/appmenu-qt5/copyright
+/usr/share/doc/appmenu-qt5/changelog.Debian.gz
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/qt5
+/usr/lib/x86_64-linux-gnu/qt5/plugins
+/usr/lib/x86_64-linux-gnu/qt5/plugins/platformthemes
+/usr/lib/x86_64-linux-gnu/qt5/plugins/platformthemes/libappmenu-qt5.so

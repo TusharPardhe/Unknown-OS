@@ -1,0 +1,20 @@
+#! /bin/sh
+set -e
+
+if [ "$1" = "configure" ] ; then
+  if [ ! -d /var/games ]; then
+	mkdir /var/games
+  fi
+
+  for FILE in gtali.Colors.scores gtali.Regular.scores; do
+	if [ -e /var/games/$FILE ]; then
+		continue
+	fi
+
+	touch /var/games/$FILE
+	chown root:games /var/games/$FILE
+	chmod 664 /var/games/$FILE
+  done
+fi
+
+

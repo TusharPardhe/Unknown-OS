@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="notify_on_idle">
+					<local_schema short_desc="പ്രവര്‍ത്തനം സജ്ജമല്ലെങ്കില്‍ നിങ്ങളെ അറിയിക്കുകയും ചെയ്യുന്നു">
+						<longdesc>ഒരു പ്രവര്‍ത്തനവും തുടങ്ങിയില്ലെങ്കില്‍, എല്ലാ notify_interval മിനിട്ടില്‍ ഓര്‍പ്പിക്കുക.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="നിലവിലുള്ള പ്രവര്‍ത്തനം എല്ലാ x മിനിട്ടിലും ഓര്‍പ്പിക്കുക">
+						<longdesc>നിലവില്‍ ചെയ്യുന്ന ജോലി പറഞ്ഞിരിക്കുന്ന സമയത്തു് ഓര്‍പ്പിക്കുക. 0 അല്ലെങ്കില്‍ 120-നേക്കാള്‍ കൂടുതല്‍ നല്‍കി റിമയിണ്ടര്‍ പ്രവര്‍ത്തന രഹിതമാക്കുക.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="കമ്പ്യൂട്ടര്‍ പ്രവര്‍ത്തനം നിറുത്തിക്കൊണ്ടിരിക്കുമ്പോള്‍ നിരീക്ഷണം നിര്‍ത്തുക">
+						<longdesc>കമ്പ്യൂട്ടര്‍ നിര്‍ത്തിക്കൊണ്ടിരിക്കുമ്പോള്‍ ആ സമയത്തു് നടക്കുന്ന പ്രവര്‍ത്തനങ്ങളുടെ നിരീക്ഷണം നിര്‍ത്തുക</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="വെറുതെയിരിക്കുമ്പോള്‍ നിരീക്ഷണം നിര്‍ത്തുക">
+						<longdesc>കമ്പ്യൂട്ടര്‍ വെറുതെയിരിക്കുമ്പോള്‍ ആ സമയത്തു് നടക്കുന്ന പ്രവര്‍ത്തനങ്ങളുടെ നിരീക്ഷണം നിര്‍ത്തുക</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

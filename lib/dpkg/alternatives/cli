@@ -1,0 +1,9 @@
+auto
+/usr/bin/cli
+cli.1.gz
+/usr/share/man/man1/cli.1.gz
+
+/usr/bin/mono
+10
+/usr/share/man/man1/mono.1.gz
+

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Verander taak met wisseling van werkruimte">
+						<longdesc>Indien oorskakeling volgens naam aan is, sal hierdie lys die taakname stel waarheen oorgeskakel moet word, met die werkruimtes wat deur die item se indeks verteenwoordig word.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="Hoe laat begin die dag? (Verstekwaarde is 05:30)">
+						<longdesc>Take sal onder gister val indien die huidige tyd minder as die gegewe dag se aanvangstyd is, maar onder vandag indien dit meer as daardie aanvangstyd is. Take wat oor twee dae strek, sal onder die dag verskyn waarin die meeste tyd gespandeer is.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Herinner ook wanneer geen taak gestel is nie">
+						<longdesc>Herinner ook elke notify_interval minute indien daar met geen taak begin is nie.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Herinner aan die huidige taak elke x minute">
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Staak registrasie tydens afskakel">
+						<longdesc>Staak registrasie van huidige taak wanneer die rekenaar afgeskakel word</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Staak registrasie wanneer ledig">
+						<longdesc>Staak registrasie van huidige taak wanneer die rekenaar ledig word</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Wissel hamster toepassingsvenster">
+								<longdesc>Wissel sigbaarheid van hamster se toepassingsvenster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema>
+								<longdesc>Bevel om die sigbaarheid van Hamster se toepassingsvenster aan of af te skakel.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Wys / versteek die Tydregistreerder-venster">
+								<longdesc>Sleutelbordkortpad om die Tydregistreerder venster te wys / versteek.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="notify_interval">
+					<local_schema short_desc="แจ้งเตือนภารกิจปัจจุบันทุกๆ x นาที">
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="หยุดติดตามเมื่อปิดเครื่อง">
+						<longdesc>หยุดติดตามกิจกรรมที่ดำเนินอยู่เมื่อปิดเครื่อง</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="หยุดติดตามเมื่อไม่มีการโต้ตอบกับเครื่อง">
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

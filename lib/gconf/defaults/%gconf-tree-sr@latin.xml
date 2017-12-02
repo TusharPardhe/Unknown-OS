@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Promeni aktivnost pri promeni radnog prostora">
+						<longdesc>Ukoliko je uključeno prebacivanje po imenu, ovaj spisak postavlja imena aktivnosti na koje se treba prebaciti (radni prostori predstavljeni njihovim indeksima).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Da li prekidač radnog prostora treba da uključuje i aktivnost">
+						<longdesc>Spisak uključenih načina praćenja. „name“ (naziv) će omogućiti prebacivanje aktivnosti po imenima iz workspace_mapping. „memory“ (memorija) će omogućiti prebacivanje na poslednju aktivnosti pri povratku na prethodni radni prostor.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="Kada počinje novi dan (podrazumevano je 5:30)">
+						<longdesc>Aktivnosti se smatraju jučerašnjim ukoliko je trenutno vreme u prošlosti u odnosu na dan početka; današnjim ako je preko tog vremena. Ukoliko aktivnost obuhvata dva dana, ona će preći u onaj dan kada je izvršen veći deo te aktivnosti.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Takođe me i podseti kada nema aktivnosti">
+						<longdesc>Ukoliko ni jedna aktivnost nije započeta podseti me nakon određenog boja minuta, koje određuje ključ notify_interval.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Podseti na trenutni posao svakih x minuta">
+						<longdesc>Podseti na trenutni posao nakon vremenskog intervala zatdatog u minutama. Stavite na 0 ili na više od 120 minuta da onemogućite podsetnik.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Zaustavi praćenje pri gašenju">
+						<longdesc>Zaustavi praćenje tekuće aktivnosti pri gašenju</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Zaustavi praćenje kada nema aktivnosti">
+						<longdesc>Zaustavi praćenje tekuće aktivnosti, kada računar postane neuposlen</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Promena vidljivosti glavnog prozora Vrednog hrčka">
+								<longdesc>Promeni vidljivost glavnog prozora Vrednog hrčka</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Akcija promene vidljivosti glavnog prozora Vrednog hrčka">
+								<longdesc>Naredba za promenu vidljivosti glavnog prozora Vrednog hrčka.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Prikaži / sakrij prozor Pratioca vremena">
+								<longdesc>Prečica na tastaturi za prikazivanje / sakrivanje prozora Pratioca vremena</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

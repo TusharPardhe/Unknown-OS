@@ -1,0 +1,37 @@
+#!/bin/sh
+
+set -e
+
+case "${1}" in
+	configure)
+		if ! dpkg-statoverride --list /bin/fusermount > /dev/null 2>&1
+		then
+			chmod 4755 /bin/fusermount
+		fi
+
+		# Drop this hunk in 16.10, "upgrade" permissions to new defaults 0600 -> 0644
+		if dpkg --compare-versions "$2" lt-nl "2.9.4-1ubuntu2~"; then
+		    if ! dpkg-statoverride --list /etc/fuse.conf >/dev/null 2>&1; then
+			chmod 0644 /etc/fuse.conf
+		    fi
+		fi
+
+		if [ -x /usr/sbin/update-initramfs ]
+		then
+			update-initramfs -u
+		fi
+		;;
+
+	abort-upgrade|abort-remove|abort-deconfigure)
+
+		;;
+
+	*)
+		echo "postinst called with unknown argument \`${1}'" >&2
+		exit 1
+		;;
+esac
+
+
+
+exit 0

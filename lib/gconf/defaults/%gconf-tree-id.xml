@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Tukar aktivitas pada perubahan ruang kerja">
+						<longdesc>Bila pertukaran berdasarkan nama diaktifkan, daftar ini menata nama aktivitas yang mesti dituju, ruang kerja diwakili oleh index butir.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Mestikah bertukar ruang kerja memicu pertukaran aktivitas">
+						<longdesc>Daftar metoda pelacakan yang difungsikan. &quot;name&quot; akan mengaktifkan pertukaran aktivitas berdasarkan nama yang didefinisikan dalam workspace_mapping. &quot;memory&quot; akan mengaktifkan pertukaran ke aktivitas terakhir ketika kembali ke ruang kerja sebelumnya.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="Pukul berapa hari dimulai (bawaan adalah 5:30)">
+						<longdesc>Aktivitas akan dihitung milik kemarin bila waktu kini kurang dari awal hari yang dinyatakan; dan hari ini, bila lewat dari waktu itu. Aktivitas yang mencakup dua hari, akan jatuh ke sisi bagian terbesar aktivitas.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Juga ingatkan bila tak ada aktivitas yang ditata">
+						<longdesc>Juga ingatkan setiap notify_interval menit bila tak ada aktivitas yang telah dimulai.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Mengingatkan tugas yang berlangsung setiap x menit.">
+						<longdesc>Ingatkan tugas saat ini setiap sekian menit yang dinyatakan. Tata ke 0 atau lebih dari 120 untuk mematikan pengingat.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Berhenti melacak saat diamtikan">
+						<longdesc>Berhenti melacak aktivitas ketika komputer dimatikan</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Berhenti melacak saat menganggur">
+						<longdesc>Berhenti melacak aktivitas ketika komputer menganggur</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Jungkitkan jendela aplikasi hamster">
+								<longdesc>Jungkitkan kenampakan jendela aplikasi hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Jungkitkan aksi jendela aplikasi hamster">
+								<longdesc>Perintah untuk menjungkit kenampakan jendela aplikasi hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Menampilkan/menyembunyikan Jendela Pelacak Waktu">
+								<longdesc>Tombol kombinasi pintasan untuk menampilkan/menyembunyikan jendela Pelacak Waktu.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

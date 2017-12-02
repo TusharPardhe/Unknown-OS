@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/dh-strip-nondeterminism
+/usr/share/doc/dh-strip-nondeterminism/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/dh_strip_nondeterminism.1p.gz
+/usr/bin
+/usr/bin/dh_strip_nondeterminism
+/usr/share/doc/dh-strip-nondeterminism/changelog.Debian.gz

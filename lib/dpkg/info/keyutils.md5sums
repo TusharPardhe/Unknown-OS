@@ -1,0 +1,17 @@
+4e822ada0e7a54dce88f41c594aa76ab  bin/keyctl
+303208e8d6be36cdb86f175bfb820bf0  sbin/key.dns_resolver
+3442444ce2868cfe3b85b72283b431d0  sbin/request-key
+9fb5fab335965aca498f4e8c57c09bbf  usr/share/doc/keyutils/copyright
+738c1d4c2c763040c6e47e5b19861292  usr/share/keyutils/request-key-debug.sh
+9978f4fce04a7caee9b6656a9e667472  usr/share/man/man1/keyctl.1.gz
+3586a15a6e714933071ac8d0f12b3468  usr/share/man/man5/request-key.conf.5.gz
+b5cbfaf31ea90a246e4174eb2245ec89  usr/share/man/man7/keyrings.7.gz
+db9f473c014ce705839982c4fbe0ca1b  usr/share/man/man7/keyutils.7.gz
+bab1833e7fd368c10dbd8c1ab78a2019  usr/share/man/man7/persistent-keyring.7.gz
+adcabab6893d7f43fffbaeb525017bd6  usr/share/man/man7/process-keyring.7.gz
+4838a1d496e00f3ec73216d75c1fe258  usr/share/man/man7/session-keyring.7.gz
+92b204396b8d12c48102f7b7325fc189  usr/share/man/man7/thread-keyring.7.gz
+cc0dec899373250a3be228e7dfbd6c1d  usr/share/man/man7/user-keyring.7.gz
+3a2e7a48d485ab5af91b430da5bc0471  usr/share/man/man7/user-session-keyring.7.gz
+e79a3358b22fa9b78b262e2e700af5e3  usr/share/man/man8/key.dns_resolver.8.gz
+e37dbe87a3a8599cb959fb87eba9161a  usr/share/man/man8/request-key.8.gz

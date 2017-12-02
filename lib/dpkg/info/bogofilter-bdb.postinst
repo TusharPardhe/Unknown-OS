@@ -1,0 +1,26 @@
+#!/bin/sh
+
+set -e
+
+util=bdb
+
+
+
+case "$1" in
+    configure|abort-upgrade)
+        update-alternatives --quiet --install \
+            /usr/bin/bogofilter bogofilter /usr/bin/bogofilter-${util} 20 \
+            --slave /usr/bin/bogoupgrade bogoupgrade /usr/bin/bogoupgrade-${util} \
+            --slave /usr/bin/bogotune bogotune /usr/bin/bogotune-${util} \
+            --slave /usr/bin/bf_copy bf_copy /usr/bin/bf_copy-${util} \
+            --slave /usr/bin/bogolexer bogolexer /usr/bin/bogolexer-${util} \
+            --slave /usr/bin/bogoutil bogoutil /usr/bin/bogoutil-${util} \
+            --slave /usr/bin/bf_compact bf_compact /usr/bin/bf_compact-${util} \
+            --slave /usr/bin/bf_tar bf_tar /usr/bin/bf_tar-${util}
+        ;;
+    *)
+        echo "postint called with unknown argument \`$1'" >&2
+        exit 1
+        ;;
+esac
+

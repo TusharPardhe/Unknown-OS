@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/libnux-4.0.so.0.8.0
+/usr/lib/x86_64-linux-gnu/libnux-core-4.0.so.0.8.0
+/usr/lib/x86_64-linux-gnu/libnux-graphics-4.0.so.0.8.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libnux-4.0-0
+/usr/share/doc/libnux-4.0-0/copyright
+/usr/share/doc/libnux-4.0-0/changelog.Debian.gz
+/usr/lib/x86_64-linux-gnu/libnux-4.0.so.0
+/usr/lib/x86_64-linux-gnu/libnux-graphics-4.0.so.0
+/usr/lib/x86_64-linux-gnu/libnux-core-4.0.so.0

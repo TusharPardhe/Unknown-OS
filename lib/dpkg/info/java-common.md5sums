@@ -1,0 +1,6 @@
+9b46473d220960174184bdbb60013348  usr/sbin/update-java-alternatives
+32d83c35e81c9bc1bce06dca908dfd49  usr/share/bash-completion/completions/update-java-alternatives
+5e00f2a390dd549bc92ce95b86f6a811  usr/share/doc/java-common/changelog.gz
+3565d133359c116f3a9dcf7e52ae690d  usr/share/doc/java-common/copyright
+1c91f4360336824e54616e9263aada04  usr/share/java/java_defaults.mk
+124c011d10ac78972e3fdc092518933b  usr/share/man/man8/update-java-alternatives.8.gz

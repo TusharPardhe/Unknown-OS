@@ -1,0 +1,16 @@
+/.
+/lib
+/lib/udev
+/lib/udev/ipod-set-info
+/lib/udev/iphone-set-info
+/lib/udev/rules.d
+/lib/udev/rules.d/90-libgpod.rules
+/usr
+/usr/bin
+/usr/bin/ipod-time-sync
+/usr/bin/ipod-read-sysinfo-extended
+/usr/share
+/usr/share/doc
+/usr/share/doc/libgpod-common
+/usr/share/doc/libgpod-common/copyright
+/usr/share/doc/libgpod-common/changelog.Debian.gz

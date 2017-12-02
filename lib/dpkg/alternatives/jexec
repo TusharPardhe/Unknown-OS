@@ -1,0 +1,9 @@
+auto
+/usr/bin/jexec
+jexec-binfmt
+/usr/share/binfmts/jar
+
+/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jexec
+1081
+/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jar.binfmt
+

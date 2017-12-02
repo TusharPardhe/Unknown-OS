@@ -1,0 +1,12 @@
+da718a74fde25f88decf5e3842b633f5  usr/lib/indicators3/7/libprintersmenu.so
+f186ac1ffb2ac6211af5f690c27b89f7  usr/lib/x86_64-linux-gnu/indicator-printers/indicator-printers-service
+5a5e08175865e0fdcfa0b3bdf16731a7  usr/share/doc/indicator-printers/changelog.Debian.gz
+6588471f74f08645375595d2bf1be82f  usr/share/doc/indicator-printers/copyright
+9b4f40126d77e733cd84ecf814336d3e  usr/share/icons/ubuntu-mono-dark/status/16/printer-symbolic.svg
+b0d9d4f8b86e3e6d487a678eb5d3896e  usr/share/icons/ubuntu-mono-dark/status/22/printer-symbolic.svg
+e187d9fbf4bcc343a8026232b0051b6b  usr/share/icons/ubuntu-mono-dark/status/24/printer-symbolic.svg
+a004b97d9f444032e0f7fccab130f9fc  usr/share/icons/ubuntu-mono-light/status/16/printer-symbolic.svg
+f7d2af431f9371d877fa9ccfa099736c  usr/share/icons/ubuntu-mono-light/status/22/printer-symbolic.svg
+f3c1bbc1d65baf94fdbdca2e294b72e8  usr/share/icons/ubuntu-mono-light/status/24/printer-symbolic.svg
+3ab0f33fbcefbb0c7c5573a391ca33ce  usr/share/upstart/sessions/indicator-printers.conf
+a20cc77fbe4c170cbec090e4b037313e  usr/share/upstart/xdg/autostart/indicator-printers.desktop

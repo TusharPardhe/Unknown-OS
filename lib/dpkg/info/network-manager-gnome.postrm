@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/dbus-1/system.d/nm-applet.conf 0.9.0-4~ network-manager-gnome -- "$@"
+# End automatically added section

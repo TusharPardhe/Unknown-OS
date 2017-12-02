@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Смяна на дейността при смяна на плота">
+						<longdesc>Ако смяната по име е включена, списъкът задава имената на дейностите, към които да се превключва. Работните плотове се представят с индекса на дейността.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Дали смяната на плота означава и смяна на дейността">
+						<longdesc>Списък с включените методи за проследяване. При „name“ смяната е според името, указано в ключа „workspace_mapping“. При „memory“ ще се превключва към последната дейност при преминаване към предишен работен плот.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="Кога започва денят (стандартно е в 5:30)">
+						<longdesc>Дейностите се броят към предишния ден, ако текущото време е преди указаното за начало на деня, и се броят към днешния ден, ако текущото време е след това. Дейностите, които са в два дни, се броят към този, в който е по-голямата част от тях.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Напомняне и когато не е зададена дейност">
+						<longdesc>Да се напомня на интервал равен на ключа „notify_interval“ в минути, ако не е зададена текуща дейност.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Време в минути за повтарящо се напомняне">
+						<longdesc>Напомняне за текущата задача на всяко изтичане на указания брой минути. За да изключите напомнянето, задайте да е 0 или над 120.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Преустановяване на отчитането при изключване на компютъра">
+						<longdesc>Преустановяване на отчитането на текущата дейност при изключване на компютъра</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Преустановяване на отчитането при бездействие">
+						<longdesc>Преустановяване на отчитането на текущата дейност, когато компютърът бездейства</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Показване и скриване на прозореца на програмата">
+								<longdesc>Показване и скриване на главния прозорец на програмата Хамстер</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Показване и скриване на главния прозорец на програмата Хамстер">
+								<longdesc>Команда за показване и скриване на главния прозорец на програмата.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Показване и скриване на прозореца за отчитане на времето.">
+								<longdesc>Клавишна комбинация за показване и скриване на прозореца за отчитане на времето.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,15 @@
+ea22f49664f1902c90e7789457b13d27  usr/bin/btcflash
+79f40c33c95d56cf81898a39e328f8fe  usr/bin/dvd+rw-booktype
+573d231ed176651b645a1ac58dee0d2c  usr/bin/dvd+rw-mediainfo
+c1045c4521aeef5736c8675183bada64  usr/bin/dvd-ram-control
+6e66589712baceb71760b92f516615d5  usr/bin/rpl8
+d379c8b904efc09254ad3eb20a88251e  usr/share/doc-base/dvd+rw-tools
+b1a9e4fdfa77508c7eba408d3d5a2f75  usr/share/doc/dvd+rw-tools/copyright
+3242020553945d24d07b6332925a6475  usr/share/doc/dvd+rw-tools/dvd-rw.html
+836e28a6d8c36ad1eecbf8f97e2c7fb1  usr/share/doc/dvd+rw-tools/index.html
+e4c7ce5a812898fe448c252448171a3c  usr/share/doc/dvd+rw-tools/isofs4gb.gif
+8b16bd54b1828d8be418c4fddaa36a8a  usr/share/man/man1/dvd+rw-booktype.1.gz
+2e9ebd9ba7b658a0f9c027c1b21d67bb  usr/share/man/man1/dvd+rw-mediainfo.1.gz
+1baf70b397805c879e074149faebf4a2  usr/share/man/man1/dvd-ram-control.1.gz
+241a6e2eb2ba783af15b45043634224a  usr/share/man/man8/btcflash.8.gz
+8a07b045c1ecfce9b6e434d274233a7d  usr/share/man/man8/rpl8.8.gz

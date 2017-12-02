@@ -1,0 +1,8 @@
+692c626ff5ed5ca0cad28a00a69d1888  usr/bin/gsf
+342126084ac674e3eabd9f85bc6b0342  usr/bin/gsf-office-thumbnailer
+b60c976220bf7432fff346cbecf9979b  usr/bin/gsf-vba-dump
+09a90d270b5e4ac3fc035ed43346d4df  usr/share/doc/libgsf-bin/copyright
+d2f7b99443aa60ea9192d31d08220771  usr/share/man/man1/gsf-office-thumbnailer.1.gz
+d7a6cf5f49b91039e0b6ec7c99291966  usr/share/man/man1/gsf-vba-dump.1.gz
+cefc58358a950f2c87d3166b319726cf  usr/share/man/man1/gsf.1.gz
+e72e55ce569b6cb047f38f134b9594ac  usr/share/thumbnailers/gsf-office.thumbnailer

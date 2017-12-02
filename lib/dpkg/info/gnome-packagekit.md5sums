@@ -1,0 +1,16 @@
+09ceced780914b4efeb5274153422637  usr/bin/gpk-application
+5e7a2d30bac8e586f1e6ff2d428821fa  usr/bin/gpk-install-local-file
+bb370bd750d9fd1706d64328c553e852  usr/bin/gpk-update-viewer
+b7820505b551a28ec99544ef8699ae15  usr/share/appdata/gpk-application.appdata.xml
+5ec2a761c53331a0f047d4319d7e82c6  usr/share/appdata/gpk-update-viewer.appdata.xml
+000e73e3f791c01fbe7f01d4a13d5824  usr/share/applications/gpk-application.desktop
+a5352b7c952f1ae50ebb72d474da60f6  usr/share/applications/gpk-install-local-file.desktop
+468c4f9647d8d5f438e3ba8d374bb5ab  usr/share/applications/gpk-update-viewer.desktop
+20cd1377ca6421add079ce798afc9a21  usr/share/doc/gnome-packagekit/AUTHORS
+032ceb4b0987cb0402d40d12ea50438f  usr/share/doc/gnome-packagekit/NEWS.gz
+a1d18f1a43110009055d9b3aefae330f  usr/share/doc/gnome-packagekit/README
+57b69120fc5a6e8707101d23d38a7526  usr/share/doc/gnome-packagekit/TODO
+9027eb5fade1048047928e0dea401e79  usr/share/doc/gnome-packagekit/copyright
+251dcf4077805782afade2a59c28376b  usr/share/man/man1/gpk-application.1.gz
+69a5c8d5a4c4078f596d659face10656  usr/share/man/man1/gpk-install-local-file.1.gz
+4e3b9abf41482f8289f2f6cfca954ab4  usr/share/man/man1/gpk-update-viewer.1.gz

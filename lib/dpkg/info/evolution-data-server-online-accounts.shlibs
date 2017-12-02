@@ -1,0 +1,4 @@
+module-credentials goa evolution-data-server-online-accounts (>= 3.18.5)
+module-credentials uoa evolution-data-server-online-accounts (>= 3.18.5)
+module-gnome-online accounts evolution-data-server-online-accounts (>= 3.18.5)
+module-ubuntu-online accounts evolution-data-server-online-accounts (>= 3.18.5)

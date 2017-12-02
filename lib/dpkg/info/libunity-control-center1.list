@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/libunity-control-center.so.1.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libunity-control-center1
+/usr/share/doc/libunity-control-center1/TODO
+/usr/share/doc/libunity-control-center1/changelog.Debian.gz
+/usr/share/doc/libunity-control-center1/README
+/usr/share/doc/libunity-control-center1/copyright
+/usr/share/doc/libunity-control-center1/NEWS.gz
+/usr/share/doc/libunity-control-center1/AUTHORS
+/usr/lib/x86_64-linux-gnu/libunity-control-center.so.1

@@ -1,0 +1,4 @@
+d51281388dfbcbcef6293660d4746ec9  usr/lib/x86_64-linux-gnu/gconf/gconf-defaults-mechanism
+a4f45cd69d20c858f4feeccf87f666e2  usr/share/dbus-1/system-services/org.gnome.GConf.Defaults.service
+616b3703117a9f12548cc7257f95ad24  usr/share/doc/gconf-defaults-service/copyright
+69058ad85f883fa19d0e9dc2bcd137ed  usr/share/polkit-1/actions/org.gnome.gconf.defaults.policy

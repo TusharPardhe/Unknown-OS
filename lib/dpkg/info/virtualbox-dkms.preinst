@@ -1,0 +1,34 @@
+#!/bin/sh
+
+set -e
+
+# Automatically added by dh_installudev
+if [ "$1" = install ] || [ "$1" = upgrade ]; then
+	if [ -e "/etc/udev/rules.d/z60_virtualbox-dkms.rules" ]; then
+		if [ "`md5sum \"/etc/udev/rules.d/z60_virtualbox-dkms.rules\" | sed -e \"s/ .*//\"`" = \
+		     "`dpkg-query -W -f='${Conffiles}' virtualbox-dkms | sed -n -e \"\\\\' /etc/udev/rules.d/z60_virtualbox-dkms.rules '{s/ obsolete$//;s/.* //p}\"`" ]
+		then
+			rm -f "/etc/udev/rules.d/z60_virtualbox-dkms.rules"
+		fi
+	fi
+fi
+# End automatically added section
+
+
+case "$1" in
+  install|upgrade)
+		# These are no longer used
+		for mod in vboxdrv vboxnetflt vboxnetadp; do
+			dkms status -m $mod | while read line; do
+				if echo "$line" | grep -q added > /dev/null ||
+					echo "$line" | grep -q built > /dev/null ||
+					echo "$line" | grep -q installed > /dev/null;
+				then
+					version=`echo "$line" | sed "s/$mod,\([^,]*\)[,:].*/\1/;t;d"`
+					echo "Removing obsolete module $mod version $version"
+					dkms remove -m $mod -v $version --all
+				fi
+			done
+		done
+  ;;
+esac

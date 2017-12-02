@@ -1,0 +1,1 @@
+cmd_/var/lib/dkms/virtualbox/5.0.40/build/vboxnetadp/vboxnetadp.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /var/lib/dkms/virtualbox/5.0.40/build/vboxnetadp/vboxnetadp.ko /var/lib/dkms/virtualbox/5.0.40/build/vboxnetadp/vboxnetadp.o /var/lib/dkms/virtualbox/5.0.40/build/vboxnetadp/vboxnetadp.mod.o

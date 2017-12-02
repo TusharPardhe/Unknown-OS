@@ -1,0 +1,6 @@
+db737b77366824d465f7d3da2fc6650c  usr/include/X11/extensions/composite.h
+24b60417fbc3c62c7901166b19caa46a  usr/include/X11/extensions/compositeproto.h
+9b1d3d8e2806447569cc92f015ab13d5  usr/share/doc/x11proto-composite-dev/changelog.Debian.gz
+397d8b4b73d11d1a065ce49ed1441fac  usr/share/doc/x11proto-composite-dev/compositeproto.txt.gz
+9261002fe40013b078656a3c82ce7a3d  usr/share/doc/x11proto-composite-dev/copyright
+bb129d662f2563ecc7f56c7a6ab37662  usr/share/pkgconfig/compositeproto.pc

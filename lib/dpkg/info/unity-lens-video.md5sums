@@ -1,0 +1,5 @@
+6551601e7c129b69848925a2a691011f  usr/lib/x86_64-linux-gnu/unity-lens-video/unity-video-lens-daemon
+516fc647f14f4d8f4a995c0865fec19f  usr/share/dbus-1/services/unity-scope-video-local.service
+33102fdbed233727e17aea1c5b77f074  usr/share/doc/unity-lens-video/changelog.Debian.gz
+452f1e59cdc6407c770d79be82c060d8  usr/share/doc/unity-lens-video/copyright
+668444651e0335f4880cff652ec75f49  usr/share/unity/scopes/video/local.scope

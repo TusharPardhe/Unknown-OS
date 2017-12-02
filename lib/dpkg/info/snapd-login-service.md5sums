@@ -1,0 +1,5 @@
+a056e487bae7ada26b3b80113d6e1455  usr/lib/snapd-glib/snapd-login-service
+5575cb1b4e0f6f66983cebc345cfcc1a  usr/share/dbus-1/interfaces/io.snapcraft.SnapdLoginService.xml
+ac7b38026fcefe0c2a978eb7ebb3b737  usr/share/dbus-1/system-services/io.snapcraft.SnapdLoginService.service
+c5ec10d95abae4df08366f0736fec944  usr/share/doc/snapd-login-service/copyright
+f837885a24ab4f3729c5351d87af8fa8  usr/share/polkit-1/actions/io.snapcraft.SnapdLoginService.policy

@@ -1,0 +1,17 @@
+73c181410aa055b55546e0e89a3208bc  sbin/fatlabel
+0ccc42f22e0d9ee225262613d5543396  sbin/fsck.fat
+f3428a1c2e32072e4cb5c6f8ed1016e3  sbin/mkfs.fat
+3717ef608a40abb192553f1060fe1dce  usr/share/doc/dosfstools/ANNOUNCE.mkdosfs
+5d67850aa41b658f966d84477729b1b3  usr/share/doc/dosfstools/NEWS.Debian.gz
+625934b496c765f8810238b6368c8875  usr/share/doc/dosfstools/README.dosfsck
+52593f2d08903bee08e4ffa1100d06ff  usr/share/doc/dosfstools/README.dosfstools-2.x
+659fea5c4dcf133415580dbbfccaaeef  usr/share/doc/dosfstools/README.mkdosfs
+6f811c393a544fc0ef91d09017bb4e93  usr/share/doc/dosfstools/TODO.dosfstools-2.x
+322ad750ef1cd4f9789b19361c194693  usr/share/doc/dosfstools/changelog.Debian.gz
+2554d68826aa1447dc3dc178da00b770  usr/share/doc/dosfstools/copyright
+b6c0dccb3bc889378ba4fb4ae9f03aa1  usr/share/man/de/man8/fatlabel.8.gz
+9b8e7cbb00e6cb995c612bc9531326bc  usr/share/man/de/man8/fsck.fat.8.gz
+2d37bc7da4975c9c0ec9693057192a1c  usr/share/man/de/man8/mkfs.fat.8.gz
+9a95dae1f0851e69576e04ff654ff000  usr/share/man/man8/fatlabel.8.gz
+d004396b148796179025dbb28f430f6c  usr/share/man/man8/fsck.fat.8.gz
+9eeb7a2bc5905913b808353719541394  usr/share/man/man8/mkfs.fat.8.gz

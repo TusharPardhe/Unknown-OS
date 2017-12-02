@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/libmozjs-24.so.0.0.0
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libmozjs-24-0v5
+/usr/share/doc
+/usr/share/doc/libmozjs-24-0v5
+/usr/share/doc/libmozjs-24-0v5/copyright
+/usr/share/doc/libmozjs-24-0v5/changelog.Debian.gz
+/usr/lib/x86_64-linux-gnu/libmozjs-24.so.0

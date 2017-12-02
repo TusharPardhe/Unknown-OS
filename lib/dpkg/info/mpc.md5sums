@@ -1,0 +1,9 @@
+f95c932ce1df95ca9be77d29d555f4a3  usr/bin/mpc
+12739d9bd83669202abe9eb66c814583  usr/share/bash-completion/completions/mpc
+2fb559378b909fb974b93554f3b02ca5  usr/share/doc/mpc/changelog.Debian.gz
+c01c554d1b0a02bfd3811e2b53ca6b6c  usr/share/doc/mpc/copyright
+fa5574282aec2c4ae891651f362aa2d2  usr/share/doc/mpc/examples/mpd-m3u-handler.sh
+af08a9604eeae7022c9fcab498af90a3  usr/share/doc/mpc/examples/mpd-pls-handler.sh
+a170fb6acd804a1fbfaab48c51dc3615  usr/share/doc/mpc/examples/mppledit
+e3c363013804ef8bd3b844f8e1bf3e14  usr/share/doc/mpc/examples/playstream
+89b966be8b3cf48f743c3f9f1a2bf017  usr/share/man/man1/mpc.1.gz

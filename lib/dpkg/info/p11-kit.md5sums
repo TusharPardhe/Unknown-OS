@@ -1,0 +1,7 @@
+3932ef927b9f932ae5002b6b00f28c82  usr/bin/p11-kit
+28ab3d335f3220565279b68b648f2e3f  usr/bin/trust
+a6e0180e598168218708a2700e151536  usr/share/doc/p11-kit/copyright
+3e3cb91c17f47128f2080ac9b37cca3a  usr/share/man/man1/trust.1.gz
+a87218638e2608ee6087d26a561a23c8  usr/share/man/man5/pkcs11.conf.5.gz
+60de04a5a629aa1399feb433a4b1905f  usr/share/man/man8/p11-kit.8.gz
+3b4433707e795559b45eef02e0ec064b  usr/share/p11-kit/modules/p11-kit-trust.module

@@ -1,0 +1,16 @@
+8b04f3f411e6fefc3aa172a9bfae1d9e  usr/include/telepathy-rakia-0.7/rakia/base-connection.h
+3b6a48121e3750f8fac30b172c26888a  usr/include/telepathy-rakia-0.7/rakia/codec-param-formats.h
+3efdd7b59cadec02c9cb8f53a57c8aee  usr/include/telepathy-rakia-0.7/rakia/connection-aliasing.h
+8cee9137e7b7a8c7f5667997cbd6bc55  usr/include/telepathy-rakia-0.7/rakia/debug.h
+cbcee29747e66592c3790acc249d4ce6  usr/include/telepathy-rakia-0.7/rakia/event-target.h
+88de6ba92f2c17ea5c7f66fb8ec4338d  usr/include/telepathy-rakia-0.7/rakia/handles.h
+4dd6a30c496a2991ebcb9ffe59ff5b2c  usr/include/telepathy-rakia-0.7/rakia/media-manager.h
+2ed44ec66db4854a9cf0c5e9bc001aa0  usr/include/telepathy-rakia-0.7/rakia/sofia-decls.h
+9e6731747aa741841639852402dc8458  usr/include/telepathy-rakia-0.7/rakia/text-manager.h
+2a6cb0bca5ee4194f23da9aabf1bff25  usr/include/telepathy-rakia-0.7/rakia/util.h
+ae8527efd817a5412b664b11bced034c  usr/lib/telepathy/telepathy-rakia
+582f40400e4ce22454bcd6e13c6e671e  usr/share/dbus-1/services/org.freedesktop.Telepathy.ConnectionManager.sofiasip.service
+81d4eb18b7fe694077b30ad57c55e854  usr/share/doc/telepathy-rakia/changelog.Debian.gz
+ac78a8e9256ae161f1357947cb4275fd  usr/share/doc/telepathy-rakia/copyright
+805a2f82579295445382dd611641e2d2  usr/share/man/man8/telepathy-rakia.8.gz
+84e6038fceaeccf0d2bd017a18b805c0  usr/share/telepathy/managers/rakia.manager

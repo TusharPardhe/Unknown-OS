@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/hwinfo
+/usr/share/doc/hwinfo/TODO.Debian
+/usr/share/doc/hwinfo/copyright
+/usr/share/man
+/usr/share/man/man8
+/usr/share/man/man8/hwinfo.8.gz
+/usr/sbin
+/usr/sbin/hwinfo
+/usr/share/doc/hwinfo/README-legacy.md
+/usr/share/doc/hwinfo/README-hwprobe.md
+/usr/share/doc/hwinfo/README.md
+/usr/share/doc/hwinfo/changelog.Debian.gz

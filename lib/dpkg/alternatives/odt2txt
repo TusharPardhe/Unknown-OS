@@ -1,0 +1,9 @@
+auto
+/usr/bin/odt2txt
+odt2txt.1.gz
+/usr/share/man/man1/odt2txt.1.gz
+
+/usr/bin/odt2txt.unoconv
+100
+/usr/share/man/man1/odt2txt.unoconv.1.gz
+

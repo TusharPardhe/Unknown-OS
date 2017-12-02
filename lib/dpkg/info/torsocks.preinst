@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+dpkg-maintscript-helper mv_conffile \
+	/etc/torsocks.conf /etc/tor/torsocks.conf 2.0~ -- "$@"
+
+

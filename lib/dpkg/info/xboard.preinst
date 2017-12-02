@@ -1,0 +1,14 @@
+#!/bin/sh
+# preinst to faciliate upgrades from older versions that still used
+# the alternates system for accessing xaw-wrappers
+
+set -e
+
+if [ "$1" = "upgrade" ] && dpkg --compare-versions "$2" le "4.2.6-2.1"
+then
+	update-alternatives --quiet --remove \
+		xboard \
+		/usr/lib/games/xboard/xboard.real
+fi
+
+

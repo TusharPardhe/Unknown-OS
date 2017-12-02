@@ -1,0 +1,17 @@
+#!/bin/sh
+
+set -e
+
+
+
+if [ "$1" = "remove" ]; then
+    # hack to avoid breaking update-gconf-defaults when leaving
+    # a dangling symlink;
+    if ! test -e $(readlink /etc/alternatives/libgksu-gconf-defaults); then
+	rm -f /usr/share/gconf/defaults/10_libgksu > /dev/null 2>&1 || true
+    fi
+
+    if which update-gconf-defaults >/dev/null 2>&1; then
+	update-gconf-defaults
+    fi
+fi

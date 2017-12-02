@@ -1,0 +1,20 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installinit
+if [ "$1" = install ] || [ "$1" = upgrade ]; then
+	if [ -e "/etc/init.d/avahi-daemon" ] && [ -L "/etc/init.d/avahi-daemon" ] \
+	   && [ $(readlink -f "/etc/init.d/avahi-daemon") = /lib/init/upstart-job ]
+	then
+		rm -f "/etc/init.d/avahi-daemon"
+	fi
+fi
+# End automatically added section
+# Automatically added by dh_installinit
+if [ "$1" = install ] || [ "$1" = upgrade ]; then
+	if [ -e "/etc/init.d/avahi-cups-reload" ] && [ -L "/etc/init.d/avahi-cups-reload" ] \
+	   && [ $(readlink -f "/etc/init.d/avahi-cups-reload") = /lib/init/upstart-job ]
+	then
+		rm -f "/etc/init.d/avahi-cups-reload"
+	fi
+fi
+# End automatically added section

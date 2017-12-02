@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/pkgconfig
+/usr/share/pkgconfig/renderproto.pc
+/usr/share/doc
+/usr/share/doc/x11proto-render-dev
+/usr/share/doc/x11proto-render-dev/renderproto.txt.gz
+/usr/share/doc/x11proto-render-dev/copyright
+/usr/share/doc/x11proto-render-dev/changelog.Debian.gz
+/usr/include
+/usr/include/X11
+/usr/include/X11/extensions
+/usr/include/X11/extensions/renderproto.h
+/usr/include/X11/extensions/render.h

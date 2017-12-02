@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/x11proto-composite-dev
+/usr/share/doc/x11proto-composite-dev/copyright
+/usr/share/doc/x11proto-composite-dev/changelog.Debian.gz
+/usr/share/doc/x11proto-composite-dev/compositeproto.txt.gz
+/usr/share/pkgconfig
+/usr/share/pkgconfig/compositeproto.pc
+/usr/include
+/usr/include/X11
+/usr/include/X11/extensions
+/usr/include/X11/extensions/composite.h
+/usr/include/X11/extensions/compositeproto.h

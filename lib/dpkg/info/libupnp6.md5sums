@@ -1,0 +1,6 @@
+3a637ec1dd1719a1fd595f2061252e68  usr/lib/x86_64-linux-gnu/libixml.so.2.0.8
+07c321257ae51cafe6fdbb6e881432a6  usr/lib/x86_64-linux-gnu/libthreadutil.so.6.0.4
+7fb5cf6202c1e28a8e4b26dd851f9645  usr/lib/x86_64-linux-gnu/libupnp.so.6.3.3
+aa21078840b893ffa6c0f96cd162b00d  usr/share/doc/libupnp6/changelog.Debian.gz
+adb9d0f9e442af7ef5494b50e54bde99  usr/share/doc/libupnp6/copyright
+9fd052bc94f0778df6464dadfa6410c8  usr/share/lintian/overrides/libupnp6

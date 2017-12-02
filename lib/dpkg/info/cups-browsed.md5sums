@@ -1,0 +1,9 @@
+99308420bd1f5e094aaa8816fbb9564f  lib/systemd/system/cups-browsed.service
+f0f2988703a60a50fffc98ed16d567a2  usr/lib/cups/backend/implicitclass
+6f138769291c2ffcf22a8978b3253e66  usr/sbin/cups-browsed
+a4c048387d22df9ace4ae744bd048812  usr/share/doc/cups-browsed/AUTHORS
+b92dd4f75fd0b880b53cce1be1507b87  usr/share/doc/cups-browsed/README.gz
+5e4031fc5a0056bef9d12390765767fe  usr/share/doc/cups-browsed/changelog.Debian.gz
+90812312ae2529b34c79430cb2cd1aa4  usr/share/doc/cups-browsed/copyright
+9a317adf52fc514ed84dc46a831b82b0  usr/share/man/man5/cups-browsed.conf.5.gz
+c3eec3e8b96cfbca91365c70e9091ba7  usr/share/man/man8/cups-browsed.8.gz

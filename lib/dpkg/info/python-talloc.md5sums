@@ -1,0 +1,4 @@
+0721bd58913b7bde6b085af8fca54df5  usr/lib/python2.7/dist-packages/talloc.x86_64-linux-gnu.so
+a74880633e6435bbe1c4dc3867f5245d  usr/lib/x86_64-linux-gnu/libpytalloc-util.so.2.1.5
+4342a52d7a71d719e88fccd56c6fa4e3  usr/share/doc/python-talloc/copyright
+53c3d2deef71ceb980de958f07238b7f  usr/share/lintian/overrides/python-talloc

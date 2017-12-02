@@ -1,0 +1,4 @@
+52277049dbebafb6dcdfa044d88c1aad  usr/share/doc/unity-gtk-module-common/changelog.Debian.gz
+ea2ee8b6c0dd6ec6891f6142707d7bdd  usr/share/doc/unity-gtk-module-common/copyright
+114eb30848aea7eb2b137ab25e40baad  usr/share/glib-2.0/schemas/com.canonical.unity-gtk-module.gschema.xml
+1cc78d64d227a6d0dc77ba8f24750b4f  usr/share/upstart/sessions/unity-gtk-module.conf

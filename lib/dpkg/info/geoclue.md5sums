@@ -1,0 +1,7 @@
+f7a5b3308b6b39cd80b125ab464fb564  usr/lib/geoclue/geoclue-master
+7aa4b88c5a74a3e91483f54161471d61  usr/share/GConf/gsettings/geoclue
+ba515096bbce5d681055056fdad2ee3a  usr/share/dbus-1/services/org.freedesktop.Geoclue.Master.service
+a8602778e07d516e2af139987182962d  usr/share/doc/geoclue/AUTHORS
+9a08867df9ca4bd81ab95beb1d3b2bbd  usr/share/doc/geoclue/README
+5f64847920c3b6fc41f9236de98dd4bc  usr/share/doc/geoclue/copyright
+ad7eac5a153c2d3691939fe253726d80  usr/share/glib-2.0/schemas/org.freedesktop.Geoclue.gschema.xml

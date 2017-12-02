@@ -1,0 +1,330 @@
+
+Template: resolvconf/linkify-resolvconf
+Type: boolean
+Default: true
+Description: Prepare /etc/resolv.conf for dynamic updates?
+ The resolvconf package contains the infrastructure required for
+ dynamic updating of the resolver configuration file. Part of the
+ necessary infrastructure is a symbolic link from /etc/resolv.conf to
+ /run/resolvconf/resolv.conf. If you choose this option then this
+ link will be created; the existing /etc/resolv.conf file will be
+ preserved as /etc/resolvconf/resolv.conf.d/original, and will be
+ restored if this package is removed.
+ .
+ Declining this option will prevent future installations from
+ recreating the symbolic link and therefore the resolver configuration
+ file will not be dynamically updated. Dynamic updating can then be
+ activated following instructions in the README file.
+ .
+ The presence of resolvconf can affect the behavior of other programs,
+ so it should not be left installed if unconfigured.
+Description-pt.UTF-8: Preparar /etc/resolv.conf para actualizações dinâmicas?
+ O pacote resolvconf contém a infraestrutura requerida para actualizar dinamicamente o ficheiro de configuração do resolver. Parte da infraestrutura necessária é uma ligação simbólica de /etc/resolv.conf para /run/resolvconf/resolv.conf. Se concordar, esta ligação será criada. O ficheiro /etc/resolv.conf existente será mantido como /etc/resolvconf/resolv.conf.d/original; será reposto se este pacote for removido.
+ .
+ Não aceitar esta opção irá prevenir futuras instalações de recriar a ligação simbólica e portanto o ficheiro de configuração do resolver não será dinamicamente actualizado. A actualização dinâmica pode então ser activada seguindo as instruções do ficheiro README.
+ .
+ A presença do resolvconf pode afectar o comportamento de outros programas, por isso não deve ser deixado instalado se não-configurado.
+
+Template: resolvconf/downup-interfaces
+Type: note
+Description: Reboot recommended
+ Suppliers of name server information such as local caching name
+ servers and interface configurers are expected to supply name server
+ information to the resolvconf program. However, although
+ installation of the resolvconf package triggers them to supply
+ their information, some of them fail to do so.
+ .
+ This bug would lead to loss of valid name server information on
+ installation of the resolvconf package if the following workaround
+ were not adopted: resolvconf includes the full contents of the
+ pre-installation /etc/resolv.conf in its database until reboot.
+ This has the drawback that name server information is retained
+ even if the associated interface is later deconfigured. (This
+ incorrect behavior is judged to be less harmful than the alternative
+ of losing valid information.)
+ .
+ Until the bug in question is fixed and the workaround removed,
+ the only way to ensure that resolvconf has fully correct name server
+ information after the resolvconf package has been installed on a
+ running system is to reboot the system.
+Description-cs.UTF-8: Doporučuje se restartovat systém
+ resolvconf očekává, že mu informace o jmenných serverech poskytnou programy k tomu určené, jako jsou lokální cachovací jmenné servery nebo programy pro konfiguraci síťových rozhraní. Přestože si od nich resolvconf při instalaci tyto informace vyžádá, některé programy bohužel neodpoví.
+ .
+ Tato chyba by při instalaci resolvconfu vedla ke ztrátě informací o platném jmenném serveru a proto existuje následující obezlička: resolvconf až do restartu ve své databázi uchová kompletní obsah souboru /etc/resolv.conf z doby před instalací resolvconfu. To má nevýhodu v tom, že pokud je příslušné síťové rozhraní vypnuto, informace o svázaném jmenném serveru v resolvconfu zůstává, což je považováno za menší zlo, než ztráta platné informace.
+ .
+ Dokud se zmíněná chyba nevyřeší, je restart systému jediným způsobem jak zajistit, aby měl resolvconf po čerstvé instalaci správné informace o jmenném serveru.
+Description-da.UTF-8: Genstart anbefales
+ Leverandører af navneserverinformation såsom lokale navneservere for mellemlageret (caching) og opsættere af brugerflader forventes at angive navneserverinformation til resolvconf-programmet. Selvom installationen af pakken resolvconf beder dem om at angive deres informationer så fejler nogle af dem med hensyn til denne opgave.
+ .
+ Denne fejl vil føre til tab af gyldig navneserverinformation ved installation af pakken resolvconf, hvis den følgende omgåelse ikke blev indarbejdet: resolvconf inkluderer det fulde indhold af den præinstallerede /etc/resolv.conf i sin database indtil genstart. Dette har den ulempe, at navneserverinformation bevares selv om den associerede brugerflade senere dekonfigureres. (Denne forkerte opførsel er bedømt til at være mindre skadelig end alternativet, der kan medføre tab af valid information.)
+ .
+ Indtil den omtalte fejl er rettet og omgåelsen fjernet er den eneste måde at sikre sig, at resolvconf har fuld korrekt navneserverinformation, efter at pakken resolvconf er blevet installeret på et kørende system, at genstarte systemet.
+Description-de.UTF-8: Systemneustart empfohlen
+ Anbieter von Name-Server-Informationen wie lokale, zwischenspeichernde Name-Server und Schnittstellenkonfiguratoren sollten dem Resolvconf-Programm Name-Server-Informationen bereitstellen. Obwohl die Installation des Pakets Resolvconf die Bereitstellung der Informationen auslöst, schlägt dies bei einigen fehl.
+ .
+ Dieser Fehler würde zum Verlust gültiger Name-Server-Information bei der Installation des Pakets Resolvconf führen, falls die folgende Hilfskonstruktion nicht eingesetzt würde: Resolvconf enthält den gesamten Inhalt von /etc/resolv.conf im Zustand vor der Installation bis zum Systemneustart. Dies hat den Nachteil, dass die Name-Server-Information beibehalten wird, selbst wenn die Konfiguration der zugehörige Schnittstelle später entfernt wird. (Dieses inkorrekte Verhalten wird als weniger schädlich als die Alternative des Verlusts gültiger Information angesehen).
+ .
+ Bis der besagte Fehler behoben ist und die Hilfskonstruktion entfernt wurde, ist die einzige Methode, um sicherzustellen, dass Resolvconf über komplett korrekte Name-Server-Informationen verfügt, nachdem das Paket auf einem laufenden System installiert wurde, der Neustart des Systems.
+Description-es.UTF-8: Se recomienda reiniciar
+ Se espera que los proveedores de información de servidores de nombres, como puedan ser servidores de nombres con caché local y los sistemas que configuran las interfaces, de información al programa resolvconf. Sin embargo, aunque la instalación del paquete resolvconf hace que éstos proporcionen esta información, algunos de éstos pueden no darla.
+ .
+ Este error puede dar lugar a la pérdida de la información de servidores de nombres válidos al instalar el paquete resolvconf si no se adoptar las siguientes medidas de para evitar el problema: resolvconf incluye los contenidos completos del fichero «/etc/resolv.conf» antes de la instalación en su base de datos hasta un reinicio del sistema. Esto tiene el inconveniente de que la información de servidores de nombres se mantiene aún cuando la interfaz asociada se desconfigure (se considera que este comportamiento inválido es menos perjuidicial que la alternativa de perder información válida).
+ .
+ Hasta que este error no se haya arreglado y se haya eliminado este arreglo transitorio, la única forma de asegurarse que resolvconf tiene la información correcta de los servidores de nombres después de su instalación es reiniciar el sistema.
+Description-eu.UTF-8: Berrabiaraztea gomendatzen da
+ Izen-zerbitzarien informazioaren hornitzaileak, hala nola cache lokaleko izen-zerbitzariak eta konfiguratzaileen interfazeak, espero dira izen-zerbitzarien informazioa resolvconf programari emateko. Hala ere, nahiz eta resolvconf paketearen instalazioak haiek abiarazi beraien informazioa emateko, haietariko batzuk huts egin dezakete.
+ .
+ Akats honek resolvconf paketearen instalazioko baliozko izen-zerbitzariaren informazioa galtzea eragin dezake honako konponbidea ez bada lantzen: resolvconf-ek aurre-instalazioko /etc/resolv.conf fitxategiaren eduki osoa edukitzen du bere datu-basean berrabiarazi arte. Honek badu bere eragozpena, izen-zerbitzariaren informazioa mantenduko baita nahiz eta esleitutako interfazea beranduago deskonfiguratua izan. Portaera desegoki honek baliozko informazioa galtzea baino kalte gutxiago sortzen duela suposatzen da.
+ .
+ Akats hori konpondu eta konponbidea kendu arte, resolvconf-k baliozko izen-zerbitzariaren informazio osoa duela ziurtatzeko era bakarra resolvconf paketea instalatu ondoren exekutatzen ari den sistema batean sistema berrabiaraztea da.
+Description-fr.UTF-8: Redémarrage recommandé
+ Les programmes en charge de la fourniture des informations de service de noms tels que les programmes locaux de cache de service de noms et les configurateurs d'interfaces doivent fournir les informations de service de noms au programme resolvconf. Cependant, bien que l'installation de celui-ci déclenche une demande de mise à jour de ces informations, certains échouent à l'effectuer.
+ .
+ Ce bogue pourrait conduire à la perte d'informations valables lors de l'installation du paquet resolvconf si les contournements suivants ne sont pas mis en œuvre : resolvconf inclut le contenu complet du fichier /etc/resolv.conf précédant l'installation jusqu'au redémarrage qui suit. Ce contournement a le défaut de conserver l'information de service de noms même si l'interface réseau en question est déconfigurée, ce qui est jugé moins ennuyeux que la perte possible d'informations.
+ .
+ En attendant que ce bogue soit corrigé et le contournement retiré, la seule façon de garantir que resolvconf possède les informations entièrement correctes de service de noms après son installation sur un système est le redémarrage de ce système.
+Description-it.UTF-8: Riavvio consigliato
+ I fornitori di informazioni sui name server, come i name server di cache e i configuratori di interfacce, sarebbero tenuti a fornire informazioni sui name server a resolvconf. Comunque, sebbene l'installazione del pacchetto resolvconf attivi in essi le procedure per comunicare tali informazioni, alcuni non riescono a farlo correttamente.
+ .
+ Questo bug potrebbe portare a una perdita di informazioni sui name server durante l'installazione del pacchetto resolvconf se non si adotta la seguente soluzione temporanea: resolvconf includerà il contenuto completo del file /etc/resolv.conf come era prima della sua installazione nel suo database fino al prossimo riavvio. Questo ha lo svantaggio che le informazioni sui name server saranno mantenute anche se l'interfaccia associata venisse disattivata. (Questo comportamento scorretto è giudicato meno dannoso dell'alternativa di perdere informazioni valide.)
+ .
+ Fino a che il bug in questione non sarà corretto e non sarà rimossa la soluzione temporanea, il solo modo di assicurarsi che resolvconf abbia le informazioni corrette sui name server dopo che è stato installato su un sistema in esecuzione è riavviare il sistema.
+Description-ja.UTF-8: 再起動することを勧めます
+ ローカルキャッシュ用ネームサーバやインターフェース設定プログラムといったネームサーバ情報を提供するプログラムは、resolvconf プログラムにネームサーバ情報を提供することが予測されます。しかし、resolvconf パッケージのインストールはその情報を提供させるようにはしますが、それに失敗するものがあります。
+ .
+ このバグにより、以下の対策をとらないと、resolvconf パッケージのインストールで正しいネームサーバ情報を失ってしまうことがあります: resolvconf は、再起動するまでデータベース内にインストール前の /etc/resolv.conf の内容をすべて持っています。これには、関連するインターフェース設定が後で解除されてもそのネームサーバ情報を保持してしまう欠点があります。(この誤った挙動は、正しい情報を失うことよりは害は少ないと判断されました。)
+ .
+ 問題となっているバグが修正されて対策が除去されるまで、動作しているシステムに resolvconf パッケージをインストールした後に完全に正しいネームサーバ情報を resolvconf に確実に持たせる唯一の方法はシステムを再起動することです。
+Description-nl.UTF-8: Herstart aanbevolen
+ Van programma's die naamserver-informatie leveren, zoals lokale naamservers en interface-configuratieprogramma's, wordt verwacht dat zij naamserver-informatie aan het resolvconf programma doorgeven. Sommigen doen dit echter niet, hoewel de installatie van het resolvconf-pakket hun daartoe een signaal geeft.
+ .
+ Deze fout kan leiden tot verlies van geldige naamserver-informatie bij installatie van het resolvconf-pakket. Daarom is er de volgende maatregel: resolvconf neemt de volledige inhoud van /etc/resolv.conf van voor zijn installatie over tot aan de volgende herstart. Het nadeel van deze maatregel is dat naamserver-informatie wordt vastgehouden, zelfs als de bijbehorende interface later wordt gedeconfigureerd. Dit op zich onjuiste gedrag wordt beschouwd als minder schadelijk dan het alternatief waarbij geldige informatie verloren gaat.
+ .
+ Totdat de feitelijke fout is verholpen en de maatregel is verwijderd, is herstarten van het systeem de enige manier om te garanderen dat resolvconf na installatie volledig juiste naamserver-informatie heeft.
+Description-pt.UTF-8: Re-início do sistema recomendado
+ Os fornecedores de informação de servidor de nomes, tais como servidores de nome com cache local e configuradores de interfaces, devem fornecer essa informação ao resolvconf. No entanto, embora a instalação do pacote resolvconf despolete a entrega dessa informação, alguns deles não o fazem.
+ .
+ Esta falha levaria à perda de informação válida do servidor de nomes após a instalação do resolvconf se o seguinte procedimento não fosse adoptado: o resolvconf inclui todo o conteúdo do /etc/resolv.conf pré-existente na sua base de dados até ao re-início seguinte. Isto tem a desvantagem da informação do servidor de nomes ser retida mesmo que a interface associada seja desconfigurada. (Este comportamento incorrecto é julgado menos prejudicial que a alternativa de perder informação válida.)
+ .
+ Até que esta falha esteja resolvida e o procedimento removido, a única maneira de assegurar que o resolvconf tem informação completamente correcta dos servidores de nome após a instalação do pacote resolvconf num sistema é reiniciar o sistema.
+Description-pt_BR.UTF-8: Reinicialização recomendada
+ Fornecedores de informação de servidores de nomes, tais como servidores de nomes com cache local e configuradores de interfaces, devem fornecer informação de servidores de nomes para o programa resolvconf. Porém, embora a instalação do pacote resolvconf dispare-os para que forneçam suas informações, alguns deles falham ao fazer isso.
+ .
+ Esse bug levaria à perda de informação de servidores de nomes válida na instalação do pacote resolvconf se a seguinte solução alternativa não fosse adotada: o resolvconf inclui o conteúdo completo do arquivo /etc/resolv.conf existente antes da instalação no seu banco de dados até a reinicialização do sistema. Isso tem o inconveniente de reter a informação de servidores de nomes mesmo que a interface associada seja desconfigurada mais tarde. (Esse comportamento incorreto é considerado menos prejudicial que a alternativa de perder informação válida.)
+ .
+ Até que o bug em questão seja corrigido e a solução alternativa removida, a única maneira de garantir que o resolvconf tenha informação de servidores de nomes totalmente correta depois de ser instalado em um sistema em execução é reinicializar o sistema.
+Description-ru.UTF-8: Рекомендуется перезагрузка
+ Ожидается, что информация о сервере имён для программы resolvconf будет получена от других программ, таких как локальные кэширущие серверы имён и настройщики интерфейсов. Однако, хотя процедура установки пакета resolvconf запросила эту информацию, некоторые из них не могут её выдать.
+ .
+ Этот дефект привёл бы к потере информации о сервере имён при установке пакета resolvconf, если не было применено следующее обходное решение: resolvconf включил всё содержимое /etc/resolv.conf, которое было до установки, в свою базу данных до перезагрузки. Но в этом решении есть недостаток: информация о сервере имён останется, даже если со связанного с ней интерфейса позднее будут удалены настройки (это некорректное поведение считается менее болезненным, чем потеря достоверной информации).
+ .
+ Пока рассматриваемая ошибка не исправлена, и обходное решение не удалено, единственный путь гарантировать, что у resolvconf есть полностью корректная информация о сервере имён после установки пакета resolvconf пакет в рабочую систему, это перезагрузка системы.
+Description-sk.UTF-8: Odporúčame reštart
+ Na poskytnutie informácií menného servera programu resolvconf sú očakávaný poskytovatelia informácií menného servera, ako napr. lokálne kešovacie menné servery a konfigurátory rozhrania. Avšak, hoci ich inštalácia balíka o poskytnutie informácií požiada, niektoré z nich pri tom zlyhávajú.
+ .
+ Táto chyba môže mať za následok stratu informácií o platnom mennom serveri pri inštalácii balíka resolvconf, ak nebude prijatá nasledujúca oprava: resolvconf zahŕňa vo svojej databáze úplný obsah pôvodného /etc/resolv.conf až do reštartu. Je to nevýhoda, keď informácie menného servera sú zachované, dokonca i keď je priradené rozhranie neskôr vypnuté (toto nesprávne správanie je posúdené ako menej škodlivá alternatíva straty informácií).
+ .
+ Kým nebude táto chyba opravená a táto oprava odstránená, jediným spôsobom ako zaistiť, že resolvconf má úplné a správne informácie o mennom serveri po nainštalovaní balíka resolvconf na bežiacom systéme je reštartovať systém.
+Description-sv.UTF-8: Omstart rekomenderas
+ Programmet resolvconf ska få information namnserverinformation från gränssnittskonfiguratorer och lokala namncacheservrar. Trots att installationen av paketet resolvconf säger till dem att dela med sig av sin information så finns det vissa som inte gör detta.
+ .
+ Detta fel innebär att namnserverinformation vid installation av paketet resolvconf om inte följande lösning används för att gå runt problemet; resolvconf tar med sig all information från /etc/resolv.conf till databasen fram tills omstart av systemet. Detta är innebär i förlängningen att namnserverinformation som sparas undan finns kvar även om gränssnittet som det är associerat med avaktiveras. (Detta beteende bedöms mindre skadligt än att korrekt information försvinner.)
+ .
+ Så länge felet ifråga finns kvar och speciallösningen inte tagits bort är enda sättet att säkerställa att resolvconf har rätt namnserverinformation efter installationen av resolvconfpaketet i ett körande system att starta om systemet.
+
+Template: resolvconf/reboot-recommended-after-removal
+Type: note
+Description: Reboot recommended
+ The removal of the resolvconf package may have resulted in some
+ information about name servers becoming unavailable. To correct
+ this problem it is recommended that the system be rebooted.
+Description-cs.UTF-8: Doporučuje se restartovat systém
+ Odstranění balíku resolvconf může způsobit, že některé informace o jmenných serverech nebudou dostupné. Pro nápravu tohoto problému se doporučuje restartovat systém.
+Description-da.UTF-8: Genstart anbefales
+ Fjernelsen af pakken resolvconf kan have medført, at information om navneservere er blevet utilgængelig. For at rette dette problem anbefales det, at systemet genstartes.
+Description-de.UTF-8: Systemneustart empfohlen
+ Die Entfernung des Pakets resolvconf könnte dazu geführt haben, dass einige Informationen über Name-Server nicht mehr verfügbar sind. Um dieses Problem zu beheben, wird ein Neustart des Systems empfohlen.
+Description-es.UTF-8: Se recomienda reiniciar
+ Es posible que la eliminación del paquete resolvconf haya tenido como resultado la pérdida de alguna información sobre los servidores de nombres. Se recomienda reiniciar el sistema para corregir este problema.
+Description-eu.UTF-8: Berrabiaraztea gomendatzen da
+ resolvconf paketea kentzeak izen-zerbitzariei buruzko informazio batzuk eskuragarri ez egotea eragin dezake. Arazo hau konpontzeko, sistema berrabiaraztea gomendatzen da.
+Description-fr.UTF-8: Redémarrage recommandé
+ La suppression du paquet resolvconf peut avoir eu comme conséquence l'indisponibilité d'informations sur les serveurs de noms. Pour corriger ce problème, il est recommandé de redémarrer le système.
+Description-it.UTF-8: Riavvio consigliato
+ La rimozione del pacchetto resolvconf potrebbe aver reso indisponibili alcune informazioni sui name server. Per correggere questo problema si consiglia un riavvio del sistema.
+Description-ja.UTF-8: 再起動することを勧めます
+ resolvconf パッケージの削除によってネームサーバに関する情報の一部が利用できなくなる可能性があります。この問題を修正するためにシステムを再起動することを勧めます。
+Description-nl.UTF-8: Herstart aanbevolen
+ Door het verwijderen van het resolvconf-pakket is sommige informatie over naamservers mogelijk niet meer beschikbaar. Om dit probleem op te lossen wordt een herstart aanbevolen.
+Description-pt.UTF-8: Re-início do sistema recomendado
+ A remoção do pacote resolvconf pode ter resultado na indisponibilidade de alguma informação acerca de servidores de nomes. Para corrigir este problema é recomendável que o sistema seja reiniciado.
+Description-pt_BR.UTF-8: Reinicialização recomendada
+ A remoção do pacote resolvconf pode ter resultado em alguma informação sobre servidores de nomes ter ficado indisponível. Para corrigir esse problema, é recomendado que o sistema seja reinicializado.
+Description-ru.UTF-8: Рекомендуется перезагрузка
+ Удаление пакета resolvconf может привести потере информации о серверах имён. Для устранения проблемы перезагрузите систему.
+Description-sk.UTF-8: Odporúčame reštart
+ Odstránenie balíka resolvconf môže mať za následok, že niektoré informácie o menných serveroch nebudú dostupné. Na nápravu tohoto problému je odporúčané reštartovať systém.
+Description-sv.UTF-8: Omstart rekomenderas
+ När paketet resolvconf togs bort kan information om namnserverar ha gått förlorad. För att korrigera detta problem bör systemet startas om.
+
+Template: resolvconf/link-tail-to-original
+Type: boolean
+Default: false
+Description: Append original file to dynamic file?
+ If the original static resolver configuration file (/etc/resolv.conf)
+ contains name server addresses, those addresses should be listed on
+ "dns-nameservers" lines in /etc/network/interfaces. For more
+ information, please consult the resolvconf(8) man page and the
+ README file.
+ .
+ Until /etc/network/interfaces has been edited and the affected
+ interfaces brought down and up again, the name server addresses will
+ not be included in the dynamically generated resolver configuration
+ file.
+ .
+ If you choose this option, a temporary workaround will be put in
+ place: a symbolic link will be created (if it does not already exist)
+ from /etc/resolvconf/resolv.conf.d/tail to
+ /etc/resolvconf/resolv.conf.d/original. This will cause the whole of
+ that original resolver configuration file to be appended to the
+ dynamically generated file.
+ .
+ After the required "dns-nameservers" lines have been added to
+ /etc/network/interfaces, the /etc/resolvconf/resolv.conf.d/tail link
+ should be replaced by one to /dev/null.
+Description-cs.UTF-8: Připojit původní soubor k dynamickému souboru?
+ Pokud váš původní statický konfigurační soubor (/etc/resolv.conf) obsahuje adresy jmenných serverů, pak by měly být tyto adresy vypsány na řádcích „dns-nameservers“ v souboru /etc/network/interfaces. Více informací naleznete v manuálové stránce resolvconf(8) a souboru README.
+ .
+ Dokud neupravíte /etc/network/interfaces a znovu nenakonfigurujete postižená rozhraní, neobjeví se adresy jmenných serverů v dynamicky generovaném konfiguračním souboru souboru resolveru.
+ .
+ Vyberete-li tuto možnost, použije se dočasné řešení: vytvoří se symbolický odkaz z /etc/resolvconf/resolv.conf.d/tail na /etc/resolvconf/resolv.conf.d/original (pokud již neexisuje). To způsobí, že se na konec dynamicky generovaného souboru připojí celý původní konfigurační soubor resolveru.
+ .
+ Až do souboru /etc/network/interfaces přidáte požadované řádky „dns-nameservers“, měli byste přesměrovat symbolický odkaz /etc/resolvconf/resolv.conf.d/tail na /dev/null.
+Description-da.UTF-8: Tilføj oprindelig fil til dynamisk fil?
+ Hvis den oprindelige statiske klarlæggerkonfigurationsfil (/etc/resolv.conf) indeholder adresser for navneservere, så bør disse adresser være anført på »dns-nameservers«-linjer i /etc/network/interfaces. For yderligere information så konsulter venligst manualsiden resolvconf(8) og README-filen.
+ .
+ Indtil /etc/network/interfaces er blevet redigeret og de påvirkede grænseflader bragt ned og op igen, vil navneserveradresserne ikke være inkluderet i den dynamisk oprettede klarlæggerkonfigurationsfil.
+ .
+ Hvis du vælger denne indstilling, vil en midlertidig omgåelse blive igangsat: En symbolsk henvisning vil blive oprettet (hvis den ikke allerede findes) fra /etc/resolvconf/resolv.conf.d/tail til /etc/resolvconf/resolv.conf.d/original. Dette vil medføre, at hele den oprindelige klarlæggerkonfigurationsfil vil blive tilføjet til den dynamisk oprettede fil.
+ .
+ Efter de krævede »dns-nameservers«-linjer er blevet tilføjet til /etc/network/interfaces, bør henvisningen /etc/resolvconf/resolv.conf.d/tail erstattes med en i /dev/null.
+Description-de.UTF-8: Die ursprüngliche Datei an die dynamische Datei anhängen?
+ Falls die ursprüngliche statische Resolver-Konfigurationsdatei (/etc/resolv.conf) Nameserver-Adressen enthielt, sollten diese Adressen auf »dns-nameservers«-Zeilen in /etc/network/interfaces aufgeführt werden. Für weitere Informationen lesen Sie die Handbuchseite resolvconf(8) und die README-Datei.
+ .
+ Bis /etc/network/interfaces bearbeitet und die betroffenen Schnittstellen herunter- und wieder heraufgefahren wurden, wird die Adresse des Nameservers nicht in die dynamisch erstellte Resolver-Konfigurationsdatei aufgenommen.
+ .
+ Falls Sie diese Option wählen, wird eine vorübergehende provisorische Lösung realisiert: Ein symbolischer Link von /etc/resolvconf/resolv.conf.d/tail nach /etc/resolvconf/resolv.conf.d/original wird erstellt (falls er nicht bereits existiert). Damit wird die gesamte ursprüngliche Konfigurationsdatei des Resolvers an die dynamisch generierte Datei angehängt.
+ .
+ Nachdem benötigte »dns-nameservers«-Zeilen zu /etc/network/interfaces hinzugefügt wurden, sollte der symbolische Link von /etc/resolvconf/resolv.conf.d/tail auf /dev/null geändert werden.
+Description-es.UTF-8: ¿Añadir el fichero original al final del fichero dinámico?
+ Si su fichero de configuración de resolución estática original («/etc/resolv.conf») contiene direcciones de servidores de nombres, deberá incluir estas direcciones en las líneas «dns-nameservers» en el fichero «/etc/network/interfaces». Para más información consulte la página de manual de «resolvconf(8)» y el fichero «README».
+ .
+ No se incluirán las direcciones de los servidores de nombres en el fichero de configuración de resolución que se genera de forma dinámica hasta que no haya editado el fichero «/etc/network/interfaces» y haya parado y arrancado de nuevo las interfaces afectadas.
+ .
+ Se introducirá una solución temporal si escoge esta opción: se creará un enlace simbólico (si no existe todavía) en «/etc/resolvconf/resolv.conf/tail» a «/etc/resolvconf/resolv.conf.d/original». Esto hará que se añada el contenido completo del fichero de configuración de resolución original al fichero generado de forma dinámica.
+ .
+ Debería reemplazar el enlace simbólico «/etc/resolvconf/resolv.conf.d/tail» para que sea un enlace a «/dev/null» una vez haya añadido las líneas «dns-nameservers» necesarias a «/etc/network/interfaces».
+Description-eu.UTF-8: Erantsi jatorrizko fitxategia fitxategi dinamikora?
+ Jatorrizko ebazpen 'finko' konfigurazio fitxategiak (etc/resolv.conf) izen-zerbitzariak baditu, helbide horiek /etc/network/interfaces fitxategiko "dns-nameservers" lerroetan gehitu beharko dira. Argibide gehiagorako irakurri itzazu resolvconf(8) manual orrialdea eta README fitxategia.
+ .
+ Behin /etc/network/interfaces editatua izan denean eta dagozkion interfazeak desgaitu eta gaitu arte izen-zerbitzari helbideak ez dira gehituko dinamikoki sortutako ebazte konfigurazio fitxategian.
+ .
+ Aukera hau hautatzen baduzu aldiroko portamolde bat erabiliko da, lotura sinboliko bat sortuko da (dagoeneko ez badago) /etc/resolvconf/resolv.conf.d/tail eta /etc/resolvconf/resolv.conf.d/original artean. Honela jatorrizko ebazte konfigurazio fitxategia dinamikoki sortutakoari erantsiko zaio.
+ .
+ Behin beharrezko "dns-nameservers" lerroak /etc/network/interfaces fitxategira gehitu direnean, /etc/resolvconf/resolv.conf.d/tail lotura /dev/null-erako batez ordeztu beharko zen.
+Description-fi.UTF-8: Lisätäänkö alkuperäinen tiedosto dynaamiseen tiedostoon?
+ Jos alkuperäinen staattinen selvittäjän asetustiedosto (/etc/resolv.conf) sisältää nimipalvelimien osoitteita, osoitteet tulisi listata ”dns-nameservers”-riveillä tiedostossa /etc/network/interfaces. Lisätietoja löytyy man-ohjesivulta resolvconf(8) ja README-tiedostosta.
+ .
+ Nimipalvelimien osoitteet sisällytetään dynaamisesti luotuun selvittäjän asetustiedostoon vasta, kun tiedostoa /etc/network/interfaces on muokattu ja muutetut liitynnät on käynnistetty uudelleen.
+ .
+ Jos valitset tämän vaihtoehdon, ongelma kierretään väliaikaisesti seuraavasti: Sijainnista /etc/resolvconf/resolv.conf.d/tail luodaan symbolinen linkki tiedostoon /etc/resolvconf/resolv.conf.d/original (jos sitä ei jo ole olemassa). Tällöin koko alkuperäinen selvittäjän asetustiedosto lisätään dynaamisesti luotuun tiedostoon.
+ .
+ Kun vaaditut ”dns-nameservers”-rivit on lisätty tiedostoon /etc/network/interfaces, Linkki /etc/resolvconf/resolv.conf.d/tail tulisi muuttaa osoittamaan sijaintiin /dev/null.
+Description-fr.UTF-8: Faut-il ajouter le fichier original au fichier dynamique ?
+ Si le fichier de configuration d'origine du résolveur (/etc/resolv.conf) contient des adresses de serveurs de noms, ces adresses peuvent être indiquées dans les lignes « dns-nameservers » du fichier /etc/network/interfaces. Pour plus d'informations, veuillez consulter la page de manuel de resolvconf et le fichier README.
+ .
+ Tant que le fichier /etc/network/interfaces n'aura pas été modifié et que les interfaces concernées n'auront pas été redémarrées, les adresses des serveurs de noms ne seront pas ajoutées au fichier de configuration créé dynamiquement.
+ .
+ Si vous choisissez cette option, un contournement temporaire sera établi : un lien symbolique sera créé (s'il n'existe pas déjà), de /etc/resolvconf/resolv.conf.d/tail vers /etc/resolvconf/resolv.conf.d/original. Cela ajoutera l'ensemble du fichier initial de configuration du résolveur à la fin du fichier créé dynamiquement.
+ .
+ Après avoir modifié /etc/network/interfaces pour ajouter les lignes « dns-nameservers », vous devriez faire pointer le lien symbolique /etc/resolvconf/resolv.conf.d/tail vers /dev/null.
+Description-gl.UTF-8: ¿Engadir o ficheiro orixinal ao ficheiro dinámico?
+ Se o ficheiro de configuración do resolvedor estático orixinal (/etc/resolv.conf) contén enderezos de servidores de nomes, eses enderezos deberían figurar en liñas "dns-nameservers" do ficheiro /etc/network/interfaces. Para máis información, consulte a páxina de manual de resolvconf(8) e o ficheiro README.
+ .
+ Ata que edite o ficheiro /etc/network/interfaces e as interfaces afectadas se baixen e volvan erguer, non se han incluír os enderezos dos servidores de nomes no ficheiro de configuración do resolvedor xerado dinamicamente.
+ .
+ Se escolle esta opción, hase establecer unha solución temporal: hase crear unha ligazón simbólica (se non existe xa) de /etc/resolvconf/resolv.conf.d/tail a /etc/resolvconf/resolv.conf.d/original . Isto ha facer que todo o contido dese ficheiro de configuración orixinal se engada ao ficheiro xerado dinamicamente.
+ .
+ Despois de engadir as liñas "dns-nameserver" necesarias ao ficheiro /etc/network/interfaces , deberíase substituír a ligazón /etc/resolvconf/resolv.conf.d/tail por unha ligazón a /dev/null.
+Description-it.UTF-8: Aggiungere il file originale al file dinamico?
+ Se il file di configurazione della risoluzione dei nomi (/etc/resolv.conf) contiene gli indirizzi del name server, questi indirizzi devono essere elencati nelle righe "dns-nameservers" in /etc/network/interfaces. Per ulteriori informazioni consultare la pagina man di resolvconf(8) e il file README.
+ .
+ Finché non viene modificato /etc/network/interfaces e le interfacce non sono disattivate e poi riattivate, gli indirizzi del name server non verranno inseriti nel file di configurazione della risoluzione dei nomi generato dinamicamente.
+ .
+ Se si accetta, viene realizzata un soluzione temporanea: viene creato (se non esiste) un collegamento simbolico da /etc/resolvconf/resolv.conf.d/tail a /etc/resolvconf/resolv.conf.d/original. Questo comporta che il file originale di configurazione per la risoluzione dei nomi viene aggiunto in coda a quello generato dinamicamente.
+ .
+ Una volta aggiunte le righe obbligatorie "dns-nameservers" a /etc/network/interfaces, il collegamento /etc/resolvconf/resolv.conf.d/tail deve essere sostituito con uno verso /dev/null.
+Description-ja.UTF-8: 更新されるファイルにオリジナルのファイルを追加しますか?
+ 元々の静的な名前解決ファイル (/etc/resolv.conf) がネームサーバのアドレスを含んでいる場合、これらのアドレスは、/etc/network/interfaces の "dns-nameservers" 行に記述されている必要があります。詳細については、resolvconf(8) の man ページと README ファイルを参照してください。
+ .
+ /etc/network/interfaces を編集し、関連するインターフェースをダウンして再度アップするまで、ネームサーバのアドレスは動的に生成される名前解決ファイルに含まれません。
+ .
+ この選択を選んだ場合、一時的な回避方法があります。(まだファイルが存在していない場合) /etc/resolvconf/resolv.conf.d/tail から /etc/resolvconf/resolv.conf.d/original へシンボリックリンクが作られます。これによって、元々のリゾルバ設定ファイルが丸ごと動的に生成されるファイルに追加されます。
+ .
+ /etc/network/interfaces に必要な "dns-nameservers" 行を加えた後、/etc/resolvconf/resolv.conf.d/tail へのシンボリックリンクを /dev/null へのリンクに変更する必要があります。
+Description-nl.UTF-8: Originele bestand aan het eind van dynamische bestand toevoegen?
+ Als het originele statische resolver-configuratiebestand (/etc/resolv.conf) naamserver-adressen bevatte, dan dienen die adressen te worden genoemd op "dns-nameservers"-regels in /etc/network/interfaces. Zie voor nadere informatie de resolvconf(8) manpagina en de README.
+ .
+ Tot op het moment waarop /etc/network/interfaces is aangepast en de betreffende netwerk-interfaces opnieuw zijn ingesteld, zullen deze adressen niet in het automatisch gegenereerde resolver-configuratiebestand zijn opgenomen.
+ .
+ Indien u deze optie accepteert zal een tijdelijke oplossing worden neergezet: een symbolische koppeling zal worden aangemaakt (als deze nog niet bestaat) van /etc/resolvconf/resolv.conf.d/tail naar /etc/resolvconf/resolv.conf.d/original. Hierdoor zal het volledige oorspronkelijke configuratiebestand achter aan het dynamisch gegenereerde bestand worden toegevoegd.
+ .
+ Nadat de benodigde "dns-nameservers"-regels zijn toegevoegd aan /etc/network/interfaces, dient de symbolische koppeling /etc/resolvconf/resolv.conf.d/tail te worden vervangen door één die naar /dev/null wijst.
+Description-pt.UTF-8: Acrescentar o ficheiro original ao ficheiro dinâmico?
+ Se o ficheiro original de configuração estática do resolver (/etc/resolv.conf) contém endereços de servidores de nomes, esses endereços devem estar listados em linhas "dns-nameservers" em /etc/network/interfaces.Para mais informação, por favor consulte a página de manual resolvonf(8) e o ficheiro README.
+ .
+ Até /etc/networks/interfaces ter sido editado e as interfaces afectadas re-iniciadas, os endereços dos servidores de nomes não serão incluídos no ficheiro de configuração do resolver gerado dinamicamente.
+ .
+ Se escolher esta opção, uma resolução temporária será posta em funcionamento: uma ligação simbólica será criada (se não existir) de /etc/resolvconf/resolv.conf.d/tail para /etc/resolvconf/resolv.conf.d/original. Isto irá fazer com que toda a configuração estática seja acrescentada ao ficheiro gerado dinamicamente.
+ .
+ Após as linhas "dns-nameserver" necessárias terem sido acrescentadas ao ficheiro /etc/network/interfaces, a ligação simbólica /etc/resolvconf/resolv.conf.d/tail deve ser substituída por uma para /dev/null.
+Description-pt_BR.UTF-8: Adicionar o arquivo original ao arquivo dinâmico?
+ Se o arquivo de configuração estático original do resolvedor (/etc/resolv.conf) contém endereços de servidores de nomes, esses endereços devem ser listados em linhas "dns-nameservers" em /etc/network/interfaces. Para mais informação, por favor, consulte a página de manual resolvconf(8) e o arquivo README.
+ .
+ Até que /etc/network/interfaces tenha sido editado e as interfaces afetadas baixadas e subidas novamente, os endereços de servidores de nomes não serão incluídos no arquivo de configuração do resolvedor gerado dinamicamente.
+ .
+ Se você escolher essa opção, uma solução alternativa temporária será usada: um link simbólico será criado (caso já não exista) de /etc/resolvconf/resolv.conf.d/tail para /etc/resolvconf/resolv.conf.d/original. Isso fará com que todo o conteúdo do arquivo original de configuração do resolvedor seja adicionado ao arquivo gerado dinamicamente.
+ .
+ Depois de as linhas "dns-nameservers" requeridas terem sido adicionadas a /etc/network/interfaces, o link /etc/resolvconf/resolv.conf.d/tail deverá ser substituído por outro que aponte para /dev/null.
+Description-ru.UTF-8: Добавить имеющийся файл в динамически обновляемый файл?
+ Если ваш статический файл настройки определителя имён (/etc/resolv.conf) содержит адреса серверов имён, то эти адреса должны быть записаны в строках «dns-nameservers» в файл /etc/network/interfaces. Подробней об этом написано на странице руководства resolvconf(8) и в файле README.
+ .
+ Пока файл /etc/network/interfaces не будет отредактирован и задействованные интерфейсы не будут перезапущены, адреса серверов имён не будут добавляться в динамически создаваемый файл настройки определителя.
+ .
+ Если вы ответите утвердительно, то будет активировано временное решение: будет создана символическая ссылка (если её ещё не было) /etc/resolvconf/resolv.conf.d/tail на файл /etc/resolvconf/resolv.conf.d/original. Это приведёт к добавлению всего содержимого имеющего файла настройки определителя в динамически создаваемый файл.
+ .
+ После добавления в /etc/network/interfaces необходимых строк «dns-nameservers», нужно изменить символическую ссылку /etc/resolvconf/resolv.conf.d/tail, чтобы она указывала на /dev/null.
+Description-sk.UTF-8: Pripojiť pôvodný súbor k dynamickému súboru?
+ Ak pôvodný statický konfiguračný súbor resolvera (/etc/resolv.conf) obsahuje adresy menného servera, tieto adresy musia byť vypísané v riadkoch "dns-nameservers" v súbore /etc/network/interfaces. ďalšie podrobnosti hľadajte v manuálovej stránke resolvconf(8) a v súbore README.
+ .
+ Ak bol súbor /etc/network/interfaces zmenený, kým nebudú dotknuté rozhrania vypnuté a znova zapnuté, adresy menného servera nebudú zahrnuté v dynamicky generovanom konfiguračnom súbore resolvera.
+ .
+ Ak zvolíte túto možnosť, bude použitá dočasná oprava: bude vytvorený symbolický odkaz (ak ešte neexistuje) z /etc/resolvconf/resolv.conf.d/tail do /etc/resolvconf/resolv.conf.d/original. Takýmto spôsobom bude celý obsah pôvodného konfiguračného súboru resolvera pripojený k dynamicky generovanému súboru.
+ .
+ Po pridaní požadovaných riadkov "dns-nameservers" do /etc/network/interfaces, bude odkaz /etc/resolvconf/resolv.conf.d/tail nahradený odkazom do /dev/null.
+Description-sv.UTF-8: Lägg till originalfil till dynamisk fil?
+ Om den vanliga statiska uppslagningskonfigurationen (vanligen /etc/resolv.conf) innehåller adresser för namnservrar ska dessa flyttas till /etc/network/interfaces, raderna ska ha prefixen "dns-nameservers". Läs mer i manualsidan resolvconf(8) och README-filen.
+ .
+ Så länge /etc/network/interfaces inte har ändrats och de påverkade gränssnitten stoppats och startats kommer namnservrarnas adresser inte att inkluderas i den dynamiskt skapade uppslagsningskonfigurationen.
+ .
+ Om du väljer detta alternativ så kommer en temporär omväg att skapas, en symbolisk länk placeras i /etc/resolvconf/resolv.conf.d/tail och den pekar på /etc/resolvconf/resolv.conf.d/original. Detta kommer medföra att hela den ursprungliga uppslagningskonfigurationen läggs till sist i den dynamiskt skapade filen.
+ .
+ Efter du har modifierat /etc/network/interfaces och lagt till raderna för "dns-nameservers" som krävs bör du peka en symbolisk länk från /etc/resolvconf/resolv.conf.d/tail till /dev/null.
+Description-vi.UTF-8: Phụ thêm tập tin gốc vào tập tin động không?
+ Nếu tập tin cấu hình phần mềm giải quyết tĩnh gốc (/etc/resolv.conf) chứa địa chỉ của máy phục vụ tên thì các tên đó nên được liệt kê theo dòng « dns-nameservers » trong tập tin « /etc/network/interfaces ». Để tìm thêm thông tin, xem trang hướng dẫn (man) resolvconf(8) và tập tin Đọc Đi (README).
+ .
+ Đến khi tập tin « /etc/network/interfaces » đã được chỉnh sửa, và các giao diện bị ảnh hưởng được tắt rồi bật lại, những địa chỉ máy phục vụ tên sẽ không được liệt kê trong tập tin cấu hình phần mềm giải quyết được tạo động.
+ .
+ Bật tùy chọn này thì dùng một sự khắc phục tạm thời: một liên kết tượng trưng sẽ được tạo (nếu chưa có) từ tập tin « /etc/resolvconf/resolv.conf.d/tail » đến tập tin « /etc/resolvconf/resolv.conf.d/original ». Liên kết này sẽ gây ra phụ thêm toàn bộ tập tin cấu hình phần mềm giải quyết gốc vào tập tin được tạo ra động.
+ .
+ Sau khi các dòng « dns-nameservers » cần thiết đã được thêm vào tập tin « /etc/network/interfaces », liên kết « /etc/resolvconf/resolv.conf.d/tail » nên bị thay thế bằng một liên kết tới « /dev/null ».

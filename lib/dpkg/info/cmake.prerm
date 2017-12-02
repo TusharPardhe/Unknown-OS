@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/bash_completion.d/ctest 3.2.2-3~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/bash_completion.d/cpack 3.2.2-3~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/bash_completion.d/cmake 3.2.2-3~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper symlink_to_dir /usr/share/doc/cmake /usr/share/doc/cmake-data 2.8.12.2-2~ -- "$@"
+# End automatically added section

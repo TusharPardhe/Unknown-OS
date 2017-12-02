@@ -1,0 +1,9 @@
+c3cc7c667c526bf8b318fd501e52c537  usr/bin/gdmflexiserver
+2ab8013c90387cc8c6a7ee9b35de5459  usr/lib/x86_64-linux-gnu/libgdm.so.1.0.0
+4228c5b6d8f8db6b6b29da4cfedf2a1a  usr/share/doc/libgdm1/AUTHORS
+77d4e9879c5a15178e910fcabe4c3284  usr/share/doc/libgdm1/NEWS.gz
+5ffaf7d4dd4c4da76eaa8f963e2a74be  usr/share/doc/libgdm1/README
+72574f504e7be4112cee4e8ddfdd3787  usr/share/doc/libgdm1/changelog.Debian.gz
+533755cf867d1aa9feed9d8d15c92472  usr/share/doc/libgdm1/copyright
+1426a4ce1102863f118dfe270e99facf  usr/share/glib-2.0/schemas/org.gnome.login-screen.gschema.xml
+b6f76d10bdd73b88838c448ffe3a2f98  usr/share/man/man1/gdmflexiserver.1.gz

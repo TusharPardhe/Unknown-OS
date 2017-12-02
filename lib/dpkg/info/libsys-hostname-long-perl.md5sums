@@ -1,0 +1,6 @@
+4954398466b5509f2ff3f174da189ca1  usr/share/doc/libsys-hostname-long-perl/changelog.Debian.gz
+1438ea8667cedda3b616d14477f6e10f  usr/share/doc/libsys-hostname-long-perl/copyright
+432b4240dda8a107b3c4537848680405  usr/share/doc/libsys-hostname-long-perl/examples/testall.pl
+bcbf27430316fe87ce81cb81658d6c98  usr/share/man/man3/Sys::Hostname::Long.3pm.gz
+19755854eef47bca955df2a5c3745e3f  usr/share/perl5/Sys/Hostname/Long.pm
+432b4240dda8a107b3c4537848680405  usr/share/perl5/Sys/Hostname/testall.pl

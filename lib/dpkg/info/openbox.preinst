@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = upgrade ]; then
+    update-alternatives --remove x-window-manager /usr/bin/openbox-session
+fi
+
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/xdg/openbox/autostart.sh 3.5.0-1 -- "$@"
+# End automatically added section
+
+
+exit 0

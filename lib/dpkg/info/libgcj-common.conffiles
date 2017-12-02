@@ -1,0 +1,7 @@
+/etc/java/cacerts-gcj
+/etc/java/security/classpath.security
+/etc/java/security/security.d/1000-gnu.java.security.provider.Gnu
+/etc/java/security/security.d/1001-gnu.javax.crypto.jce.GnuCrypto
+/etc/java/security/security.d/1002-gnu.javax.crypto.jce.GnuSasl
+/etc/java/security/security.d/1003-gnu.javax.net.ssl.provider.Jessie
+/etc/java/security/security.d/1004-gnu.javax.security.auth.callback.GnuCallbacks

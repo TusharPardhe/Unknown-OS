@@ -1,0 +1,12 @@
+cbe2d3db7a2af3f913bd6dededc1f516  usr/bin/fix-qdf
+2856db0773ee0043b4bab0a680d4ea46  usr/bin/qpdf
+a5875638d8cde909910f248731c86b1d  usr/bin/zlib-flate
+c884a6500379ceadcbe5fbd653b3c345  usr/share/doc-base/qpdf-manual
+1edd708bec2589f715c69c9ba953aebd  usr/share/doc/qpdf/copyright
+64fbc4702d9f8104c21cb5de64c56483  usr/share/doc/qpdf/qpdf-manual.html
+a3617b64246c508729c6b0b91b63e6ad  usr/share/doc/qpdf/qpdf-manual.pdf
+96964ea207fbf9ca7978287569daec43  usr/share/doc/qpdf/stylesheet.css
+e11b55ed71675c382198e4f5aa690c3b  usr/share/lintian/overrides/qpdf
+e42484816092ff49e917f35f1ed958d2  usr/share/man/man1/fix-qdf.1.gz
+9b4ccc653ba3a362aab4193bf8300452  usr/share/man/man1/qpdf.1.gz
+ff0369facbf6f3dd98b63fa92fdbf6ce  usr/share/man/man1/zlib-flate.1.gz

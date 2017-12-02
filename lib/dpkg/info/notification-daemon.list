@@ -1,0 +1,17 @@
+/.
+/etc
+/etc/xdg
+/etc/xdg/autostart
+/etc/xdg/autostart/notification-daemon-autostart.desktop
+/usr
+/usr/lib
+/usr/lib/notification-daemon
+/usr/lib/notification-daemon/notification-daemon
+/usr/share
+/usr/share/applications
+/usr/share/applications/notification-daemon.desktop
+/usr/share/doc
+/usr/share/doc/notification-daemon
+/usr/share/doc/notification-daemon/AUTHORS
+/usr/share/doc/notification-daemon/copyright
+/usr/share/doc/notification-daemon/changelog.Debian.gz

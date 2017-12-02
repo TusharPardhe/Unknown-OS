@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Перемикати зайняття при зміні робочого місця">
+						<longdesc>Якщо увімкнено, перемикання за назвою, цей список встановлює назви занять, які слід перемикати. Робочі місця представлені індексом елементи.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Чи потрібно перемикати робочого місця перемикати задачу">
+						<longdesc>Список використаних способів звіту. Значення «name» враховує перемикання зайнята за назвами, визначеннями у workspace_mapping. Значення «memory» враховує перемикання на останнє заняття при повернені до попереднього робочого простору.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="О котрій починається день (типово 5:30)">
+						<longdesc>Дії будуть записані на вчорашній день, якщо поточний час менший за вказаний у полі початок дня, і будуть записані на сьогодні, якщо час більший за початок дня. Дії, що охоплюють два дні, приписуються до дня, у якому зроблено більшу частину дії.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Також нагадати коли не встановлено діяльність">
+						<longdesc>Нагадувати з інтервалом notify_interval у хвилинах, якщо дію не було розпочато.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Періодично нагадувати про поточну задачу через вказане число хвилин">
+						<longdesc>Вмикає нагадування про поточну задачу періодично через вказане число хвилин. Значення 0 або більше 120 вимикає нагадування</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Припиняти стеження при вимиканні комп&apos;ютера">
+						<longdesc>Припинити стеження за поточною дією при вимиканні комп&apos;ютера</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Припинити стеження при бездіяльності">
+						<longdesc>Припинити стеження за поточною дією при бездіяльності комп&apos;ютера</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Перемкнути вікно програми">
+								<longdesc>Перемкнути видимість вікна програми.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Перемкнути дії вікна програми">
+								<longdesc>Команда для перемикання видимості вікна програми.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Показати / сховати вікно обліку за часом">
+								<longdesc>Клавіатурне скорочення для показу / ховання вікна обліку за часом.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

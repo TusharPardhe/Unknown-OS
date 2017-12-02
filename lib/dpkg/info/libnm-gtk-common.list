@@ -1,0 +1,9 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libnm-gtk-common
+/usr/share/doc/libnm-gtk-common/changelog.Debian.gz
+/usr/share/doc/libnm-gtk-common/copyright
+/usr/share/libnm-gtk
+/usr/share/libnm-gtk/wifi.ui

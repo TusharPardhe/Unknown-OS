@@ -1,0 +1,2 @@
+/etc/apport/crashdb.conf.d/indicator-sound-crashdb.conf
+/etc/xdg/autostart/indicator-sound.desktop

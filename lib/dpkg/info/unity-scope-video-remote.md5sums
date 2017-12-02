@@ -1,0 +1,5 @@
+c15cb2dee3dc1bedd26fe3afea0fd8f8  usr/lib/x86_64-linux-gnu/unity-lens-video/unity-scope-video-remote
+a45eaeebdeab70bdb1b99b86eba7ea93  usr/share/dbus-1/services/unity-scope-video-remote.service
+a349f49c05f8cfa43224663b279e0243  usr/share/doc/unity-scope-video-remote/changelog.Debian.gz
+452f1e59cdc6407c770d79be82c060d8  usr/share/doc/unity-scope-video-remote/copyright
+9b3fc171e17e2babfc2a5d05c85b5186  usr/share/unity/scopes/video/remote.scope

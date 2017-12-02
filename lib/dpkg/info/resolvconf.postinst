@@ -1,0 +1,234 @@
+#!/bin/sh
+#
+# This file is part of the resolvconf package.
+#
+
+set -e
+
+. /usr/share/debconf/confmodule
+
+MYNAME=resolvconf.postinst
+report() { echo "${MYNAME}: $*" ; }
+report_err() { report "Error: $*" >&2 ; }
+report_warn() { report "Warning: $*" >&2 ; }
+report_info() { report "$*" >&2 ; }
+
+is_immutable_file() {
+	[ "$1" ] || return 2
+	[ -e "$1" ] || return 1
+	[ ! -L "$1" ] || return 1
+	local ATTR="$(lsattr "$1" 2>/dev/null || :)"
+	[ "$ATTR" ] || return 1
+	echo "$ATTR" | awk '$1 ~ /i/ { exit 0; }; { exit 1; }'
+}
+
+dnssec_trigger_is_installed() {
+	[ -x /usr/sbin/dnssec-triggerd ]
+}
+
+case "$1" in
+  configure)
+	### Deal with obsolete configuration files ###
+	rm -f /etc/dhcp3/dhclient-enter-hooks.d/resolvconf
+	[ -f /etc/resolvconf/update.d/bind ] && mv -f /etc/resolvconf/update.d/bind /etc/resolvconf/update.d/bind.dpkg-old
+
+	### If there are "S" runlevel symlinks in runlevels 1-5 then that is bad. Delete them. ###
+	G='/etc/rc[1-5].d/S??resolvconf'
+	if [ "$(echo $G)" != "$G" ] ; then
+		update-rc.d resolvconf remove >/dev/null || :
+	fi
+	;;
+esac
+
+# Automatically added by dh_systemd_enable
+# This will only remove masks created by d-s-h on package removal.
+deb-systemd-helper unmask resolvconf.service >/dev/null || true
+
+# was-enabled defaults to true, so new installations run enable.
+if deb-systemd-helper --quiet was-enabled resolvconf.service; then
+	# Enables the unit on first installation, creates new
+	# symlinks on upgrades if the unit file has changed.
+	deb-systemd-helper enable resolvconf.service >/dev/null || true
+else
+	# Update the statefile to add new symlinks (if any), which need to be
+	# cleaned up on purge. Also remove old symlinks.
+	deb-systemd-helper update-state resolvconf.service >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_installinit
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ]; then
+	if [ -x "/etc/init.d/resolvconf" ]; then
+		update-rc.d resolvconf defaults >/dev/null || exit $?
+	fi
+fi
+# End automatically added section
+
+
+### Create run-time directories and linkify ###
+#
+# We create the run-time directories here, in the postinst, even though
+# we also do so in the preinst, because
+# * the system may have rebooted since the preinst ran, causing
+#   everything on tmpfses to disappear;
+# * multistrap doesn't run the preinst at all.
+#
+case "$1" in
+  configure)
+	# Do linkify once again on dpkg-reconfigure
+	if [ "$DEBCONF_RECONFIGURE" = 1 ] || [ "$1" = reconfigure ] ; then
+		rm -f /var/lib/resolvconf/linkified
+	fi
+
+	# Link tail to original if appropriate
+	if [ ! -e /etc/resolvconf/resolv.conf.d/tail ] && [ ! -e /var/lib/resolvconf/linkified ] ; then
+		db_get resolvconf/link-tail-to-original
+		if [ "$RET" = "true" ] ; then
+			ln -nsf original /etc/resolvconf/resolv.conf.d/tail
+		else
+			: > /etc/resolvconf/resolv.conf.d/tail
+		fi
+	fi
+
+	# Linkify /etc/resolv.conf if appropriate
+	if [ ! -e /var/lib/resolvconf/linkified ] ; then
+		db_get resolvconf/linkify-resolvconf
+		if [ "$RET" = "true" ] ; then
+			if is_immutable_file /etc/resolv.conf ; then
+				if dnssec_trigger_is_installed ; then
+					# dnssec-trigger sets the immutability attribute. Override it.
+					chattr -i /etc/resolv.conf
+				else
+					# Respect the admin
+					report_err "Cannot replace the current /etc/resolv.conf with a symbolic link because it is immutable; to correct this problem, gain root privileges in a terminal and run 'chattr -i /etc/resolv.conf' and then 'dpkg --configure resolvconf'; aborting"
+					exit 1
+				fi
+			else
+				if
+					[ -f /etc/resolv.conf ] \
+					&& {
+						[ ! -L /etc/resolv.conf ] \
+						|| [ ! "$(readlink /etc/resolv.conf)" = "/run/resolvconf/resolv.conf" ]
+					}
+				then
+					# Back up original file
+					if [ ! -e /etc/resolvconf/resolv.conf.d/original ] ; then
+						cp -a /etc/resolv.conf /etc/resolvconf/resolv.conf.d/original
+					else
+						cp -a /etc/resolv.conf /etc/resolv.conf.dpkg-old
+					fi
+					# Before creating the link, make sure that the original file is
+					# at the target of the link.  /sbin/resolvconf will overwrite
+					# this when it does an update, of course.
+					if [ ! -e /run/resolvconf/resolv.conf ] ; then
+						cp -a /etc/resolv.conf /run/resolvconf/resolv.conf
+					fi
+					# Add the original file to the database so that its contents
+					# are included when resolvconf updates.
+					# Yes, this is an ugly workaround for the problem that some
+					# interface configurers haven't added a dpkg-event.d script.
+					cp -a /etc/resolv.conf /run/resolvconf/interface/original.resolvconf
+				fi
+				# Create the link
+				# The link is relative to allow for cp from outside a chroot into a chroot
+				# to work without overwriting the file outside the chroot (or failing)
+				ln -nsf ../run/resolvconf/resolv.conf /etc/resolv.conf
+				# Make a record that we have created it
+				:> /var/lib/resolvconf/linkified
+			fi
+		fi
+	fi
+	;;
+  # triggered)
+	# Don't do anything here
+	# ;;
+  # abort-upgrade)
+	# Don't do anything here since we don't do anything in the prerm on upgrade or on failed-upgrade
+	# ;;
+  # abort-remove)
+	# Don't do anything extra here since we don't deconfigure anything in the prerm on remove
+	# ;;
+  # abort-deconfigure)
+	# Don't do anything extra here since we don't do anything in the prerm on deconfigure
+	# ;;
+esac
+
+db_stop
+
+
+### Notify others of our installation ###
+
+is_installed() {
+	# Same function in preinst, postinst, postrm
+	[ "$1" ] || return 1
+	dpkg-query -W -f='${Status}\n' "$1" 2>/dev/null | grep -siq '^[[:alpha:]]\+ [[:alpha:]]\+ installed$' >/dev/null 2>&1
+}
+
+case "$1" in
+  configure)
+	if [ -f /run/resolvconf/packages-to-notify ] ; then
+		PACKAGES_TO_NOTIFY="$(cat /run/resolvconf/packages-to-notify)"
+		rm -f /run/resolvconf/packages-to-notify
+		for PKG in $PACKAGES_TO_NOTIFY ; do
+			if is_installed "$PKG" ; then
+				SCRPT="/usr/lib/resolvconf/dpkg-event.d/$PKG"
+				if [ -x "$SCRPT" ] ; then
+					"$SCRPT" install || :
+				fi
+			fi
+		done
+	fi
+	;;
+  # triggered)
+	# Don't do anything
+	# ;;
+  # abort-upgrade)
+	# Don't do anything here since we don't do anything in the prerm on upgrade or on failed-upgrade
+	# ;;
+  # abort-remove)
+	# Don't do anything extra here since we don't deconfigure anything in the prerm on remove
+	# ;;
+  # abort-deconfigure)
+	# Don't do anything extra here since we don't do anything in the prerm on deconfigure
+	# ;;
+esac
+
+
+### (Trigger self to) enable updates ###
+
+case "$1" in
+  reconfigure)
+		resolvconf --enable-updates
+	;;
+  configure)
+	if [ "$DEBCONF_RECONFIGURE" = 1 ] ; then
+		resolvconf --enable-updates
+	else
+		# Trigger self to enable updates later
+		dpkg-trigger --no-await resolvconf-enable-updates || resolvconf --enable-updates
+	fi
+	;;
+  triggered)
+	# Runs after this and other packages have been configured
+        for trggr in $2 ; do
+		case "$trggr" in
+		  resolvconf-enable-updates)
+			resolvconf --enable-updates
+			break
+			;;
+		esac
+        done
+	;;
+  abort-remove)
+	# We disable updates in the prerm on remove.
+	# So, enable them again
+	resolvconf --enable-updates
+	;;
+  # abort-upgrade)
+	# Don't do anything here since we don't do anything in the prerm on upgrade or on failed-upgrade
+	# ;;
+  # abort-deconfigure)
+	# Don't do anything extra here since we don't do anything in the prerm on deconfigure
+	# ;;
+esac
+
+exit 0

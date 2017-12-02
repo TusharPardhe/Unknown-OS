@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/localechooser
+/usr/share/localechooser/languagelist.data.gz
+/usr/share/localechooser/shortlists
+/usr/share/localechooser/languagelist
+/usr/share/localechooser/regionmap
+/usr/share/doc
+/usr/share/doc/localechooser-data
+/usr/share/doc/localechooser-data/changelog.gz
+/usr/share/doc/localechooser-data/copyright

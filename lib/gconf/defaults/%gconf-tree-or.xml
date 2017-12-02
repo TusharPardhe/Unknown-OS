@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="କାର୍ଯ୍ଯକ୍ଷେତ୍ର ପରିବର୍ତ୍ତନ ହେଲେ କାର୍ଯ୍ୟକ୍ରମକୁ ବଦଳାନ୍ତୁ">
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="କେତେବେଳେ ଦିନ ଆରମ୍ଭ ହୋଇଥାଏ (ପୂର୍ବନିର୍ଦ୍ଧାରିତ 5:30AM)">
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="କୌଣସି କାର୍ଯ୍ୟକ୍ରମ ସେଟ କରାଯାଇଥିବା ସମୟରେ ମଧ୍ଯ ସ୍ମରଣ କରନ୍ତୁ">
+						<longdesc>କୌଣସି କାର୍ଯ୍ୟକ୍ରମ ଆରମ୍ଭ ହୋଇନଥିଲେ ମଧ୍ଯ ପ୍ରତ୍ୟେକ ବିଜ୍ଞପ୍ତି ଅନ୍ତରାଳକୁ ମନେ ପକାଇ ଥାଏ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="ସାଂପ୍ରତିକ କାର୍ଯ୍ୟ ର ସ୍ମରଣ ପ୍ରତି x ମିନିଟରେ କରାନ୍ତୁ">
+						<longdesc>ନିର୍ଦ୍ଦିଷ୍ଟ ମିନିଟରେ ସାଂପ୍ରତିକ କାର୍ଯ୍ୟ ସ୍ମରଣ କରନ୍ତୁ. ସ୍ମାରକକୁ ଅକ୍ଷମ କରିବା ନିମନ୍ତେ 0 ଅଥବା 120 ଠାରୁ ଅଧିକ ସଂଖ୍ଯା ବିନ୍ୟାସ କରନ୍ତୁ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="ବନ୍ଦ କରିବା ପରେ ଅନୁସରଣକୁ ବିରାମ ଦିଅନ୍ତୁ">
+						<longdesc>ବନ୍ଦ କରିବା ପରେ ସାଂପ୍ରତିକ କାର୍ୟକ୍ରମର ଅନୁସରଣକୁ ବିରାମ ଦିଅନ୍ତୁ</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="ନିଷ୍କ୍ରିୟ ହେବା ମାତ୍ରେ ଅନୁସରଣକୁ ବିରାମ ଦିଅନ୍ତୁ">
+						<longdesc>କମ୍ପ୍ଯୁଟର ନିଷ୍କ୍ରିୟ ହେବା ମାତ୍ରେ ଅନୁସରଣକୁ ବିରାମ ଦିଅନ୍ତୁ</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="hamster ପ୍ରୟୋଗ ୱିଣ୍ଡୋକୁ ହଲାନ୍ତୁ">
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema>
+								<longdesc>hamster ପ୍ରୟୋଗ ୱିଣ୍ଡୋର ଦର୍ଶନକୁ ଆଗପଛ କରିବା ପାଇଁ ନିର୍ଦ୍ଦେଶ।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="ସମୟ ଅନୁସରଣ ୱିଣ୍ଡୋକୁ ଦର୍ଶାନ୍ତୁ / ଲୁଚାନ୍ତୁ">
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

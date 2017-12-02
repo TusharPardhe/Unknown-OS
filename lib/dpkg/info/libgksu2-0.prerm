@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+
+
+if [ "$1" = "remove" ]; then
+        update-alternatives --remove libgksu-gconf-defaults \
+	    /usr/share/libgksu/debian/gconf-defaults.libgksu-su
+
+        update-alternatives --remove libgksu-gconf-defaults \
+	    /usr/share/libgksu/debian/gconf-defaults.libgksu-sudo
+fi

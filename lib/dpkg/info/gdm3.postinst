@@ -1,0 +1,138 @@
+#!/bin/sh
+
+set -e
+
+. /usr/share/debconf/confmodule
+
+# Move a conffile without triggering a dpkg question
+mv_conffile() {
+    local OLDCONFFILE="$1"
+    local NEWCONFFILE="$2"
+
+    [ -e "$OLDCONFFILE" ] || return 0
+
+    echo "Preserving user changes to $NEWCONFFILE ..."
+    if [ -f "$NEWCONFFILE" ]; then
+      mv -f "$NEWCONFFILE" "$NEWCONFFILE".dpkg-new
+    fi
+    mv -f "$OLDCONFFILE" "$NEWCONFFILE"
+}
+
+THIS_PACKAGE=gdm3
+DEFAULT_DISPLAY_MANAGER_FILE=/etc/X11/default-display-manager
+
+# creating gdm group if it isn't already there
+if ! getent group gdm >/dev/null; then
+        addgroup --system --force-badname --quiet gdm
+fi
+
+# creating gdm user if it isn't already there
+if ! getent passwd gdm >/dev/null; then
+        adduser --system --force-badname --quiet \
+            --ingroup gdm \
+            --home /var/lib/gdm3 --no-create-home \
+            --shell /bin/false \
+            gdm
+        usermod -c "Gnome Display Manager" gdm
+fi
+
+# debconf is not a registry, so we only fiddle with the default file if 
+# the configure script requested an update
+if [ -e $DEFAULT_DISPLAY_MANAGER_FILE.debconf-update ]; then
+  rm -f $DEFAULT_DISPLAY_MANAGER_FILE.debconf-update
+  if db_get shared/default-x-display-manager; then
+    # workaround debconf passthru bug (#379198)
+    if [ -z "$RET" ]; then
+      RET="$THIS_PACKAGE"
+    fi
+    if db_get "$RET"/daemon_name; then
+      if [ -n "$RET" ]; then
+        echo "$RET" > $DEFAULT_DISPLAY_MANAGER_FILE
+      fi
+    fi
+  fi
+fi
+
+DEFAULT_SERVICE=/etc/systemd/system/display-manager.service
+# set default-display-manager systemd service link according to our config
+if [ "$1" = configure ] && [ -d /etc/systemd/system/ ]; then
+  if [ -e "$DEFAULT_DISPLAY_MANAGER_FILE" ]; then
+    SERVICE=/lib/systemd/system/$(basename $(cat "$DEFAULT_DISPLAY_MANAGER_FILE")).service
+    if [ -h "$DEFAULT_SERVICE" ] && [ $(readlink "$DEFAULT_SERVICE") = /dev/null ]; then
+      echo "Display manager service is masked" >&2
+    elif [ -e "$SERVICE" ]; then
+      ln -sf "$SERVICE" "$DEFAULT_SERVICE"
+    else
+      echo "WARNING: $SERVICE is the selected default display manager but does not exist" >&2
+      rm -f "$DEFAULT_SERVICE"
+    fi
+  else
+    rm -f "$DEFAULT_SERVICE"
+  fi
+fi
+
+# update-rc.d levels
+S=30
+K=01
+
+if [ "$1" = configure ] && dpkg --compare-versions "$2" lt-nl "3.2"; then
+  # Remove 3.0 gsettings configuration - now we use dconf
+  rm -f /var/lib/gdm3/gschemas.compiled
+fi
+
+if [ "$1" = configure ] && dpkg --compare-versions "$2" lt-nl "3.4" \
+	&& [ -d /var/lib/gdm3 ]; then
+  # Remove anything GConf related
+  (
+    cd /var/lib/gdm3
+    rm -rf .gconf .gconf.mandatory .gconf.path .gconfd
+  )
+fi
+
+# .Transition any conffiles in /etc/gdm -> /etc/gdm3
+if [ "$1" = configure ] && [ -d /etc/gdm ]; then
+  mv_conffile /etc/pam.d/gdm3 /etc/pam.d/gdm-password
+  mv_conffile /etc/pam.d/gdm3-autologin /etc/pam.d/gdm-launch-environment
+
+  conffiles="$(dpkg-query -W -f='${Conffiles}' gdm | cut -d' ' -f2 | grep -s '/etc/gdm' )" || true
+  for f in ${conffiles}; do
+    NEWFILE="$(echo ${f} | sed 's/gdm/gdm3/')"
+    mv_conffile ${f} ${NEWFILE}
+  done
+  rm -rf /etc/gdm
+
+  # DON'T DO THIS AT HOME, KIDS
+  # Convert the old GSettings settings file to a dconf one
+  # Yes it's stupid to just convert GSettings paths to dconf ones, but
+  # this is what the init script used to do.
+  if [ -f /etc/gdm3/greeter.gsettings ] && ! [ -f /etc/gdm3/greeter.dconf-defaults ]; then
+    awk '/^[ \t#]*\[.*\]/ { gsub("\\.","/"); } { print;}' \
+      /etc/gdm3/greeter.gsettings > /etc/gdm3/greeter.dconf-defaults
+    rm -f /etc/gdm3/greeter.gsettings
+  fi
+fi
+
+ucf --debconf-ok --three-way /usr/share/gdm/greeter.dconf-defaults /etc/gdm3/greeter.dconf-defaults
+ucfr gdm3 /etc/gdm3/greeter.dconf-defaults
+
+# debconf hangs if gdm3 gets started below without this
+db_stop || true
+
+chown -R gdm:gdm /var/lib/gdm3
+
+if [ -L /etc/pam.d/gdm-welcome ]; then
+    rm -f /etc/pam.d/gdm-welcome
+fi
+
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/gdm3/greeter.gconf-defaults 3.4 -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper mv_conffile /etc/pam.d/gdm3 /etc/pam.d/gdm-password 3.10.0.1-3~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper mv_conffile /etc/pam.d/gdm3-autologin /etc/pam.d/gdm-autologin 3.10.0.1-3~ -- "$@"
+# End automatically added section
+
+
+exit 0

@@ -1,0 +1,12 @@
+875f4a015e30905bc1d98015e3c3f410  usr/bin/bf_compact-bdb
+9440208649091dfe9b83fceacef582ca  usr/bin/bf_copy-bdb
+3c3bfc74ecb66dc53106ef6eab5347a9  usr/bin/bf_tar-bdb
+d36cf2bbdd23d7d56b3c5d37e17e2588  usr/bin/bogofilter-bdb
+6d2b9f57fca87ff97245fc45066e03f6  usr/bin/bogolexer-bdb
+5f0b2cf7c7e3e40f815e8f13a9c4e489  usr/bin/bogotune-bdb
+6ab34a613cb4ade1aa5c7b57ce0b92b6  usr/bin/bogoupgrade-bdb
+72a33c55f281208eb38d822934de075f  usr/bin/bogoutil-bdb
+e51e4c27c06f64f7806db886921cd740  usr/share/doc/bogofilter-bdb/NEWS.Debian.gz
+6c175cadcc8ef0b4838a58deb90e81d3  usr/share/doc/bogofilter-bdb/README.db.gz
+8136e56ddd902ba7edb62647a7678cf6  usr/share/doc/bogofilter-bdb/changelog.Debian.gz
+eb0c312c2269e1454e24e108b2d9ab9e  usr/share/doc/bogofilter-bdb/copyright

@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libvlccore8
+/usr/share/doc/libvlccore8/NEWS.Debian.gz
+/usr/share/doc/libvlccore8/changelog.Debian.gz
+/usr/share/doc/libvlccore8/copyright
+/usr/share/bug
+/usr/share/bug/libvlccore8
+/usr/share/bug/libvlccore8/control
+/usr/share/bug/libvlccore8/presubj
+/usr/lib
+/usr/lib/libvlccore.so.8.0.0
+/usr/lib/libvlccore.so.8

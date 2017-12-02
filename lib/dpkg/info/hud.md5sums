@@ -1,0 +1,13 @@
+31ae5367aaed3e1209486b1de8d229eb  usr/lib/x86_64-linux-gnu/hud/dbus-activation-hack.sh
+a54b274a83c6426e047aeb3cbcd37b2f  usr/lib/x86_64-linux-gnu/hud/hud-service
+5aacfb2d66878976bfac35c7a71c3a80  usr/lib/x86_64-linux-gnu/hud/window-stack-bridge
+851aa9ac733b74b73389c265e403e4a3  usr/share/apport/package-hooks/source_hud.py
+cf5c63527ceb077b33b72e018410f83e  usr/share/dbus-1/interfaces/com.canonical.hud.query.xml
+3351d01160ae5cc658d0c4e7040762d9  usr/share/dbus-1/interfaces/com.canonical.hud.xml
+dd6d260d5e5b6bb1959390a142c08b8c  usr/share/dbus-1/services/com.canonical.hud.service
+70ee5148e09d216a4f6dc9c575547f89  usr/share/doc/hud/changelog.Debian.gz
+bfaf45b4112c608ace602ba41e6cd77f  usr/share/doc/hud/copyright
+a22c493e87209e98ac750d150a2876c8  usr/share/glib-2.0/schemas/com.canonical.indicator.appmenu.hud.gschema.xml
+1738989a497201296115eb79b6153d4e  usr/share/glib-2.0/schemas/com.canonical.indicator.appmenu.hud.search.gschema.xml
+5db3bb95fd35dbdc18bfd437fe4f085c  usr/share/upstart/sessions/hud.conf
+80208f42c1490a5e60468a7075522bd9  usr/share/upstart/sessions/window-stack-bridge.conf

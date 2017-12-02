@@ -1,0 +1,14 @@
+#! /bin/sh
+set -e
+
+if [ "$1" = "purge" ] ; then
+  for FILE in glines.Small.scores glines.Medium.scores glines.Large.scores glines.scores; do
+	rm -f /var/games/$FILE
+  done
+
+  if [ -d /var/games ]; then
+	rmdir --ignore-fail-on-non-empty /var/games
+  fi
+fi
+
+

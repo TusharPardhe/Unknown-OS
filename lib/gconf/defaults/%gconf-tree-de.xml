@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Tätigkeit bei Arbeitsflächenwechsel ebenfalls wechseln">
+						<longdesc>Falls der Wechsel anhand des Namens aktiviert ist, gibt diese Liste die Namen an, zu denen gewechselt werden soll. Arbeitsflächen werden durch den Index des Eintrags dargestellt.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Arbeitsflächenwechsel bedingt Tätigkeitswechsel">
+						<longdesc>Liste der aktivierten Methoden zur Zeiterfassung. »name« aktiviert den Wechsel der Tätigkeit anhand des Namens, der in »workspace_mapping« festgelegt ist. »memory« aktiviert die letzte Tätigkeit bei der Rückkehr zur vorherigen Arbeitsfläche.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="Zeit des Tagesbeginns (Vorgabe ist 5:30 Uhr)">
+						<longdesc>Tätigkeiten werden dem gestrigen Tag zugeordnet, falls die aktuelle Tageszeit vor der als Tagesbeginn festgelegten Zeit liegt, und dem heutigen Tag, falls danach. Tätigkeiten, die sich über zwei Tage erstrecken, werden dem Tag zugeordnet, zu dem der längste Teil der Tätigkeit gehört.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Auch dann erinnern, wenn keine Tätigkeit gesetzt ist">
+						<longdesc>Auch alle »notify_interval« Minuten erinnern, falls keine Tätigkeit begonnen wurde. </longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Alle X Minuten an momentane Tätigkeit erinnern">
+						<longdesc>Alle X Minuten an momentane Tätigkeit erinnern. Wenn dieser Wert 0 oder größer als 120 ist, wird die Erinnerung deaktiviert.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Beim Herunterfahren die Erfassung anhalten">
+						<longdesc>Beim Herunterfahren momentane Tätigkeit nicht weiter erfassen</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Erfassung bei Untätigkeit anhalten">
+						<longdesc>Wenn sich der Rechner im Leerlauf befindet, die momentane Tätigkeit nicht weiter erfassen</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Hamster-Anwendungsfenster sichtbar/unsichtbar">
+								<longdesc>Die Sichtbarkeit des Hamster-Anwendungsfensters ein-/ausschalten.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Aktion zum Ein- und Ausschalten der Sichtbarkeit des Anwendungsfensters von Hamster">
+								<longdesc>Befehl zum Ein- und Ausschalten der Sichtbarkeit des Anwendungsfensters von Hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Zeiterfassungsfenster anzeigen/verbergen">
+								<longdesc>Tastenkürzel um das Zeiterfassungsfenster anzuzeigen/zu verbergen.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

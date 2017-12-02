@@ -1,0 +1,4 @@
+/etc
+/etc/apport
+/etc/apport/crashdb.conf.d
+/etc/apport/crashdb.conf.d/libunity-webapps-crashdb.conf

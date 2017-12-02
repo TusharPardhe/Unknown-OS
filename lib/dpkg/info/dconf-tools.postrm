@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/bash_completion.d/dconf-bash-completion.sh 0.13.5-0ubuntu1 dconf-tools -- "$@"
+# End automatically added section

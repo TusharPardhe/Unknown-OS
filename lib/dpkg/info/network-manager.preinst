@@ -1,0 +1,69 @@
+#!/bin/sh
+
+set -e
+
+# This script can be called in the following ways:
+#
+# Before the package is installed:
+#	<new-preinst> install
+#
+# Before removed package is upgraded:
+#	<new-preinst> install <old-version>
+#
+# Before the package is upgraded:
+#	<new-preinst> upgrade <old-version>
+#
+#
+# If postrm fails during upgrade or fails on failed upgrade:
+#	<old-preinst> abort-upgrade <new-version>
+
+case "$1" in
+    install|upgrade)
+	if dpkg --compare-versions "$2" lt "0.9.8.8-4"; then
+	    if [ -L /etc/systemd/system/network-manager.service ]; then
+	        rm -f /etc/systemd/system/network-manager.service
+	    fi
+	fi
+
+	if dpkg --compare-versions "$2" lt "1.0.0-4"; then
+	    if [ -L /etc/systemd/system/dbus-org.freedesktop.NetworkManager.service ]; then
+	        rm -f /etc/systemd/system/dbus-org.freedesktop.NetworkManager.service
+	    fi
+	fi
+
+	# Upgrade from previous versions
+	if dpkg --compare-versions "$2" lt "0.9.7.997-2"; then
+	    # Move old pid file to /var/run/NetworkManager so the init script
+	    # doesn't get confused
+	    if [ -f /var/run/NetworkManager.pid ]; then
+	        [ -d /var/run/NetworkManager/ ] || mkdir /var/run/NetworkManager
+	        mv -n /var/run/NetworkManager.pid /var/run/NetworkManager/
+	    fi
+	fi
+	;;
+
+    abort-upgrade)
+        ;;
+
+    *)
+        echo "$0 called with unknown argument \`$1'" 1>&2
+	exit 1
+	;;
+esac
+
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper mv_conffile /etc/dbus-1/system.d/NetworkManager.conf /etc/dbus-1/system.d/org.freedesktop.NetworkManager.conf 0.9.4.0-1~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/polkit-1/localauthority/10-vendor.d/org.freedesktop.NetworkManager.pkla 0.9.8.8-4~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/polkit-1/rules.d/60-network-manager.rules 0.9.8.8-4~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/dbus-1/system.d/nm-dhcp-client.conf 0.9.10.0-1~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/dbus-1/system.d/nm-avahi-autoipd.conf 1.1.90-2~ -- "$@"
+# End automatically added section
+

@@ -1,0 +1,17 @@
+/.
+/etc
+/etc/ca-certificates
+/etc/ca-certificates/update.d
+/etc/ca-certificates/update.d/mono-keystore
+/usr
+/usr/bin
+/usr/bin/cert-sync
+/usr/lib
+/usr/lib/mono
+/usr/lib/mono/4.5
+/usr/lib/mono/4.5/cert-sync.exe
+/usr/share
+/usr/share/doc
+/usr/share/doc/ca-certificates-mono
+/usr/share/doc/ca-certificates-mono/copyright
+/usr/share/doc/ca-certificates-mono/changelog.Debian.gz

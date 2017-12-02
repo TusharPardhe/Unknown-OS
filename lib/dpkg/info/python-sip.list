@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/python-sip
+/usr/share/doc/python-sip/copyright
+/usr/share/doc/python-sip/changelog.Debian.gz
+/usr/lib
+/usr/lib/python2.7
+/usr/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages/sipconfig_nd.py
+/usr/lib/python2.7/dist-packages/sipconfig.py
+/usr/lib/python2.7/dist-packages/sip.x86_64-linux-gnu.so

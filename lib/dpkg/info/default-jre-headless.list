@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/jvm
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/default-jre-headless
+/usr/share/doc
+/usr/share/doc/default-jre-headless
+/usr/share/doc/default-jre-headless/changelog.gz
+/usr/share/doc/default-jre-headless/copyright
+/usr/lib/jvm/default-java

@@ -1,0 +1,8 @@
+3d4c2a2c516cdf78cef920d1536343ed  usr/lib/x86_64-linux-gnu/perl5/5.22/FCGI.pm
+99dfd37cb87389fda32a555e682d7a84  usr/lib/x86_64-linux-gnu/perl5/5.22/auto/FCGI/FCGI.so
+6230a0563c186a04f5087fbecd3b2e36  usr/share/doc/libfcgi-perl/changelog.Debian.gz
+12a62b6e0f8d158ce6d5bd12aab2e472  usr/share/doc/libfcgi-perl/copyright
+73d428a67004201b720341ecc9491792  usr/share/doc/libfcgi-perl/examples/echo.pl
+92518663ef8eff170d404ab4c8e204e5  usr/share/doc/libfcgi-perl/examples/remote.pl
+4063cd42e52e83ef2f9cf6376816fc3e  usr/share/doc/libfcgi-perl/examples/threaded.pl
+570b5c2daa7f60281b9c81b1d7c958f9  usr/share/man/man3/FCGI.3pm.gz

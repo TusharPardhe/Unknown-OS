@@ -1,0 +1,15 @@
+414dd2eb8c896250fdac5fba264f8be3  lib/systemd/system/geoclue.service
+4e56509bd55ac164988b91711fb673f2  usr/lib/geoclue-2.0/demos/where-am-i
+477f5b8918ec271a4cb0f6be0f3bb828  usr/lib/geoclue-2.0/geoclue
+a606b84c4c1886e15d0812341a52930c  usr/lib/x86_64-linux-gnu/pkgconfig/geoclue-2.0.pc
+46140866a1e56820c579cde90c6abbd2  usr/share/applications/geoclue-where-am-i.desktop
+7ad6489f2ac2e55d4dfe0229bcc555e2  usr/share/dbus-1/interfaces/org.freedesktop.GeoClue2.Agent.xml
+437cfeda169ba12a00e17bc6023cc843  usr/share/dbus-1/interfaces/org.freedesktop.GeoClue2.Client.xml
+bc9bb39882eacc0387c333dd19b98a5e  usr/share/dbus-1/interfaces/org.freedesktop.GeoClue2.Location.xml
+a69a20aea5c090ed71c25f8f389b3e27  usr/share/dbus-1/interfaces/org.freedesktop.GeoClue2.Manager.xml
+9f388c430c90c232bcec5e1d6e04bc56  usr/share/dbus-1/interfaces/org.freedesktop.GeoClue2.xml
+8478957ffb02729dfadae1b312c5c7a0  usr/share/dbus-1/system-services/org.freedesktop.GeoClue2.service
+397cffb96d28b8ecf87f81381c2ca30d  usr/share/doc/geoclue-2.0/copyright
+ee72745b28843e87f2bde95511b5e833  usr/share/lintian/overrides/geoclue-2.0
+b8130d2e86899be170626c39e85b8d09  usr/share/polkit-1/rules.d/geoclue-2.0.rules
+1ab300595054873dca04c5e076b70d3c  var/lib/polkit-1/localauthority/10-vendor.d/geoclue-2.0.pkla

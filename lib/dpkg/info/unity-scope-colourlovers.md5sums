@@ -1,0 +1,7 @@
+953e80465e40255113868afd1646483e  usr/lib/python3/dist-packages/unity_scope_colourlovers-0.1.egg-info
+f77ac25969312b4995b3d105ac1be7ed  usr/share/dbus-1/services/unity-scope-colourlovers.service
+d98bc5bc09553223cc77a146c2c1d4b5  usr/share/doc/unity-scope-colourlovers/changelog.Debian.gz
+98196ea6cf5750caa72624173e49e6a9  usr/share/doc/unity-scope-colourlovers/copyright
+d41d8cd98f00b204e9800998ecf8427e  usr/share/unity-scopes/colourlovers/__init__.py
+6e5a9e422f0196dcec71c8a8fb40b7b9  usr/share/unity-scopes/colourlovers/unity_colourlovers_daemon.py
+68d40a758446de8bdb794e938baaa1dd  usr/share/unity/scopes/graphics/colourlovers.scope

@@ -1,0 +1,6 @@
+262c650a9e97156c704895008ded624a  usr/lib/libreoffice/program/libqstart_gtklo.so
+12fe7cdf88c5f2e50482b9b36d3fd885  usr/lib/libreoffice/program/libvclplug_gtklo.so
+01855ae1929de101d3ffb43e4bb5ca5a  usr/lib/libreoffice/program/xid-fullscreen-on-all-monitors
+46f15d4c8cce2fa37efd162fc3338e2d  usr/lib/libreoffice/share/xdg/qstart.desktop
+4583c119b7c148a61e54ddbbdc1917a9  usr/share/bug/libreoffice-gtk/presubj
+6f07fb286d333aa09b7463a489171b0a  usr/share/lintian/overrides/libreoffice-gtk

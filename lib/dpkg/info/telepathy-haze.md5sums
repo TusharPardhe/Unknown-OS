@@ -1,0 +1,5 @@
+57760cb7bb05aaef0894be309eb3b54f  usr/lib/telepathy/telepathy-haze
+fd3fa6b75a10f39fae9e5d0e83f7a3a6  usr/share/dbus-1/services/org.freedesktop.Telepathy.ConnectionManager.haze.service
+d39df56afc0a598ccef145bc6847ef2e  usr/share/doc/telepathy-haze/changelog.Debian.gz
+5017f7fedef7822c5561875361343cce  usr/share/doc/telepathy-haze/copyright
+ff44298825f7284289cca1137b370214  usr/share/man/man8/telepathy-haze.8.gz

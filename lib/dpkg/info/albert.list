@@ -1,0 +1,77 @@
+/.
+/usr
+/usr/lib
+/usr/lib/albert
+/usr/lib/albert/libxdg.so
+/usr/lib/albert/plugins
+/usr/lib/albert/plugins/libterminal.so
+/usr/lib/albert/plugins/libmpris.so
+/usr/lib/albert/plugins/libexternalextensions.so
+/usr/lib/albert/plugins/libchromebookmarks.so
+/usr/lib/albert/plugins/libvirtualbox.so
+/usr/lib/albert/plugins/libsystem.so
+/usr/lib/albert/plugins/libwebsearch.so
+/usr/lib/albert/plugins/libfiles.so
+/usr/lib/albert/plugins/libssh.so
+/usr/lib/albert/plugins/libapplications.so
+/usr/lib/albert/plugins/libcalculator.so
+/usr/lib/albert/plugins/libfirefoxbookmarks.so
+/usr/lib/albert/libalbertcore.so
+/usr/lib/albert/libglobalshortcut.so
+/usr/share
+/usr/share/icons
+/usr/share/icons/hicolor
+/usr/share/icons/hicolor/scalable
+/usr/share/icons/hicolor/scalable/apps
+/usr/share/icons/hicolor/scalable/apps/albert.svg
+/usr/share/applications
+/usr/share/applications/albert.desktop
+/usr/share/albert
+/usr/share/albert/themes
+/usr/share/albert/themes/Dark.qss
+/usr/share/albert/themes/Spotlight.qss
+/usr/share/albert/themes/DarkMint.qss
+/usr/share/albert/themes/DarkGreen.qss
+/usr/share/albert/themes/BrightViolet.qss
+/usr/share/albert/themes/Arc Dark Grey.qss
+/usr/share/albert/themes/SolarizedDarkYellow.qss
+/usr/share/albert/themes/SolarizedBrightMagenta.qss
+/usr/share/albert/themes/SolarizedBrightRed.qss
+/usr/share/albert/themes/Spotlight Dark.qss
+/usr/share/albert/themes/Yosemite.qss
+/usr/share/albert/themes/SolarizedBrightGreen.qss
+/usr/share/albert/themes/SolarizedBrightCyan.qss
+/usr/share/albert/themes/SolarizedDarkMagenta.qss
+/usr/share/albert/themes/BrightOrange.qss
+/usr/share/albert/themes/BrightBlue.qss
+/usr/share/albert/themes/SolarizedDarkGreen.qss
+/usr/share/albert/themes/SolarizedDarkCyan.qss
+/usr/share/albert/themes/SolarizedBrightYellow.qss
+/usr/share/albert/themes/Arc Dark Blue.qss
+/usr/share/albert/themes/SolarizedBrightOrange.qss
+/usr/share/albert/themes/Numix Rounded.qss
+/usr/share/albert/themes/SolarizedDarkOrange.qss
+/usr/share/albert/themes/SolarizedDarkRed.qss
+/usr/share/albert/themes/SolarizedDarkBlue.qss
+/usr/share/albert/themes/Arc Blue.qss
+/usr/share/albert/themes/SolarizedBrightViolet.qss
+/usr/share/albert/themes/Yosemite Dark.qss
+/usr/share/albert/themes/DarkOrange.qss
+/usr/share/albert/themes/DarkBlue.qss
+/usr/share/albert/themes/DarkMagenta.qss
+/usr/share/albert/themes/SolarizedDarkViolet.qss
+/usr/share/albert/themes/DarkViolet.qss
+/usr/share/albert/themes/Arc Grey.qss
+/usr/share/albert/themes/BrightMint.qss
+/usr/share/albert/themes/Elementary.qss
+/usr/share/albert/themes/BrightGreen.qss
+/usr/share/albert/themes/SolarizedBrightBlue.qss
+/usr/share/albert/themes/Bright.qss
+/usr/share/albert/themes/BrightMagenta.qss
+/usr/share/albert/themes/Numix.qss
+/usr/share/doc
+/usr/share/doc/albert
+/usr/share/doc/albert/copyright
+/usr/share/doc/albert/changelog.Debian.gz
+/usr/bin
+/usr/bin/albert

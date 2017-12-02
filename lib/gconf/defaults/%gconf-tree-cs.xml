@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Přepnout činnost při změně pracovní plochy">
+						<longdesc>Pokud je přepínání podle názvu povoleno, tento seznam stanoví názvy činností, které mohou být přepnuty na pracovní plochy reprezentované seznamem položek.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Může přepínač pracovních ploch spustit přepínač činnosti?">
+						<longdesc>Seznam povolených metod sledování. Hodnota „name“ povolí přepínání činností podle názvu stanoveného v klíči workspace_mapping. Hodnota „memory“ povolí přepnutí na poslední činnost při návratu na předchozí pracovní plochu.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="V kolik hodin začíná den (výchozí čas je 5:30)">
+						<longdesc>Činnosti budou zahrnuty do včerejška, pokud je aktuální čas před stanoveným začátkem dne, a do dneška v případě, že překročí tento čas. Činnosti, které trvají dva dny, se překlopí do dne, ve kterém se odehrává delší část činnosti.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Připomenout, i když není nastavena žádná činnost">
+						<longdesc>Připomenout vždy po nastavené době upozorňování (notify_interval v min.), pokud nebyla spuštěna žádná činnost.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Připomenout aktuální úlohu každých x minut">
+						<longdesc>Připomenout aktuální úlohu vždy po nastaveném času (min). Nastavte na 0 nebo větší než 120 pro zakázání upozorňování.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Zastavit sledování při vypnutí počítače">
+						<longdesc>Zastavit sledování aktuální činnosti při vypnutí počítače</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Zastavit sledování při nečinnosti">
+						<longdesc>Zastavit sledování aktuální činnosti při nečinnosti počítače</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Přepnout okno aplikace hamster">
+								<longdesc>Přepnout viditelnost okna aplikace hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Přepnout akci okna aplikace hamster">
+								<longdesc>Příkaz pro přepínání viditelnosti okna aplikace hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Zobrazit / skrýt okno Sledování času">
+								<longdesc>Klávesová zkratka pro zobrazení / skrytí okna Sledování času.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

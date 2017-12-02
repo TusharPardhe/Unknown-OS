@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Tööala vahetamisel vahetatakse tegevust">
+						<longdesc>Kui nime järgi lülitumine on lubatud, siis see loend määrab tegevuste nimed, millele tuleks tööala vahetamisel lülituda.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Kas tööala vahetus peaks valla päästma tegevuse vahetuse">
+						<longdesc>Lubatud jälitusmeetodite loend. &quot;nimi&quot; põhjustab tegevuste vahetamise workspace_mapping väärtuses antud nime järgi. &quot;memory&quot; puhul lülitatakse eelmisele tööalale naasmisel seal toimunud tegevusele.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="Mis kell algab päev (vaikimisi 5:30)">
+						<longdesc>Kui praegune hetk on enne päeva algusajaks määratud aega, siis kuvatakse tegevused eelmisesse päeva kuuluvatena. Kui päeva alguseks määratud aeg on möödunud, siis aga tänasesse päeva kuuluvatena. Kahte päeva kuuluvad tegevused ulatuvad üle selle serva, kuhu tegevuse suurim osa jääb.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Meeldetuletused ka tegevuse puudumise korral">
+						<longdesc>Meeldetuletuste kuvamine ka võtmega notify_interval määratud minutite järel isegi juhul, kui tegevust pole alustatud.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Jooksvast tegevusest antakse teada iga x minuti järel">
+						<longdesc>Jooksva tegevuse kohta antakse teada kindlaksmääratud hulga minutite järel. Väärtuse 0 või 120-st suurema väärtuse korral on meeldetuletaja keelatud.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Väljalülitamisel lõpetatakse jälgimine">
+						<longdesc>Jooksva tegevuse jälgimine lõpetatakse arvuti väljalülitamisel</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Jõudeolekul lõpetatakse jälgimine">
+						<longdesc>Jooksva tegevuse jälgimine lõpetatakse arvuti jõudeolekul</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Hamstri rakendusakna sisse- ja väljalülitamine">
+								<longdesc>Hamstri rakendusakna nähtavuse sisse- ja väljalülitamine</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Hamstri rakendusakna tegevuse sisse- ja väljalülitamine">
+								<longdesc>Hamstri rakendusakna nähtavuse sisse- ja väljalülitamise käsk.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Ajakasutuse jälgija akna näitamine või peitmine">
+								<longdesc>Kiirklahv ajakasutuse jälgija akna näitamiseks või peitmiseks.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

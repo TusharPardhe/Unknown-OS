@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/gcr-3
+/usr/share/gcr-3/ui
+/usr/share/gcr-3/ui/gcr-unlock-options-widget.ui
+/usr/share/gcr-3/ui/gcr-pkcs11-import-dialog.ui
+/usr/share/doc
+/usr/share/doc/libgcr-3-common
+/usr/share/doc/libgcr-3-common/AUTHORS
+/usr/share/doc/libgcr-3-common/README
+/usr/share/doc/libgcr-3-common/copyright
+/usr/share/doc/libgcr-3-common/NEWS.gz
+/usr/share/doc/libgcr-3-common/changelog.Debian.gz

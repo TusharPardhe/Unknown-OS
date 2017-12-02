@@ -1,0 +1,14 @@
+61756c055bb5491afeaa111aa3ed4fee  usr/sbin/pptp
+c22a62d24a6e1dc55954a03fe68cf4dc  usr/sbin/pptpsetup
+9fe4fe536c05111d8b9c59729e3d231a  usr/share/doc/pptp-linux/AUTHORS
+bb83dd3ac61394c2b9b3c5cae12c047f  usr/share/doc/pptp-linux/DESIGN.CALLMGR
+0c1bb164151e2034abbdeaf88eb1fe22  usr/share/doc/pptp-linux/DESIGN.PPTP
+afb2822440be2e72cf2c489aa1e52deb  usr/share/doc/pptp-linux/PORTING
+0663ba7541e56e722ac2c828d64294e4  usr/share/doc/pptp-linux/README
+0b7e3da79e274212c62024eed7181f6f  usr/share/doc/pptp-linux/README.Debian
+4cdba405b583ff4ca3d2405146b9eea2  usr/share/doc/pptp-linux/TODO
+974cf60c18c2ef6e32a084aafdbd8256  usr/share/doc/pptp-linux/USING
+07418ed9e9540fbbb86c6f6da5cc9fa4  usr/share/doc/pptp-linux/changelog.Debian.gz
+f2142dbda95dea4ec51dbc8cfcdc3eac  usr/share/doc/pptp-linux/copyright
+f1409b6bade5605cd3f21018fa76c06c  usr/share/man/man8/pptp.8.gz
+5ff4d5972b5840e9a50c61caa2d1dd7f  usr/share/man/man8/pptpsetup.8.gz

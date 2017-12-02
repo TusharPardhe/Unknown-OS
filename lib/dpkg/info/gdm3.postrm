@@ -1,0 +1,56 @@
+#!/bin/sh
+set -e
+
+# Need to load this before any output on stdout/stderr
+# otherwise the debconf command-stream will get
+# some invalid input and cause the failure of postrm.
+if [ "$1" = purge ] && [ -e /usr/share/debconf/confmodule ]; then
+        . /usr/share/debconf/confmodule
+fi
+
+if [ "$1" = "purge" ] ; then
+        if [ -d /etc/gdm3 ]; then
+		for i in Init PreSession PostSession PostLogin; do
+			if [ -d /etc/gdm3/$i ]; then
+				rmdir --ignore-fail-on-non-empty /etc/gdm3/$i 2> /dev/null
+			fi
+		done
+		rm -f /etc/gdm3/greeter.dconf-defaults
+		rmdir --ignore-fail-on-non-empty /etc/gdm3
+        fi
+        if which ucf >/dev/null; then
+        	ucf --purge /etc/gdm3/greeter.dconf-defaults
+        	ucfr --purge gdm3 /etc/gdm3/greeter.dconf-defaults
+        fi
+	rm -rf /var/lib/gdm3
+	rm -rf /var/run/gdm3
+	rm -rf /var/log/gdm3
+	rm -rf /var/cache/gdm
+        if getent passwd gdm >/dev/null; then
+                if [ -x /usr/sbin/deluser ]; then
+                        deluser --system gdm || echo "Could not remove gdm user."
+                fi
+        fi
+        if getent group gdm >/dev/null; then
+                if [ -x /usr/sbin/delgroup ]; then
+                        delgroup --system gdm || echo "Could not remove gdm group."
+                fi
+        fi
+fi
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper mv_conffile /etc/pam.d/gdm3-autologin /etc/pam.d/gdm-autologin 3.10.0.1-3~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper mv_conffile /etc/pam.d/gdm3 /etc/pam.d/gdm-password 3.10.0.1-3~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/gdm3/greeter.gconf-defaults 3.4 -- "$@"
+# End automatically added section
+# Automatically added by dh_installdebconf
+if [ "$1" = purge ] && [ -e /usr/share/debconf/confmodule ]; then
+	. /usr/share/debconf/confmodule
+	db_purge
+fi
+# End automatically added section
+
+exit 0

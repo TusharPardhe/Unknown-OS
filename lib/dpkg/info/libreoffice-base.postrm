@@ -1,0 +1,28 @@
+#!/bin/sh
+
+set -e
+
+
+if [ "$1" = remove -o "$1" = abort-install -o "$1" = disappear ]; then
+	dpkg-divert --package $DPKG_MAINTSCRIPT_PACKAGE --remove --rename \
+		--divert /usr/lib/libreoffice/share/basic/dialog.xlc.noaccess \
+                        /usr/lib/libreoffice/share/basic/dialog.xlc
+	dpkg-divert --package $DPKG_MAINTSCRIPT_PACKAGE --remove --rename \
+		--divert /usr/lib/libreoffice/share/basic/script.xlc.noaccess \
+                        /usr/lib/libreoffice/share/basic/script.xlc
+fi
+if [ "$1" = abort-upgrade ] && dpkg --compare-versions "$2" lt 1:4.3.0~beta1-1; then
+	dpkg-divert --package $DPKG_MAINTSCRIPT_PACKAGE --remove --rename \
+		--divert /usr/lib/libreoffice/share/basic/dialog.xlc.noaccess \
+                        /usr/lib/libreoffice/share/basic/dialog.xlc
+	dpkg-divert --package $DPKG_MAINTSCRIPT_PACKAGE --remove --rename \
+		--divert /usr/lib/libreoffice/share/basic/script.xlc.noaccess \
+			/usr/lib/libreoffice/share/basic/script.xlc
+fi
+
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper dir_to_symlink /usr/share/doc/libreoffice-base /usr/share/doc/libreoffice-core 1:5.0.3~rc1-2 $DPKG_MAINTSCRIPT_PACKAGE -- "$@"
+# End automatically added section
+
+
+exit 0

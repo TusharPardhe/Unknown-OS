@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/sbin
+/usr/sbin/macchanger-gtk
+/usr/share
+/usr/share/macchanger-gtk
+/usr/share/macchanger-gtk/macchanger-gtk.glade
+/usr/share/doc
+/usr/share/doc/macchanger-gtk
+/usr/share/doc/macchanger-gtk/changelog.gz
+/usr/share/doc/macchanger-gtk/copyright
+/usr/share/doc/macchanger-gtk/changelog.Debian.gz
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/macchanger-gtk.1.gz
+/usr/share/menu
+/usr/share/menu/macchanger-gtk

@@ -1,0 +1,7 @@
+c3a1eef7db8d30d17ae8354d48bc2ea5  usr/lib/python3/dist-packages/unity_scope_yelp-0.1.egg-info
+2565e476ae93a5000d291da0efae3a71  usr/share/dbus-1/services/unity-scope-yelp.service
+d4450186dba99bb72c3c96e39df3f1cb  usr/share/doc/unity-scope-yelp/changelog.Debian.gz
+927da0f83903ef67326039647eefd399  usr/share/doc/unity-scope-yelp/copyright
+d41d8cd98f00b204e9800998ecf8427e  usr/share/unity-scopes/yelp/__init__.py
+bd0316d63f3d2ee9220e8d6a8e271713  usr/share/unity-scopes/yelp/unity_yelp_daemon.py
+8524115c0a75607dbbd86e1878df2e6e  usr/share/unity/scopes/help/yelp.scope

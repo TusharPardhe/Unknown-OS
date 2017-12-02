@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Cambia attività al cambio dello spazio di lavoro">
+						<longdesc>Indica se il cambio per nome è abilitato, questo elenco imposta i nomi delle attività a cui passare, gli spazi di lavoro sono rappresentati dall&apos;indice dell&apos;elemento.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Indica se il cambio di spazio di lavoro debba cambiare attività">
+						<longdesc>Elenco di metodi di conteggio abilitati: &quot;name&quot; abilita il cambio di attività per nome, come definito in workspace_mapping; &quot;memory&quot; abilita il passaggio all&apos;ultima attività quando si ritorna in uno spazio di lavoro precedente.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="Orario di inizio della giornata (predefinito alle 5.30)">
+						<longdesc>Le attività verranno considerate: come del giorno precedente se l&apos;ora corrente è minore di quella specificata come inizio della giornata, come del giorno attuale se supera tale ora. Le attività che si estendono su due giorni verranno visualizzate dove si è svolta la maggior parte dell&apos;attività.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Ricordare anche quando nessuna attività è impostata">
+						<longdesc>Ricorda anche ogni notify_interval se non è stata avviata alcuna attività.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Ricorda l&apos;attività corrente ogni X minuti">
+						<longdesc>Ricorda l&apos;attività corrente in base ai minuti specificati. Impostare a 0 o maggiore di 120 per disabilitare la notifica.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Fermare il conteggio all&apos;arresto del sistema">
+						<longdesc>Ferma il conteggio dell&apos;attività corrente all&apos;arresto del sistema</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Ferma il conteggio quando inattivo">
+						<longdesc>Ferma il conteggio dell&apos;attività corrente quando il computer diventa inattivo</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Mostra/Nasconde la finestra dell&apos;applicazione">
+								<longdesc>Mostra/Nasconde la finestra dell&apos;applicazione.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Abilita/Disabilita l&apos;azione sulla finestra dell&apos;applicazione">
+								<longdesc>Comando per mostrare/nascondere la finestra dell&apos;applicazione.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Mostra/Nasconde la finestra dell&apos;applicazione">
+								<longdesc>Scorciatoia per mostrare/nascondere la finestra di Conteggio tempo.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

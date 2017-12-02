@@ -1,0 +1,7 @@
+e8f877d91ab6b313ecafec091a50426c  usr/lib/python3/dist-packages/unity_scope_texdoc-0.1.egg-info
+b8b62fac5a3c8ac58383b03ab1a02214  usr/share/dbus-1/services/unity-scope-texdoc.service
+fde104c1abb496795a4fc514be6eecc7  usr/share/doc/unity-scope-texdoc/changelog.Debian.gz
+cf821e6361309b3bf376278c1e8c2c08  usr/share/doc/unity-scope-texdoc/copyright
+d41d8cd98f00b204e9800998ecf8427e  usr/share/unity-scopes/texdoc/__init__.py
+4334676735216efa00c42c2fb73bce7a  usr/share/unity-scopes/texdoc/unity_texdoc_daemon.py
+c9fc77f4074ca72000be21fcd7c1fab9  usr/share/unity/scopes/help/texdoc.scope

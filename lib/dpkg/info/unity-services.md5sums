@@ -1,0 +1,6 @@
+25b332ddce1e648dadbec9de1b3453cd  usr/lib/x86_64-linux-gnu/unity/unity-panel-service
+679b0c147047b0ff66f9b55a6b5e8f31  usr/share/doc/unity-services/changelog.Debian.gz
+1b494617ca5e6d5b95ec993c49302665  usr/share/doc/unity-services/copyright
+d20080c2f879a1366a39129bdd45af4f  usr/share/man/man1/unity-panel-service.1.gz
+6300dfe2080bf9309d00ced70e9f10b2  usr/share/upstart/sessions/unity-panel-service-lockscreen.conf
+7f021d59add5272df2453a2595310ffa  usr/share/upstart/sessions/unity-panel-service.conf

@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Przełączenie czynności po zmianie obszaru roboczego">
+						<longdesc>Jeśli włączone jest przełączanie według nazwy, to ta lista ustawia nazwy czynności, na które można się przełączyć, z obszarem roboczym prezentowanym przez indeks elementów.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Określa, czy przełączenie obszaru roboczego wywołuje przełączenie czynności">
+						<longdesc>Lista włączonych metod śledzenia. Wartość &quot;name&quot; włączy przełączanie czynności według nazwy określonej w kluczu &quot;workspace_mapping&quot;. Wartość &quot;memory&quot; włączy przełączanie na ostatnią czynność podczas powracania na poprzedni obszar roboczy.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="Kiedy powinien rozpoczynać się dzień (domyślnie o 5:30)">
+						<longdesc>Czynności będą liczone jako należące do dnia poprzedniego, jeśli bieżący czas jest wcześniejszy niż określony czas rozpoczęcia danego dnia, a jako należące do dnia dzisiejszego, jeśli ten czas minął. Czynności rozdzielone na dwa dni będą przesuwane na ten dzień, w którym odbyło się większość czasu czynności.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Przypominanie również, gdy nie ustawiono żadnej czynności">
+						<longdesc>Przypominanie co notify_interval minut nawet, jeśli nie uruchomiono żadnej czynności.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Przypominanie o bieżącej czynności co x minut">
+						<longdesc>Przypominanie o bieżącej czynności co określoną liczbę minut. Ustawienie wartości na 0 lub więcej niż 120, wyłącza przypominanie.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Zatrzymanie śledzenia przy wyłączeniu komputera">
+						<longdesc>Zatrzymanie śledzenia bieżącej czynności przy wyłączeniu komputera</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Zatrzymanie czasu podczas bezczynności">
+						<longdesc>Zatrzymanie śledzenia bieżącej czynności podczas bezczynności komputera</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Przełączenie okna programu Hamster">
+								<longdesc>Przełączenie widoczności okna programu Hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Przełączenie czynności okna programu Hamster">
+								<longdesc>Polecenie do przełącznika widoczności okna programu Hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Wyświetlanie/ukrywanie okna zarządzania czasem">
+								<longdesc>Skrót klawiszowy do wyświetlenia/ukrywania okna zarządzania czasem.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,15 @@
+auto
+/usr/bin/automake
+aclocal
+/usr/bin/aclocal
+aclocal.1.gz
+/usr/share/man/man1/aclocal.1.gz
+automake.1.gz
+/usr/share/man/man1/automake.1.gz
+
+/usr/bin/automake-1.15
+33
+/usr/bin/aclocal-1.15
+/usr/share/man/man1/aclocal-1.15.1.gz
+/usr/share/man/man1/automake-1.15.1.gz
+

@@ -1,0 +1,15 @@
+#!/bin/sh -e
+set -e
+
+
+
+if dpkg-maintscript-helper supports rm_conffile 2>/dev/null; then
+  dpkg-maintscript-helper rm_conffile /etc/kde3/kdeglobals 6.0.1 -- "$@"
+fi
+
+if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
+    if which update-grub2 > /dev/null ; then
+        update-grub2 || true
+    fi
+fi
+

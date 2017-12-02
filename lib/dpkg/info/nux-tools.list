@@ -1,0 +1,17 @@
+/.
+/etc
+/etc/X11
+/etc/X11/Xsession.d
+/etc/X11/Xsession.d/50_check_unity_support
+/usr
+/usr/lib
+/usr/lib/nux
+/usr/lib/nux/unity_support_test
+/usr/share
+/usr/share/apport
+/usr/share/apport/package-hooks
+/usr/share/apport/package-hooks/source_nux.py
+/usr/share/doc
+/usr/share/doc/nux-tools
+/usr/share/doc/nux-tools/copyright
+/usr/share/doc/nux-tools/changelog.Debian.gz

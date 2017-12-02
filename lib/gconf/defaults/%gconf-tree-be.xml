@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Пераключаць занятак пры змяненні прасторы працы">
+						<longdesc>Калі ўключана пераключэнне па назве, гэты спіс прызначае назвы заняткаў для пераключэння, прасторы працы, прадстаўленыя індэксамі элементаў.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Ці павінна пераключэнне прасторы працы выклікаць пераключэнне занятку">
+						<longdesc>Спіс уключаных спосабаў адсочвання. &quot;name&quot; - уключыць пераключэнне заняткаў па назве, у адпаведнасці са значэннем ключа &quot;workspace_mapping&quot;; &quot;memory&quot; - уключыць пераключэнне на апошні занятак пры вяртанні на папярэднюю прастору працы.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="Калі пачынаецца дзень (прадвызначана а 5:30)">
+						<longdesc>Занятак лічыцца ўчорашнім, калі бягучы час меншы за вызначаны час пачатку дня, і сённяшнім, калі гэты час большы. Занятак, расцягнуты на два дні, будзе аднесены да таго дня, у які дзейнасць была больш працяглай.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Таксама нагадваць, калі ніякі занятак не вызначаны">
+						<longdesc>Таксама нагадваць кожныя notify_interval хвілін, калі ніякі занятак не пачаты.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Нагадваць пра бягучае заданне кожныя x хвілін">
+						<longdesc>Нагадваць пра бягучае заданне праз вызначаную колькасць хвілін. Значэнне 0 ці большае за 120 адключае нагадванне.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Спыніць адсочванне пры спыненні працы">
+						<longdesc>Спыніць адсочванне бягучага занятку пры спыненні працы</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Спыніць адсочванне ў стане бяздзейнасці">
+						<longdesc>Спыніць адсочванне бягучага занятку, калі камп&apos;ютар становіцца бяздзейным</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Пераключэнне акна праграмы hamster">
+								<longdesc>Пераключыць бачнасць акна праграмы hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Дзеянне пераключэння акна праграмы hamster">
+								<longdesc>Загад для змянення бачнасці акна праграмы hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Ці трэба паказваць акно Трэкера часу">
+								<longdesc>Клавіятурны скарот для паказу ці хавання акна Трэкера часу.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

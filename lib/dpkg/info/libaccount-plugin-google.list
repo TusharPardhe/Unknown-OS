@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libaccount-plugin-google
+/usr/share/doc/libaccount-plugin-google/copyright
+/usr/share/doc/libaccount-plugin-google/changelog.Debian.gz
+/usr/lib
+/usr/lib/libaccount-plugin-1.0
+/usr/lib/libaccount-plugin-1.0/providers
+/usr/lib/libaccount-plugin-1.0/providers/libgoogle.so

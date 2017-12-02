@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+
+# Automatically added by dh_python2:
+if which pyclean >/dev/null 2>&1; then
+	pyclean -p gir1.2-dee-1.0 
+else
+	dpkg -L gir1.2-dee-1.0 | grep \.py$ | while read file
+	do
+		rm -f "${file}"[co] >/dev/null
+  	done
+fi
+
+# End automatically added section

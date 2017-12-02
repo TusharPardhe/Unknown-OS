@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/bin
+/usr/bin/growisofs
+/usr/bin/dvd+rw-format
+/usr/share
+/usr/share/doc
+/usr/share/doc/growisofs
+/usr/share/doc/growisofs/copyright
+/usr/share/doc/growisofs/changelog.Debian.gz
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/dvd+rw-format.1.gz
+/usr/share/man/man1/growisofs.1.gz

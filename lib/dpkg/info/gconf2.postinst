@@ -1,0 +1,79 @@
+#!/bin/sh
+
+set -e
+
+signal_daemons()
+{
+    # Tell all running daemons to reload their databases
+    kill -s HUP `pidof gconfd-2` >/dev/null 2>&1 || true
+}
+
+check_for_new_convert_files()
+{
+    # Check /usr/share/GConf/gsettings to see if there are any new files.
+    # We do this by keeping track of the files in that directory since last
+    # time we ran, stored in /usr/share/GConf/gsettings.dpkg-cache.
+    #
+    # If any new files exist, we notify that a reboot is a good idea.
+    # We don't worry about updated files, since gsettings-data-convert doesn't.
+
+    convertdir="/usr/share/GConf/gsettings"
+    if [ ! -d "$convertdir" ]; then
+        return 0
+    fi
+
+    cachefile="$convertdir.dpkg-cache"
+    newcachefile="$cachefile.new"
+    (cd /usr/share/GConf/gsettings; ls -1 * > "$newcachefile" 2>/dev/null)
+    if [ ! -e "$cachefile" ] || \
+       [ -n "$(comm -1 -3 $cachefile $newcachefile 2>/dev/null)" ]; then
+        if [ -x /usr/share/update-notifier/notify-reboot-required ]; then
+            /usr/share/update-notifier/notify-reboot-required
+        fi
+    fi
+    mv "$newcachefile" "$cachefile" || true # save for future runs
+}
+
+if [ "$1" = triggered ]; then
+    for trigger in $2; do
+        case $trigger in
+            /usr/share/gconf/schemas)
+                gconf-schemas --register-all --no-signal
+                ;;
+            /usr/share/gconf/defaults)
+                update-gconf-defaults --no-signal
+                ;;
+            /usr/share/gconf/mandatory)
+                update-gconf-defaults --no-signal --mandatory
+                ;;
+            /usr/share/GConf/gsettings)
+                check_for_new_convert_files
+                ;;
+        esac
+    done
+    signal_daemons
+    exit 0
+fi
+
+
+
+for GCONF_DIR in \
+                 /etc/gconf/gconf.xml.mandatory \
+                 /etc/gconf/gconf.xml.defaults ; do
+  GCONF_TREE=$GCONF_DIR/%gconf-tree.xml
+  if [ ! -f "$GCONF_TREE" ]; then
+    gconf-merge-tree "$GCONF_DIR"
+    chmod 644 "$GCONF_TREE"
+    find "$GCONF_DIR" -mindepth 1 -maxdepth 1 -type d -exec rm -rf \{\} \;
+    rm -f "$GCONF_DIR/%gconf.xml"
+  fi
+done
+
+# Upon installation/upgrade, regenerate all databases, because in this case 
+# there will be no trigger run
+gconf-schemas --register-all --no-signal
+update-gconf-defaults --no-signal
+update-gconf-defaults --no-signal --mandatory
+check_for_new_convert_files
+signal_daemons
+

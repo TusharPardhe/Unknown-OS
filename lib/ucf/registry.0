@@ -1,0 +1,5 @@
+rsyslog 	 /etc/rsyslog.d/50-default.conf
+grub-pc 	 /etc/default/grub
+unattended-upgrades 	 /etc/apt/apt.conf.d/50unattended-upgrades
+libxml-sax-perl 	 /etc/perl/XML/SAX/ParserDetails.ini
+samba-common 	 /etc/samba/smb.conf

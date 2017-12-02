@@ -1,0 +1,9 @@
+auto
+/usr/bin/mogrify
+mogrify.1.gz
+/usr/share/man/man1/mogrify.1.gz
+
+/usr/bin/mogrify-im6
+100
+/usr/share/man/man1/mogrify-im6.1.gz
+

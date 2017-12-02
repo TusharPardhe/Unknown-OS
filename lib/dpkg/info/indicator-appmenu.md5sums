@@ -1,0 +1,5 @@
+0b4717897f277db33f1d1874d286fa98  usr/lib/indicators3/7/libappmenu.so
+27c791af9917bf20dc691c15c8f7e851  usr/share/apport/package-hooks/source_indicator-appmenu.py
+699fb004102581dd3d12d68a58ce4af4  usr/share/doc/indicator-appmenu/changelog.Debian.gz
+7f952dc2188bb67848c2c9838a555f40  usr/share/doc/indicator-appmenu/copyright
+8c19b99fb01d55146200dfca7f9a931f  usr/share/glib-2.0/schemas/com.canonical.indicator.appmenu.gschema.xml

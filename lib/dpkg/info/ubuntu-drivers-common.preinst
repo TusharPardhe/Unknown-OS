@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/init/hybrid-gfx.conf 1:0.2.91~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/init/amd-config.conf 1:0.2.91.1~ -- "$@"
+# End automatically added section

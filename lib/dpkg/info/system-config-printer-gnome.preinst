@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+case "$1" in
+    install|upgrade)
+        if dpkg --compare-versions "$2" lt-nl "1.1.2+git20090125-0ubuntu2"; then
+            if [ -e /etc/xdg/autostart/redhat-print-applet.desktop ]; then
+                rm /etc/xdg/autostart/redhat-print-applet.desktop
+            fi
+        fi
+esac

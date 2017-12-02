@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+
+if [ "$1" = "upgrade" -o "$1" = "install" ]; then
+	rm -f /`echo usr/lib/libreoffice | sed -e s,usr/,var/,g`/basis3.4/program/services.rdb
+	rmdir /`echo usr/lib/libreoffice | sed -e s,usr/,var/,g`/basis3.4/program/ 2>/dev/null || true
+	rmdir /`echo usr/lib/libreoffice | sed -e s,usr/,var/,g`/basis3.4 2>/dev/null || true
+fi
+
+
+
+exit 0

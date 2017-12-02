@@ -1,0 +1,11 @@
+2e6da2912c531368001791ea577239c8  usr/lib/girepository-1.0/GstAllocators-1.0.typelib
+da4315b8487c1145e1936ccbdaf78a94  usr/lib/girepository-1.0/GstApp-1.0.typelib
+c845fbeb9490ff979c2e6ca2b8906350  usr/lib/girepository-1.0/GstAudio-1.0.typelib
+2641b34348b00f4500377fef5f0ee988  usr/lib/girepository-1.0/GstFft-1.0.typelib
+44f9404c71da10fb05ae3f26f32a6ca9  usr/lib/girepository-1.0/GstPbutils-1.0.typelib
+8788265c12b2f342f6ade3cd8dc7965c  usr/lib/girepository-1.0/GstRtp-1.0.typelib
+4729564df95232dcda9043d941356bb7  usr/lib/girepository-1.0/GstRtsp-1.0.typelib
+4dc01e6f434737c9b92918def8be26c1  usr/lib/girepository-1.0/GstSdp-1.0.typelib
+1eac506c9abb96afab60c662b4fb8fe0  usr/lib/girepository-1.0/GstTag-1.0.typelib
+296e8bf6bca44a0ea69b6e735290d922  usr/lib/girepository-1.0/GstVideo-1.0.typelib
+41bd7b94c1d38f696720990e7142e548  usr/share/doc/gir1.2-gst-plugins-base-1.0/copyright

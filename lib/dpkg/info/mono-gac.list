@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/bin
+/usr/bin/gacutil
+/usr/share
+/usr/share/cli-common
+/usr/share/cli-common/runtimes.d
+/usr/share/cli-common/runtimes.d/mono
+/usr/share/mono
+/usr/share/mono/MonoGetAssemblyName.exe
+/usr/share/doc
+/usr/share/doc/mono-gac
+/usr/share/doc/mono-gac/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/gacutil.1.gz
+/usr/share/doc/mono-gac/changelog.Debian.gz

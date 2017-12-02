@@ -1,0 +1,10 @@
+300e967197a2907161ea62cc941b1921  usr/lib/python3/dist-packages/unity_scope_gdrive-0.7.egg-info
+6bb408343f591b871bd7b279f9815658  usr/share/accounts/applications/unity-scope-gdrive.application
+e6c5c5973d17f70c5b5090008eb82b36  usr/share/accounts/services/google-drive-scope.service
+8037b6aa9c185be8f6a73df5c66afc6d  usr/share/applications/unity-scope-gdrive.desktop
+4f91691c1ab1bbe2b4f0055e34f883ac  usr/share/dbus-1/services/unity-scope-gdrive.service
+a807a9658d94c00d87af265f81ad7292  usr/share/doc/unity-scope-gdrive/changelog.Debian.gz
+da37c90ac671dc0a379b641ee340481d  usr/share/doc/unity-scope-gdrive/copyright
+751c9cdf3369f71de92c464700235b6e  usr/share/icons/hicolor/48x48/apps/unity-scope-gdrive.png
+0225d30682e35dc480b25135a90893ff  usr/share/unity-scopes/gdrive/unity_gdrive_daemon.py
+9792fae86e3a03b817b249965f2f42f4  usr/share/unity/scopes/files/gdrive.scope

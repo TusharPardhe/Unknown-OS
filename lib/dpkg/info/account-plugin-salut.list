@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/accounts
+/usr/share/accounts/providers
+/usr/share/accounts/providers/local-xmpp.provider
+/usr/share/accounts/services
+/usr/share/accounts/services/local-xmpp-im.service
+/usr/share/doc
+/usr/share/doc/account-plugin-salut
+/usr/share/doc/account-plugin-salut/copyright
+/usr/share/doc/account-plugin-salut/changelog.Debian.gz
+/usr/share/doc/account-plugin-salut/CONTRIBUTORS
+/usr/share/doc/account-plugin-salut/NEWS.gz
+/usr/share/doc/account-plugin-salut/TODO
+/usr/share/doc/account-plugin-salut/README
+/usr/share/doc/account-plugin-salut/AUTHORS

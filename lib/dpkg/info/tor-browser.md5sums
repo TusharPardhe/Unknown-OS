@@ -1,0 +1,6 @@
+ce6fced0c79842b442b2dfb39d492f8f  opt/tor-browser-en/tor-browser-linux64-6.5.1_en-US.tar.xz
+15b8d8afbc6f8d5fe92a44c0c8f27aac  usr/bin/tor-browser-en.sh
+5a6fb5393830baad7e928725daa52ce5  usr/share/applications/tor-browser-en.desktop
+b1b586e57fa70520849c5ba5283e836c  usr/share/doc/tor-browser/changelog.Debian.gz
+8319f8c8d36bca663ada01f8f8d55140  usr/share/doc/tor-browser/copyright
+494afbfa60fb4ce21840244cc3f7208c  usr/share/pixmaps/tor-browser-en.png

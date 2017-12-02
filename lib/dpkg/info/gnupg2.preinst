@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installudev
+if [ "$1" = install ] || [ "$1" = upgrade ]; then
+	if [ -e "/etc/udev/rules.d/z60_gnupg2.rules" ]; then
+		if [ "`md5sum \"/etc/udev/rules.d/z60_gnupg2.rules\" | sed -e \"s/ .*//\"`" = \
+		     "`dpkg-query -W -f='${Conffiles}' gnupg2 | sed -n -e \"\\\\' /etc/udev/rules.d/z60_gnupg2.rules '{s/ obsolete$//;s/.* //p}\"`" ]
+		then
+			rm -f "/etc/udev/rules.d/z60_gnupg2.rules"
+		fi
+	fi
+fi
+# End automatically added section

@@ -1,0 +1,7 @@
+210f50f40e0d0c6cf3ceb9f42ad829bf  usr/lib/python3/dist-packages/unity_scope_virtualbox-0.1.egg-info
+2b09363694424cc6627e111616385188  usr/share/dbus-1/services/unity-scope-virtualbox.service
+8da6435600fc4dc1f6bc9d781b06398e  usr/share/doc/unity-scope-virtualbox/changelog.Debian.gz
+c3edf099a532b39040b63d761d80d587  usr/share/doc/unity-scope-virtualbox/copyright
+d41d8cd98f00b204e9800998ecf8427e  usr/share/unity-scopes/virtualbox/__init__.py
+c5927c86ed5bbae5dbc3d87168115fac  usr/share/unity-scopes/virtualbox/unity_virtualbox_daemon.py
+960d40f1f13b8669e0703e1918edb6b5  usr/share/unity/scopes/boxes/virtualbox.scope

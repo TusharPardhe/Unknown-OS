@@ -1,0 +1,10 @@
+3fd11677c9f240643f8501f5f8588dd9  usr/share/command-not-found/priority.txt
+adaf7d0cd25acf74bca543c74e2bd2d5  usr/share/command-not-found/programs.d/all-main.db
+2c77fffd6b74f47ef5980a0be5c3fa85  usr/share/command-not-found/programs.d/all-multiverse.db
+6d378f2f673e69e2696d89354105d843  usr/share/command-not-found/programs.d/all-universe.db
+134014d9e5629863dce48d05459200d2  usr/share/command-not-found/programs.d/amd64-main.db
+a2b39fab2cad4ddf0b0fd85522381f67  usr/share/command-not-found/programs.d/amd64-multiverse.db
+54b83fcc9721c805aad199d9341209ed  usr/share/command-not-found/programs.d/amd64-restricted.db
+f6376dc48cf14bd5b7e5bac3e1f44db7  usr/share/command-not-found/programs.d/amd64-universe.db
+ec2b439754cfd1aa2a8dea18b799ab9b  usr/share/doc/command-not-found-data/changelog.gz
+d8d63b205bed90d1c4ab7bcf4ae2d447  usr/share/doc/command-not-found-data/copyright

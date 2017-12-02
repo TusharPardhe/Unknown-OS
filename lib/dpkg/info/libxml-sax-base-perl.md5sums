@@ -1,0 +1,6 @@
+af58a629117d02febfa4219b90c94248  usr/share/doc/libxml-sax-base-perl/changelog.Debian.gz
+0a2a8dccb86c48e605b0eca054dc0dad  usr/share/doc/libxml-sax-base-perl/copyright
+adc651c9bc808aa0800c8d4ab5c3afba  usr/share/man/man3/XML::SAX::Base.3pm.gz
+ab0c85102c4a08ffd9c0d168c5d3f7a7  usr/share/man/man3/XML::SAX::Exception.3pm.gz
+5db9bfd696e0a37e8d605fe292d76984  usr/share/perl5/XML/SAX/Base.pm
+b638a17e5cde24c1b8fa508f5aeeec4e  usr/share/perl5/XML/SAX/Exception.pm

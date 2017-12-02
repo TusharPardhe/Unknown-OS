@@ -1,0 +1,8 @@
+cc6f2aa5869f1284426147dade89c2ab  usr/lib/x86_64-linux-gnu/unity-lens-music/music-preview-player
+81411c26c5df1f1de8b81ae82077a83c  usr/lib/x86_64-linux-gnu/unity-lens-music/unity-music-daemon
+045b36c7b98da82a9c7f63935e6c84c4  usr/share/dbus-1/services/music-preview-player.service
+3199ff4ab84f75c0c14e6068d17143b8  usr/share/dbus-1/services/unity-scope-music.service
+c855f0bb5f317e651699b9bac4a6f90c  usr/share/doc/unity-lens-music/changelog.Debian.gz
+d5af77e5e1f8dda379d02af11c405b4f  usr/share/doc/unity-lens-music/copyright
+f0b2ce1437ec465a699bf4c4d06c4ead  usr/share/unity/scopes/music/banshee.scope
+399393e4ad8261c6327ebe331c3bd057  usr/share/unity/scopes/music/rhythmbox.scope

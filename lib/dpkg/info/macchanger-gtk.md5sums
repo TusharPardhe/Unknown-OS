@@ -1,0 +1,7 @@
+65982f34ac480a5b575eb1ab6eabe3ee  usr/sbin/macchanger-gtk
+7ed6e5af069471a5576f5b815919af4c  usr/share/macchanger-gtk/macchanger-gtk.glade
+296d55c41ac0b05fa6ed7929c0251371  usr/share/doc/macchanger-gtk/changelog.gz
+e9c1ff7f1b93b665d4fae9cd6767f175  usr/share/doc/macchanger-gtk/copyright
+7ca71560e9ca7c8f740609a1551e059b  usr/share/doc/macchanger-gtk/changelog.Debian.gz
+9e19803cd4154ac2e64c5abaec302782  usr/share/man/man1/macchanger-gtk.1.gz
+25a93f72e2c07269ef5c6befb38f0d4b  usr/share/menu/macchanger-gtk

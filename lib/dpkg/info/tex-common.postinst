@@ -1,0 +1,422 @@
+#!/bin/sh -e
+# 
+# postinst maintainer script for the Debian tex-common package.
+#
+# Copyright (C) 2004 by Frank Küster <frank@kuesterei.ch>. 
+# Copyright (C) 2012-2015 by Norbert Preining <preining@debian.org>
+#
+# This file is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the
+# Free Software Foundation; either version 2 of the License, or (at your
+# option) any later version.
+#
+# This file is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to: The Free Software Foundation, Inc.,
+# 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
+#
+# On Debian GNU/Linux System you can find a copy of the GNU General Public
+# License in "/usr/share/common-licenses/GPL".
+
+umask 022
+
+#
+# definitions of necessary trees
+TEXMFSYSVARDIR=/var/lib/texmf
+
+# summary of how this script can be called:
+#        * <postinst> `configure' <most-recently-configured-version>
+#        * <old-postinst> `abort-upgrade' <new version>
+#        * <conflictor's-postinst> `abort-remove' `in-favour' <package>
+#          <new-version>
+#        * <deconfigured's-postinst> `abort-deconfigure' `in-favour'
+#          <failed-install-package> <version> `removing'
+#          <conflicting-package> <version>
+
+
+# Give a name to the first commandline argument
+action=$1
+trigger=$2
+
+. /usr/share/debconf/confmodule
+db_version 2.0
+
+dhit_texlive_binaries_configured ()
+{
+    # unfortunately this seems not to work anymore, we have to make
+    # sure that texlive-binaries is properly configured, otherwise
+    # a squeeze in libkpathsea and engines might occur
+    # kpsewhich --version >/dev/null 2>&1
+    stat=$(dpkg-query -W -f='${Status}' texlive-binaries 2>/dev/null || true)
+    case "$stat" in
+        "install ok installed")
+            return 0
+            ;;
+        *)
+            return 1
+            ;;
+    esac
+}
+
+dhit_build_format ()
+{
+
+    tempfile=$(mktemp -p /tmp fmtutil.XXXXXXXX)
+    printf "Building format(s) $*.\n\tThis may take some time... "
+    if fmtutil-sys --no-error-if-no-engine=luajittex "$@" > $tempfile 2>&1 ; then
+        rm -f $tempfile
+        echo "done."
+    else
+        exec >&2
+        echo
+        echo "fmtutil-sys failed. Output has been stored in"
+        echo "$tempfile"
+        echo "Please include this file if you report a bug."
+        echo
+        exit 1
+    fi
+}
+
+run_mtxrun_if_possible()
+{
+    # code from postinst-tex
+    if dhit_texlive_binaries_configured; then
+        if which mtxrun >/dev/null; then
+            # we also have to check that texlive-base is installed
+            # and configured, otherwise we cannot be sure that
+            # all necessary basic files are present
+            #
+            # dpkg-query has two defects wrt not existing packages
+            # - it is noisy to stderr
+            # - it returns 1
+            # so shut both errors up
+            stat=$(dpkg-query -W -f='${Status}' context 2>/dev/null || true)
+            case "$stat" in
+                "install ok installed")
+                    do_it=1
+                    ;;
+                *)
+                    do_it=0
+                    ;;
+            esac
+            if [ "$do_it" = 1 ] ; then
+                tempfile=$(mktemp -p /tmp mtxrun.XXXXXXXX)
+                printf "Running mtxrun --generate. This may take some time... "
+                if mtxrun --generate > $tempfile 2>&1 ; then
+                    rm -f $tempfile
+                    echo "done."
+                else
+                    exec >&2
+                    echo
+                    echo "mtxrun --generate failed. Output has been stored in"
+                    echo "$tempfile"
+                    echo "Please include this file if you report a bug."
+                    echo
+                    exit 1
+    	        fi
+            fi
+        fi
+    fi
+}
+
+run_updmap()
+{
+    if dhit_texlive_binaries_configured; then
+        if which updmap-sys >/dev/null; then
+            # we also have to check that texlive-base is installed
+            # and configured, otherwise we cannot be sure that
+            # all necessary basic files are present
+            #
+            # dpkg-query has two defects wrt not existing packages
+            # - it is noisy to stderr
+            # - it returns 1
+            # so shut both errors up
+            stat=$(dpkg-query -W -f='${Status}' texlive-base 2>/dev/null || true)
+            case "$stat" in
+                "install ok installed")
+                    do_it=1
+                    ;;
+                *)
+                    do_it=0
+                    ;;
+            esac
+            if [ "$do_it" = 0 ] ; then
+                echo "texlive-base is not ready, delaying updmap-sys call" >&2
+            else
+                tempfile=$(mktemp -p /tmp updmap.XXXXXXXX)
+                printf "Running updmap-sys. This may take some time... "
+                # call updmap with --nohash so that no ls-R files
+                # are created in /usr/local/share/texmf/
+                # see bug report #607857
+                # instead of that we call mktexlsr $TEXMFSYSVARDIR 
+                # afterwards. This can be done without checks as
+                # we know that dhit_texlive_binaries_configured and
+                # since mktexlsr and updmap are in the same package
+                # and we checked for updmap already
+                if updmap-sys --nohash > $tempfile 2>&1 ; then
+                    rm -f $tempfile
+                    echo "done."
+                    tempfile=$(mktemp -p /tmp mktexlsr.XXXXXXXX)
+                    printf "Running mktexlsr $TEXMFSYSVARDIR ... "
+                    if mktexlsr $TEXMFSYSVARDIR > $tempfile 2>&1 ; then
+                        rm -f $tempfile
+                        echo "done."
+                    else
+                        exec >&2
+                        echo
+                        echo "mktexlsr $TEXMFSYSVARDIR failed. Output has been stored in"
+                        echo "$tempfile"
+                        echo "Please include this file if you report a bug."
+                        echo
+                        exit 1
+                    fi
+                else
+                    exec >&2
+                    echo
+                    echo "updmap-sys failed. Output has been stored in"
+                    echo "$tempfile"
+                    echo "Please include this file if you report a bug."
+                    echo
+                    echo "Sometimes, not accepting conffile updates in /etc/texmf/updmap.d"
+                    echo "causes updmap-sys to fail.  Please check for files with extension"
+                    echo ".dpkg-dist or .ucf-dist in this directory" 
+                    echo
+                    exit 1
+	            fi
+            fi
+        fi
+    fi
+}
+
+run_fmtutil()
+{
+    # now call the equivalent of fmtutil-sys --all explicitely
+    # we also have to check that texlive-base is installed
+    # and configured, otherwise we cannot be sure that
+    # all necessary basic files are present
+    if dhit_texlive_binaries_configured; then
+        # see above for information on dpkg-query usage
+        stat=$(dpkg-query -W -f='${Status}' texlive-base  2>/dev/null || true)
+        case "$stat" in
+            "install ok installed")
+                do_it=1
+                ;;
+            *)
+                do_it=0
+                ;;
+        esac
+        if [ "$do_it" = 0 ] ; then
+            echo "texlive-base is not ready, skipping fmtutil-sys --all call" >&2
+        else
+            dhit_build_format --all
+        fi
+    fi
+}
+
+run_mktexlsr()
+{
+    trees=$*
+    if dhit_texlive_binaries_configured; then
+        # mktexlsr may not be present
+        if which mktexlsr >/dev/null; then
+            tempfile=$(mktemp -p /tmp mktexlsr.XXXXXXXX)
+            printf "Running mktexlsr. This may take some time... "
+            if mktexlsr $trees > $tempfile 2>&1 ; then
+                rm -f $tempfile
+                echo "done."
+            else
+                exec >&2
+                echo
+                echo "mktexlsr $trees failed. Output has been stored in"
+                echo "$tempfile"
+                echo "Please include this file if you report a bug."
+                echo
+                exit 1
+            fi
+        fi
+    fi
+}
+
+run_hyphen()
+{
+    if dhit_texlive_binaries_configured; then
+        if which kpsewhich >/dev/null; then
+            if which fmtutil-sys >/dev/null; then
+                # code from postinst.tex
+                v=$(kpsewhich -var-value TEXMFSYSVAR)
+                c=$(kpsewhich -var-value TEXMFSYSCONFIG)
+                TEXMFVAR="$v"
+                TEXMFCONFIG="$c"
+                export TEXMFVAR TEXMFCONFIG
+                tempfile=$(mktemp -p /tmp fmtutil.XXXXXXXX)
+                printf "Building latex-based formats --byhyphen $(kpsewhich language.dat).\n\tThis may take some time... "
+                if fmtutil-sys --no-error-if-no-engine=luajittex --byhyphen "$(kpsewhich language.dat)" > $tempfile 2>&1 ; then
+                    rm -f $tempfile
+                    echo "done."
+                else
+                    exec >&2
+                    echo
+                    echo "fmtutil-sys failed. Output has been stored in"
+                    echo "$tempfile"
+                    echo "Please include this file if you report a bug."
+                    echo
+                    exit 1
+                fi
+                tempfile=$(mktemp -p /tmp fmtutil.XXXXXXXX)
+                printf "Building e-tex based formats --byhyphen $(kpsewhich language.def).\n\tThis may take some time... "
+                if fmtutil-sys --no-error-if-no-engine=luajittex --byhyphen "$(kpsewhich language.def)" > $tempfile 2>&1 ; then
+                    rm -f $tempfile
+                    echo "done."
+                else
+                    exec >&2
+                    echo
+                    echo "fmtutil-sys failed. Output has been stored in"
+                    echo "$tempfile"
+                    echo "Please include this file if you report a bug."
+                    echo
+                    exit 1
+                fi
+            fi
+        fi
+    fi
+}
+
+do_triggers() 
+{
+    DO_TEXMF=0
+    DO_TEXMFDIST=0
+    DO_UPDMAP=0
+    DO_FMTUTIL=0
+    DO_HYPHEN=0
+    case " $trigger " in 
+        *" /usr/share/texmf "*)                DO_TEXMF=1 ;; esac
+    case " $trigger " in
+        *" /usr/share/texlive/texmf-dist "*)   DO_TEXMFDIST=1 ;; esac
+    case " $trigger " in
+        *" texmf-map "*)                       DO_UPDMAP=1 ;; esac
+    case " $trigger " in
+        *" texmf-format "*)                    DO_FMTUTIL=1 ;; esac
+    case " $trigger " in
+        *" texmf-hyphen "*)                    DO_HYPHEN=1 ;; esac
+
+    DO_MKTEXLSR=0
+    #
+    # ls-R updates
+    trees="$TEXMFSYSVARDIR"
+    if [ $DO_TEXMF = 1 ] ; then
+        DO_MKTEXLSR=1
+        trees="$trees /usr/share/texmf"
+    fi
+    if [ $DO_TEXMFDIST = 1 ] ; then
+        DO_MKTEXLSR=1
+        trees="$trees /usr/share/texlive/texmf-dist"
+    fi
+    if [ $DO_MKTEXLSR = 1 ] ; then
+        run_mktexlsr $trees
+        run_mtxrun_if_possible
+    fi
+    if [ $DO_UPDMAP = 1 ] ; then
+        update-updmap --quiet
+        run_updmap
+    fi
+    if [ $DO_FMTUTIL = 1 ] ; then
+        update-language --quiet
+        update-fmtutil --quiet
+        run_fmtutil
+        # reset hyphen, we already rebuilt all formats
+        DO_HYPHEN=0
+    fi
+    if [ $DO_HYPHEN = 1 ] ; then
+        update-language --quiet
+        update-fmtutil --quiet
+        run_hyphen
+    fi
+}
+
+
+#################################################################
+# Here starts the real action
+#################################################################
+
+
+case $action in
+    triggered)
+        do_triggers
+        ;;
+
+    configure|reconfigure)
+
+    # if we are upgrading from before 4, remove the preinst created
+    # backup of the symlink
+    if dpkg --compare-versions "$trigger" lt "4" ; then
+      if [ -L /usr/share/texmf/doc.dpkg-remove ] ; then
+        rm -f /usr/share/texmf/doc.dpkg-remove
+      fi
+    fi
+
+
+    # remove outdated thailatex babel.sty
+    if [ -f $TEXMFSYSVARDIR/tex/generic/babel/babel.sty ] ; then
+        echo "Removing outdated babel.sty from thailatex."
+        rm $TEXMFSYSVARDIR/tex/generic/babel/babel.sty
+        rmdir --ignore-fail-on-non-empty $TEXMFSYSVARDIR/tex/generic/babel
+        rmdir --ignore-fail-on-non-empty $TEXMFSYSVARDIR/tex/generic
+        rmdir --ignore-fail-on-non-empty $TEXMFSYSVARDIR/tex
+    fi
+
+    update-texmf
+    update-updmap --quiet
+    update-fmtutil --quiet
+    update-language --quiet
+    trees="$TEXMFSYSVARDIR /usr/share/texmf"
+    if [ -d /usr/share/texlive/texmf-dist ] ; then
+        trees="$trees /usr/share/texlive/texmf-dist"
+    fi
+    run_mktexlsr $trees
+    run_mtxrun_if_possible
+    run_updmap
+    run_fmtutil
+
+    # create empty dirs in /usr/local/share/
+    if [ ! -e /usr/local/share/texmf ]
+    then
+      if mkdir -p /usr/local/share/texmf 2>/dev/null
+      then
+        chown root:staff /usr/local/share/texmf
+        chmod 2775 /usr/local/share/texmf
+      fi
+    fi
+
+    # remove out dated dir /etc/texmf/language.d
+    if [ -d /etc/texmf/language.d ] ; then 
+        rmdir --ignore-fail-on-non-empty /etc/texmf/language.d/
+    fi
+
+
+    ;;
+  *)
+    ;;
+esac
+
+
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/texmf/language.d/00tex.cnf 2.11 -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/texmf/fmt.d/00tex.cnf 6.00~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/texmf/hyphen.d/00tex.cnf 6.00~ -- "$@"
+# End automatically added section
+
+
+### Local Variables:
+### perl-indent-level: 4
+### tab-width: 4
+### indent-tabs-mode: nil
+### End:
+# vim:set tabstop=4 expandtab: #

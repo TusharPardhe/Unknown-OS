@@ -1,0 +1,8 @@
+auto
+/usr/share/gconf/defaults/10_libgksu
+
+/usr/share/libgksu/debian/gconf-defaults.libgksu-su
+20
+/usr/share/libgksu/debian/gconf-defaults.libgksu-sudo
+30
+

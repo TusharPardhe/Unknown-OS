@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Växla aktivitet vid byte av arbetsyta">
+						<longdesc>Om växling efter namn är aktiverat kommer denna lista att ställa in aktivitetsnamnen som ska växlas till, arbetsytor representeras av indexet för objektet.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Ska växling av arbetsyta generera aktivitetsväxling">
+						<longdesc>Lista över aktiverade mätmetoder. &quot;name&quot; kommer att aktivera växling av aktivitet efter namn i workspace_mapping. &quot;memory&quot; kommer att aktivera växling till senaste aktivitet vid när man återvänder till en tidigare arbetsyta.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="Vid vilken tidpunkt som dagen börjar (standard är 05.30)">
+						<longdesc>Aktiviteter kommer att räknas som gårdagens om den aktuella tiden är mindre än den angivna dagens start, och idag, om den går över tiden. Aktiviteter som spänner över två dagar kommer att tippa över till den sida där den största delen av aktiviteten är.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Påminn även när ingen aktivitet är inställd">
+						<longdesc>Påminn även varje notify_interval minuter om ingen aktivitet har startats.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Påminn om aktuell uppgift var x minuter">
+						<longdesc>Påminn om aktuell uppgift varje angivet antal minuter. Ställ in till 0 eller större än 120 för att inaktivera påminnelser.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Stoppa tidmätning vid avstängning">
+						<longdesc>Stoppa tidmätning av aktuell aktivitet vid avstängning</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Stoppa tidmätning vid inaktivitet">
+						<longdesc>Stoppa tidmätning av aktuell aktivitet när datorn blir overksam</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Växla programfönstret för hamster">
+								<longdesc>Växla fönstersynlighet för hamster-programmet.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Växla fönsteråtgärd för hamster-programmet">
+								<longdesc>Kommando för att växla fönstersynlighet för hamster-programmet.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Visa / dölj Tidmätare-fönstret">
+								<longdesc>Tangentbordsgenväg för att visa /dölja Tidmätare-fönstret.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

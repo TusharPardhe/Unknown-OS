@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Cambiar actividad al cambiar de área de trabajo">
+						<longdesc>Si el cambio por nombre está activado, esta lista configura los nombres de las actividades a las que se debería cambiar; las áreas de trabajo están representadas por el índice del elemento.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Indica si al cambiar de área de trabajo se cambia de actividad">
+						<longdesc>Lista de métodos de seguimiento activados. «name» activará el cambio de actividades por nombre definido en «workspace_mapping», «memory» activará el cambio a la última actividad al volver al área de trabajo anterior.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="A qué hora comienza el día (lo predeterminado es 05:30)">
+						<longdesc>Las actividades se contarán como si perteneciesen a ayer si la hora actual es anterior al día de inicio especificado; y para hoy, si es posterior. Las actividades que se alargan durante dos días recaerán sobre la parte donde más actividad se haya realizado.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Recordar también cuando no hay actividades configuradas">
+						<longdesc>Recordar también cada intervalo de notificación («notify_interval») minutos si no se ha iniciado ninguna actividad.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Recordar la tarea actual cada x minutos">
+						<longdesc>Recordar la tarea actual cada número de minutos especificados. Establecer a 0 o a más de 120 para desactivar el recordatorio.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Detener el registro al apagar">
+						<longdesc>Parar la actividad actual al apagar</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Detener el registro en inactividad">
+						<longdesc>Parar la actividad actual cuando el ordenador esté inactivo</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Conmutar la ventana de la aplicación Hamster">
+								<longdesc>Conmutar la visibilidad de la ventana de aplicación Hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Conmutar la acción de la ventana de aplicación Hamster">
+								<longdesc>Comando para conmutar la visibilidad de la ventana de la aplicación Hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Mostrar/ocultar la ventana del gestor de tiempo">
+								<longdesc>Combinación de teclas para mostrar/ocultar la ventana del gestor de tiempo.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

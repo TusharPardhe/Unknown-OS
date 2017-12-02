@@ -1,0 +1,9 @@
+auto
+/usr/bin/keytool
+keytool.1.gz
+/usr/share/man/man1/keytool.1.gz
+
+/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/keytool
+1081
+/usr/lib/jvm/java-8-openjdk-amd64/jre/man/man1/keytool.1.gz
+

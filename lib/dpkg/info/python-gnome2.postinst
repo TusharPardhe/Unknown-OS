@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -e
+
+/usr/share/python/runtime.d/python-gnome2.rtupdate \
+        rtupdate \
+        pouet \
+        $(pyversions -d)
+
+# remove cruft from pysupport which breaks upgrades
+rm -f /usr/lib/pymodules/python2.*/gtk-2.0/gnome/__init__.py*
+
+
+# Automatically added by dh_python2:
+if which pycompile >/dev/null 2>&1; then
+	pycompile -p python-gnome2 
+fi
+
+# End automatically added section
+
+

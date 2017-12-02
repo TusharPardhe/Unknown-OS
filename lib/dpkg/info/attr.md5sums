@@ -1,0 +1,10 @@
+5bbfb977ab31d20cca252f77c41eb862  usr/bin/attr
+ad7facbdda411de0fe2a9906046d6207  usr/bin/getfattr
+e6dc683427fab0018e207adc6cfff248  usr/bin/setfattr
+b6f14c27824f61fa363668770fe99c97  usr/share/doc/attr/PORTING
+62961c60371497ed780ec2bd0fc348fa  usr/share/doc/attr/README
+6697e729027ca22da7584a736c9632a5  usr/share/doc/attr/copyright
+0c04c85baeafdfc23abb974d7b92d7ce  usr/share/man/man1/attr.1.gz
+17a7c05bd7fa5aa606f716fdae5c2edc  usr/share/man/man1/getfattr.1.gz
+151410d0bd221bcdf835940b5a4f9c7d  usr/share/man/man1/setfattr.1.gz
+39104edb5425d4aeedd14e688068faf6  usr/share/man/man5/attr.5.gz

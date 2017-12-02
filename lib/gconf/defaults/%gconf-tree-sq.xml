@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Ndalon numërimin kur sistemi shuhet">
+						<longdesc>Ndalo llogaritjen e kohës së aktivitetit të tanishëm kur sistemi shuhet</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Ndalo numërimin kur jo aktiv">
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

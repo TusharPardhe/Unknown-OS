@@ -1,0 +1,14 @@
+#!/bin/sh
+# prerm script for libgs9.18-common
+
+set -e
+
+if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ] ; then
+	update-alternatives --remove ghostscript-current \
+			    /usr/share/ghostscript/9.18 || true
+
+fi
+
+
+
+exit 0

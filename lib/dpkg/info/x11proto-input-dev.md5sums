@@ -1,0 +1,11 @@
+ce5b985fb309dcaca87e278560da60e3  usr/include/X11/extensions/XI.h
+e3b2ff21ade7a10ae3bb07385b7bd2ba  usr/include/X11/extensions/XI2.h
+8d16503c9d7d8acd7073dfe0c898d864  usr/include/X11/extensions/XI2proto.h
+46d9e7504bfc20cb646481a383e69b75  usr/include/X11/extensions/XIproto.h
+aa1074e62138c402de06e2ebf7afd0c9  usr/share/doc/x11proto-input-dev/XI2proto.html
+e8ea3e82fe5c661beb9b2e25e2a19496  usr/share/doc/x11proto-input-dev/XI2proto.txt.gz
+a3133eddcc6d605b2fb976ef59dd950b  usr/share/doc/x11proto-input-dev/XIproto.html
+995a7a8847a55f858549350f97e4ed9a  usr/share/doc/x11proto-input-dev/XIproto.txt.gz
+39d97b7ffb97b3f005de551c86e28d4b  usr/share/doc/x11proto-input-dev/changelog.Debian.gz
+4434420694d5f1e698dbf95092834e80  usr/share/doc/x11proto-input-dev/copyright
+b150375a6428a0b9a06a891518af8fbb  usr/share/pkgconfig/inputproto.pc

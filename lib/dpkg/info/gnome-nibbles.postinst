@@ -1,0 +1,22 @@
+#! /bin/sh
+set -e
+
+if [ "$1" = "configure" ] ; then
+  if [ ! -d /var/games ]; then
+        mkdir /var/games
+  fi
+
+  for FILE in gnibbles.1.0.scores gnibbles.2.0.scores \
+  gnibbles.3.0.scores gnibbles.4.0.scores gnibbles.1.1.scores \
+  gnibbles.2.1.scores gnibbles.3.1.scores gnibbles.4.1.scores; do
+        if [ -e /var/games/$FILE ]; then
+                continue
+        fi
+
+        touch /var/games/$FILE
+        chown root:games /var/games/$FILE
+        chmod 664 /var/games/$FILE
+  done
+fi
+
+

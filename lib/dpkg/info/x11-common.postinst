@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [ -f /usr/share/debconf/confmodule ]; then
+  . /usr/share/debconf/confmodule
+
+  db_purge x11-common/xwrapper/allowed_users
+  db_purge x11-common/xwrapper/actual_allowed_users
+fi
+
+# Automatically added by dh_installinit
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ]; then
+	if [ -x "/etc/init.d/x11-common" ]; then
+		update-rc.d x11-common start 70 S . >/dev/null
+	fi
+	if [ -x "/etc/init.d/x11-common" ] || [ -e "/etc/init/x11-common.conf" ]; then
+		invoke-rc.d x11-common start || exit $?
+	fi
+fi
+# End automatically added section
+
+
+exit 0

@@ -1,0 +1,150 @@
+#! /bin/sh
+# postinst script for cups-browsed
+#
+# see: dh_installdeb(1)
+
+set -e
+
+# summary of how this script can be called:
+#        * <postinst> `configure' <most-recently-configured-version>
+#        * <old-postinst> `abort-upgrade' <new version>
+#        * <conflictor's-postinst> `abort-remove' `in-favour' <package>
+#          <new-version>
+#        * <deconfigured's-postinst> `abort-deconfigure' `in-favour'
+#          <failed-install-package> <version> `removing'
+#          <conflicting-package> <version>
+# for details, see /usr/doc/packaging-manual/
+#
+# quoting from the policy:
+#     Any necessary prompting should almost always be confined to the
+#     post-installation script, and should be protected with a conditional
+#     so that unnecessary prompting doesn't happen if a package's
+#     installation fails and the `postinst' is called with `abort-upgrade',
+#     `abort-remove' or `abort-deconfigure'.
+
+if [ "$1" = "configure" ]; then
+
+  # Look for broadcasting/browsing configuration in /etc/cups/cupsd.conf
+  # and overtake the directives to /etc/cups/cups-browsed.conf. Comment
+  # out lines to activate CUPS Broadcasting and browsing, to assure that
+  # users use this deprecated method only if really needed.
+  
+  # Do this only on the initial introduction of cups-browsed or on the update
+  # from any version older than 1.0.41 to 1.0.41 or newer (to avoid doing this
+  # more than once on the same system)
+  if dpkg --compare-versions "$2" lt "1.0.41~" && [ -r /etc/cups/cupsd.conf ]; then
+      ECHO=/bin/echo
+      linesadded=0
+      tempfiles=
+      trap 'rm -f $tempfiles; exit 0' 0 HUP INT QUIT ILL ABRT PIPE TERM
+      tmpfile0=`mktemp -t updateppds.XXXXXX`
+      tempfiles="$tempfiles $tmpfile0"
+      # If cupsd.conf.pre16-bak exists (and therefore has the pre-1.6 upgrade values), use it
+      cupsdconf_orig=/etc/cups/cupsd.conf
+      if [ -r /etc/cups/cupsd.conf.pre16-bak ]; then
+          cupsdconf_orig=/etc/cups/cupsd.conf.pre16-bak
+      fi
+      
+      if grep -Piq '^\s*BrowseRemoteProtocols' $cupsdconf_orig 2>/dev/null; then
+	        # Get previously enabled protocols, remove cups and dnssd from that list
+	        previousProtocols=`grep -Pi '^\s*BrowseRemoteProtocols\s+' $cupsdconf_orig | perl -pe "s/BrowseRemoteProtocols\s*(.*)\#?.*$/\1/;s/\s*(dnssd|cups)//gi;s/^\s*//;s/\s*$//"`
+	        if grep -Piq '^\s*BrowseRemoteProtocols\s+' /etc/cups/cups-browsed.conf 2>/dev/null; then
+	            if dpkg --compare-versions "$2" lt "1.0.32~"; then
+	                # Enable the previously enabled protocols on top of the defaults which are 'dnssd cups'
+	                perl -p -i -e "s/^(\s*BrowseRemoteProtocols.*)/\1 $previousProtocols\n# Upgraded from cups: $previousProtocols\n# Defaults from 1.0.41: dnssd cups/i" /etc/cups/cups-browsed.conf
+	            else
+	                # 1.0.32 already had an upgrade handling which added a commented cups
+	                # Keep enabled protocols, add dnssd and cups
+	                perl -p -i -e "s/^(\s*BrowseRemoteProtocols\s*)(.*)(#.*)?$/\1 $previousProtocols \2 dnssd cups \3\n# Upgraded from cups: \3\n# Upgraded from cups-browsed >= 1.0.32: $previousProtocols\n# Defaults from 1.0.41: dnssd cups/i" /etc/cups/cups-browsed.conf
+	            fi
+	        fi
+      fi
+      if grep -Piq '^\s*BrowseLocalProtocols.*\s+cups\b' $cupsdconf_orig 2>/dev/null; then
+	  if ! grep -Piq '^\s*BrowseLocalProtocols.*\s+\#?cups\b' /etc/cups/cups-browsed.conf 2>/dev/null; then
+	      if grep -Piq '^\s*BrowseLocalProtocols\s+' /etc/cups/cups-browsed.conf 2>/dev/null; then
+		  perl -p -i -e 's/^(\s*BrowseLocalProtocols.*)/\n\# Please remove the "\#" before "cups" to make the local printers available to clients running\n\# CUPS 1.5.x or older.\n$1 \#cups\n/i' /etc/cups/cups-browsed.conf
+	      else
+		  linesadded=1
+		  $ECHO -en '\n# Please remove the "#" in the beginning of the following line to make the\n# local printers available to clients running CUPS 1.5.x or older.\n#BrowseLocalProtocols cups\n' >> $tmpfile0
+	      fi
+	  fi
+      fi
+      if grep -Piq '^\s*Browse(Order|Allow|Deny|Poll)' $cupsdconf_orig 2>/dev/null; then
+	  linesadded=1
+	  $ECHO -en '\n# The following CUPS broadcasting/browsing-related lines were overtaken from\n# /etc/cups/cupsd.conf. Not all are supported by cups-browsed and so could get\n# ignored. Please check the comments and examples above and edit the lines if\n# needed. Note that for getting available the remote printers from all hosts/\n# networks you have to remove all "BrowseAllow" lines.\n' >> $tmpfile0
+	  grep -Pi '^\s*Browse(Order|Allow|Deny|Poll)' $cupsdconf_orig >> $tmpfile0 2>/dev/null
+	  $ECHO -en '\n' >> $tmpfile0
+      fi
+      if [ "$linesadded" = "1" ]; then
+	  $ECHO -en '\n# Please check and edit the following lines, especially if you have Linux\n# machines with CUPS 1.5.x and older in your network.\n\n# If you edit anything in this file, please remember to restart cups-browsed\n# (or reboot the system) afterwards.\n' >> /etc/cups/cups-browsed.conf
+	  cat $tmpfile0 >> /etc/cups/cups-browsed.conf
+      fi
+      rm $tmpfile0
+      if [ -r /etc/cups/cupsd.conf.pre16-bak ]; then
+          rm /etc/cups/cupsd.conf.pre16-bak
+      fi
+  fi
+
+elif [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remove" ] || [ "$1" = "abort-deconfigure" ]; then
+  :
+else
+  echo "postinst called with unknown argument \`$1'" >&2
+  exit 0
+fi
+
+# dh_installdeb will replace this with shell code automatically
+# generated by other debhelper scripts.
+
+# Automatically added by dh_apparmor
+if [ "$1" = "configure" ]; then
+    APP_PROFILE="/etc/apparmor.d/usr.sbin.cups-browsed"
+    if [ -f "$APP_PROFILE" ]; then
+        # Add the local/ include
+        LOCAL_APP_PROFILE="/etc/apparmor.d/local/usr.sbin.cups-browsed"
+
+        test -e "$LOCAL_APP_PROFILE" || {
+            tmp=`mktemp`
+        cat <<EOM > "$tmp"
+# Site-specific additions and overrides for usr.sbin.cups-browsed.
+# For more details, please see /etc/apparmor.d/local/README.
+EOM
+            mkdir `dirname "$LOCAL_APP_PROFILE"` 2>/dev/null || true
+            mv -f "$tmp" "$LOCAL_APP_PROFILE"
+            chmod 644 "$LOCAL_APP_PROFILE"
+        }
+
+        # Reload the profile, including any abstraction updates
+        if aa-status --enabled 2>/dev/null; then
+            apparmor_parser -r -T -W "$APP_PROFILE" || true
+        fi
+    fi
+fi
+# End automatically added section
+# Automatically added by dh_systemd_enable
+# This will only remove masks created by d-s-h on package removal.
+deb-systemd-helper unmask cups-browsed.service >/dev/null || true
+
+# was-enabled defaults to true, so new installations run enable.
+if deb-systemd-helper --quiet was-enabled cups-browsed.service; then
+	# Enables the unit on first installation, creates new
+	# symlinks on upgrades if the unit file has changed.
+	deb-systemd-helper enable cups-browsed.service >/dev/null || true
+else
+	# Update the statefile to add new symlinks (if any), which need to be
+	# cleaned up on purge. Also remove old symlinks.
+	deb-systemd-helper update-state cups-browsed.service >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_installinit
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ]; then
+	if [ -x "/etc/init.d/cups-browsed" ]; then
+		update-rc.d cups-browsed defaults >/dev/null
+	fi
+	if [ -x "/etc/init.d/cups-browsed" ] || [ -e "/etc/init/cups-browsed.conf" ]; then
+		invoke-rc.d cups-browsed start || exit $?
+	fi
+fi
+# End automatically added section
+
+
+exit 0

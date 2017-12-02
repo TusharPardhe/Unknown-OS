@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/fonts/conf.avail/65-ubuntu-font-family-arabic.conf 1:0.83-0ubuntu2~ -- "$@"
+# End automatically added section

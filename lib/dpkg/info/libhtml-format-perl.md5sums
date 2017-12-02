@@ -1,0 +1,12 @@
+e2d6ed2ea0b999398e576cfd79ba946a  usr/share/doc/libhtml-format-perl/changelog.Debian.gz
+6a4821c54e9d4594217193e874faa236  usr/share/doc/libhtml-format-perl/copyright
+2db781d408ae7f23de6204bd2c260f9c  usr/share/man/man3/HTML::FormatMarkdown.3pm.gz
+31520b94f38d7af8d251492d2a7573da  usr/share/man/man3/HTML::FormatPS.3pm.gz
+34fdc409c7a9d1ffef3fa7522923b9bb  usr/share/man/man3/HTML::FormatRTF.3pm.gz
+f4f850c469052626b0544c9be1c098a4  usr/share/man/man3/HTML::FormatText.3pm.gz
+98f511d0179d46bb76406a2465d478b6  usr/share/man/man3/HTML::Formatter.3pm.gz
+f12f42c98b52af5bb356a65ccfd485ec  usr/share/perl5/HTML/FormatMarkdown.pm
+65cd1496093a4177c97febdc6667aaea  usr/share/perl5/HTML/FormatPS.pm
+895fe9ae70bfd98fde5d7e251f057e56  usr/share/perl5/HTML/FormatRTF.pm
+ccc338af07a93f874558cc91a0b9bfd4  usr/share/perl5/HTML/FormatText.pm
+1ac18bc59b08aa10356abd5d1f70be9e  usr/share/perl5/HTML/Formatter.pm

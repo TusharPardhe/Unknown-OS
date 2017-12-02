@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/gstreamer-1.0
+/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstclutter-3.0.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/gstreamer1.0-clutter-3.0
+/usr/share/doc/gstreamer1.0-clutter-3.0/copyright
+/usr/share/doc/gstreamer1.0-clutter-3.0/NEWS.gz
+/usr/share/doc/gstreamer1.0-clutter-3.0/AUTHORS
+/usr/share/doc/gstreamer1.0-clutter-3.0/changelog.Debian.gz
+/usr/share/doc/gstreamer1.0-clutter-3.0/README

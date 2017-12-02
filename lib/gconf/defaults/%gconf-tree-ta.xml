@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="செயலை வேலைக்கள் மாற்றத்துக்கு மாற்றவும்.">
+						<longdesc>பெயரால் மாற்றுவது செயலில் உள்ளது. இந்த பட்டியல் மாற்ற வேண்டிய செயல் பெயரை அமைக்கிறது. வேலைக்களங்கள் உருப்படியின் அட்டவணையால் காட்டப்படும்.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="வேலைக்களம் மாற்றுவது செயலையும் பாதிக்க வேண்டுமா?">
+						<longdesc>தடத்தொடர்தலுக்கு செயலாக்கிய முறைகளின் பட்டியல். &quot;பெயர்&quot; என்பது  workspace_mapping இல் அறுதியான பெயரால் மாற்றும் செயல்களை நடத்தும். &quot;நினைவகம்&quot;என்பது முந்தைய வேலைக்களத்தின் கடைசி  மாற்றும்  செயலுக்கு செயலாக்கும். </longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="நாளில் எந்த நேரத்தில் துவங்க வேண்டும்? (முன்னிருப்பு காலை ஐந்தரை)">
+						<longdesc>நடப்பு நேரம் குறிப்பிட்ட துவக்க  நாளை விட குறைவாக இருந்தால் செயல்கள் நேற்றையதாக கொள்ளப்படும். அதிகமாக இருப்பின் இன்றையதாக கொள்ளப்படும். இரு நாட்களில் வியாபிக்கும் செய்ல்கள் அதிக நேரம் இருக்கும் நாளுக்கு தள்ளப்படும்.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="செயல் அமைக்காத போதும் நினைவுறுத்துக">
+						<longdesc>செயல் துவக்கப்படாத போதும் நினைவுறுத்த வேண்டிய இடைவெளியில் நினைவுறுத்துக (_i)</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="ஒவ்வொரு x நிமிடங்களும் நடப்பு வேலையை நினைவுறுத்துக">
+						<longdesc>நடப்பு பணியின் நினைவூட்டல் ஒவ்வொரு குறிப்பிட்ட அளவு நிமிடங்களுக்கு. 0 அல்லது 120 அதிகமாக அமைத்து நினைவூட்டலை செயல்நீக்கவும்.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="முடித்து வைத்ததும் தடத்தொடர்தல்  நிறுத்தவும்">
+						<longdesc>முடித்து வைத்ததும் தற்போதைய செயல்பாட்டுத் தடத்தொடர்தல்  நிறுத்தவும்</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="இயக்கமற்ற நிலையில் தடத்தொடர்தல்  நிறுத்தவும்">
+						<longdesc>கணினி வெறுமையாக இருக்கும் போது தற்போதைய செயல்பாட்டுத் தடத்தொடர்தல்  நிறுத்தவும்</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="ஹாம்ஸ்டர் பயன்பாட்டு சாளரத்தை நிலை மாற்றுக">
+								<longdesc>ஹாம்ஸ்டர் பயன்பாட்டு சாளரத்தின் வெளிப்பாட்டை நிலை மாற்றுக</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="ஹாம்ஸ்டர் பயன்பாட்டு சாளர செயலை நிலை மாற்றுக">
+								<longdesc>ஹாம்ஸ்டர் பயன்பாட்டு சாளரத்தின் வெளிப்பாட்டை நிலை மாற்ற கட்டளை</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="நேரத் தடம் தேடல் சாளரத்தைக் காட்டு / மறை">
+								<longdesc>நேரத் தடம் தேடல் சாளரத்தைக் காட்டுவதற்கான /மூடுவதற்கான விசைப் பலகைக் குறுக்கு வழி</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

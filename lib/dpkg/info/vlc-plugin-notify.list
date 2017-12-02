@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/bug
+/usr/share/bug/vlc-plugin-notify
+/usr/share/bug/vlc-plugin-notify/control
+/usr/share/bug/vlc-plugin-notify/presubj
+/usr/lib
+/usr/lib/vlc
+/usr/lib/vlc/plugins
+/usr/lib/vlc/plugins/notify
+/usr/lib/vlc/plugins/notify/libnotify_plugin.so
+/usr/share/doc/vlc-plugin-notify

@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Changer d&apos;activité lorsqu&apos;on change d&apos;espace de travail">
+						<longdesc>Si le changement par nom est actif, cette liste donne les noms d&apos;activité auxquelles on pourra passer, les espaces de travail sont représentés par l&apos;indice de l&apos;élément.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Indique si le changement d&apos;espace de travail doit déclencher un changement d&apos;activité">
+						<longdesc>Liste des méthodes de suivi actives. « name » active le changement d&apos;activités par nom défini dans workspace_mapping. « memory » active le changement vers la dernière activité en cas de retour dans un espace de travail précédent.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="Heure de début de journée (5 h 30 par défaut)">
+						<longdesc>Les activités sont comptabilisées dans la journée d&apos;hier si l&apos;heure actuelle précède l&apos;heure qui est spécifiée pour le début de la journée ; et dans celle d&apos;aujourd&apos;hui, si c&apos;est après. Les activités ayant cours sur 2 journées sont comptabilisées dans celle où la part la plus grande est effectuée.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Rappeler également lorsqu&apos;aucune activité n&apos;est définie">
+						<longdesc>Rappeler également toutes les « notify_interval » minutes si aucune activité n&apos;a été commencée.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Rappeler l&apos;activité en cours toutes les n minutes">
+						<longdesc>Rappeler l&apos;activité en cours chaque nombre de minutes spécifié. Définir à 0 ou à plus de 120 pour désactiver le rappel.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Arrêter le suivi à l&apos;extinction de l&apos;ordinateur">
+						<longdesc>Arrêter le suivi de l&apos;activité en cours à l&apos;extinction de l&apos;ordinateur</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Arrêter le suivi en cas d&apos;inactivité">
+						<longdesc>Arrêter le suivi de l&apos;activité en cours quand l&apos;ordinateur devient inactif</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Afficher ou masquer la fenêtre de l&apos;application de Hamster">
+								<longdesc>Afficher ou masquer la fenêtre de l&apos;application de Hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Action pour afficher ou masquer la fenêtre de l&apos;application de Hamster">
+								<longdesc>Commande pour afficher ou masquer la fenêtre de l&apos;application de Hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Afficher ou masquer la fenêtre du gestionnaire de temps">
+								<longdesc>Raccourci clavier pour afficher ou masquer la fenêtre du gestionnaire de temps.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

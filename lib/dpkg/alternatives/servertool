@@ -1,0 +1,9 @@
+auto
+/usr/bin/servertool
+servertool.1.gz
+/usr/share/man/man1/servertool.1.gz
+
+/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/servertool
+1081
+/usr/lib/jvm/java-8-openjdk-amd64/jre/man/man1/servertool.1.gz
+

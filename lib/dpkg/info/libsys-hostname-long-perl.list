@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/perl5
+/usr/share/perl5/Sys
+/usr/share/perl5/Sys/Hostname
+/usr/share/perl5/Sys/Hostname/testall.pl
+/usr/share/perl5/Sys/Hostname/Long.pm
+/usr/share/doc
+/usr/share/doc/libsys-hostname-long-perl
+/usr/share/doc/libsys-hostname-long-perl/changelog.Debian.gz
+/usr/share/doc/libsys-hostname-long-perl/examples
+/usr/share/doc/libsys-hostname-long-perl/examples/testall.pl
+/usr/share/doc/libsys-hostname-long-perl/copyright
+/usr/share/man
+/usr/share/man/man3
+/usr/share/man/man3/Sys::Hostname::Long.3pm.gz

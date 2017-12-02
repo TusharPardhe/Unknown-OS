@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="작업 공간을 바꾸면 활동 전환">
+						<longdesc>이름으로 전환하는 경우, 이 목록에서 전환할 활동의 이름을 설정합니다. 목록의 항목은 순서대로 해당 번호의 작업 공간에 해당하는 활동입니다.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="작업 공간을 전환하면 활동을 전환합니다">
+						<longdesc>사용하는 추적 방법 목록. &quot;name&quot;이면 workspace_mapping에서 정의한 활동으로 전환합니다. &quot;memory&quot;면 작업 공간으로 돌아가면 최근 활동으로 전환합니다.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="하루가 시작하는 시각 (기본값은 오전 5:30)">
+						<longdesc>현재 시각이 지정한 하루의 시작 시각보다 이전이면 어제 날짜의 활동으로 취급되고, 하루의 시작 시각보다 나중이면 오늘 날짜의 활동으로 취급됩니다. 이틀에 걸쳐서 이루어진 활동의 경우 시간이 긴 쪽 날짜의 활동으로 취급됩니다.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="활동을 설정하지 않은 경우에도 알리기">
+						<longdesc>활동이 시작하지 않았을 때에도 매 notify_interval 분마다 알립니다.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="현재 활동을 매 몇분마다 알립니다">
+						<longdesc>현재 활동을 지정한 분마다 알립니다. 0으로 설정하거나 120보다 큰 값으로 설정하면 알리지 않습니다.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="컴퓨터를 끄면 추적 중지">
+						<longdesc>컴퓨터를 끄면 현재 활동의 추적을 중지합니다</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="절전 상태에 추적 중지">
+						<longdesc>컴퓨터가 절전 상태가 되면 현재 활동의 추적을 중지합니다</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="햄스터 프로그램 창 토글">
+								<longdesc>햄스터 프로그램 창을 표시할지 토글합니다.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="햄스터 프로그램 창 토글 동작">
+								<longdesc>햄스터 프로그램 창을 보일지 말지 토글하는 명령.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="시간 추적 창을 보이기 / 감추기">
+								<longdesc>시간 추적 프로그램 창을 보이고 감추는 바로 가기 키.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

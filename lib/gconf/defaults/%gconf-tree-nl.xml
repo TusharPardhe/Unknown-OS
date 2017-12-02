@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="notify_interval">
+					<local_schema short_desc="Elke x minuten herinneren aan de huidige activiteit">
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Stop registratie bij afsluiten">
+						<longdesc>Registratie huidige activiteit stoppen bij afsluiten computer</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Registratie stoppen bij computerinactiviteit">
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

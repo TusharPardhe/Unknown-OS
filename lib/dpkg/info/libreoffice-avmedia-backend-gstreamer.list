@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/bug
+/usr/share/bug/libreoffice-avmedia-backend-gstreamer
+/usr/share/bug/libreoffice-avmedia-backend-gstreamer/presubj
+/usr/share/doc
+/usr/lib
+/usr/lib/libreoffice
+/usr/lib/libreoffice/program
+/usr/lib/libreoffice/program/libavmediagst.so
+/usr/share/doc/libreoffice-avmedia-backend-gstreamer

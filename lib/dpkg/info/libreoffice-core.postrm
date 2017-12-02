@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+
+if [ "$1" = "remove" ]; then
+	rm -rf /var/spool/libreoffice
+fi
+
+
+
+exit 0

@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libsubunit-dev
+/usr/share/doc/libsubunit-dev/README
+/usr/share/doc/libsubunit-dev/copyright
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/libsubunit.a
+/usr/lib/x86_64-linux-gnu/pkgconfig
+/usr/lib/x86_64-linux-gnu/pkgconfig/libsubunit.pc
+/usr/include
+/usr/include/subunit
+/usr/include/subunit/child.h
+/usr/share/doc/libsubunit-dev/changelog.Debian.gz
+/usr/lib/x86_64-linux-gnu/libsubunit.so

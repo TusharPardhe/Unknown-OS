@@ -1,0 +1,6 @@
+29f2913d0405293a8785f1e7c6971d10  usr/lib/x86_64-linux-gnu/gconf/2/libgconfbackend-evoldap.so
+e06aebe066ed7a100c0658f21138de57  usr/lib/x86_64-linux-gnu/gconf/2/libgconfbackend-oldxml.so
+6ee1b9e662ac8086af3a89e945912348  usr/lib/x86_64-linux-gnu/gconf/2/libgconfbackend-xml.so
+a776e21745ffc07ee11fd05a5fd81d2d  usr/lib/x86_64-linux-gnu/gconf/gconfd-2
+b6922d25de12783789df952dcb4529b9  usr/share/dbus-1/services/org.gnome.GConf.service
+616b3703117a9f12548cc7257f95ad24  usr/share/doc/gconf-service-backend/copyright

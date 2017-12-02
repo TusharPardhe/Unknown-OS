@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/bin
+/usr/bin/xfreerdp
+/usr/share
+/usr/share/doc
+/usr/share/doc/freerdp-x11
+/usr/share/doc/freerdp-x11/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/xfreerdp.1.gz
+/usr/share/doc/freerdp-x11/README
+/usr/share/doc/freerdp-x11/changelog.Debian.gz

@@ -1,0 +1,8 @@
+6ff55dbf5c9c74c15a68d129a144c8c2  usr/bin/macchanger
+58dd00e245b3779b8929763dbbcf519b  usr/share/doc/macchanger/changelog.Debian.gz
+e679bc787f7b3f2ecad68a724a5deeb6  usr/share/doc/macchanger/copyright
+2fa55fae5d03a95902ad75053d6ea48d  usr/share/doc/macchanger/examples/IEEE_OUI.py
+7bf8ba2125ffc6afaecdd99c87f10438  usr/share/info/macchanger.info.gz
+70be0cccbe93a4d77a360b6fdc567293  usr/share/macchanger/OUI.list
+cec33bddd1e3406d8ca32c693137125c  usr/share/macchanger/wireless.list
+97f25a076ffd4bb7e179532793673bfd  usr/share/man/man1/macchanger.1.gz

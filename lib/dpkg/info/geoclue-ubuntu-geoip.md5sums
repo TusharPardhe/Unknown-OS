@@ -1,0 +1,6 @@
+f6f2bc9bb2fc27b06d466f653ee4d694  usr/lib/x86_64-linux-gnu/ubuntu-geoip-provider
+f8bc11c5db4bd3109ed6128f5a59571a  usr/share/dbus-1/services/org.freedesktop.Geoclue.Providers.UbuntuGeoIP.service
+77756eaed82ba7adb5ae519a95f95fa3  usr/share/doc/geoclue-ubuntu-geoip/changelog.Debian.gz
+cea01d406142c96bfd13bd774431e785  usr/share/doc/geoclue-ubuntu-geoip/copyright
+e3b685726b800b971f7a4dbb1d0b20a2  usr/share/geoclue-providers/ubuntu-geoip.provider
+3deaf9a53fc38bde684fea2b32a06b7b  usr/share/glib-2.0/schemas/com.ubuntu.geoip.gschema.xml

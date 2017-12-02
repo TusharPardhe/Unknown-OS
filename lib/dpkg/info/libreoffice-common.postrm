@@ -1,0 +1,38 @@
+#!/bin/sh
+
+set -e
+
+
+case "$1" in
+	remove|abort-install|abort-upgrade)
+		dpkg-maintscript-helper rm_conffile "/etc/bash_completion.d/ooffice.sh" 1:3.3.0~rc4-2 libreoffice-common -- "$@"
+
+		dpkg-maintscript-helper mv_conffile \
+			"/etc/openoffice/psprint.conf" "/etc/libreoffice/psprint.conf" "" libreoffice-common -- "$@"
+		dpkg-maintscript-helper mv_conffile \
+			"/etc/openoffice/sofficerc" "/etc/libreoffice/sofficerc" "" libreoffice-common -- "$@"
+		dpkg-maintscript-helper mv_conffile \
+			"/etc/openoffice/soffice.sh" "/etc/libreoffice/soffice.sh" "" libreoffice-common -- "$@"
+		rm -rf /`echo usr/lib/libreoffice | sed -e s,usr/,var/,g`/share/prereg/bundled
+		rmdir /`echo usr/lib/libreoffice | sed -e s,usr/,var/,g`/share/prereg/ || true
+		rmdir /`echo usr/lib/libreoffice | sed -e s,usr/,var/,g`/share/ || true
+		# this belongs to -core, but won't work until we have -common stuff removed, too, so try here again
+		# in adduition to -core
+		rmdir /`echo usr/lib/libreoffice | sed -e s,usr/,var/,g`/program/ || true
+		rmdir /`echo usr/lib/libreoffice | sed -e s,usr/,var/,g` || true
+		# and try to remove /@OOBRANDDIR@ itself
+		rmdir /`echo usr/lib/libreoffice | sed -e s,usr/,var/,g` || true
+	;;
+	purge)
+		rm -f /`echo usr/lib/libreoffice | sed -e s,usr/,var/,g`/share/config/javasettingsunopkginstall.xml
+		rmdir /`echo usr/lib/libreoffice | sed -e s,usr/,var/,g`/share/config || true
+		rmdir /`echo usr/lib/libreoffice | sed -e s,usr/,var/,g`/share || true
+	;;
+esac
+
+# Automatically added by dh_icons
+if which update-icon-caches >/dev/null 2>&1 ; then
+	update-icon-caches /usr/share/icons/locolor
+fi
+# End automatically added section
+

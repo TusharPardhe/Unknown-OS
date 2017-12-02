@@ -1,0 +1,9 @@
+auto
+/usr/bin/cli-gacutil
+cli-gacutil.1.gz
+/usr/share/man/man1/cli-gacutil.1.gz
+
+/usr/bin/gacutil
+10
+/usr/share/man/man1/gacutil.1.gz
+

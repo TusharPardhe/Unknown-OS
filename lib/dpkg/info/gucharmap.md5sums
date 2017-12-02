@@ -1,0 +1,9 @@
+b1cd1de0fa158fe8f8c5c47de7db777d  usr/bin/gucharmap
+c853606eac1bf9614e48e0eb7bbbac2b  usr/share/appdata/gucharmap.appdata.xml
+362cbb6750f8785b77e6ac303dd6b380  usr/share/applications/gucharmap.desktop
+dc507dd9250b9ea01f0ad792954c2725  usr/share/doc/gucharmap/copyright
+c0be25fc754065ab158b5da62987a5a4  usr/share/glib-2.0/schemas/org.gnome.Charmap.enums.xml
+9a5a7b9e7ca9d9d64c8c6f401287277d  usr/share/glib-2.0/schemas/org.gnome.Charmap.gschema.xml
+90e757107df35e2c00631d22426c9029  usr/share/help/C/gucharmap/index.docbook
+2c46e46d68d8517a9e646763604dd8f7  usr/share/help/C/gucharmap/legal.xml
+433314e1bc88b821ac13ea1f452ac7e2  usr/share/man/man1/gucharmap.1.gz

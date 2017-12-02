@@ -1,0 +1,50 @@
+#!/bin/sh
+# postinst script for macchanger
+
+set -e
+
+. /usr/share/debconf/confmodule
+
+# summary of how this script can be called:
+#        * <postinst> `configure' <most-recently-configured-version>
+#        * <old-postinst> `abort-upgrade' <new version>
+#        * <conflictor's-postinst> `abort-remove' `in-favour' <package>
+#          <new-version>
+#        * <postinst> `abort-remove'
+#        * <deconfigured's-postinst> `abort-deconfigure' `in-favour'
+#          <failed-install-package> <version> `removing'
+#          <conflicting-package> <version>
+# for details, see http://www.debian.org/doc/debian-policy/ or
+# the debian-policy package
+
+case "$1" in
+    configure)
+        # Update /etc/default file based on config
+        if [ -f /etc/default/macchanger ] ; then
+            # rename old variable to new name
+            sed -i 's,ENABLE_ON_POST_DOWN,ENABLE_ON_POST_UP_DOWN,g' /etc/default/macchanger
+
+            db_get macchanger/automatically_run
+            # set variable based on $RET
+            if grep -E  ^ENABLE_ON_POST_UP_DOWN=  /etc/default/macchanger > /dev/null; then
+                sed -i "s/^ENABLE_ON_POST_UP_DOWN=.*$/ENABLE_ON_POST_UP_DOWN=$RET/g" /etc/default/macchanger
+            else
+                echo "ENABLE_ON_POST_UP_DOWN=$RET" >> /etc/default/macchanger
+            fi
+        else
+            echo "/etc/default/macchanger not found, configuration failed." >&2
+        fi
+    ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+
+
+exit 0

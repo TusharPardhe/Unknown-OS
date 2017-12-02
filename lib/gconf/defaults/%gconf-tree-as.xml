@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="কৰ্মস্থান সলনি হওতে কাৰ্য্য অদল-বদল কৰা">
+						<longdesc>যদি নামেৰে অদল-বদল কৰা সামৰ্থবান হয়, তেনেহলে এই তালিকায় অদল-বদল হ&apos;ব লগিয়া কাৰ্য্যৰ নামসমূহ, বস্তুৰ ইনডেক্স দি প্ৰতিৰূপন হোৱা কাৰ্য্যস্থানসমূহলে সংস্থাপন কৰে।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="কৰ্মস্থানে ট্ৰিগাৰ কাৰ্য্য অদল-বদল কৰিব লাগে নে">
+						<longdesc>সামৰ্থবান অনুসৰণ পদ্ধতিসমূহৰ তালিকা। &quot;name&quot; -এ workspace_mapping -ত নামেৰে বুজুৱা অদল-বদল কাৰ্য্যসমূহকসামৰ্থবান কৰিব। &quot;memory&quot; -এ পূৰৱৰ্তী কৰ্মস্থানলৈ ঘূৰী যাওতে সৰ্বশেষ কাৰ্য্যলে যোৱাটো সামৰ্থবান কৰিব।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="কি সময়ত দিনটো আৰম্ভ হয় (অবিকল্পিত ৫:৩০ লে)">
+						<longdesc>যদি বৰ্তমান সময ধাৰ্য্য কৰা আৰম্ভনী তাৰিখত আৰু আজিৰ তাৰিখতকে কম হয়; তেনেহলে কাৰ্য্যসমূহক যোৱাকালিৰ  বুলি ধৰি গণনা কৰা হ&apos;ব, যদি ই সময় পাৰ কৰিছে, তেনেহলে যিসমূহ কাৰ্য্যত দুদিনৰ বেছি লাগে, সেইবোৰ সেইফালে যাব যিফালে কাৰ্য্যৰ বৃহতম ভাগ আছে।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="কোনো কাম নিৰ্ধাৰিত ন&apos;হ&apos;লে সূচিত কৰা হ&apos;ব">
+						<longdesc>কোনো কাম আৰম্ভ নকৰিলে প্ৰতি notify_interval মিনিটত সূচনা প্ৰদান কৰা হ&apos;ব ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="প্ৰতি x মিনিট অন্তৰ বৰ্তমান কামৰ বিষয়ে স্মৰণ কৰোৱা হ&apos;ব">
+						<longdesc>মিনিটে ধাৰ্য সুনিৰ্দিষ্ট সময়ৰ অন্তৰত বৰ্তমান কাম সম্বন্ধে স্মৰণ কৰোৱা হ&apos;ব । স্মৰণ ব্যৱস্থা নিষ্ক্ৰিয় কৰাৰ বাবে ০ বা ১২০ ৰ পৰা অধিক কোনো সংখ্যা নিৰ্ধাৰণ কৰক ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="কম্পিউটাৰ বন্ধ হ&apos;লে ট্ৰেক কৰা বন্ধ কৰক">
+						<longdesc>বন্ধ কৰা হ&apos;লে বৰ্তমান কামৰ নিৰীক্ষণ বন্ধ কৰা হ&apos;ব</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="কামহীন অৱস্থাত বৰ্তমান কামৰ নিৰীক্ষণ বন্ধ কৰা হ&apos;ব">
+						<longdesc>কম্পিউটাৰ কামহীন অৱস্থাত হ&apos;লে বৰ্তমান কামৰ নিৰীক্ষণ বন্ধ কৰা হ&apos;ব</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="hamster অনুপ্ৰয়োগ উইন্ডোক অদল-বদল কৰা">
+								<longdesc>hamster অনুপ্ৰয়োগ উইন্ডোৰ দৃশ্যমানতাক অদল-বদল কৰা।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="hamster অনুপ্ৰয়োগ উইন্ডো কাৰ্য্যক অদল-বদল কৰা">
+								<longdesc>hamster অনুপ্ৰয়োগ উইন্ডোৰ দৃশ্যমানতা অদল-বদল কৰিবৰ বাবে কমান্ড।</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="সময় অনুসৰণৰ উইন্ডো দেখুৱা/লুকোৱা">
+								<longdesc>সময় অনুসৰণৰ উইন্ডো দেখুৱাবলে/লুকাবলে কিবৰ্ড ছৰ্টকাট।</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

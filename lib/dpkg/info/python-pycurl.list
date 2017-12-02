@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python2.7
+/usr/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages/curl
+/usr/lib/python2.7/dist-packages/curl/__init__.py
+/usr/lib/python2.7/dist-packages/pycurl.x86_64-linux-gnu.so
+/usr/lib/python2.7/dist-packages/pycurl-7.43.0.egg-info
+/usr/share
+/usr/share/doc
+/usr/share/doc/python-pycurl
+/usr/share/doc/python-pycurl/copyright
+/usr/share/doc/python-pycurl/changelog.Debian.gz
+/usr/share/doc/python-pycurl/TODO.Debian

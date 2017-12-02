@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/bin
+/usr/bin/finger
+/usr/share
+/usr/share/doc
+/usr/share/doc/finger
+/usr/share/doc/finger/changelog.Debian.gz
+/usr/share/doc/finger/copyright
+/usr/share/doc/finger/BUGS
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/finger.1.gz

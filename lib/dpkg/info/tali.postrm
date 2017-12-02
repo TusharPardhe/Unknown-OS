@@ -1,0 +1,14 @@
+#! /bin/sh
+set -e
+
+if [ "$1" = "purge" ] ; then
+  for FILE in gtali.Colors.scores gtali.Regular.scores; do
+	rm -f /var/games/$FILE
+  done
+
+  if [ -d /var/games ]; then
+	rmdir --ignore-fail-on-non-empty /var/games
+  fi
+fi
+
+

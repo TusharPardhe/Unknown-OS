@@ -1,0 +1,30 @@
+#! /bin/sh
+
+GGSDPATH=${XDG_CONFIG_DIR:-$HOME}/.cache/gnome-getting-started-docs
+cfgdir=${XDG_CONFIG_DIR:-$HOME/.config}
+
+# Don't do anything if yelp isn't installed
+yelp_path=$(which yelp 2>/dev/null)
+if test -z "${yelp_path}"; then
+    rm -f $cfgdir/run-welcome-tour
+    exit
+fi
+
+if [ ! -d $cfgdir/yelp ]; then
+        mkdir $cfgdir/yelp
+        cat <<EOF >>$cfgdir/yelp/yelp.cfg
+[documents/help%3Agnome-help]
+geometry=(1024, 709)
+EOF
+fi
+
+if [ ! -d ${GGSDPATH} ]; then
+    mkdir -p $GGSDPATH
+fi
+
+if [ ! -e ${GGSDPATH}/seen-getting-started-guide ]; then
+    touch ${GGSDPATH}/seen-getting-started-guide
+
+    yelp help:gnome-help/getting-started
+    rm -f $cfgdir/run-welcome-tour
+fi

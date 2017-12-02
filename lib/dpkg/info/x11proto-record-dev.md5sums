@@ -1,0 +1,8 @@
+e209d6701f720ce5734d10826f536ed1  usr/include/X11/extensions/recordconst.h
+69a7b52b5b7698a42288e9588fc788cf  usr/include/X11/extensions/recordproto.h
+ff872b8a5c3097422c541dac4f81a7d3  usr/include/X11/extensions/recordstr.h
+6e1c8130f38090265e6fd37c84c5087f  usr/share/doc/x11proto-record-dev/changelog.Debian.gz
+7d31fe9858958aacd118170d09d1c8da  usr/share/doc/x11proto-record-dev/copyright
+586c53a7cd2d32cb33ae172a83f82027  usr/share/doc/x11proto-record-dev/record.html
+e51a8542abbd3b709c421342031af0d9  usr/share/doc/x11proto-record-dev/record.txt.gz
+bed8795f0ce6d04a8412296faf75013c  usr/share/pkgconfig/recordproto.pc

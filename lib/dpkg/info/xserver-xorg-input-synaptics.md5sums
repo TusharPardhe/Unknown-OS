@@ -1,0 +1,16 @@
+568ee70860f9a0633c46728a4bbb2c8c  lib/udev/rules.d/66-xorg-synaptics-quirks.rules
+2ddb3443ac98e2c9de9bb6fbbe575a9f  usr/bin/synclient
+b7848047f43db2366ee51d1203d62e39  usr/bin/syndaemon
+f1e08d2ee0465fb52c4d4c0a239d20d8  usr/lib/xorg/modules/input/synaptics_drv.so
+a2248347e31051ba4e6254f08249d80f  usr/share/X11/xorg.conf.d/50-synaptics.conf
+1beaf08ae98249067ef0b9f5af60edbd  usr/share/X11/xorg.conf.d/51-synaptics-quirks.conf
+7dca589291b8c05a9fa1869439c41b7a  usr/share/doc/xserver-xorg-input-synaptics/NEWS.Debian.gz
+24e2921daa4093d2bb7181bd6d58705f  usr/share/doc/xserver-xorg-input-synaptics/README.Debian
+a326d37466ee8c58a4366cf9c761ea62  usr/share/doc/xserver-xorg-input-synaptics/README.alps
+08b15acca9bad205752039562085cde5  usr/share/doc/xserver-xorg-input-synaptics/README.gz
+34293e8d2894b2339ec6f89ee7a53ef3  usr/share/doc/xserver-xorg-input-synaptics/changelog.Debian.gz
+fee6bba92687ec5f581de779024ba28f  usr/share/doc/xserver-xorg-input-synaptics/copyright
+cccd822bff141e85879ab447732f13d8  usr/share/doc/xserver-xorg-input-synaptics/trouble-shooting.txt.gz
+336833501dfcc00e8309403952399b1b  usr/share/man/man1/synclient.1.gz
+edfc81995a140f985c6d06c069f9be3d  usr/share/man/man1/syndaemon.1.gz
+a31cad2ddfadf36e2060c24a83ed3a50  usr/share/man/man4/synaptics.4.gz

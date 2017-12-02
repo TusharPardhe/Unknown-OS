@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/mono
+/usr/lib/mono/4.5
+/usr/lib/mono/gac
+/usr/lib/mono/gac/I18N.West
+/usr/lib/mono/gac/I18N.West/4.0.0.0__0738eb9f132ed756
+/usr/lib/mono/gac/I18N.West/4.0.0.0__0738eb9f132ed756/I18N.West.dll
+/usr/share
+/usr/share/doc
+/usr/share/doc/libmono-i18n-west4.0-cil
+/usr/share/doc/libmono-i18n-west4.0-cil/copyright
+/usr/lib/mono/4.5/I18N.West.dll
+/usr/share/doc/libmono-i18n-west4.0-cil/changelog.Debian.gz

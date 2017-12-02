@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/x11proto-damage-dev
+/usr/share/doc/x11proto-damage-dev/copyright
+/usr/share/doc/x11proto-damage-dev/damageproto.txt.gz
+/usr/share/doc/x11proto-damage-dev/changelog.Debian.gz
+/usr/share/pkgconfig
+/usr/share/pkgconfig/damageproto.pc
+/usr/include
+/usr/include/X11
+/usr/include/X11/extensions
+/usr/include/X11/extensions/damageproto.h
+/usr/include/X11/extensions/damagewire.h

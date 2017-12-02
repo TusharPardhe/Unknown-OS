@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_monoaot
+rm -f /usr/lib/mono/aot-cache/`mono --version | grep Architecture | sed 's/.*:  //' | sed 's/el,.*//'`/`basename /usr/lib/mono/4.5/mscorlib.dll.so`
+# End automatically added section

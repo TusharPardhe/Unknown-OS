@@ -1,0 +1,17 @@
+/.
+/etc
+/etc/update-motd.d
+/etc/update-motd.d/99-esm
+/usr
+/usr/bin
+/usr/bin/ubuntu-advantage
+/usr/share
+/usr/share/doc
+/usr/share/doc/ubuntu-advantage-tools
+/usr/share/doc/ubuntu-advantage-tools/changelog.gz
+/usr/share/doc/ubuntu-advantage-tools/copyright
+/usr/share/keyrings
+/usr/share/keyrings/ubuntu-esm-keyring.gpg
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/ubuntu-advantage.1.gz

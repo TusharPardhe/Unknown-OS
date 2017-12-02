@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/bash_completion.d/gvfs-bash-completion.sh 1.13.4-0ubuntu2 gvfs-bin -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/bash_completion.d/gvfs 1.13.4-0ubuntu2 gvfs-bin -- "$@"
+# End automatically added section

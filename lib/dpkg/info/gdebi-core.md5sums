@@ -1,0 +1,10 @@
+8a89f022f611a0b4c55f35e8bef00f9e  usr/share/doc/gdebi-core/changelog.gz
+3d2f34087d8511f7b01a1a4c9d5ee35b  usr/share/doc/gdebi-core/copyright
+2bc18943d59cd4882a9a2ac9a7cfdca9  usr/share/gdebi/GDebi/DebPackage.py
+78dcac7fae427070f16e98b0438ce5a0  usr/share/gdebi/GDebi/GDebiCli.py
+ce8f58667360b62f77b3b8f14318f5ac  usr/share/gdebi/GDebi/GDebiCommon.py
+dc72d2b0e2be5c4147737618bebf1467  usr/share/gdebi/GDebi/Version.py
+68b329da9893e34099c7d8ad5cb9c940  usr/share/gdebi/GDebi/__init__.py
+3f574abb2bc79df07ddfd76e1f196693  usr/share/gdebi/gdebi
+08d18545cd3a89745c7d6af193a72599  usr/share/man/man1/gdebi.1.gz
+be0a26221566c2cf6f3908298fff3862  usr/share/python3/runtime.d/gdebi-core.rtupdate

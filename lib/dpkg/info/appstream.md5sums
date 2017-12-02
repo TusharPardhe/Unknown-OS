@@ -1,0 +1,7 @@
+226d134f557e6613c0802f29c54f2d07  usr/bin/appstreamcli
+2b01920eca981eab27a7c7582a272f75  usr/share/app-info/categories.xml
+5a1ffd8afa20056d160e4bf46a6799e6  usr/share/doc/appstream/NEWS.gz
+b1d8f61c14632f33549a476573415c34  usr/share/doc/appstream/copyright
+aea2e4edac9077e198a9bcf13eabbed5  usr/share/gettext/its/metainfo.its
+3914d21ad257f5020c751c23941de36f  usr/share/gettext/its/metainfo.loc
+1e6cc065a7f519ec47eb1e70af6eb762  usr/share/man/man1/appstreamcli.1.gz

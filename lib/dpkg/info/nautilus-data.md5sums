@@ -1,0 +1,10 @@
+342fd8513abaf33ee78ac5fa0414f42e  usr/share/GConf/gsettings/nautilus.convert
+6a41514ed241dc9ebcf8c7c91b7835a0  usr/share/apport/package-hooks/source_nautilus.py
+ec76214c06f05d9e2def2d9fdd5ab5d1  usr/share/doc/nautilus-data/AUTHORS
+8cd33928b8400e6201f8ba4cb8925dca  usr/share/doc/nautilus-data/NEWS.gz
+4fbfd53fd329c1b0d7ede826676afe3f  usr/share/doc/nautilus-data/README
+98940de770767a3cc560a618e42ee94f  usr/share/doc/nautilus-data/THANKS.gz
+e82845362f7afef89b7e22f198b18c4a  usr/share/doc/nautilus-data/changelog.Debian.gz
+ef2cb27694ebbd3840826b70d182b51b  usr/share/doc/nautilus-data/copyright
+b9cecbd4ad71f6a8f051d4fa2dc56e8c  usr/share/glib-2.0/schemas/org.gnome.nautilus.gschema.xml
+d2da2bfa545713025c592087e34ba376  usr/share/gnome-shell/search-providers/nautilus-search-provider.ini

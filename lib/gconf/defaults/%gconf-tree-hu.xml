@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Tevékenységváltás munkaterület-váltáskor">
+						<longdesc>Ha a váltás név szerint lehetőség engedélyezve van, ez a lista beállítja azon tevékenységneveket, amelyekre váltani kell. A munkaterületeket az elemek indexe jelzi.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="A munkaterület-váltás együtt jár-e tevékenységváltással">
+						<longdesc>Az elérhető nyilvántartási módok listája. A „name” (név) engedélyezi a tevékenységek közötti név szerinti váltást a workspace_mapping kulcsban megadott módon. A „memory” (memória) engedélyezi az utolsó tevékenységre váltást, amikor visszatér az előző munkaterületre.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="Mikor kezdődik a nap (az alapértelmezett érték DE 5.30)">
+						<longdesc>A tevékenységek a tegnapi naphoz lesznek elszámolva, ha az aktuális idő kisebb a megadott napkezdő időnél, ellenkező esetben a maihoz. A két napra nyúló tevékenységek arra a napra fognak kerülni, amelyre a nagyobb részük esik.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Emlékeztessen akkor is, ha nincs beállítva tevékenység">
+						<longdesc>Emlékeztessen notify_interval percenként akkor is, ha nincs elkezdve tevékenység.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Emlékeztető az aktuális feladatra ennyi percenként">
+						<longdesc>Emlékeztessen az adott feladatra a megadott percenként. Az emlékeztető letiltásához állítsa 0-ra vagy 120-nál nagyobb értékűre.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Nyilvántartás befejezése leállításkor">
+						<longdesc>Az aktuális tevékenység nyilvántartásának befejezése leállításkor</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Nyilvántartás befejezése üresjáratban">
+						<longdesc>Az aktuális tevékenység nyilvántartásának befejezése a számítógép üresjáratában</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="A Hamster alkalmazás ablakának átváltása">
+								<longdesc>A Hamster alkalmazás ablakának láthatóságának átváltása.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="A Hamster alkalmazás ablakának átváltása művelet">
+								<longdesc>A Hamster alkalmazásablak láthatóságának átváltására szolgáló parancs.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Időnyilvántartó ablakának megjelenítése/elrejtése.">
+								<longdesc>Gyorsbillentyű az Időnyilvántartó ablakának megjelenítéséhez/elrejtéséhez.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

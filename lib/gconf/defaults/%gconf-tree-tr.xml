@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Hiçbir etkinlik ayarlanmadığında ayrıca hatırlat">
+						<longdesc>Ayrıca, hiçbir etkinlik başlatılmadığında her notify_interval dakikada bir hatırlat.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Mevcut görevi her x dakikada hatırlat">
+						<longdesc>Mevcut görevi belirtilen miktardaki dakikada hatırlat. 0 ya da 120&apos;den daha büyük bir değer atayarak hatırlatıcıyı kapatabilirsiniz.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Kapatıldığında takibi durdur">
+						<longdesc>Bilgisayar kapatıldığında mevcut etkinliği takip etmeyi durdur</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Beklemede takibi durdur">
+						<longdesc>Bilgisayar boşta olduğunda mevcut etkinliği takip etmeyi durdur</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Zaman Takipçisi Penceresini Göster / Gizle">
+								<longdesc>Zaman Takipçisi penceresini göstermek / gizlemek için klavye kısayolu.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

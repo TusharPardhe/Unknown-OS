@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/x11proto-record-dev
+/usr/share/doc/x11proto-record-dev/record.html
+/usr/share/doc/x11proto-record-dev/record.txt.gz
+/usr/share/doc/x11proto-record-dev/changelog.Debian.gz
+/usr/share/doc/x11proto-record-dev/copyright
+/usr/share/pkgconfig
+/usr/share/pkgconfig/recordproto.pc
+/usr/include
+/usr/include/X11
+/usr/include/X11/extensions
+/usr/include/X11/extensions/recordproto.h
+/usr/include/X11/extensions/recordconst.h
+/usr/include/X11/extensions/recordstr.h

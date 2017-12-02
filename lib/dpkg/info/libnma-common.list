@@ -1,0 +1,9 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libnma-common
+/usr/share/doc/libnma-common/changelog.Debian.gz
+/usr/share/doc/libnma-common/copyright
+/usr/share/libnma
+/usr/share/libnma/wifi.ui

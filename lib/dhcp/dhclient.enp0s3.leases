@@ -1,0 +1,29 @@
+lease {
+  interface "enp0s3";
+  fixed-address 10.0.2.15;
+  filename "linux.pxe";
+  option subnet-mask 255.255.255.0;
+  option dhcp-lease-time 86400;
+  option routers 10.0.2.2;
+  option dhcp-message-type 5;
+  option dhcp-server-identifier 10.0.2.2;
+  option domain-name-servers 202.88.149.25,202.88.149.6;
+  option domain-name "domain.name";
+  renew 0 2017/10/15 13:53:51;
+  rebind 0 2017/10/15 13:53:51;
+  expire 0 2017/10/15 13:53:51;
+}
+lease {
+  interface "enp0s3";
+  fixed-address 10.0.2.15;
+  filename "linux.pxe";
+  option subnet-mask 255.255.255.0;
+  option dhcp-lease-time 86400;
+  option routers 10.0.2.2;
+  option dhcp-message-type 5;
+  option dhcp-server-identifier 10.0.2.2;
+  option domain-name-servers 192.168.43.1;
+  renew 1 2017/10/16 00:58:40;
+  rebind 1 2017/10/16 10:54:18;
+  expire 1 2017/10/16 13:54:18;
+}

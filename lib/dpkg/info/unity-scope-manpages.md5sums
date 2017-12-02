@@ -1,0 +1,7 @@
+95cbe90adecc41047aa81c5e12c6dc71  usr/lib/python3/dist-packages/unity_scope_manpages-0.1.egg-info
+e5427001829ee0cb12948629d878cc1f  usr/share/dbus-1/services/unity-scope-manpages.service
+4eade9de9b07452cf791166c8aeb9119  usr/share/doc/unity-scope-manpages/changelog.Debian.gz
+2b40efffe919f227efcb7232d29ec6b7  usr/share/doc/unity-scope-manpages/copyright
+d41d8cd98f00b204e9800998ecf8427e  usr/share/unity-scopes/manpages/__init__.py
+f806cb7b123f120ad12232247e1f0715  usr/share/unity-scopes/manpages/unity_manpages_daemon.py
+6b292b110d64007438030ae96bb9476a  usr/share/unity/scopes/code/manpages.scope

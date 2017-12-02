@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Αλλαγή δραστηριότητας κατά την αλλαγή χώρου εργασίας">
+						<longdesc>Αν η αλλαγή κατά όνομα είναι ενεργή, αυτή η λίστα θα παρουσιάζει τα ονόματα των δραστηριοτήτων που θα πρέπει να μεταβείτε.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Αν η αλλαγή σε χώρο εργασίας θα επιφέρει και αλλαγή δραστηριότητας">
+						<longdesc>Λίστα από ενεργές μεθόδους καταγραφής.  Το &quot;name&quot; θα ενεργοποιεί την αλλαγή δραστηριοτήτων κατά το όνομα που καθορίζεται στο workspace_mapping. Το &quot;memory&quot; θα ενεργοποιεί την εναλλαγή στην προηγούμενη δραστηριότητα κατά την επιστροφή τον προηγούμενο χώρο εργασίας.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="Ποια ώρα ξεκινάει η ημέρα (προεπιλογή στις 5:30π.μ)">
+						<longdesc>Αν η ώρα πραγματοποίησης μιας εργασίας είναι νωρίτερα από την καθορισμένη ώρα έναρξης της ημέρας, τότε θα καταγραφεί ως εργασία της προηγούμενης ημέρας. Οι δραστηριότητες που επεκτείνονται σε δύο ημέρες θα προσμετρούνται στην ημέρα όπου πραγματοποιήθηκε το μεγαλύτερο μέρος της εργασίας.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Υπενθύμιση ακόμα και όταν δεν έχει οριστεί δραστηριότητα">
+						<longdesc>Να γίνεται υπενθύμιση σε κάθε διάστημα_υπενθύμισης ακόμα και αν δεν έχει ξεκινήσει μια δραστηριότητα.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Υπενθύμιση τρέχουσας εργασίας κάθε x λεπτά">
+						<longdesc>Υπενθύμιση της τρέχουσας δραστηριότητας σε κάθε ορισμένο αριθμό λεπτών. Ορίστε το σε 0 ή σε μεγαλύτερο από 120 για να απενεργοποιήσετε την υπενθύμιση.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Διακοπή καταγραφής κατά τον τερματισμό">
+						<longdesc>Διακοπή καταγραφής παρούσας δραστηριότητας κατά τον τερματισμό</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Διακοπή καταγραφής κατά την αδρανοποίηση">
+						<longdesc>Διακοπή καταγραφής παρούσας δραστηριότητας, όταν ο υπολογιστής βρίσκεται σε αδράνεια</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Εναλλαγή παραθύρου εφαρμογής hamster">
+								<longdesc>Εναλλαγή ορατότητας παραθύρου της εφαρμογής hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Ενέργεια εναλλαγής παραθύρου εφαρμογής hamster">
+								<longdesc>Εντολή για εναλλαγή ορατότητας του παραθύρου της εφαρμογής hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Εμφάνιση / απόκρυψη παραθύρου καταγραφής χρόνου.">
+								<longdesc>Συντόμευση πληκτρολογίου για εμφάνιση / απόκρυψη του παραθύρου της καταγραφής χρόνου.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

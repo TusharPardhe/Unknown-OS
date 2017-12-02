@@ -1,0 +1,17 @@
+#!/bin/sh
+
+set -e
+
+util=bdb
+
+
+
+case "$1" in
+    remove|deconfigure)
+        if update-alternatives --list bogofilter | grep -q bogofilter-${util}; then
+            update-alternatives --quiet --remove bogofilter "/usr/bin/bogofilter-${util}"
+        fi
+        ;;
+    *)
+        ;;
+esac

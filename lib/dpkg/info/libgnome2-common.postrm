@@ -1,0 +1,6 @@
+#!/bin/sh
+set -e
+
+# dummy empty postrm, see #706110
+
+

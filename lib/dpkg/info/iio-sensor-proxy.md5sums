@@ -1,0 +1,6 @@
+c531d228163b16b964a9c7c9c4283e85  lib/systemd/system/iio-sensor-proxy.service
+387f190ccccda084e7065f22e889f06e  lib/udev/rules.d/40-iio-sensor-proxy.rules
+6deae926a5f2854c573ee7700dfc177c  usr/bin/monitor-sensor
+11e40c049e50819a84339b974fa053e9  usr/sbin/iio-sensor-proxy
+93a7efa3f793814ab0c7bfc35822be50  usr/share/doc/iio-sensor-proxy/changelog.Debian.gz
+daddd38598a7a67e98379dd43510dfdd  usr/share/doc/iio-sensor-proxy/copyright

@@ -1,0 +1,10 @@
+0eb92905427a2d0b0bf8f1f3259df900  usr/bin/gen-preseed
+b74999004bbb2d1e1a53db64e40f2d34  usr/bin/report-hw
+7626bb7f78474319861777caa62bd97a  usr/share/bug/installation-report/control
+cd3e2d066384ed06a4f2a43f5193f77d  usr/share/bug/installation-report/script
+1f6ca3ef98a1afefb72b09433aa09078  usr/share/bug/installation-reports/script
+7115a8a24122fa680388413118668479  usr/share/doc/installation-report/README.Debian
+9e272237ddb93502e46c2dabfccebbfa  usr/share/doc/installation-report/changelog.gz
+0563aa22a6d19c80320e42d0602804e8  usr/share/doc/installation-report/copyright
+57b46abfc8ad89f818e8ad26e149932b  usr/share/installation-report/install-report.template
+6eac5a43ccab3e0e74913e264bdca771  usr/share/man/man1/report-hw.1.gz

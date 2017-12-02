@@ -1,0 +1,7 @@
+6f9ea2df537ba5dfcee466e2777f70b6  usr/lib/python3/dist-packages/unity_scope_calculator-0.1.egg-info
+af07a255af7329d692bd2318390f461f  usr/share/dbus-1/services/unity-scope-calculator.service
+a457d7bdd5db969e50e0bda6ce12f6fe  usr/share/doc/unity-scope-calculator/changelog.Debian.gz
+55a4e0962510736d20b3f6e5829580e4  usr/share/doc/unity-scope-calculator/copyright
+d41d8cd98f00b204e9800998ecf8427e  usr/share/unity-scopes/calculator/__init__.py
+237597dc093a78b43e764205d3240d5b  usr/share/unity-scopes/calculator/unity_calculator_daemon.py
+59f82c6f0215baaa4af5ff33681787c4  usr/share/unity/scopes/info/calculator.scope

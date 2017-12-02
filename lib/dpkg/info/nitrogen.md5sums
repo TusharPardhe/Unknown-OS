@@ -1,0 +1,17 @@
+024d62118ffcc9e116534bd1bd11176e  usr/bin/nitrogen
+b008c55a6fa6db885f7baa1bbbb3cc3e  usr/share/applications/nitrogen.desktop
+142f36b6b96efb7b53eeef588137a9c7  usr/share/doc/nitrogen/changelog.Debian.gz
+76934d79112a703c952680b57e776d15  usr/share/doc/nitrogen/copyright
+c4e9b62bc4de6b6f8247faeb0ce193d9  usr/share/icons/hicolor/128x128/apps/nitrogen.png
+c892da51fa5ef34f3c211cd1dc51225f  usr/share/icons/hicolor/16x16/actions/wallpaper-centered.png
+d9a07c66f5e2e9dd3bc06673ea18a602  usr/share/icons/hicolor/16x16/actions/wallpaper-scaled.png
+1f6f581180b145cd97b32bac81dc8024  usr/share/icons/hicolor/16x16/actions/wallpaper-tiled.png
+bdb1c1fdb8f17e910e3ed1c1f1b40a49  usr/share/icons/hicolor/16x16/actions/wallpaper-zoomed.png
+5650d12fc2deb87ed018485fef825714  usr/share/icons/hicolor/16x16/apps/nitrogen.png
+f63b82e32b296e4cd27cf6e3fb92a17e  usr/share/icons/hicolor/16x16/devices/video-display.png
+967670ab7fcfd7441e259029a17a4f2d  usr/share/icons/hicolor/16x16/mimetypes/image-x-generic.png
+ad15772f5092f54bf31cd4ec6e25bfb4  usr/share/icons/hicolor/22x22/apps/nitrogen.png
+177a93a7fc736342eda9aa116d5f3499  usr/share/icons/hicolor/32x32/apps/nitrogen.png
+dd2711ca2ae4912659ac88c11a7fff29  usr/share/icons/hicolor/48x48/apps/nitrogen.png
+8824d875d47e5f0086a3470962f0de7e  usr/share/man/man1/nitrogen.1.gz
+1b156de440400642431c1dd552df9cf1  usr/share/menu/nitrogen

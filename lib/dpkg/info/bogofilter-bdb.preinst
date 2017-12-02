@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+
+
+if [ -L /usr/share/doc/bogofilter-bdb ]; then
+    rm -f /usr/share/doc/bogofilter-bdb
+fi

@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_monoaot
+if [ "$1" = "configure" ]
+then
+	MONOARCH=`mono --version | grep Architecture | sed 's/.*:  //' | sed 's/el,.*//'`
+	mkdir -p /usr/lib/mono/aot-cache/${MONOARCH}/
+	/usr/bin/mono --aot=outfile=/usr/lib/mono/aot-cache/${MONOARCH}/`basename /usr/lib/mono/4.5/mscorlib.dll.so` -O=all /usr/lib/mono/4.5/mscorlib.dll > /dev/null 2>&1 || true
+fi
+# End automatically added section

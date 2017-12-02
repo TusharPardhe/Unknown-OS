@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Comută activitatea la comutarea spațiului de lucru">
+						<longdesc>Dacă comutarea după nume este activată, această listă definește numele activităților la care se comută, spațiile de lucru reprezentate prin indexul elementului.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Dacă comutarea spațiului de lucru declanșează o comutare a activității">
+						<longdesc>Listă de metode de urmărire activate. „name” va activa comutarea activităților după nume definit în workspace_mapping. „memory” va activa comutarea la ultima activitate la întoarcerea într-un spațiu de lucru anterior.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="La ce oră începe ziua (implicit 5:30AM)">
+						<longdesc>Activitățile vor fi contabilizate pentru ziua precedentă dacă timpul curent este mai mic decât startul zilei specificat și pentru astăzi dacă depășește timpul. Activitățile care se întind pe două zile vor fi contorizate pentru ziua în care este cea mai mare parte a activității.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="Amintește atunci când nu există o activitate definită">
+						<longdesc>De asemenea, amintește la fiecare notify_interval minute dacă nu s-a pornit o activitate.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="Amintește sarcina curentă la fiecare x minute">
+						<longdesc>Amintește sarcina curentă la un interval de minute specificat. Pentru dezactivare, definiți ca 0 sau mai mare de 120.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="Oprește pontarea când e oprit calculatorul">
+						<longdesc>Oprește pontarea activității curente când calculatorul este oprit</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="Oprește pontarea în inactivitate">
+						<longdesc>Oprește pontarea activității curente când calculatorul devine inactiv</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="Comută fereastra aplicației hamster">
+								<longdesc>Comută vizibilitatea ferestrei aplicației hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="Acțiune comutare fereastră aplicație hamster">
+								<longdesc>Comandă pentru comutarea vizibilității ferestrei aplicației hamster.</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="Arată / ascunde fereastra de pontare">
+								<longdesc>Combinație de taste pentru afișarea / ascunderea ferestrei de pontare.</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

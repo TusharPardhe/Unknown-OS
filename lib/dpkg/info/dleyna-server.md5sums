@@ -1,0 +1,7 @@
+c6941315399a9897821f8d019297a148  usr/lib/dleyna-server/dleyna-server-service
+36891ae3597828b79563b3a38658ce28  usr/lib/x86_64-linux-gnu/dleyna-server/libdleyna-server-1.0.so.1.0.3
+41e612672b7ce8c2d778fe5155e29d01  usr/lib/x86_64-linux-gnu/pkgconfig/dleyna-server-1.0.pc
+deda1b7fdefb81f8180bfaee130cab4d  usr/lib/x86_64-linux-gnu/pkgconfig/dleyna-server-service-1.0.pc
+c0bc2cbda037360bee91f4610414bb9b  usr/share/dbus-1/services/com.intel.dleyna-server.service
+68770a6de6f4dc7b474075dd29189416  usr/share/doc/dleyna-server/changelog.Debian.gz
+aab4ccb617a948e9e2493250323c8011  usr/share/doc/dleyna-server/copyright

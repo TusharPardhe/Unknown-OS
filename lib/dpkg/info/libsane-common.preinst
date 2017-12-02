@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+
+
+if [ "$1" = upgrade ]; then
+#
+# remove obsolete conffile
+#
+    dpkg-maintscript-helper rm_conffile /etc/sane.d/v4l.conf 1.0.24-10 -- "$@"
+fi
+
+

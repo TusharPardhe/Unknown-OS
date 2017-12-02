@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/sbin
+/usr/sbin/update-java-alternatives
+/usr/share
+/usr/share/bash-completion
+/usr/share/bash-completion/completions
+/usr/share/bash-completion/completions/update-java-alternatives
+/usr/share/java
+/usr/share/java/java_defaults.mk
+/usr/share/doc
+/usr/share/doc/java-common
+/usr/share/doc/java-common/changelog.gz
+/usr/share/doc/java-common/copyright
+/usr/share/man
+/usr/share/man/man8
+/usr/share/man/man8/update-java-alternatives.8.gz

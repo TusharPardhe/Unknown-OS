@@ -1,0 +1,12 @@
+6cf756c298c0c1184a7e3ae4aa6d665f  usr/bin/readom
+b22ddab60a6ed772c255e6d782dfbff6  usr/bin/wodim
+b7d87cb98eb0b57f0d19656f7cbadfa0  usr/sbin/netscsid
+8f6083ffcdb9191223c0dc51ea2fb13e  usr/share/doc/wodim/README.ATAPI.setup
+1c5c79b4ef98b4e7e8cb9412cfc7336a  usr/share/doc/wodim/README.Debian
+fc81163cdd44869659b73b7106ca4f25  usr/share/doc/wodim/changelog.Debian.gz
+04dc60b566cc6628786bed8c661aba48  usr/share/doc/wodim/copyright
+ec0932794ae71a3c71a3f14288131f54  usr/share/doc/wodim/examples/burnstuff
+00118d4a9c94c41d3ae415638cc055dd  usr/share/doc/wodim/examples/netscsid.dfl
+9369bbf580daf4c52288f951dd547b37  usr/share/doc/wodim/examples/wodim.dfl
+0a1c45fbbd32d39f9a6421019d9cb10a  usr/share/man/man1/readom.1.gz
+d88ced1f11dd1c2d948869c5fbf45c82  usr/share/man/man1/wodim.1.gz

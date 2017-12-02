@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -e
+
+
+
+update-alternatives --install /usr/share/gconf/defaults/10_libgksu \
+    libgksu-gconf-defaults /usr/share/libgksu/debian/gconf-defaults.libgksu-sudo \
+    30
+
+update-alternatives --install /usr/share/gconf/defaults/10_libgksu \
+    libgksu-gconf-defaults /usr/share/libgksu/debian/gconf-defaults.libgksu-su \
+    20
+
+# hack to work-around a problem with update-gconf-defaults not being
+# able to handle dangling symlinks correctly (see prerm)
+if ! test -e /usr/share/gconf/defaults/10_libgksu; then
+    ln -fs /etc/alternatives/libgksu-gconf-defaults /usr/share/gconf/defaults/10_libgksu
+fi
+
+dpkg-trigger /usr/share/gconf/defaults

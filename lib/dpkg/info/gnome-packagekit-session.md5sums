@@ -1,0 +1,14 @@
+75385c3e1e6bbb6dcec7c069ec5a3bb5  usr/bin/gpk-dbus-service
+95b970435a102176540b115095330568  usr/bin/gpk-log
+9f1c0fbd65cf88d234f9239cc2348a13  usr/bin/gpk-prefs
+17dc6f8d54c18ec2154406acc8c5f79d  usr/share/GConf/gsettings/org.gnome.packagekit.gschema.migrate
+4cf4f7e337c703230704d9a9168bd5b2  usr/share/applications/gpk-dbus-service.desktop
+877fa3066fc125dd32a07117d918ba03  usr/share/applications/gpk-log.desktop
+f0ccc4a25feb325cae064653cbf805ce  usr/share/applications/gpk-prefs.desktop
+355a247d0a8294f51a9b0fb02ab74dfb  usr/share/dbus-1/services/org.freedesktop.PackageKit.service
+d123ed22653a2bbbead9e931ca6d39d6  usr/share/doc/gnome-packagekit-session/changelog.Debian.gz
+9027eb5fade1048047928e0dea401e79  usr/share/doc/gnome-packagekit-session/copyright
+c985bac82eaf5b071ff53694deef10a9  usr/share/glib-2.0/schemas/org.gnome.packagekit.gschema.xml
+7c7d1501b9ae588130af559edb88180b  usr/share/man/man1/gpk-dbus-service.1.gz
+67f7758d0d6e6865d31205f4e738c228  usr/share/man/man1/gpk-log.1.gz
+3218afb27da0c0383a66ccf4b949122d  usr/share/man/man1/gpk-prefs.1.gz

@@ -1,0 +1,3 @@
+/etc/systemd/system/suspend.target.wants/anacron-resume.service
+/etc/systemd/system/hibernate.target.wants/anacron-resume.service
+/etc/systemd/system/hybrid-sleep.target.wants/anacron-resume.service

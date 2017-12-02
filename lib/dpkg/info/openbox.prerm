@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    remove)
+	update-alternatives --remove x-window-manager /usr/bin/openbox
+	update-alternatives --remove x-session-manager /usr/bin/openbox-session
+	rm -f /var/lib/openbox/debian-menu.xml
+	;;
+esac
+
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/xdg/openbox/autostart.sh 3.5.0-1 -- "$@"
+# End automatically added section
+

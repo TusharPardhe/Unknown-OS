@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/mono
+/usr/lib/mono/4.5
+/usr/lib/mono/gac
+/usr/lib/mono/gac/System.Core
+/usr/lib/mono/gac/System.Core/4.0.0.0__b77a5c561934e089
+/usr/lib/mono/gac/System.Core/4.0.0.0__b77a5c561934e089/System.Core.dll
+/usr/share
+/usr/share/doc
+/usr/share/doc/libmono-system-core4.0-cil
+/usr/share/doc/libmono-system-core4.0-cil/copyright
+/usr/lib/mono/4.5/System.Core.dll
+/usr/share/doc/libmono-system-core4.0-cil/changelog.Debian.gz

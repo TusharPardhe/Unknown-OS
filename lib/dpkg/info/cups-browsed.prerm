@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installinit
+if [ -x "/etc/init.d/cups-browsed" ] || [ -e "/etc/init/cups-browsed.conf" ]; then
+	invoke-rc.d cups-browsed stop || exit $?
+fi
+# End automatically added section

@@ -1,0 +1,17 @@
+fd62977dfd96dc6f4e5ab8b8a9e5540b  usr/bin/gnome-power-statistics
+0b841aafffe2f8426ee087bb92d19adf  usr/share/appdata/gnome-power-statistics.appdata.xml
+b98069abc03e4d228ebdf6bd0ad65bc0  usr/share/applications/gnome-power-statistics.desktop
+e5d370e22da2abeca7091ace8ff3780d  usr/share/doc/gnome-power-manager/AUTHORS
+6d14f1cafc09273eb27c4cd2cc1e61b8  usr/share/doc/gnome-power-manager/NEWS.gz
+ddf40f5abed7d5d998cd30712f178314  usr/share/doc/gnome-power-manager/README
+14a8246b7dcdd950c3ae47583d230f8d  usr/share/doc/gnome-power-manager/changelog.Debian.gz
+e836997e0f19728a29559ca21213cbd2  usr/share/doc/gnome-power-manager/copyright
+7bc109c2f4b38cef183ce6d2adad7164  usr/share/glib-2.0/schemas/org.gnome.power-manager.gschema.xml
+34640e4080e85e94fbcd7f5aa1522a78  usr/share/icons/hicolor/16x16/apps/gnome-power-statistics.png
+cef314ac687eef8218b75a5ef86c3a02  usr/share/icons/hicolor/22x22/apps/gnome-power-statistics.png
+9db2cfa9529a977dc321f6746cdd3d5e  usr/share/icons/hicolor/24x24/apps/gnome-power-statistics.png
+91ab665496e9d3a7c432fd22b39531ab  usr/share/icons/hicolor/32x32/apps/gnome-power-statistics.png
+3677f416a5799ec67ff4428e8b1edff9  usr/share/icons/hicolor/48x48/apps/gnome-power-statistics.png
+b07a5419ce9980a477bd937e62e10467  usr/share/icons/hicolor/scalable/apps/gnome-power-statistics.svg
+f8fa1001593318166404f3c3e53af386  usr/share/icons/hicolor/symbolic/apps/gnome-power-statistics-symbolic.svg
+7fe36a873825d7aa91f6ef8630f77787  usr/share/man/man1/gnome-power-statistics.1.gz

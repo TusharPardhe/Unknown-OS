@@ -1,0 +1,27 @@
+#! /bin/sh
+set -e
+
+if [ "$1" = "configure" ] ; then
+  if [ ! -d /var/games ]; then
+        mkdir /var/games
+  fi
+
+  for FILE in gnobots2.classic_robots-safe.scores gnobots2.classic_robots.scores \
+  gnobots2.classic_robots-super-safe.scores gnobots2.nightmare-safe.scores \
+  gnobots2.nightmare.scores gnobots2.nightmare-super-safe.scores \
+  gnobots2.robots2_easy-safe.scores gnobots2.robots2_easy.scores \
+  gnobots2.robots2_easy-super-safe.scores gnobots2.robots2-safe.scores \
+  gnobots2.robots2.scores gnobots2.robots2-super-safe.scores \
+  gnobots2.robots_with_safe_teleport-safe.scores gnobots2.robots_with_safe_teleport.scores \
+  gnobots2.robots_with_safe_teleport-super-safe.scores; do
+        if [ -e /var/games/$FILE ]; then
+                continue
+        fi
+
+        touch /var/games/$FILE
+        chown root:games /var/games/$FILE
+        chmod 664 /var/games/$FILE
+  done
+fi
+
+

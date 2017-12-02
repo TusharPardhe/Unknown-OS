@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/man
+/usr/share/man/man3
+/usr/share/man/man3/Mail::Sendmail.3pm.gz
+/usr/share/perl5
+/usr/share/perl5/Mail
+/usr/share/perl5/Mail/Sendmail.pm
+/usr/share/doc
+/usr/share/doc/libmail-sendmail-perl
+/usr/share/doc/libmail-sendmail-perl/Todo
+/usr/share/doc/libmail-sendmail-perl/copyright
+/usr/share/doc/libmail-sendmail-perl/changelog.gz
+/usr/share/doc/libmail-sendmail-perl/changelog.Debian.gz

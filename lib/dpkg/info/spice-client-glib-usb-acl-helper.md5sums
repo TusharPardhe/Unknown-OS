@@ -1,0 +1,4 @@
+d35ab0b198fda7627f7582d8f673cbb9  usr/lib/spice-gtk/spice-client-glib-usb-acl-helper
+59e99445e57379dbeca7cba0ceaeeaa0  usr/share/doc/spice-client-glib-usb-acl-helper/changelog.Debian.gz
+eaee9422d36d6893a8ec26cd723cc344  usr/share/doc/spice-client-glib-usb-acl-helper/copyright
+b6a08bbc5b750ecef8aba0b3278f95c6  usr/share/polkit-1/actions/org.spice-space.lowlevelusbaccess.policy

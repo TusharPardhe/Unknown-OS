@@ -1,0 +1,61 @@
+87652192deb3a23d4b8109bcefebf894  usr/bin/albert
+dba49de60fae0ee1dc8f2fe7a82e5336  usr/lib/albert/libalbertcore.so
+3460780077dfa70e5b5abe2599064b34  usr/lib/albert/libglobalshortcut.so
+47842d27675e17456a9445adff24c8b5  usr/lib/albert/libxdg.so
+3016c123790eedc064b92fd2a5f69c56  usr/lib/albert/plugins/libapplications.so
+918ca4aed17e06af674b493c098bd052  usr/lib/albert/plugins/libcalculator.so
+a45e3bab03d5158e47ce42f1181b4ad2  usr/lib/albert/plugins/libchromebookmarks.so
+bcf4c90f5b3465bb8224892d63619105  usr/lib/albert/plugins/libexternalextensions.so
+2058ec6a5e0540f282d61e45d34082d0  usr/lib/albert/plugins/libfiles.so
+470cf5be768dae052d9c5552ded29277  usr/lib/albert/plugins/libfirefoxbookmarks.so
+1791393971184760606bdb958af7502b  usr/lib/albert/plugins/libmpris.so
+8b64f41c84726d74be8cc8d8e45f6624  usr/lib/albert/plugins/libssh.so
+d1e597b43c5e181c0c58a4b9c3186ef9  usr/lib/albert/plugins/libsystem.so
+fd10cf67d2a99d079794e166e5020af1  usr/lib/albert/plugins/libterminal.so
+41991153116c88c79dce1a7b5935944a  usr/lib/albert/plugins/libvirtualbox.so
+4a82e6fb086c23ae6b8df46f5487b61b  usr/lib/albert/plugins/libwebsearch.so
+c29d0c0607db0eafb8c221868f068c2d  usr/share/albert/themes/Arc Blue.qss
+a12818927929c25dd28febf9ccf3d621  usr/share/albert/themes/Arc Dark Blue.qss
+a3d71987c73dbc70b70d983ab1347123  usr/share/albert/themes/Arc Dark Grey.qss
+1932a0c3192f52ffa31a3a1f147ee859  usr/share/albert/themes/Arc Grey.qss
+a1d2363cb9bcfae90b4052ebd67aafcd  usr/share/albert/themes/Bright.qss
+3155d9487cc497350ada13951cf4d0d5  usr/share/albert/themes/BrightBlue.qss
+0c39a9fd7cdc889bd9d3bff9afcd64a2  usr/share/albert/themes/BrightGreen.qss
+8430caaf48420edbc5850f00e047bbcb  usr/share/albert/themes/BrightMagenta.qss
+c2b41f1540dee2d89a5aca36241dbfd6  usr/share/albert/themes/BrightMint.qss
+418d16f6bf301a5d85c26278b0ab3673  usr/share/albert/themes/BrightOrange.qss
+ebdb8854d8ae6d3678dcfe641eca777f  usr/share/albert/themes/BrightViolet.qss
+ca398a384a5475a187c2ad0854a6aab1  usr/share/albert/themes/Dark.qss
+a7e69415eaa7b34e3d73cb6c32c1e6ff  usr/share/albert/themes/DarkBlue.qss
+640a4b32f556ca11f11c39bb2045c592  usr/share/albert/themes/DarkGreen.qss
+06913092ce173417205ce1d05f114beb  usr/share/albert/themes/DarkMagenta.qss
+9051109fd1da24a91c0ee2f889b173fc  usr/share/albert/themes/DarkMint.qss
+62b4b5b6238dfb32b066c88cb6b9961e  usr/share/albert/themes/DarkOrange.qss
+91ee4439c64f38cff9e9b0eb3d517890  usr/share/albert/themes/DarkViolet.qss
+ffc798ea1b74c8a65b469ed580b6fc24  usr/share/albert/themes/Elementary.qss
+e054f00fa8b60cf04276e8d5d377002a  usr/share/albert/themes/Numix Rounded.qss
+ec8bcc8bf75af99ff6a70c6732469d96  usr/share/albert/themes/Numix.qss
+f0d71f38f77cb707dac2fc56a574a37a  usr/share/albert/themes/SolarizedBrightBlue.qss
+ebb10ee053ff5185ffe0588a66411e57  usr/share/albert/themes/SolarizedBrightCyan.qss
+fc60a2c1f51eee3ad0fa40e2d76a1211  usr/share/albert/themes/SolarizedBrightGreen.qss
+cb990f1f230adaa3a7752f4159817475  usr/share/albert/themes/SolarizedBrightMagenta.qss
+2c719133b32d53c3524cefd3ddb737a3  usr/share/albert/themes/SolarizedBrightOrange.qss
+7ed060bacfcaf278f47cc95b0536701a  usr/share/albert/themes/SolarizedBrightRed.qss
+4ccca5356df9b7c12e8638b0ed2561e0  usr/share/albert/themes/SolarizedBrightViolet.qss
+3fd26fd2817b633edfd192b276aed45b  usr/share/albert/themes/SolarizedBrightYellow.qss
+700a62b060e3b71703363f003960a866  usr/share/albert/themes/SolarizedDarkBlue.qss
+57ddb6d0c420179078f6c1032a672a94  usr/share/albert/themes/SolarizedDarkCyan.qss
+f9bd1367510b44f4ce789c0095d10d1a  usr/share/albert/themes/SolarizedDarkGreen.qss
+8bd43305e9146f69677009634c81f097  usr/share/albert/themes/SolarizedDarkMagenta.qss
+77a446fd915037a70391ff2386fab250  usr/share/albert/themes/SolarizedDarkOrange.qss
+ebe8b3b604cc35746afc37d23863b54e  usr/share/albert/themes/SolarizedDarkRed.qss
+262b959ef6d86476e9a3f241e37280ac  usr/share/albert/themes/SolarizedDarkViolet.qss
+949e3f767dd104e325891e072c610c61  usr/share/albert/themes/SolarizedDarkYellow.qss
+4a3209421fe61cfc7c4d3a489f1ae729  usr/share/albert/themes/Spotlight Dark.qss
+160008fd885b78babaec366a6943efc9  usr/share/albert/themes/Spotlight.qss
+fd6841364217a07d7263fe1c377b4b66  usr/share/albert/themes/Yosemite Dark.qss
+735fe71fb647cd6f0d54a54b4db0d0ee  usr/share/albert/themes/Yosemite.qss
+29dc1e0ae2e282e612b4c3384822b2c0  usr/share/applications/albert.desktop
+52f1ca7a9514d4c928e0f31093be4c7e  usr/share/doc/albert/changelog.Debian.gz
+8bbdb58271bc1844b8f5186d7bbc870c  usr/share/doc/albert/copyright
+c4ba242f6a7557d79c2be7477d1cbcb5  usr/share/icons/hicolor/scalable/apps/albert.svg

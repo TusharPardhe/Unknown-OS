@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="工作區改變時切換活動">
+						<longdesc>如果啟用依名稱切換，這個清單設定了應該被切換的活動名稱，項目的索引代表工作區。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="工作區的切換是否應觸發活動的切換">
+						<longdesc>已啟用追蹤方法的清單。「name」(名稱) 會啟用依 workspace_mapping 中定義的名稱切換活動。「memory」(記憶) 會啟用在返回上一個工作區時切換到上次的活動。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="這天開始的時刻 (預設為上午 5:30)">
+						<longdesc>如果目前的時間尚未達到指定日子開始的時候，那麼活動會被算在昨天。跨越兩天的活動會跳到活動佔絕大的部分那天。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="當沒有設定活動時也提醒">
+						<longdesc>如果沒有活動開始，仍在每 notify_interval 分鐘提醒我。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="每 x 分鐘提醒目前的工作">
+						<longdesc>在每次指定的分鐘數後提醒目前的工作。設為 0 或大於 120 時表示停用提醒。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="關機時停止追蹤">
+						<longdesc>關機時停止追蹤目前的活動</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="閒置時停止追蹤">
+						<longdesc>當電腦為閒置狀態時停止追蹤目前的活動</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="name">
+							<local_schema short_desc="切換 hamster 應用程式視窗">
+								<longdesc>切換 hamster 應用程式視窗可見與否。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="action">
+							<local_schema short_desc="切換 hamster 應用程式視窗動作">
+								<longdesc>切換 hamster 應用程式視窗可見與否的指令。</longdesc>
+							</local_schema>
+						</entry>
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="顯示或隱藏時間追蹤程式視窗">
+								<longdesc>用來顯示或隱藏時間追蹤程式視窗的鍵盤捷徑鍵。</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

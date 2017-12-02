@@ -1,0 +1,27 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install glib-sharp 2.6
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install glib-sharp 2.10
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install glib-sharp 2.8
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install glib-sharp 2.4
+fi
+# End automatically added section
+# Automatically added by dh_installcligac
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/gac-package-install ]; then
+	/usr/share/cli-common/gac-package-install libglib2.0-cil
+fi
+# End automatically added section

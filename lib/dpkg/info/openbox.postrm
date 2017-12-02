@@ -1,0 +1,32 @@
+#!/bin/sh
+
+set -e
+
+# workaround for bug #198522
+delete_dir_if_empty() {
+	if [ ! -d "$1" ]; then
+		return 0;
+	fi
+	rmdir --ignore-fail-on-non-empty $1;
+}
+
+case "$1" in
+	purge)
+		delete_dir_if_empty /etc/xdg/openbox
+		delete_dir_if_empty /etc/xdg
+		;;
+esac
+
+if which update-menus >/dev/null 2>&1; then
+	update-menus ;
+fi
+
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/xdg/openbox/autostart.sh 3.5.0-1 -- "$@"
+# End automatically added section
+# Automatically added by dh_installmenu
+inst=/etc/menu-methods/openbox
+if [ "$1" = "remove" ] && [ -f "$inst" ]; then chmod a-x $inst ; fi
+if [ -x "`which update-menus 2>/dev/null`" ]; then update-menus ; fi
+# End automatically added section
+

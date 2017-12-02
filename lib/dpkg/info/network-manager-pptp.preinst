@@ -1,0 +1,61 @@
+#!/bin/sh
+
+set -e
+
+# This script can be called in the following ways:
+#
+# Before the package is installed:
+#	<new-preinst> install
+#
+# Before removed package is upgraded:
+#	<new-preinst> install <old-version>
+#
+# Before the package is upgraded:
+#	<new-preinst> upgrade <old-version>
+#
+#
+# If postrm fails during upgrade or fails on failed upgrade:
+#	<old-preinst> abort-upgrade <new-version>
+
+
+# remove a no-longer used conffile
+rm_conffile()
+{
+    PKGNAME="$1"
+    CONFFILE="$2"
+
+    if [ -e "$CONFFILE" ]; then
+	md5sum="`md5sum \"$CONFFILE\" | sed -e \"s/ .*//\"`"
+	old_md5sum="`dpkg-query -W -f='${Conffiles}' $PKGNAME | sed -n -e \"\\\\' $CONFFILE'{s/ obsolete$//;s/.* //p}\"`"
+	if [ "$md5sum" != "$old_md5sum" ]; then
+	    echo "Obsolete conffile $CONFFILE has been modified by you."
+	    echo "Saving as $CONFFILE.dpkg-bak ..."
+	    mv -f "$CONFFILE" "$CONFFILE".dpkg-bak
+	else
+	    echo "Removing obsolete conffile $CONFFILE ..."
+	    rm -f "$CONFFILE"
+	fi
+    fi
+}
+
+
+case "$1" in
+    install|upgrade)
+        if dpkg --compare-versions "$2" lt "0.7.0-1"; then
+	    rm_conffile network-manager-pptp /etc/NetworkManager/VPN/nm-ppp-starter.name
+	    rm_conffile network-manager-pptp /etc/dbus-1/system.d/nm-ppp-starter.conf
+	fi
+	;;
+
+    abort-upgrade)
+        ;;
+
+    *)
+        echo "$0 called with unknown argument \`$1'" 1>&2
+	exit 1
+	;;
+esac
+
+
+
+exit 0

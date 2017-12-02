@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+dpkg-maintscript-helper rm_conffile /etc/bash_completion.d/mpc 0.27-2~ mpc -- "$@"
+
+
+
+exit 0

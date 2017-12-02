@@ -1,0 +1,6 @@
+41843d0adbe0c1f3f1c2e87f054d0a81  usr/lib/telepathy/telepathy-idle
+17eedc8202dfdfbda733d19961b6296e  usr/share/dbus-1/services/org.freedesktop.Telepathy.ConnectionManager.idle.service
+0b52ee8c9e32b9281529f8bb26ba63d6  usr/share/doc/telepathy-idle/changelog.Debian.gz
+052b4e63526c33dec385300787fc93e7  usr/share/doc/telepathy-idle/copyright
+9e7bb7a153df34938defda1bac2c0e40  usr/share/man/man8/telepathy-idle.8.gz
+19fdc8d439472fdc12faec44e81bcaf4  usr/share/telepathy/managers/idle.manager

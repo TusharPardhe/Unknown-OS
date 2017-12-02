@@ -1,0 +1,5 @@
+198727e6b331fd2380e53e5c715c8a84  usr/bin/hardening-check
+79979cb7fc5d537c65886d62c5bb8c57  usr/share/doc/hardening-includes/changelog.gz
+06ff97d53f05a9b8ce2a416b30f496b9  usr/share/doc/hardening-includes/copyright
+447afcc3231609a7c855d4e9892c853f  usr/share/hardening-includes/hardening.make
+8fb52894d8c8c7cf4af42def011bf0b4  usr/share/man/man1/hardening-check.1.gz

@@ -1,0 +1,107 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install pango-sharp 2.8
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install pango-sharp 2.4
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install gtk-sharp 2.10
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install atk-sharp 2.10
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install gdk-sharp 2.10
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install gtk-dotnet 2.6
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install gtk-dotnet 2.4
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install gdk-sharp 2.8
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install atk-sharp 2.4
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install gtk-sharp 2.8
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install gtk-dotnet 2.8
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install gtk-sharp 2.4
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install gtk-sharp 2.6
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install pango-sharp 2.6
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install atk-sharp 2.8
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install gtk-dotnet 2.10
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install gdk-sharp 2.6
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install pango-sharp 2.10
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install gdk-sharp 2.4
+fi
+# End automatically added section
+# Automatically added by dh_cligacpolicy
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/policy-install ]; then
+	/usr/share/cli-common/policy-install atk-sharp 2.6
+fi
+# End automatically added section
+# Automatically added by dh_installcligac
+if [ "$1" = "configure" ] && [ -x /usr/share/cli-common/gac-package-install ]; then
+	/usr/share/cli-common/gac-package-install libgtk2.0-cil
+fi
+# End automatically added section

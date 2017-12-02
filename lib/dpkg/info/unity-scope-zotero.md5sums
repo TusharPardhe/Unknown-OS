@@ -1,0 +1,7 @@
+94856937563b339a3754ad3b4f8333e0  usr/lib/python3/dist-packages/unity_scope_zotero-0.1.egg-info
+9aa414534daf0ddbc80d1443dc4de921  usr/share/dbus-1/services/unity-scope-zotero.service
+50517fa881e616d91901e36614f724c5  usr/share/doc/unity-scope-zotero/changelog.Debian.gz
+d03ccd3eeb1b163e9ab52939682611ed  usr/share/doc/unity-scope-zotero/copyright
+d41d8cd98f00b204e9800998ecf8427e  usr/share/unity-scopes/zotero/__init__.py
+b41b1729f757f2f77ff031bb79e3884f  usr/share/unity-scopes/zotero/unity_zotero_daemon.py
+024181de0f3dc4ffa8f77d31d322fad1  usr/share/unity/scopes/reference/zotero.scope

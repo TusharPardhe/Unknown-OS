@@ -1,0 +1,15 @@
+0bcc4319d06de325211be47c3f930e8b  usr/share/doc/liblangtag-common/changelog.Debian.gz
+6859291b1cb59d42c8fa3eb43da340e3  usr/share/doc/liblangtag-common/copyright
+b0ab35c61083505c41dcf5f390078008  usr/share/liblangtag/common/bcp47/calendar.xml
+971f5c0a9ad66c7634099f45fd22aff3  usr/share/liblangtag/common/bcp47/collation.xml
+edcec9d893a2c5f40271f2eaeb7773d3  usr/share/liblangtag/common/bcp47/currency.xml
+1065cbe5d1e6f1a96d9234f59a4d3c1b  usr/share/liblangtag/common/bcp47/number.xml
+d5109444bd3ebe3739f8dbb74504e4bd  usr/share/liblangtag/common/bcp47/timezone.xml
+b42343cfe6cf6a2bd2af06ebc43a1740  usr/share/liblangtag/common/bcp47/transform.xml
+97a5344f60f26ceeef607cc44f10b08e  usr/share/liblangtag/common/bcp47/transform_ime.xml
+ff389dae2f0d28e0fc54add509cdc256  usr/share/liblangtag/common/bcp47/transform_keyboard.xml
+8d1fb0fd17570818c7f5038a9136e7bb  usr/share/liblangtag/common/bcp47/transform_mt.xml
+b1cab7c16bdbd054e11d3303595a0c45  usr/share/liblangtag/common/bcp47/transform_private_use.xml
+c3c53833116e6c7236971d986c044019  usr/share/liblangtag/common/bcp47/variant.xml
+7ffdf9f0b153e1fb73514a3fcd5ffce3  usr/share/liblangtag/common/supplemental/likelySubtags.xml
+eeddb664676ba6feafc4cb0f47072062  usr/share/liblangtag/language-subtag-registry.xml

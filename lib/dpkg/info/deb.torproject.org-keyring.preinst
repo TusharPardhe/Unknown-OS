@@ -1,0 +1,36 @@
+#!/bin/bash
+
+set -e
+
+# cleanup keys from the old /etc/apt/trusted.gpg, because it was not
+# properly cleaned up by previous versions of
+# deb.torproject.org-keyring.
+
+# we could try to limit this cleanup to just upgrade moving from
+# versions before 2016.08.03, but due to the possibility of someone
+# having purged the old package before installing this new one, it's
+# better to do it unconditionally.
+
+# another way of looking at this is that the installation of this
+# package will ensure that the keys in question don't show up in two
+# keyrings at once.
+
+if [ -e /etc/apt/trusted.gpg ] && which gpg >/dev/null; then
+   # remove the version of the keys that were shipped in
+   # deb.torproject.org-keyring before version 2016.08.03:
+   (
+   h="$(mktemp -d)"
+   trap "rm -rf '$h'" EXIT
+
+   if gpg --homedir="$h" \
+          --batch --no-tty --no-default-keyring --keyring /etc/apt/trusted.gpg \
+          --list-key 0xA3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 > /dev/null 2>&1 ; then
+      gpg --homedir="$h" \
+          --batch --no-tty --no-default-keyring --keyring /etc/apt/trusted.gpg \
+          --no-auto-check-trustdb \
+          --delete-key 0xA3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 || true
+   fi
+   )
+fi
+
+

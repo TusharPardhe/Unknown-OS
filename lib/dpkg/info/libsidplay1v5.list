@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libsidplay1v5
+/usr/share/doc/libsidplay1v5/README.Debian
+/usr/share/doc/libsidplay1v5/copyright
+/usr/share/doc/libsidplay1v5/changelog.Debian.gz
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/libsidplay.so.1.0.3
+/usr/lib/x86_64-linux-gnu/libsidplay.so.1

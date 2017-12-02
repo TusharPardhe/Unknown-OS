@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/bug
+/usr/share/bug/libreoffice-base-core
+/usr/share/bug/libreoffice-base-core/presubj
+/usr/share/doc
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libreoffice-base-core
+/usr/lib
+/usr/lib/libreoffice
+/usr/lib/libreoffice/program
+/usr/lib/libreoffice/program/libdbalo.so
+/usr/share/doc/libreoffice-base-core

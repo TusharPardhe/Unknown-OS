@@ -1,0 +1,13 @@
+5b31a1e4a4bd410a2b7acdc1114f49f5  usr/bin/unoconv
+9b104e1e76bd8dc31637bfdc12f84654  usr/share/doc/unoconv/README.Debian
+6144ad916c45545bd7623b5c74dc08e2  usr/share/doc/unoconv/README.adoc.gz
+cc084fbefcb15b1746d6a61aa7a634f5  usr/share/doc/unoconv/changelog.Debian.gz
+12166228f2d762a7a7181863cc2bcecb  usr/share/doc/unoconv/copyright
+6d548635393554e48374111e0a5f7c22  usr/share/doc/unoconv/errcode.html
+4b27ea8703e7efb7fccd975ceece1192  usr/share/doc/unoconv/filters.html
+de862f6eee437b1ebe8750710af21940  usr/share/doc/unoconv/formats.html
+4d5a566b7f6c253ad1dcde6f101aaf29  usr/share/doc/unoconv/office-installations.html
+4c207f501b886654d53485c12863a286  usr/share/doc/unoconv/selinux.html
+65653ec31a1ef5c38b0dc64984fe6942  usr/share/doc/unoconv/unoconv.1.html
+90dcbbb966a6f0bad80400520cd5d286  usr/share/lintian/overrides/unoconv
+7d3e64a878e3441d7299c36c6887da9b  usr/share/man/man1/unoconv.1.gz

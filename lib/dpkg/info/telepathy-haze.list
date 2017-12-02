@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/share
+/usr/share/dbus-1
+/usr/share/dbus-1/services
+/usr/share/dbus-1/services/org.freedesktop.Telepathy.ConnectionManager.haze.service
+/usr/share/doc
+/usr/share/doc/telepathy-haze
+/usr/share/doc/telepathy-haze/changelog.Debian.gz
+/usr/share/doc/telepathy-haze/copyright
+/usr/share/man
+/usr/share/man/man8
+/usr/share/man/man8/telepathy-haze.8.gz
+/usr/lib
+/usr/lib/telepathy
+/usr/lib/telepathy/telepathy-haze

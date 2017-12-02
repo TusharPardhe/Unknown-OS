@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="notify_on_idle">
+					<local_schema short_desc="ذكر أيضا عند عدم ضبط أي نشاط">
+						<longdesc>ذكّر أيضا كل notify_interval دقائق إذا لم يُبدأ أي نشاط</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="ذكّر بالمهمة الحالية كل س من الدقائق">
+						<longdesc>ذكّر بالمهمة الحالية كلما مرت المدة المحددة بالدقائق. اجعلها 0 أو أكبر من 120 لتعطيل التذكير.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="أوقف التتبع عند إيقاف التشغيل">
+						<longdesc>أوقف تتبع النشاط الحالي عند إيقاف التشغيل</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="أوقف التتبع عند الخمول">
+						<longdesc>أوقف تتبع النشاط الحالي عندما يصبح الحاسوب خاملًا</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="keybindings">
+					<dir name="hamster-applet">
+						<entry name="activate_hamster_window">
+							<local_schema short_desc="إظهار وإخفاء نافذة مقتفي الوقت">
+								<longdesc>اختصار لوحة المفاتيح لإظهار وإخفاء نافذة مقتفي الوقت</longdesc>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

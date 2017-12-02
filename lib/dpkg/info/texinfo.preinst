@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/texmf/fmt.d/50cyrtexinfo.cnf 5.9.92.dfsg.1-1~ -- "$@"
+# End automatically added section

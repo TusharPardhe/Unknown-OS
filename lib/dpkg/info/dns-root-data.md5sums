@@ -1,0 +1,7 @@
+187aa15890949466e28bddb42117e93b  usr/share/dns/root.ds
+4b2f916d8ed2ae73e6478f5e158dc169  usr/share/dns/root.hints
+49149ab3df666caf3b66d73c91b3604c  usr/share/dns/root.key
+c5e3ca98551fdcf67d61578d14d28df2  usr/share/doc/dns-root-data/changelog.gz
+0de4f1f7c71afeff4a9118cb03ad5b17  usr/share/doc/dns-root-data/copyright
+fc244ac431689b6f5be904028c869fce  usr/share/doc/dns-root-data/draft-icann-dnssec-trust-anchor.html
+c2ba77b89eee3fa3e1b6436e7d0322a0  usr/share/doc/dns-root-data/draft-icann-dnssec-trust-anchor.txt.gz

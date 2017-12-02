@@ -1,0 +1,15 @@
+95d1033c575b9057487a015907d7f75c  usr/lib/caribou/antler-keyboard
+0e3f6be8896fcbbcf0fcde97eaba8a3e  usr/lib/python2.7/dist-packages/caribou/antler/__init__.py
+59ced06d9887450dafc9a99e9d2be75b  usr/lib/python2.7/dist-packages/caribou/antler/antler_settings.py
+da0953691a8bee292d140a03675410ef  usr/lib/python2.7/dist-packages/caribou/antler/keyboard_view.py
+f90806d802165b66f56e118841e5e6cd  usr/lib/python2.7/dist-packages/caribou/antler/main.py
+d2e13945eb7802e6f2c82e4d20b217df  usr/lib/python2.7/dist-packages/caribou/antler/window.py
+ffff8962125337c7f64abb301c219369  usr/share/antler/dark-key-border.svg
+ae9ee00589f220d7b045b8fb289a640a  usr/share/antler/style.css
+bffeb005a4f390b1eb3be7a2b812b248  usr/share/dbus-1/services/org.gnome.Caribou.Antler.service
+fb6226426a43359d8d4c253979984181  usr/share/doc/caribou-antler/AUTHORS
+71853601f94036e0c596184c62487095  usr/share/doc/caribou-antler/NEWS.gz
+629be530c64aa2a934ade37b1561a4b2  usr/share/doc/caribou-antler/README
+7bc2ab1d22deb225e8ddca7ee079a54e  usr/share/doc/caribou-antler/changelog.Debian.gz
+4e98acf8ef5d49fcf285c6108409afe2  usr/share/doc/caribou-antler/copyright
+a8c86be3ab0f72027d7890ba936f3bb5  usr/share/glib-2.0/schemas/org.gnome.antler.gschema.xml

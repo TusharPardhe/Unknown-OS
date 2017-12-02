@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/bin
+/usr/bin/pdftk
+/usr/share
+/usr/share/doc
+/usr/share/doc/pdftk
+/usr/share/doc/pdftk/copyright
+/usr/share/doc/pdftk/changelog.Debian.gz
+/usr/share/doc/pdftk/NEWS.Debian.gz
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/pdftk.1.gz

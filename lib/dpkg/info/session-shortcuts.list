@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/share
+/usr/share/applications
+/usr/share/applications/shutdown.desktop
+/usr/share/applications/logout.desktop
+/usr/share/applications/reboot.desktop
+/usr/share/doc
+/usr/share/doc/session-shortcuts
+/usr/share/doc/session-shortcuts/copyright
+/usr/share/doc/session-shortcuts/changelog.gz

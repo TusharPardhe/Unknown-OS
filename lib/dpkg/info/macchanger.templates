@@ -1,0 +1,19 @@
+Template: macchanger/automatically_run
+Type: boolean
+Default: false
+Description: Change MAC automatically?
+ Please specify whether macchanger should be set up to run automatically
+ every time a network device is brought up or down. This gives a new MAC
+ address whenever you attach an ethernet cable or reenable wifi.
+Description-cs.UTF-8: Změnit automaticky MAC adresu?
+ Uveďte prosím, zda se má macchanger nastavit tak, aby se spouštěl pokaždé, když je připojeno, nebo odpojeno, síťové zařízení. Tím se pokaždé, když připojíte ethernetový kabel, nebo znovu zapnete wifi, získá nová MAC adresa.
+Description-da.UTF-8: Ændr MAC automatisk?
+ Angiv venligst om macchanger skal sættes op til at køre automatisk hver gang en netværksenhed tændes eller slukkes. Dette giver en ny MAC-adresse hver gang du tilkobler et ethernetkabel eller genaktiverer wifi.
+Description-de.UTF-8: MAC automatisch ändern?
+ Bitte geben Sie an, ob Macchanger so eingerichtet werden soll, dass es automatisch ausgeführt wird, wanimmer ein Netzgerät aktiviert oder deaktiviert wird. Damit wird für eine neue MAC-Adresse gesorgt, wanimmer Sie sich mit einem Ethernet-Kabel verbinden oder Wifi reaktivieren.
+Description-fr.UTF-8: Faut-il changer l'adresse MAC automatiquement ?
+ Veuillez choisir si macchanger doit être paramétré pour être lancé automatiquement chaque fois qu'un périphérique réseau est mis en ligne ou hors ligne. Cela a pour effet d'attribuer une nouvelle adresse MAC dès que vous branchez un câble Ethernet ou que vous réactivez le réseau sans fil.
+Description-pt.UTF-8: Mudar o MAC automaticamente?
+ Por favor especifique se o macchanger deve ser configurado para correr automaticamente sempre que um dispositivo de rede é activado ou desactivado. Isto fornece um novo endereço MAC sempre que ligar um cabo ethernet ou reactivar a wifi.
+Description-ru.UTF-8: Изменять MAC автоматически?
+ Выберите, должен ли macchanger автоматически запускаться каждый раз при включении и выключении сетевого устройства. Это позволяет иметь новый  MAC-адрес при подключении кабеля ethernet или переподключениипо wifi.

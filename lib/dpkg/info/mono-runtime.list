@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/bin
+/usr/lib
+/usr/lib/cli
+/usr/lib/cli/binfmt-detector-cli
+/usr/share
+/usr/share/doc
+/usr/share/doc/mono-runtime
+/usr/share/doc/mono-runtime/copyright
+/usr/share/binfmts
+/usr/share/binfmts/cli
+/usr/bin/mono
+/usr/share/doc/mono-runtime/changelog.Debian.gz

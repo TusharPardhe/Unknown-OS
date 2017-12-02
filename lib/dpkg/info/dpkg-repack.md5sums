@@ -1,0 +1,5 @@
+db4e784c97faaf2f0583045928e14ad9  usr/bin/dpkg-repack
+5b2110dd4cff153076f296c41bb39da0  usr/share/doc/dpkg-repack/README
+8ee6818a124d9b0054c270a2193e50d0  usr/share/doc/dpkg-repack/changelog.gz
+b88744dd3fa6cdd3f856c6d39edc42d6  usr/share/doc/dpkg-repack/copyright
+f68cd13ee057f138b4c5c116ef04faab  usr/share/man/man1/dpkg-repack.1.gz

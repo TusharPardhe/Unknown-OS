@@ -1,0 +1,7 @@
+9d4d613a6957297bdb87396f32c94b12  usr/lib/python3/dist-packages/unity_scope_firefoxbookmarks-0.1.egg-info
+53559a5b31702170febbb0afb2bdf483  usr/share/dbus-1/services/unity-scope-firefoxbookmarks.service
+df63109da542164ee7f35fc634e98a66  usr/share/doc/unity-scope-firefoxbookmarks/changelog.Debian.gz
+572abd93dad3cc3d40f357f43b2f5150  usr/share/doc/unity-scope-firefoxbookmarks/copyright
+d41d8cd98f00b204e9800998ecf8427e  usr/share/unity-scopes/firefoxbookmarks/__init__.py
+1a6bacc64f934a16898b5f8e8fad82a2  usr/share/unity-scopes/firefoxbookmarks/unity_firefoxbookmarks_daemon.py
+752e8f4f288f1e0d3a4ecea5f9690fdd  usr/share/unity/scopes/web/firefoxbookmarks.scope

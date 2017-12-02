@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/GConf
+/usr/share/GConf/gsettings
+/usr/share/GConf/gsettings/folks.convert
+/usr/share/doc
+/usr/share/doc/folks-common
+/usr/share/doc/folks-common/copyright
+/usr/share/doc/folks-common/changelog.Debian.gz
+/usr/share/glib-2.0
+/usr/share/glib-2.0/schemas
+/usr/share/glib-2.0/schemas/org.freedesktop.folks.gschema.xml

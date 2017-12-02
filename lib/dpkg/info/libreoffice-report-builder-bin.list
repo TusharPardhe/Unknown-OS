@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/bug
+/usr/share/bug/libreoffice-report-builder-bin
+/usr/share/bug/libreoffice-report-builder-bin/presubj
+/usr/share/doc
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libreoffice-report-builder-bin
+/usr/lib
+/usr/lib/libreoffice
+/usr/lib/libreoffice/program
+/usr/lib/libreoffice/program/librptlo.so
+/usr/lib/libreoffice/program/librptuilo.so
+/usr/lib/libreoffice/program/librptxmllo.so
+/usr/share/doc/libreoffice-report-builder-bin

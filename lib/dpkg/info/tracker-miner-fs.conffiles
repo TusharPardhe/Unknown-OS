@@ -1,0 +1,4 @@
+/etc/sysctl.d/30-tracker.conf
+/etc/xdg/autostart/tracker-miner-apps.desktop
+/etc/xdg/autostart/tracker-miner-fs.desktop
+/etc/xdg/autostart/tracker-miner-user-guides.desktop

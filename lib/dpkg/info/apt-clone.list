@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/bin
+/usr/bin/apt-clone
+/usr/share
+/usr/share/man
+/usr/share/man/man8
+/usr/share/man/man8/apt-clone.8.gz
+/usr/share/doc
+/usr/share/doc/apt-clone
+/usr/share/doc/apt-clone/copyright
+/usr/share/doc/apt-clone/changelog.gz
+/usr/lib
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/apt_clone.py
+/usr/lib/python3/dist-packages/apt_clone-0.2.1.egg-info

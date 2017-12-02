@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper symlink_to_dir /usr/share/doc/libvlc5 libvlccore8 2.2.2-4~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper symlink_to_dir /usr/share/bug/libvlc5 libvlccore8 2.2.2-4~ -- "$@"
+# End automatically added section

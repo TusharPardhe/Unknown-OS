@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="hamster-applet">
+				<entry name="workspace_mapping">
+					<local_schema short_desc="Switch activity on workspace change">
+						<longdesc>If switching by name is enabled, this list sets the activity names that should be switched to, workspaces represented by the index of item.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="workspace_tracking">
+					<local_schema short_desc="Should workspace switch trigger activity switch">
+					</local_schema>
+				</entry>
+				<entry name="day_start_minutes">
+					<local_schema short_desc="At what time does the day start (defaults to 5:30AM)">
+					</local_schema>
+				</entry>
+				<entry name="notify_on_idle">
+					<local_schema short_desc="উপরন্তু, কোনো কাজ নির্ধারিত না হলে সূচিত করা হবে">
+						<longdesc>উপরন্তু, কোনো কাজ না আরম্ভ করা হলে প্রতি notify_interval মিনিটে সূচনা প্রদান করা হবে।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="notify_interval">
+					<local_schema short_desc="প্রতি x মিনিট অন্তর বর্তমান কর্মের বিষয়ে স্মরণ করানো হবে">
+						<longdesc>মিনিটে ধার্য সুনির্দিষ্ট সময়ের অন্তরে বর্তমান কর্ম সম্বন্ধে স্মরণ করানো হবে। স্মরণ ব্যবস্থা নিষ্ক্রিয় করার জন্য ০ অথবা ১২০ থেকে অধিক কোনো সংখ্যা নির্ধারণ করুন।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="stop_on_shutdown">
+					<local_schema short_desc="কম্পিউটার বন্ধ হলে">
+						<longdesc>বন্ধ করা হলে বর্তমান কাজের নিরীক্ষণ বন্ধ করা হবে</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="enable_timeout">
+					<local_schema short_desc="কর্মহীন অবস্থায় বর্তমান কাজে নিরীক্ষণ বন্ধ করা হবে">
+						<longdesc>কম্পিউটার কর্মহীন অবস্থায় হলে বর্তমান কর্মের নিরীক্ষণ বন্ধ করা হবে</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

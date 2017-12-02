@@ -1,0 +1,23 @@
+#!/bin/sh
+
+set -e
+
+# Package maintainers, DO NOT use this as an example for how to
+# call update-menus in your postinst! This script does several things
+# you shouldn't do, and doesn't do other things that you should
+# do. See /usr/share/doc/menu/ for more info.
+
+case "$1" in
+triggered)
+	# This is triggered by any installation of a menu file and by
+	# any call to update-menus made in a package maintainer script.
+        test -x /usr/bin/update-menus && update-menus --trigger
+        exit 0
+;;
+*)
+	chmod a+x /usr/bin/update-menus
+	update-menus
+;;
+esac
+
+

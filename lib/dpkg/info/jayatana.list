@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/jayatana
+/usr/lib/jayatana/libjayatana.so
+/usr/lib/jayatana/libjayatanaag.so
+/usr/share
+/usr/share/java
+/usr/share/java/jayatana.jar
+/usr/share/java/jayatanaag.jar
+/usr/share/doc
+/usr/share/doc/jayatana
+/usr/share/doc/jayatana/NEWS.gz
+/usr/share/doc/jayatana/copyright
+/usr/share/doc/jayatana/changelog.Debian.gz
+/usr/share/upstart
+/usr/share/upstart/sessions

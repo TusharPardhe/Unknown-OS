@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper dir_to_symlink /usr/share/doc/libreoffice-gtk /usr/share/doc/libreoffice-core 1:5.0.3~rc1-2 $DPKG_MAINTSCRIPT_PACKAGE -- "$@"
+# End automatically added section

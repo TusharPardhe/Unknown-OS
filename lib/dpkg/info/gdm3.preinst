@@ -1,0 +1,11 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/gdm3/greeter.gconf-defaults 3.4 -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper mv_conffile /etc/pam.d/gdm3 /etc/pam.d/gdm-password 3.10.0.1-3~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper mv_conffile /etc/pam.d/gdm3-autologin /etc/pam.d/gdm-autologin 3.10.0.1-3~ -- "$@"
+# End automatically added section

@@ -1,0 +1,11 @@
+932796a9aacc0f8947bebbf538e925bc  usr/bin/totem
+27fe9d3de6149d599026e76e3fcbcdba  usr/bin/totem-audio-preview
+2bd72e17cb334ea76ab30e2126dec85c  usr/bin/totem-video-thumbnailer
+c17603411bf2e4af11ddfa7f447487e0  usr/lib/nautilus/extensions-3.0/libtotem-properties-page.so
+98c06bda97c887af64c2b126f1f5c2ff  usr/share/appdata/org.gnome.Totem.appdata.xml
+d203d56408713c897ffb126308740321  usr/share/applications/org.gnome.Totem.desktop
+8978fa2b45ca562b00c9eb3d24144284  usr/share/applications/totem.desktop
+07caf874be261379cf54f2a25fe55ecb  usr/share/dbus-1/services/org.gnome.Totem.service
+f69e1e4c3db9f7adb5efcf6d4dcc9285  usr/share/doc/totem/README.Debian
+895062c3f6b7fb6b09b39fca8cbaacab  usr/share/doc/totem/copyright
+8c4d1e68184098a236965b6320c2f5ea  usr/share/lintian/overrides/totem

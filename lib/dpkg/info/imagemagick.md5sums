@@ -1,0 +1,17 @@
+5b562c577b14e6eacb340132e04bb622  usr/lib/mime/packages/imagemagick
+996762a768544001a9513b370440b28b  usr/share/applications/display-im6.desktop
+f00b8d8b25b0cddb433d9ad3b75df0f5  usr/share/bug/imagemagick/presubj
+70ac06eb9cf75b077ceb300f7aa804b3  usr/share/bug/imagemagick/script
+15d4a4781f9a33db1cb2d3d84650eadd  usr/share/doc/imagemagick/copyright
+1bee6775639add8a50f529cc67480efb  usr/share/man/man1/animate-im6.1.gz
+c93a576c9e22b1737805cccc2be789b9  usr/share/man/man1/compare-im6.1.gz
+be616ccddc2f03df3bf67b7325dc4b82  usr/share/man/man1/composite-im6.1.gz
+02a3ca9bcd96f446bd3dc4738f09b69a  usr/share/man/man1/conjure-im6.1.gz
+973c3e91a0e6b6f48e97017829ba6a70  usr/share/man/man1/convert-im6.1.gz
+13d89874163626ebe226221506fa72f1  usr/share/man/man1/display-im6.1.gz
+b5b83d5a3c4074a7866d1c02c8ddcf44  usr/share/man/man1/identify-im6.1.gz
+0a14c807cfc8c8e92e81f86bc7b25b1b  usr/share/man/man1/import-im6.1.gz
+1b806ae7c7fac3989aabe16cf569a86b  usr/share/man/man1/mogrify-im6.1.gz
+9a76a8b43fd083fc62090546968387d4  usr/share/man/man1/montage-im6.1.gz
+fe04476b2325497ef516a4709de31200  usr/share/man/man1/stream-im6.1.gz
+7fe4f7871dde58abd946fc2eb933a00b  usr/share/menu/imagemagick

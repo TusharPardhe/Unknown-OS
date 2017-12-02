@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+ver=1.15
+
+if [ "$1" = "remove" ]; then
+	update-alternatives --remove automake /usr/bin/automake-$ver
+fi
+
+

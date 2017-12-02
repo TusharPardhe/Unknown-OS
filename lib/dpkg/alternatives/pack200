@@ -1,0 +1,9 @@
+auto
+/usr/bin/pack200
+pack200.1.gz
+/usr/share/man/man1/pack200.1.gz
+
+/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/pack200
+1081
+/usr/lib/jvm/java-8-openjdk-amd64/jre/man/man1/pack200.1.gz
+

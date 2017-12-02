@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/cairo
+/usr/lib/python3/dist-packages/cairo/__init__.py
+/usr/lib/python3/dist-packages/cairo/_cairo.cpython-35m-x86_64-linux-gnu.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/python3-cairo
+/usr/share/doc/python3-cairo/copyright
+/usr/share/doc/python3-cairo/changelog.Debian.gz

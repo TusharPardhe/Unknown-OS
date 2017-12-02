@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/javascript
+/usr/share/javascript/jquery
+/usr/share/javascript/jquery/jquery.min.map
+/usr/share/javascript/jquery/jquery.js
+/usr/share/javascript/jquery/jquery.min.js
+/usr/share/doc
+/usr/share/doc/libjs-jquery
+/usr/share/doc/libjs-jquery/copyright
+/usr/share/doc/libjs-jquery/changelog.Debian.gz
+/usr/share/doc/libjs-jquery/README.Debian
+/usr/share/javascript/jquery/jquery.lite.js
+/usr/share/javascript/jquery/jquery.pack.js

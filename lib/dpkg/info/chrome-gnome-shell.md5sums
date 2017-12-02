@@ -1,0 +1,12 @@
+e2ac8e57979ee0954e35e934735c8661  usr/bin/chrome-gnome-shell
+02c550d8fb7d3c5f6b0d68e24c78a377  usr/lib/mozilla/native-messaging-hosts/org.gnome.chrome_gnome_shell.json
+d1303d085ed8b6b427f7209504aa720d  usr/lib/python3/dist-packages/chrome_gnome_shell-0.0.0.egg-info
+180dea1297668ed3d08a9db5d060c4e8  usr/share/applications/org.gnome.ChromeGnomeShell.desktop
+6c4f4e83f3a219d4a0bb12e40cdfb502  usr/share/dbus-1/services/org.gnome.ChromeGnomeShell.service
+363892d35ce35a4da860eec822d3812b  usr/share/doc/chrome-gnome-shell/README.Debian
+345213081d4e44a23d5b297be33e41a2  usr/share/doc/chrome-gnome-shell/README.md
+c96973324402ade4fa4d4beeff4d6986  usr/share/doc/chrome-gnome-shell/changelog.Debian.gz
+38a956ad9bba0311c0fdac9bddedbf29  usr/share/doc/chrome-gnome-shell/copyright
+a541eb7005f2508e20d231fcd4573f0a  usr/share/icons/gnome/128x128/apps/org.gnome.ChromeGnomeShell.png
+bcd3bb7c6537635aea0562fa2195c5bd  usr/share/icons/gnome/16x16/apps/org.gnome.ChromeGnomeShell.png
+6161f6adefd021a4614c59b45c967fad  usr/share/icons/gnome/48x48/apps/org.gnome.ChromeGnomeShell.png
