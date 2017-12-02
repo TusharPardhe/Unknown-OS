@@ -1,0 +1,13 @@
+[VPN Connection]
+name=pptp
+service=org.freedesktop.NetworkManager.pptp
+program=/usr/lib/NetworkManager/nm-pptp-service
+supports-multiple-connections=true
+
+[libnm]
+plugin=/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-vpn-plugin-pptp.so
+
+[GNOME]
+auth-dialog=/usr/lib/NetworkManager/nm-pptp-auth-dialog
+properties=/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-pptp-properties
+supports-external-ui-mode=true

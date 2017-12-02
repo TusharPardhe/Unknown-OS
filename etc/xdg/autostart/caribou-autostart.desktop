@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Caribou
+Exec=/usr/lib/caribou/caribou
+AutostartCondition=GSettings org.gnome.desktop.a11y.applications screen-keyboard-enabled
+X-GNOME-AutoRestart=true
+#X-GNOME-Autostart-Phase=Initialization
+OnlyShowIn=GNOME;Unity;
+X-Ubuntu-Gettext-Domain=caribou

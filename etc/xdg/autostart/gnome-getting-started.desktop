@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Welcome
+Exec=/var/lib/gnome-welcome-tour
+AutostartCondition=unless-exists ~/.cache/gnome-getting-started-docs/seen-getting-started-guide
+OnlyShowIn=GNOME;

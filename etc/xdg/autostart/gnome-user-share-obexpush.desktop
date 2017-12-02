@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Personal File Sharing
+Comment=Launch Bluetooth ObexPush sharing if enabled
+Keywords=share;files;bluetooth;obex;http;network;copy;send;
+AutostartCondition=GSETTINGS org.gnome.desktop.file-sharing bluetooth-obexpush-enabled
+Icon=folder-remote
+Exec=/usr/lib/gnome-user-share/gnome-user-share-obexpush
+Terminal=false
+Type=Application
+Categories=
+OnlyShowIn=Unity;
+NoDisplay=true
+X-GNOME-Autostart-Delay=15
+X-Ubuntu-Gettext-Domain=gnome-user-share

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Indicator Bluetooth
+Exec=/usr/lib/x86_64-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
+NoDisplay=true
+StartupNotify=false
+Terminal=false
+OnlyShowIn=Unity;GNOME;
+AutostartCondition=GNOME3 unless-session gnome
+X-Ubuntu-Gettext-Domain=indicator-bluetooth

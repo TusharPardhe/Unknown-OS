@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Personal File Sharing
+Comment=Launch Personal File Sharing if enabled
+Keywords=share;files;bluetooth;obex;http;network;copy;send;
+AutostartCondition=GSETTINGS org.gnome.desktop.file-sharing enabled
+Icon=folder-remote
+Exec=/usr/lib/gnome-user-share/gnome-user-share-webdav
+Terminal=false
+Type=Application
+Categories=
+OnlyShowIn=GNOME;Unity;
+NoDisplay=true
+X-GNOME-Autostart-Delay=15
+X-Ubuntu-Gettext-Domain=gnome-user-share

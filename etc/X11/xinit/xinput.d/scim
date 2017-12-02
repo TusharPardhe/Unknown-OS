@@ -1,0 +1,18 @@
+#
+# Use "X input Method" for all applications
+#
+# Per Ming's Documentation in SCIM, XIM Input Method is activated
+# not only for old X-applications but also for GTK and QT appplication.
+#
+# If a user wish to use, GTK Input Method, (s)he can right-click input 
+# area and select "Input Methods" and change from "X input Method" to 
+# "SCIM Input Method".
+#
+
+XIM=SCIM
+XIM_PROGRAM=/usr/bin/scim
+XIM_ARGS="-d"
+XIM_PROGRAM_SETS_ITSELF_AS_DAEMON=yes
+GTK_IM_MODULE=xim
+QT_IM_MODULE=xim
+DEPENDS="scim,scim-anthy|scim-canna|scim-chewing|scim-pinyin|scim-hangul|scim-prime|scim-skk|scim-tables-additional|scim-m17n|scim-uim|scim-tables-ja|scim-tables-ko|scim-tables-zh"

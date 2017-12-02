@@ -1,0 +1,66 @@
+#
+# This configuration file for SCIM is recommended.
+#
+# Use "X input method" for standard X applications
+# Use "SCIM IM module" for GTK/Qt/clutter applications if available
+#
+# Using this configuration may improve some usability for GTK/Qt applications
+# such as the location of word selection window.
+
+# You still need these XIM settings for non-GTK and non-Qt programs.
+XIM=SCIM
+XIM_PROGRAM=/usr/bin/scim
+XIM_ARGS="-d"
+XIM_PROGRAM_SETS_ITSELF_AS_DAEMON=yes
+
+gtkimm_exists () {
+	# check if any immodules installed
+	for dir in /usr/lib/gtk-?.0/*/immodules /usr/lib/x86_64-linux-gnu/gtk-?.0/*/immodules; do
+		if [ -r ${dir}/im-$1.so ]; then
+			return 0
+		fi
+	done
+	return 1
+}
+
+if gtkimm_exists scim; then
+  GTK_IM_MODULE=scim
+elif gtkimm_exists scim-orig; then
+  GTK_IM_MODULE=scim-orig
+else
+  GTK_IM_MODULE=xim
+fi
+
+qtimm_exists () {
+	# check if any immodule installed
+	for dir in /usr/lib/qt*/plugins/inputmethods /usr/lib/x86_64-linux-gnu/qt*/plugins/inputmethods; do
+		if [ -r ${dir}/im-$1.so ]; then
+			 return 0
+		fi
+	done
+	return 1
+}
+
+if qtimm_exists scim; then
+  QT_IM_MODULE=scim
+else
+  QT_IM_MODULE=xim
+fi
+
+clutterimm_exists () {
+	# check if any immodule installed
+	for dir in /usr/lib/clutter-imcontext/immodules /usr/lib/x86_64-linux-gnu/clutter-imcontext/imcontext; do
+		if [ -r ${dir}/im-$1.so ]; then
+			 return 0
+		fi
+	done
+	return 1
+}
+
+if clutterimm_exists scim; then
+  CLUTTER_IM_MODULE=scim
+else
+  CLUTTER_IM_MODULE=xim
+fi
+
+DEPENDS="scim,scim-gtk-immodule|scim-qt-immodule|scim-clutter-immodule,scim-anthy|scim-canna|scim-chewing|scim-pinyin|scim-hangul|scim-prime|scim-skk|scim-modules-table|scim-tables-additional|scim-m17n|scim-uim|scim-tables-ja|scim-tables-ko|scim-tables-zh"

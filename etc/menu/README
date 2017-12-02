@@ -1,0 +1,11 @@
+In this directory, the system administrator can install menufiles to
+override the menu files provided by Debian in /usr/lib/menu, /usr/share/menu
+and /usr/share/menu/default.
+
+The filename should be the name of the package that it is overriding,
+and may contain as many lines and menu entries as necessary.
+
+Please run 'update-menus' after changing or adding files.
+
+For more info, please read /usr/share/doc/menu/html.
+

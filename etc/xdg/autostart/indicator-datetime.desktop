@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Indicator Date & Time
+Exec=/usr/lib/x86_64-linux-gnu/indicator-datetime/indicator-datetime-service
+OnlyShowIn=Unity;GNOME;Pantheon;
+NoDisplay=true
+StartupNotify=false
+Terminal=false
+AutostartCondition=GNOME3 unless-session gnome
+X-Ubuntu-Gettext-Domain=indicator-datetime

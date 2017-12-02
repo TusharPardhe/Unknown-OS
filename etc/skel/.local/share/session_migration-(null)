@@ -1,0 +1,3 @@
+[State]
+timestamp=1508439608
+migrated=03_unity_first_run_stamp_move;00_remove_obsolete_plugins_in_unity_session_v3.py;03_migrate_signon;01_unity_change_dconf_path;02_unity_setup_text_scale_factor;nautilus-unity-launcher-icon.py;04_unity_update_software_center_desktop_file;

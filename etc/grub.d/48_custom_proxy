@@ -1,0 +1,7 @@
+#!/bin/sh
+#THIS IS A GRUB PROXY SCRIPT
+'/etc/grub.d/proxifiedScripts/custom' | /etc/grub.d/bin/grubcfg_proxy "+*
++#text
+-'UnknownOS'~57b086fd0f990e6dbf8be62f09989b43~ as 'Ubuntu'
+-'Unknown'~57b086fd0f990e6dbf8be62f09989b43~ as 'Ubuntu'
+"

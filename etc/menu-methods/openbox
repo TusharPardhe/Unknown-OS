@@ -1,0 +1,36 @@
+#!/usr/bin/install-menu
+
+!include menu.h
+
+compat="menu-1"
+
+outputencoding="UTF-8"
+genmenu="debian-menu.xml"
+rootprefix="/var/lib/openbox/"
+userprefix=".config/openbox/"
+treewalk="(M)"
+
+function xml_escape($s) = replace(replace(replace(replace(replace($s, \
+				"&",  "&amp;"), \
+				">",  "&gt;"), \
+				"<",  "&lt;"), \
+				"'",  "&apos;"), \
+				"\"", "&quot;")
+
+supported
+    x11=     nstring(level(), "  ") "<item label='" xml_escape(title()) "'" ifnempty(icon(), " icon='" xml_escape(icon()) "'") ">\n" \
+             nstring(level(), "  ") "  <action name='Execute'><execute>" xml_escape($command) "</execute></action>\n" \
+             nstring(level(), "  ") "</item>\n"
+    text=    nstring(level(), "  ") "<item label='" xml_escape(title()) "'" ifnempty(icon(), " icon='" xml_escape(icon()) "'") ">\n" \
+             nstring(level(), "  ") "  <action name='Execute'><execute>" xml_escape(term()) "</execute></action>\n" \
+             nstring(level(), "  ") "</item>\n"
+    wm=      nstring(level(), "  ") "<item label='" xml_escape(title()) "'" ifnempty(icon(), " icon='" xml_escape(icon()) "'") ">\n" \
+             nstring(level(), "  ") "  <action name='Restart'><execute>" xml_escape($command) "</execute></action>\n" \
+             nstring(level(), "  ") "</item>\n"
+endsupported
+
+startmenu=   nstring(level(), "  ")  "<menu id='" xml_escape($section) "' label='" xml_escape(title()) "'>\n"
+endmenu=     nstring(level(), "  ")  "</menu>\n"
+
+preoutput=   "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<!-- Automatically generated file. Do not edit (see /usr/share/doc/menu/html) -->\n\n<openbox_menu xmlns=\"http://openbox.org/\"\n        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n        xsi:schemaLocation=\"http://openbox.org/\n                file:///usr/share/openbox/menu.xsd\">\n\n"
+postoutput=  "\n</openbox_menu>\n"

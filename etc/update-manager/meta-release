@@ -1,0 +1,7 @@
+# default location for the meta-release file
+
+[METARELEASE]
+URI = http://changelogs.ubuntu.com/meta-release
+URI_LTS = http://changelogs.ubuntu.com/meta-release-lts
+URI_UNSTABLE_POSTFIX = -development
+URI_PROPOSED_POSTFIX = -proposed

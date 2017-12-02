@@ -1,0 +1,19 @@
+: ${GNUPGHOME=$HOME/.gnupg}
+
+GPGAGENT=/usr/bin/gpg-agent
+
+if grep -qs '^[[:space:]]*use-agent' "$GNUPGHOME/gpg.conf" "$GNUPGHOME/options" &&
+   test -x $GPGAGENT; then
+
+   # Invoking gpg-agent with no arguments exits successfully if the agent
+   # is already running on the standard socket
+   if ! $GPGAGENT 2>/dev/null; then
+       "$GPGAGENT" --daemon
+   fi
+   GPG_AGENT_INFO="${GNUPGHOME}/S.gpg-agent:0:1"
+   export GPG_AGENT_INFO
+   if grep -qs '^[[:space:]]*enable-ssh-support' "${GNUPGHOME}/gpg-agent.conf"; then
+       SSH_AUTH_SOCK="${GNUPGHOME}/S.gpg-agent.ssh"
+       export SSH_AUTH_SOCK
+   fi
+fi

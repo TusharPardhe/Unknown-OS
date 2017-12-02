@@ -1,0 +1,39 @@
+#!/bin/sh
+exec tail -n +3 $0
+# This file provides an easy way to add custom menu entries.  Simply type the
+# menu entries you want to add after this comment.  Be careful not to change
+# the 'exec tail' line above.
+menuentry "UnknownOS" --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-simple-c0da4e4c-e1f8-4b4e-8f0b-4882396be45b' {
+	recordfail
+	load_video
+	gfxmode $linux_gfx_mode
+	insmod gzio
+	if [ x$grub_platform = xxen ]; then insmod xzio; insmod lzopio; fi
+	insmod part_msdos
+	insmod ext2
+	set root='hd0,msdos6'
+	if [ x$feature_platform_search_hint = xy ]; then
+	  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,msdos6 --hint-efi=hd0,msdos6 --hint-baremetal=ahci0,msdos6  c0da4e4c-e1f8-4b4e-8f0b-4882396be45b
+	else
+	  search --no-floppy --fs-uuid --set=root c0da4e4c-e1f8-4b4e-8f0b-4882396be45b
+	fi
+	        linux	/boot/vmlinuz-4.4.0-96-generic root=UUID=c0da4e4c-e1f8-4b4e-8f0b-4882396be45b ro  splash quiet $vt_handoff
+	initrd	/boot/initrd.img-4.4.0-96-generic
+}
+menuentry "Unknown" --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-simple-c0da4e4c-e1f8-4b4e-8f0b-4882396be45b' {
+	recordfail
+	load_video
+	gfxmode $linux_gfx_mode
+	insmod gzio
+	if [ x$grub_platform = xxen ]; then insmod xzio; insmod lzopio; fi
+	insmod part_msdos
+	insmod ext2
+	set root='hd0,msdos6'
+	if [ x$feature_platform_search_hint = xy ]; then
+	  search --no-floppy --fs-uuid --set=root --hint-bios=hd0,msdos6 --hint-efi=hd0,msdos6 --hint-baremetal=ahci0,msdos6  c0da4e4c-e1f8-4b4e-8f0b-4882396be45b
+	else
+	  search --no-floppy --fs-uuid --set=root c0da4e4c-e1f8-4b4e-8f0b-4882396be45b
+	fi
+	        linux	/boot/vmlinuz-4.4.0-96-generic root=UUID=c0da4e4c-e1f8-4b4e-8f0b-4882396be45b ro  splash quiet $vt_handoff
+	initrd	/boot/initrd.img-4.4.0-96-generic
+}

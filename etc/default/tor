@@ -1,0 +1,75 @@
+# Defaults for tor initscript
+# sourced by /etc/init.d/tor
+# installed at /etc/default/tor by the maintainer scripts
+#
+# Note that this file is not being used for controlling Tor-startup
+# when Tor is launched by systemd.
+#
+
+#
+# This is a bash shell fragment
+#
+RUN_DAEMON="yes"
+
+#
+# Servers sometimes may need more than the default 1024 file descriptors
+# if they are very busy and have many clients connected to them.  The top
+# servers as of early 2008 regularly have more than 10000 connected
+# clients.
+#  (ulimit -n)
+#
+# (the default varies as it depends on the number of available system-wide file
+#  descriptors.  See the init script in /etc/init.d/tor for details.)
+#
+# MAX_FILEDESCRIPTORS=
+
+#
+# If tor is seriously hogging your CPU, taking away too much cycles from
+# other system resources, then you can renice tor.  See nice(1) for a
+# bit more information.  Another way to limit the CPU usage of an Onion
+# Router is to set a lower BandwidthRate, as CPU usage is mostly a function
+# of the amount of traffic flowing through your node.  Consult the torrc(5)
+# manual page for more information on setting BandwidthRate.
+#
+# NICE="--nicelevel 5"
+
+# Additional arguments to pass on tor's command line.
+#
+# ARGS="$ARGS "
+
+#
+# Uncomment the ulimit call below, and set "DisableDebuggerAttachment 0"
+# in /etc/tor/torrc, if you want tor to produce coredumps on segfaults
+# and assert errors.
+#
+# Keeping coredumps around is some sort of security issue since they
+# may leak session keys, sensitive client data and more, should such
+# files fall into the wrong hands.  Therefore coredumps are not enabled
+# by default.
+#
+# ulimit -c unlimited
+
+#
+# Config option for the weekly cron file: Whether or not to remove old
+# coredumps in /var/lib/tor.  Coredumps can hold sensitive data, as such
+# they probably should not be kept lying around if nobody will ever look
+# at them.  This option makes /etc/cron.weekly/tor clean out files older
+# then three weeks.
+#
+CLEANUP_OLD_COREFILES=y
+
+#
+# By default the tor init script will launch Tor using apparmor iff
+# /usr/sbin/aa-status exists and is executable and calling it with --enabled
+# returns true, /usr/sbin/aa-exec is executable, there is a
+# /etc/apparmor.d/system_tor policy, and USE_AA_EXEC is set to 'yes'.
+#
+# USE_AA_EXEC="yes"  # default
+# USE_AA_EXEC="no"
+
+# Let the vidalia package override some of our settings.
+# People who have vidalia installed might not want to run Tor as a system
+# service. The vidalia .deb can ask them that and then set run-daemon to no.
+if [ -e /etc/default/tor.vidalia ] && [ -x /usr/bin/vidalia ]; then
+	. /etc/default/tor.vidalia
+fi

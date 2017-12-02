@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Mount Helper
+Comment=Automount and autorun plugged devices
+Exec=/usr/lib/unity-settings-daemon/unity-fallback-mount-helper
+Icon=drive-optical
+Terminal=false
+Type=Application
+Categories=
+NoDisplay=true
+OnlyShowIn=Unity;
+X-GNOME-Autostart-Notify=true
+AutostartCondition=GNOME3 unless-session gnome
+X-Ubuntu-Gettext-Domain=unity-settings-daemon

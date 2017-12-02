@@ -1,0 +1,56 @@
+# This file is a part of the IBus packaging and should not be changed.
+#
+# Instead create your own file next to it with a higher numbered prefix,
+# and run
+#
+#       dconf update
+#
+
+[desktop/ibus/general]
+dconf-preserve-name-prefixes=['/desktop/ibus/engine/pinyin', '/desktop/ibus/engine/bopomofo', '/desktop/ibus/engine/hangul']
+use-system-keyboard-layout=false
+embed-preedit-text=true
+enable-by-default=false
+use-global-engine=true
+use-xmodmap=true
+switcher-delay-time=400
+version=''
+engines-order=@as []
+preload-engines=@as []
+xkb-latin-layouts=['ara', 'bg', 'cz', 'dev', 'gr', 'gur', 'in', 'jp(kana)', 'mal', 'mkd', 'ru', 'ua']
+
+[desktop/ibus/general/xkblayoutconfig]
+east-asia=['dz', 'km', 'lo', 'my', 'th', 'vi']
+center-asia=['bo', 'zh']
+north-europe=['da', 'fi', 'fo', 'is', 'no', 'se', 'sv']
+west-europe=['ca', 'cs', 'de', 'en', 'es', 'fr', 'gd', 'hu', 'it', 'nl', 'pt', 'sk', 'sl']
+group-list=['west_europe', 'south_europe', 'east_europe', 'north_europe', 'west_asia', 'center_asia', 'east_asia', 'india', 'australia']
+south-europe=['bg', 'bs', 'el', 'mk', 'mt', 'ro', 'sq', 'sr']
+west-asia=['am', 'ar', 'az', 'ber', 'fa', 'ha', 'he', 'hy', 'ig', 'ku', 'tg', 'tr', 'yo']
+india=['bn', 'dv', 'gu', 'hi', 'kn', 'ml', 'ne', 'or', 'pa', 'si', 'ta', 'te', 'ur']
+east-europe=['be', 'csb', 'cv', 'et', 'ka', 'kk', 'ky', 'lt', 'lv', 'pl', 'ru', 'tt', 'uk', 'uz']
+australia=['mi']
+
+[desktop/ibus/general/hotkey]
+next-engine=['Alt+Shift_L']
+disable-unconditional=@as []
+enable-unconditional=@as []
+trigger=['Control+space', 'Zenkaku_Hankaku', 'Alt+Kanji', 'Alt+grave', 'Hangul', 'Alt+Release+Alt_R']
+previous-engine=@as []
+prev-engine=@as []
+next-engine-in-menu=['Alt+Shift_L']
+triggers=['<Super>space']
+
+[desktop/ibus/panel]
+x=-1
+property-icon-delay-time=500
+y=-1
+lookup-table-orientation=1
+show=0
+xkb-icon-rgba='#415099'
+auto-hide-timeout=10000
+show-im-name=false
+follow-input-cursor-when-always-shown=false
+custom-font='Sans 10'
+show-icon-on-systray=true
+use-custom-font=false

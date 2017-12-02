@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Indicator Application
+Exec=/usr/lib/x86_64-linux-gnu/indicator-application/indicator-application-service
+StartupNotify=false
+Terminal=false
+OnlyShowIn=Unity;GNOME;
+NoDisplay=true
+AutostartCondition=GNOME3 unless-session gnome

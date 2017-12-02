@@ -1,0 +1,97 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          irqbalance
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: daemon to balance interrupts for SMP systems
+### END INIT INFO
+# irqbalance init script
+# August 2003
+# Eric Dorland
+
+# Based on spamassassin init script
+
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+DAEMON=/usr/sbin/irqbalance
+NAME=irqbalance
+SNAME=irqbalance
+DESC="SMP IRQ Balancer"
+PIDFILE="/var/run/$NAME.pid"
+PNAME="irqbalance"
+DOPTIONS=""
+
+# Defaults - don't touch, edit /etc/default/
+ENABLED=0
+OPTIONS=""
+ONESHOT=0
+
+test -x $DAEMON || exit 0
+
+. /lib/lsb/init-functions
+
+test -f /etc/default/irqbalance && . /etc/default/irqbalance
+
+test "$ENABLED" != "0" || exit 0
+
+if test "$ONESHOT" != "0"; then
+    DOPTIONS="--oneshot"
+fi
+
+case "$1" in
+    start)
+        if [ -x /usr/bin/systemd-detect-virt ] && /usr/bin/systemd-detect-virt --quiet --container; then
+            log_daemon_msg "Not starting $NAME in container"
+            log_end_msg 0
+            exit 0
+        fi
+
+        log_begin_msg "Starting $DESC: $NAME"
+
+        pid=$( pidofproc -p $PIDFILE $DAEMON )
+        if [ -n "$pid" ] ; then
+            log_begin_msg ". Already running"
+            log_end_msg 0
+            exit 0
+        fi
+
+        start-stop-daemon --start --quiet --oknodo --exec $DAEMON -- --pid=$PIDFILE $OPTIONS $DOPTIONS
+
+        log_end_msg $?
+        ;;
+    stop)
+        log_begin_msg "Stopping $DESC: $NAME"
+
+        start-stop-daemon --stop --quiet --oknodo --exec $DAEMON
+        rm -f $PIDFILE
+
+        log_end_msg $?
+        ;;
+    restart|force-reload)
+        if [ -x /usr/bin/systemd-detect-virt ] && /usr/bin/systemd-detect-virt --quiet --container; then
+            log_daemon_msg "Not restarting $NAME in container"
+            log_end_msg 0
+            exit 0
+        fi
+
+        log_begin_msg "Restarting $DESC: $NAME"
+
+        start-stop-daemon --stop --retry 5 --quiet --oknodo --exec $DAEMON
+        rm -f $PIDFILE
+
+        start-stop-daemon --start --quiet --oknodo --exec $DAEMON -- --pid=$PIDFILE $OPTIONS $DOPTIONS
+
+        log_end_msg $?
+        ;;
+    status)
+        status_of_proc $DAEMON $NAME
+        ;;
+    *)
+        N=/etc/init.d/$SNAME
+        echo "Usage: $N {start|stop|restart|force-reload}" >&2
+        exit 1
+        ;;
+esac
+
+exit 0

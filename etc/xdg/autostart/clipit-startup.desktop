@@ -1,0 +1,27 @@
+[Desktop Entry]
+Name=ClipIt
+Comment=Clipboard Manager
+Comment[cs]=Správce schránky
+Comment[da]=Udklipsholder
+Comment[de]=Zwischenablage-Verwaltung
+Comment[es]=Gestor de Portapapeles
+Comment[es_ES]=Gestor del portapapeles
+Comment[et]=Lõikepuhvrihaldur
+Comment[fr]=Gestionnaire de presse-papier
+Comment[hu]=Vágólapkezelő
+Comment[it]=Gestore degli appunti
+Comment[ja]=クリップボード・マネージャ
+Comment[nb]=Utklippstavleverkty
+Comment[pl]=Schowek
+Comment[pt_BR]=Gerenciador de Área de Transferência
+Comment[ro]=Administrator clipboard
+Comment[ru]=Менеджер буфера обмена
+Comment[sv]=Urklippshanterare
+Comment[tr]=Pano Yöneticisi
+Comment[zh_CN]=剪切板管理器
+Icon=clipit-trayicon
+Exec=clipit
+Terminal=false
+Type=Application
+OnlyShowIn=GNOME;XFCE;LXDE;Unity;
+X-GNOME-Autostart-enabled=true

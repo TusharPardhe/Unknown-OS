@@ -1,0 +1,13 @@
+TARGETS = lvm2-lvmetad virtualbox unattended-upgrades lvm2-lvmpolld uuidd speech-dispatcher irqbalance alsa-utils resolvconf tor ufw lightdm bluetooth cups-browsed cups plymouth PinguyBuilder-firstboot urandom avahi-daemon sendsigs rsyslog umountnfs.sh hwclock.sh networking umountfs cryptdisks cryptdisks-early umountroot halt reboot
+avahi-daemon: cups-browsed
+sendsigs: lightdm speech-dispatcher virtualbox avahi-daemon unattended-upgrades irqbalance alsa-utils uuidd bluetooth plymouth cups-browsed tor
+rsyslog: speech-dispatcher sendsigs avahi-daemon irqbalance bluetooth cups-browsed tor cups
+umountnfs.sh: lightdm speech-dispatcher rsyslog virtualbox avahi-daemon unattended-upgrades sendsigs irqbalance alsa-utils uuidd bluetooth plymouth cups-browsed tor
+hwclock.sh: rsyslog uuidd cups-browsed tor
+networking: lightdm umountnfs.sh cups-browsed tor
+umountfs: lightdm speech-dispatcher lvm2-lvmetad virtualbox avahi-daemon unattended-upgrades lvm2-lvmpolld irqbalance urandom alsa-utils uuidd networking bluetooth plymouth umountnfs.sh cups-browsed resolvconf tor hwclock.sh
+cryptdisks: umountfs
+cryptdisks-early: cryptdisks umountfs
+umountroot: umountfs cryptdisks cryptdisks-early
+halt: umountroot
+reboot: umountroot

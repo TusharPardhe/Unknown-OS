@@ -1,0 +1,218 @@
+# vim:syntax=apparmor
+# Author: Jamie Strandboge <jamie@canonical.com>
+
+#include <tunables/global>
+
+/usr/lib/telepathy/mission-control-5 (attach_disconnected) {
+    #include <abstractions/base>
+    #include <abstractions/dbus>
+    #include <abstractions/dbus-session>
+    #include <abstractions/nameservice>
+    #include <abstractions/user-tmp>
+    #include <abstractions/xdg-desktop>
+
+    # Touch custom images
+    /custom/etc/dconf_profile r,
+    /custom/etc/dconf/        r,
+    /custom/etc/dconf/**      r,
+
+    /usr/share/glib-*/schemas/   r,
+    /usr/share/glib-*/schemas/** r,
+    /usr/local/share/glib-*/schemas/   r,
+    /usr/local/share/glib-*/schemas/** r,
+    /usr/share/telepathy/   r,
+    /usr/share/telepathy/** r,
+    /usr/lib/mission-control-plugins.*/      r,
+    /usr/lib/mission-control-plugins.*/*.so  mr,
+    /usr/share/gvfs/remote-volume-monitors/  r,
+    /usr/share/gvfs/remote-volume-monitors/* r,
+
+    # This is noisy and doesn't seem to be needed. Silence the denial for now
+    deny /dev/tty rw,
+
+    owner @{HOME}/.mission-control/      rw,
+    owner @{HOME}/.mission-control/**    rw,
+    owner @{HOME}/.cache/.mc_connections rw,
+    owner @{HOME}/.cache/telepathy/avatars/ rw,
+    owner @{HOME}/.cache/telepathy/avatars/** rwk,
+    owner @{HOME}/.{cache,config}/dconf/     w,
+    owner /{,var/}run/user/[0-9]*/           w,
+    owner /{,var/}run/user/*/dconf/          w,
+    owner @{HOME}/.{cache,config}/dconf/user rw,
+    owner /{,var/}run/user/*/dconf/user      rw,
+    owner @{HOME}/.local/share/telepathy/                  rw,
+    owner @{HOME}/.local/share/telepathy/mission-control/  rw,
+    owner @{HOME}/.local/share/telepathy/mission-control/* rwk,
+
+    owner /var/lib/{gdm,lightdm}/.{cache,config}/dconf/     w,
+    owner /var/lib/{gdm,lightdm}/.{cache,config}/dconf/user rw,
+    owner /var/lib/{gdm,lightdm}/.mission-control/      rw,
+    owner /var/lib/{gdm,lightdm}/.mission-control/**    rw,
+    owner /var/lib/{gdm,lightdm}/.cache/.mc_connections rw,
+    owner /var/lib/{gdm,lightdm}/.local/share/telepathy/                  rw,
+    owner /var/lib/{gdm,lightdm}/.local/share/telepathy/mission-control/  rw,
+    owner /var/lib/{gdm,lightdm}/.local/share/telepathy/mission-control/* rwk,
+
+    # for libaccounts
+    owner @{HOME}/.config/libaccounts-glib/          rw,
+    owner @{HOME}/.config/libaccounts-glib/**        rwk,
+    /usr/share/accounts/services/                    r,
+    /usr/share/accounts/services/**                  r,
+
+    # for mcp-account-manager-ofono.so loaded dynamically by mission-control
+    owner @{PROC}/[0-9]*/fd/ r,
+    /usr/bin/getprop ix,
+    /{,android/}system/build.prop r,
+    /dev/socket/property_service rw,
+    @{PROC}/cmdline r,
+
+    # Site-specific additions and overrides. See local/README for details.
+    # Please note that accesses in local/usr.lib.telepathy are also applied to
+    # /usr/lib/telepathy/telepathy-*.
+    #include <local/usr.lib.telepathy>
+}
+
+/usr/lib/telepathy/telepathy-ofono {
+    #include <abstractions/base>
+    #include <abstractions/dbus>
+    #include <abstractions/dbus-session>
+    #include <abstractions/audio>
+
+    /dev/binder rw,
+
+    # TODO: move to base abstraction
+    ptrace (read) peer=@{profile_name},
+
+    # Touch custom images
+    /custom/etc/dconf_profile r,
+    /custom/etc/dconf/        r,
+    /custom/etc/dconf/**      r,
+
+    # LP: #1217618
+    capability sys_ptrace,
+
+    # telepathy-ofono needs to store a database for tracking pending messages
+    owner @{HOME}/.local/share/telepathy-ofono/  rw,
+    owner @{HOME}/.local/share/telepathy-ofono/** rwk,
+
+    # for telepathy-ofono to read nuntium MMS messages
+    owner @{HOME}/.local/share/nuntium/store/*.mms r,
+
+    # Site-specific additions and overrides. See local/README for details.
+    # Please note that accesses in local/usr.lib.telepathy are also applied to
+    # /usr/lib/telepathy/mission-control-5 and /usr/lib/telepathy/telepathy-*.
+    #include <local/usr.lib.telepathy>
+}
+
+# This could be broken out into the various binaries, but for now, ok
+/usr/lib/telepathy/telepathy-* {
+    #include <abstractions/base>
+    #include <abstractions/dbus>
+    #include <abstractions/dbus-session>
+    #include <abstractions/p11-kit>
+    #include <abstractions/nameservice>
+    #include <abstractions/ssl_certs>
+    #include <abstractions/ubuntu-helpers>
+    #include <abstractions/user-tmp>
+    #include <abstractions/xdg-desktop>
+
+    # Touch custom images
+    /custom/etc/dconf_profile r,
+    /custom/etc/dconf/        r,
+    /custom/etc/dconf/**      r,
+
+    /bin/dash ix,
+    /usr/bin/gconftool-2 ix,
+
+    # Maybe in abstractions?
+    audit deny owner /** m,
+    /etc/gss/mech.d/   r,
+    /etc/gss/mech.d/** r,
+    /var/lib/opencryptoki/modules/ r,
+    /var/lib/opencryptoki/modules/* r,
+    owner @{HOME}/.{cache,config}/dconf/     w,
+    owner /{,var/}run/user/*/dconf/          w,
+    owner @{HOME}/.{cache,config}/dconf/user rw,
+    owner /{,var/}run/user/*/dconf/user      rw,
+
+    # from gnome abstraction
+    /usr/share/gvfs/remote-volume-monitors/  r,
+    /usr/share/gvfs/remote-volume-monitors/* r,
+    owner /{,var/}run/gdm/*/database r,
+    owner /{,var/}run/lightdm/authority/[0-9]* r,
+
+    owner @{PROC}/[0-9]*/fd/ r,
+
+    /usr/share/glib-*/schemas/   r,
+    /usr/share/glib-*/schemas/** r,
+    /usr/local/share/glib-*/schemas/   r,
+    /usr/local/share/glib-*/schemas/** r,
+    /etc/purple/prefs.xml        r,
+    /usr/share/purple/           r,
+    /usr/share/purple/**         r,
+    /usr/share/themes/           r,
+    /usr/share/themes/**         r,
+    /usr/lib/purple*/            r,
+    /usr/lib/purple*/*.so        mr,
+    /usr/lib/telepathy/*/        r,
+    /usr/lib/telepathy/*/*.so    mr,
+    /usr/lib/libproxy*/*/modules/     r,
+    /usr/lib/libproxy*/*/modules/*.so mr,
+
+    # for telepathy-butterfly (LP: #816429)
+    #include <abstractions/python>
+    /usr/include/python{2,3}*/pyconfig.h r,
+    deny @{PROC}/[0-9]*/mounts r,
+    deny /sbin/ldconfig x,
+    deny /usr/bin/gcc-[0-9]* x,
+    /bin/uname ix,
+
+    # for telepathy-haze (LP: #867793, LP: #871497, LP: #942973, LP: #1021876)
+    owner @{HOME}/.config/indicators/          rw,
+    owner @{HOME}/.config/indicators/**        r,
+    owner @{HOME}/.config/indicators/**/       w,
+    owner @{HOME}/.config/indicators/messages/applications-blacklist/pidgin-libnotify* rw,
+    /usr/bin/gsettings ix,
+    # telepathy-haze and skype
+    deny @{PROC}/ r,
+    /usr/bin/skype Cx -> sanitized_helper,
+
+    # For telepathy-sunshine (LP: #878048, LP: #969893)
+    owner @{HOME}/.telepathy-sunshine/** rw,
+    owner @{HOME}/.Xauthority r,
+    deny /usr/lib/**/sunshine/**.pyc w,
+
+    owner @{HOME}/.cache/telepathy/          rw,
+    owner @{HOME}/.cache/telepathy/**        rwk,
+    owner @{HOME}/.local/share/telepathy*/   rw,
+    owner @{HOME}/.local/share/telepathy*/** rwk,
+    owner /var/lib/{gdm,lightdm}/.cache/telepathy/          rw,
+    owner /var/lib/{gdm,lightdm}/.cache/telepathy/**        rwk,
+    owner /var/lib/{gdm,lightdm}/.local/share/telepathy*/   rw,
+    owner /var/lib/{gdm,lightdm}/.local/share/telepathy*/** rwk,
+
+    owner @{HOME}/.cache/wocky/                     rw,
+    owner @{HOME}/.cache/wocky/caps/                rw,
+    owner @{HOME}/.cache/wocky/caps/*.db{,-journal} rwk,
+
+    owner @{HOME}/.local/share/TpLogger/   rw,
+    owner @{HOME}/.local/share/TpLogger/** rwk,
+
+    # libproxy (LP: #1147639)
+    /usr/lib/@{multiarch}/libproxy/[0-9]*/modules/*.so mr,
+    /usr/lib/@{multiarch}/libproxy/[0-9]*/pxgsettings Cxr -> pxgsettings,
+    profile pxgsettings {
+      #include <abstractions/gnome>
+      /usr/share/glib-*/schemas/** r,
+      /usr/local/share/glib-*/schemas/** r,
+      owner @{HOME}/.config/dconf/user r,
+      owner /run/user/*/dconf/     w,
+      owner /run/user/*/dconf/user rw,
+    }
+
+    # Site-specific additions and overrides. See local/README for details.
+    # Please note that accesses in local/usr.lib.telepathy are also applied to
+    # /usr/lib/telepathy/mission-control-5 and
+    # /usr/lib/telepathy/telepathy-ofono.
+    #include <local/usr.lib.telepathy>
+}

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Indicator Power
+Exec=/usr/lib/x86_64-linux-gnu/indicator-power/indicator-power-service
+OnlyShowIn=Unity;GNOME;
+NoDisplay=true
+StartupNotify=false
+Terminal=false
+AutostartCondition=GNOME3 unless-session gnome
+X-Ubuntu-Gettext-Domain=indicator-power

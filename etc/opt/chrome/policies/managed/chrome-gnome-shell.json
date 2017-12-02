@@ -1,0 +1,8 @@
+{
+	"ExtensionInstallForcelist": [
+		"gphhapmejobijbbhgpjhcjognlahblep;https://clients2.google.com/service/update2/crx"
+	],
+	"ExtensionInstallWhitelist": [
+                "gphhapmejobijbbhgpjhcjognlahblep"
+        ]
+}

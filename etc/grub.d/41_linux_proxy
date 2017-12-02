@@ -1,0 +1,7 @@
+#!/bin/sh
+#THIS IS A GRUB PROXY SCRIPT
+'/etc/grub.d/proxifiedScripts/linux' | /etc/grub.d/bin/grubcfg_proxy "+*
++'UnknownOS GNU/Linux'~5b391dcc8e40bec3fd14f59df0d869e2~
++'SUBMENU' as 'Advanced options for UnknownOS GNU/Linux'{+'Advanced options for UnknownOS GNU/Linux'/*, +'Advanced options for UnknownOS GNU/Linux'/'UnknownOS GNU/Linux, with Linux 4.4.0-96-generic'~bfc2b1e1bd5166912c3761fc48c5cbd1~, +'Advanced options for UnknownOS GNU/Linux'/'UnknownOS GNU/Linux, with Linux 4.4.0-96-generic (upstart)'~d6518d6e5d08a1c190919a28009d4b02~, +'Advanced options for UnknownOS GNU/Linux'/'UnknownOS GNU/Linux, with Linux 4.4.0-96-generic (recovery mode)'~7a59f59c88934ddcae49df606053d482~}
++#text
+"

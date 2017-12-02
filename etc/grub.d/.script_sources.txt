@@ -1,0 +1,8 @@
+"current_name";"default_name"
+"proxifiedScripts/linux";"10_linux"
+"44_linux_xen";"20_linux_xen"
+"45_memtest86+";"20_memtest86+"
+"46_os-prober";"30_os-prober"
+"47_uefi-firmware";"30_uefi-firmware"
+"proxifiedScripts/custom";"40_custom"
+"49_custom";"41_custom"

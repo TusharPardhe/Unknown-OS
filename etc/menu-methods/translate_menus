@@ -1,0 +1,99 @@
+#There's:
+#  translate:     only translate for exact matches (RE "^$match\$"
+#  subtranslate:  translate for matches of RE "^$match"
+#  substitute:    substitute substrings: sed -s "/^$match/$repl/".
+#                 this only works for "substitute x->x", and
+#		  will give interesting results for " substitute x->y".
+# 
+# Language translators: DO NOT USE THIS FILE! (see note on top of this file)
+# 
+# Implement transitory menu layout for menu migration.
+#
+# Applications [was:Apps]
+#   Amateur Radio [was:Hamradio]
+#   Data Management [was:Databases]
+#   Network [was:Net]
+#   Science
+#      Science/Electronics [was:Technical]
+#      Science/Mathematics [was:Math]
+#   System
+#      System/Administration [was:Admin]
+#      System/Language Environment [was:Language-Environment]
+#   Terminal Emulators [was:XShells]
+# Games
+#   Action [was:Arcade]
+#   Blocks [was:Tetris-like]
+# Screen
+#   Saving [was:Save]
+#   Locking [was:Lock]
+# Window Managers [was:WindowManagers]
+# FVWM Modules [was:WindowManagers/Modules]
+
+# Applications
+
+translate section->section
+  Apps/Hamradio "Apps/Amateur Radio"
+endtranslate
+
+translate section->section
+  Apps/Databases "Apps/Data Management"
+endtranslate
+
+translate section->section
+  Apps/Net Apps/Network
+endtranslate
+
+translate section->section
+  Apps/Math Apps/Science/Mathematics
+endtranslate
+
+translate section->section
+  Apps/Technical Apps/Science/Electronics
+endtranslate
+
+translate section->section
+  Apps/System/Admin Apps/System/Administration
+endtranslate
+
+translate section->section
+  Apps/System/Language-Environment "Apps/System/Language Environment"
+endtranslate
+
+translate section->section
+  XShells "Apps/Terminal Emulators"
+endtranslate
+
+# Games
+
+translate section->section
+  Games/Arcade Games/Action
+endtranslate
+
+translate section->section
+  Games/Tetris-like Games/Blocks
+endtranslate
+
+# Screen
+
+translate section->section
+  Screen/Lock Screen/Locking
+endtranslate
+
+translate section->section
+  Screen/Save Screen/Saving
+endtranslate
+
+# Toplevels
+
+substitute section->section
+  Apps/ Applications/
+endtranslate
+
+translate section->section
+  WindowManagers/Modules "FVWM Modules"
+endtranslate
+
+translate section->section
+  WindowManagers "Window Managers"
+endtranslate
+

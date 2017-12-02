@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<pref name='/'>
+        <pref name='plugins'>
+                <pref name='gtk'>
+                        <pref name='X11'>
+                                <pref name='notify'>
+                                        <pref name='type_im' type='bool' value='1' />
+                                        <pref name='type_chat' type='bool' value='0' />
+                                        <pref name='type_focused' type='bool' value='0' />
+                                        <pref name='method_string' type='bool' value='0' />
+                                        <pref name='title_string' type='string' value='(*)' />
+                                        <pref name='method_urgent' type='bool' value='1' />
+                                        <pref name='method_count' type='bool' value='0' />
+                                        <pref name='notify_focus' type='bool' value='1' />
+                                        <pref name='notify_click' type='bool' value='1' />
+                                        <pref name='notify_type' type='bool' value='1' />
+                                        <pref name='notify_send' type='bool' value='1' />
+                                        <pref name='notify_switch' type='bool' value='1' />
+                                </pref>
+                        </pref>
+                </pref>
+        </pref>
+        <pref name='pidgin'>
+                        <pref name='browsers'>
+                                <pref name='command' type='path' value='sensible-browser' />
+                                <pref name='browser' type='string' value='custom' />
+                        </pref>
+                        <pref name='plugins'>
+                            <pref name='loaded' type='pathlist'>
+                                <item value='/usr/lib/pidgin/unity.so'/>
+                                <item value='/usr/lib/pidgin/notify.so' />
+                        </pref>
+                </pref>
+        </pref>
+        <pref name='purple'>
+                <pref name='logging'>
+                        <pref name='log_ims' type='bool' value='1'/>
+                        <pref name='log_chats' type='bool' value='1'/>
+                </pref>
+        </pref>
+</pref>

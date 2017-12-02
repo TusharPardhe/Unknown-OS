@@ -1,0 +1,27 @@
+[general]
+backend = ini
+plugin_list_autosort = true
+
+[gnome_session]
+backend = gsettings
+integration = true
+plugin_list_autosort = true
+profile = Default
+
+[general_mate]
+backend = gsettings
+integration = false
+plugin_list_autosort = true
+profile = mate
+
+[general_ubuntu]
+backend = gsettings
+integration = true
+plugin_list_autosort = true
+profile = unity
+
+[general_ubuntu-lowgfx]
+backend = gsettings
+integration = true
+plugin_list_autosort = true
+profile = unity-lowgfx

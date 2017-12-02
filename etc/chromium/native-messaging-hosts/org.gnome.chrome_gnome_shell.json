@@ -1,0 +1,10 @@
+{
+  "name": "org.gnome.chrome_gnome_shell",
+  "description": "Native connector for extensions.gnome.org",
+  "path": "/usr/bin/chrome-gnome-shell",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://gphhapmejobijbbhgpjhcjognlahblep/",
+    "chrome-extension://olkooankbfblcebocnkjganpdmflbnbk/"
+  ]
+}

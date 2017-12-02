@@ -1,0 +1,8 @@
+How to restore this backup
+--------------------------
+ * make sure you have root permissions (`gksu nautilus` or `sudo -s` on command line) otherwise you won't be able to copy the files
+ * to fix an unbootable configuration, just copy:
+     * '/etc/grub.d/backup/boot_grub' to '/boot/grub'
+ * to reset the whole configuration (if it cannot be fixed by using grub customizer), also copy these files:
+     * '/etc/grub.d/backup/etc_grub_d' to '/etc/grub.d'
+     * '/etc/grub.d/backup/default_grub' to '/etc/default/grub'

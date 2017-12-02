@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e
+set -u
+
+DEFAULTSFILE=/etc/default/tor
+
+if [ -f $DEFAULTSFILE ] ; then
+	. $DEFAULTSFILE
+fi
+
+if [ "${CLEANUP_OLD_COREFILES:-}" = "y" ] ; then
+	if [ -d /var/lib/tor ] ; then
+		find /var/lib/tor -mindepth 1 -maxdepth 1 -type f -mtime +21 -user debian-tor -regex '.*/core\(\.[0-9]+\)?' -exec rm '{}' +
+	fi
+fi

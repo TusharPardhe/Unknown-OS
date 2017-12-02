@@ -1,0 +1,10 @@
+In this directory the scripts files for the install programme
+of the various window managers are situated.
+
+update-menus runs all files in this directory, passing it all menuentries
+to install on stdin.
+
+The filenames in this directory must contain only letters/numbers or -_
+any other files (like the .bak, .dpkg-old, ...) are silently ignored.
+
+For more info, see /usr/share/doc/menu/html

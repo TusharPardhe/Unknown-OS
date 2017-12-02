@@ -1,0 +1,17 @@
+[Desktop Entry]
+Type=Application
+Name=Evolution Alarm Notify
+Comment=Calendar event notifications
+Icon=appointment-soon
+Exec=/usr/lib/evolution/evolution-alarm-notify
+Terminal=false
+Type=Application
+Categories=
+OnlyShowIn=GNOME;Unity;XFCE;Dawati;MATE;
+NoDisplay=true
+X-Meego-Priority=Low
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=evolution
+X-GNOME-Bugzilla-Component=calendar
+X-GNOME-Bugzilla-Version=3.18.x
+X-Ubuntu-Gettext-Domain=evolution-3.18

@@ -1,0 +1,20 @@
+TARGETS = rsyslog lvm2-lvmetad virtualbox unattended-upgrades lvm2-lvmpolld uuidd killprocs binfmt-support dbus speech-dispatcher irqbalance tor single cron rsync anacron lightdm avahi-daemon bluetooth cups-browsed cups plymouth grub-common ondemand rc.local PinguyBuilder-firstboot
+INTERACTIVE =
+dbus: rsyslog
+speech-dispatcher: rsyslog
+irqbalance: rsyslog
+tor: rsyslog
+single: killprocs
+cron: rsyslog
+rsync: rsyslog
+anacron: rsyslog
+lightdm: dbus
+avahi-daemon: dbus rsyslog
+bluetooth: rsyslog dbus
+cups-browsed: rsyslog
+cups: rsyslog
+plymouth: lightdm dbus speech-dispatcher rsyslog lvm2-lvmetad virtualbox avahi-daemon unattended-upgrades lvm2-lvmpolld irqbalance uuidd bluetooth cups-browsed tor cups binfmt-support cron rsync anacron
+grub-common: lightdm dbus speech-dispatcher rsyslog lvm2-lvmetad virtualbox avahi-daemon unattended-upgrades lvm2-lvmpolld irqbalance uuidd bluetooth cups-browsed tor cups binfmt-support cron rsync anacron
+ondemand: lightdm dbus speech-dispatcher rsyslog lvm2-lvmetad virtualbox avahi-daemon unattended-upgrades lvm2-lvmpolld irqbalance uuidd bluetooth cups-browsed tor cups binfmt-support cron rsync anacron
+rc.local: lightdm dbus speech-dispatcher rsyslog lvm2-lvmetad virtualbox avahi-daemon unattended-upgrades lvm2-lvmpolld irqbalance uuidd bluetooth cups-browsed tor cups binfmt-support cron rsync anacron
+PinguyBuilder-firstboot: rsyslog lightdm dbus speech-dispatcher lvm2-lvmetad virtualbox avahi-daemon unattended-upgrades lvm2-lvmpolld irqbalance uuidd bluetooth cups-browsed tor cups binfmt-support cron rsync anacron
